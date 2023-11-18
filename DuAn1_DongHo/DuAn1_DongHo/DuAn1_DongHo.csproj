@@ -150,6 +150,9 @@
     <Compile Include="SanPham.cs">
       <DependentUpon>QLShopDongHo.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\QLDonHang.resx">
+      <DependentUpon>QLDonHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
