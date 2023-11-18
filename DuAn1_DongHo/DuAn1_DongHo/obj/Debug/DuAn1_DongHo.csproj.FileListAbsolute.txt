@@ -1,0 +1,15 @@
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\DuAn1_DongHo\DuAn1_DongHo\bin\Debug\DuAn1_DongHo.exe.config
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\DuAn1_DongHo\DuAn1_DongHo\bin\Debug\DuAn1_DongHo.exe
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\DuAn1_DongHo\DuAn1_DongHo\bin\Debug\DuAn1_DongHo.pdb
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\DuAn1_DongHo\DuAn1_DongHo\bin\Debug\EntityFramework.dll
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\DuAn1_DongHo\DuAn1_DongHo\bin\Debug\EntityFramework.SqlServer.dll
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\DuAn1_DongHo\DuAn1_DongHo\bin\Debug\EntityFramework.xml
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\DuAn1_DongHo\DuAn1_DongHo\bin\Debug\EntityFramework.SqlServer.xml
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\DuAn1_DongHo\DuAn1_DongHo\obj\Debug\DuAn1_DongHo.csproj.AssemblyReference.cache
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\DuAn1_DongHo\DuAn1_DongHo\obj\Debug\DuAn1_DongHo.Forms.QLDonHang.resources
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\DuAn1_DongHo\DuAn1_DongHo\obj\Debug\DuAn1_DongHo.Properties.Resources.resources
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\DuAn1_DongHo\DuAn1_DongHo\obj\Debug\DuAn1_DongHo.csproj.GenerateResource.cache
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\DuAn1_DongHo\DuAn1_DongHo\obj\Debug\DuAn1_DongHo.csproj.CoreCompileInputs.cache
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\DuAn1_DongHo\DuAn1_DongHo\obj\Debug\DuAn1_DongHo.csproj.CopyComplete
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\DuAn1_DongHo\DuAn1_DongHo\obj\Debug\DuAn1_DongHo.exe
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\DuAn1_DongHo\DuAn1_DongHo\obj\Debug\DuAn1_DongHo.pdb

@@ -1,9 +1,9 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DuAn1_DongHo.Forms;
 
 namespace DuAn1_DongHo
 {
@@ -17,7 +17,7 @@ namespace DuAn1_DongHo
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DangNhap());
+            Application.Run(new QLDonHang());
         }
     }
 }
