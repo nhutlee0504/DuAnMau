@@ -61,7 +61,7 @@ namespace QL_ShopDongHo.Forms
             this.btnLamMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnLamMoi.ForeColor = System.Drawing.Color.White;
             this.btnLamMoi.Image = global::QL_ShopDongHo.Properties.Resources.Refresh;
-            this.btnLamMoi.Location = new System.Drawing.Point(577, 456);
+            this.btnLamMoi.Location = new System.Drawing.Point(577, 453);
             this.btnLamMoi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLamMoi.Name = "btnLamMoi";
             this.btnLamMoi.Size = new System.Drawing.Size(137, 53);
@@ -79,7 +79,7 @@ namespace QL_ShopDongHo.Forms
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnXoa.ForeColor = System.Drawing.Color.White;
             this.btnXoa.Image = global::QL_ShopDongHo.Properties.Resources.Delete;
-            this.btnXoa.Location = new System.Drawing.Point(577, 397);
+            this.btnXoa.Location = new System.Drawing.Point(577, 394);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(137, 53);
@@ -97,7 +97,7 @@ namespace QL_ShopDongHo.Forms
             this.btnCapNhat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnCapNhat.ForeColor = System.Drawing.Color.White;
             this.btnCapNhat.Image = global::QL_ShopDongHo.Properties.Resources.Edit;
-            this.btnCapNhat.Location = new System.Drawing.Point(577, 338);
+            this.btnCapNhat.Location = new System.Drawing.Point(577, 335);
             this.btnCapNhat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCapNhat.Name = "btnCapNhat";
             this.btnCapNhat.Size = new System.Drawing.Size(137, 53);
@@ -110,7 +110,7 @@ namespace QL_ShopDongHo.Forms
             // txtTenKhachHang
             // 
             this.txtTenKhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtTenKhachHang.Location = new System.Drawing.Point(201, 115);
+            this.txtTenKhachHang.Location = new System.Drawing.Point(201, 112);
             this.txtTenKhachHang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTenKhachHang.Name = "txtTenKhachHang";
             this.txtTenKhachHang.Size = new System.Drawing.Size(233, 26);
@@ -124,7 +124,7 @@ namespace QL_ShopDongHo.Forms
             this.TenKH,
             this.SDT,
             this.DiaChi});
-            this.dgvKhachHang.Location = new System.Drawing.Point(50, 279);
+            this.dgvKhachHang.Location = new System.Drawing.Point(50, 276);
             this.dgvKhachHang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvKhachHang.Name = "dgvKhachHang";
             this.dgvKhachHang.RowHeadersWidth = 51;
@@ -202,7 +202,7 @@ namespace QL_ShopDongHo.Forms
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnThoat.ForeColor = System.Drawing.Color.White;
             this.btnThoat.Image = global::QL_ShopDongHo.Properties.Resources.Log_out;
-            this.btnThoat.Location = new System.Drawing.Point(577, 515);
+            this.btnThoat.Location = new System.Drawing.Point(577, 512);
             this.btnThoat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(137, 53);
@@ -220,7 +220,7 @@ namespace QL_ShopDongHo.Forms
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnThem.ForeColor = System.Drawing.Color.White;
             this.btnThem.Image = global::QL_ShopDongHo.Properties.Resources.Add;
-            this.btnThem.Location = new System.Drawing.Point(577, 279);
+            this.btnThem.Location = new System.Drawing.Point(577, 276);
             this.btnThem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(137, 53);
@@ -236,7 +236,7 @@ namespace QL_ShopDongHo.Forms
             this.panel1.Controls.Add(this.txtTenKhachTim);
             this.panel1.Controls.Add(this.btnTimKiem);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Location = new System.Drawing.Point(481, 106);
+            this.panel1.Location = new System.Drawing.Point(481, 103);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(223, 158);
@@ -249,7 +249,7 @@ namespace QL_ShopDongHo.Forms
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(46, 124);
+            this.label9.Location = new System.Drawing.Point(46, 121);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(127, 20);
             this.label9.TabIndex = 66;
@@ -258,7 +258,7 @@ namespace QL_ShopDongHo.Forms
             // txtDiaChi
             // 
             this.txtDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtDiaChi.Location = new System.Drawing.Point(201, 211);
+            this.txtDiaChi.Location = new System.Drawing.Point(201, 208);
             this.txtDiaChi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(233, 26);
@@ -270,7 +270,7 @@ namespace QL_ShopDongHo.Forms
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(46, 220);
+            this.label5.Location = new System.Drawing.Point(46, 217);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(61, 20);
             this.label5.TabIndex = 64;
@@ -279,7 +279,7 @@ namespace QL_ShopDongHo.Forms
             // txtSDT
             // 
             this.txtSDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtSDT.Location = new System.Drawing.Point(201, 161);
+            this.txtSDT.Location = new System.Drawing.Point(201, 158);
             this.txtSDT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(233, 26);
@@ -291,7 +291,7 @@ namespace QL_ShopDongHo.Forms
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(46, 168);
+            this.label3.Location = new System.Drawing.Point(46, 165);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(42, 20);
             this.label3.TabIndex = 62;
@@ -303,7 +303,7 @@ namespace QL_ShopDongHo.Forms
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label2.ForeColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(107, 30);
+            this.label2.Location = new System.Drawing.Point(107, 27);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(492, 48);
             this.label2.TabIndex = 61;
@@ -314,7 +314,7 @@ namespace QL_ShopDongHo.Forms
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::QL_ShopDongHo.Properties.Resources.bg_kh;
-            this.ClientSize = new System.Drawing.Size(768, 598);
+            this.ClientSize = new System.Drawing.Size(765, 598);
             this.Controls.Add(this.btnLamMoi);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnCapNhat);

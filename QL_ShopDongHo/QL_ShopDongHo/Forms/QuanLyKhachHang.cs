@@ -159,10 +159,9 @@ namespace QL_ShopDongHo.Forms
         {
             using (var db = new QuanLyShopDongHoEntities())
             {
-                var tim = db.KhachHangs.Select(x => x.TenKH);
-                if (tim.Contains(txtTenKhachTim.Text))
+                List<KhachHang> tenKH = db.KhachHangs.Where(x => x.TenKH.EndsWith(txtTenKhachTim.Text)).ToList();
+                if (tenKH.Count > 0)
                 {
-                    List<KhachHang> tenKH = db.KhachHangs.Where(x => x.TenKH.Contains(txtTenKhachTim.Text)).ToList();
                     dgvKhachHang.Rows.Clear();
                     tenKH.ForEach(x =>
                     {
@@ -173,7 +172,7 @@ namespace QL_ShopDongHo.Forms
                 {
                     MessageBox.Show("Không tìm thấy tên khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     ShowKH();
-                }
+                }               
             }
         }
 

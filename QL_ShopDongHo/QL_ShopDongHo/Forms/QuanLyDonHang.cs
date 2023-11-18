@@ -147,12 +147,11 @@ namespace QL_ShopDongHo.Forms
         {
             using (var db = new QuanLyShopDongHoEntities())
             {
-                var tim = db.DonHangs.Select(x => x.MaDon);
-                if (tim.Contains(cboMaDonTim.Text))
+                List<DonHang> maDon = db.DonHangs.Where(x => x.MaDon.Contains(cboMaDonTim.Text)).ToList();
+                if (maDon.Count > 0)
                 {
-                    List<DonHang> tenKH = db.DonHangs.Where(x => x.MaDon.Contains(cboMaDonTim.Text)).ToList();
                     dgvDonHang.Rows.Clear();
-                    tenKH.ForEach(x =>
+                    maDon.ForEach(x =>
                     {
                         dgvDonHang.Rows.Add(x.MaDon, x.TenKH, x.SDT, x.LoaiSP, x.SoLuong, x.NgayIn, x.MaNV);
                     });
@@ -175,7 +174,7 @@ namespace QL_ShopDongHo.Forms
 
         private string taoMaDH()
         {
-            SqlConnection conn = new SqlConnection(@"server = .; database = QuanLyDongHo; integrated security = true");
+            SqlConnection conn = new SqlConnection(@"server = .; database = QuanLyShopDongHo; integrated security = true");
             string query = "select * from DonHang";
             SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
             DataTable table = new DataTable();
