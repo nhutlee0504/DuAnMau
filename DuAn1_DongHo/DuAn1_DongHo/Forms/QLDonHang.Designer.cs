@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+<<<<<<< HEAD
             this.cboSDT = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtLoaiSanPham = new System.Windows.Forms.TextBox();
@@ -417,10 +418,15 @@
             this.label1.TabIndex = 70;
             this.label1.Text = "QUẢN LÝ ĐƠN HÀNG";
             // 
+=======
+            this.SuspendLayout();
+            // 
+>>>>>>> remotes/origin/main
             // QLDonHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.BackgroundImage = global::DuAn1_DongHo.Properties.Resources.bg1_1;
             this.ClientSize = new System.Drawing.Size(922, 729);
             this.Controls.Add(this.cboSDT);
@@ -452,6 +458,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvDonHang)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+=======
+            this.ClientSize = new System.Drawing.Size(809, 652);
+            this.Name = "QLDonHang";
+            this.Text = "QLDonHang";
+            this.ResumeLayout(false);
+>>>>>>> remotes/origin/main
 
         }
 
