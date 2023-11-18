@@ -246,6 +246,7 @@ namespace QL_ShopDongHo.Forms
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTimKiem.UseVisualStyleBackColor = false;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // label6
             // 
@@ -275,6 +276,7 @@ namespace QL_ShopDongHo.Forms
             this.btnThoat.Text = "Thoát";
             this.btnThoat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnTaoDon
             // 
@@ -292,6 +294,7 @@ namespace QL_ShopDongHo.Forms
             this.btnTaoDon.Text = "Tạo đơn";
             this.btnTaoDon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTaoDon.UseVisualStyleBackColor = false;
+            this.btnTaoDon.Click += new System.EventHandler(this.btnTaoDon_Click_1);
             // 
             // btnThanhToan
             // 
@@ -309,6 +312,7 @@ namespace QL_ShopDongHo.Forms
             this.btnThanhToan.Text = "Thanh toán";
             this.btnThanhToan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnThanhToan.UseVisualStyleBackColor = false;
+            this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
             // 
             // MaNV
             // 
@@ -375,6 +379,7 @@ namespace QL_ShopDongHo.Forms
             this.btnLamMoi.Text = "Làm mới";
             this.btnLamMoi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLamMoi.UseVisualStyleBackColor = false;
+            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
             // dgvDonHang
             // 
@@ -447,6 +452,7 @@ namespace QL_ShopDongHo.Forms
             this.Controls.Add(this.txtTenKhachHang);
             this.Name = "QuanLyDonHang";
             this.Text = "QuanLyDonHang";
+            this.Load += new System.EventHandler(this.QuanLyDonHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDonHang)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
