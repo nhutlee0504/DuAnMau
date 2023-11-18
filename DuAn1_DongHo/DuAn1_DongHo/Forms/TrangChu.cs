@@ -16,5 +16,10 @@ namespace DuAn1_DongHo.Forms
         {
             InitializeComponent();
         }
+
+        private void TrangChu_Load(object sender, EventArgs e)
+        {
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+        }
     }
 }
