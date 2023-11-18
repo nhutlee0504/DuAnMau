@@ -13,3 +13,9 @@ F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QL_ShopDongHo\QL_ShopDongHo\obj\Debug\QL_ShopDo
 F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QL_ShopDongHo\QL_ShopDongHo\obj\Debug\QL_ShopDongHo.exe
 F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QL_ShopDongHo\QL_ShopDongHo\obj\Debug\QL_ShopDongHo.pdb
 F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QL_ShopDongHo\QL_ShopDongHo\obj\Debug\QL_ShopDongHo.Forms.QuanLyDonHang.resources
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QL_ShopDongHo\QL_ShopDongHo\obj\Debug\QL_ShopDongHo.Forms.DangNhap.resources
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QL_ShopDongHo\QL_ShopDongHo\obj\Debug\QL_ShopDongHo.Forms.DoiMatKhau.resources
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QL_ShopDongHo\QL_ShopDongHo\obj\Debug\QL_ShopDongHo.Forms.HuongDan.resources
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QL_ShopDongHo\QL_ShopDongHo\obj\Debug\QL_ShopDongHo.Forms.QuanLyKhachHang.resources
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QL_ShopDongHo\QL_ShopDongHo\obj\Debug\QL_ShopDongHo.Forms.ThongKe.resources
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QL_ShopDongHo\QL_ShopDongHo\obj\Debug\QL_ShopDongHo.Forms.TrangChu.resources

@@ -32,7 +32,6 @@ namespace QL_ShopDongHo.Forms
             this.cboSDT = new System.Windows.Forms.ComboBox();
             this.dtpNgayIn = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtLoaiSanPham = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.txtMaNhanVien = new System.Windows.Forms.TextBox();
@@ -47,7 +46,6 @@ namespace QL_ShopDongHo.Forms
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.btnThoat = new System.Windows.Forms.Button();
-            this.btnTaoDon = new System.Windows.Forms.Button();
             this.btnThanhToan = new System.Windows.Forms.Button();
             this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgayIn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -60,6 +58,8 @@ namespace QL_ShopDongHo.Forms
             this.dgvDonHang = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtTenKhachHang = new System.Windows.Forms.TextBox();
+            this.btnTaoDon = new System.Windows.Forms.Button();
+            this.cboLoaiSP = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDonHang)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -96,15 +96,6 @@ namespace QL_ShopDongHo.Forms
             this.label7.Size = new System.Drawing.Size(65, 20);
             this.label7.TabIndex = 82;
             this.label7.Text = "Ngày in";
-            // 
-            // txtLoaiSanPham
-            // 
-            this.txtLoaiSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtLoaiSanPham.Location = new System.Drawing.Point(560, 161);
-            this.txtLoaiSanPham.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtLoaiSanPham.Name = "txtLoaiSanPham";
-            this.txtLoaiSanPham.Size = new System.Drawing.Size(199, 26);
-            this.txtLoaiSanPham.TabIndex = 81;
             // 
             // label8
             // 
@@ -238,6 +229,7 @@ namespace QL_ShopDongHo.Forms
             this.btnTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnTimKiem.ForeColor = System.Drawing.Color.White;
+            this.btnTimKiem.Image = global::QL_ShopDongHo.Properties.Resources.Search;
             this.btnTimKiem.Location = new System.Drawing.Point(311, 14);
             this.btnTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTimKiem.Name = "btnTimKiem";
@@ -268,6 +260,7 @@ namespace QL_ShopDongHo.Forms
             this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnThoat.ForeColor = System.Drawing.Color.White;
+            this.btnThoat.Image = global::QL_ShopDongHo.Properties.Resources.Log_out;
             this.btnThoat.Location = new System.Drawing.Point(775, 351);
             this.btnThoat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThoat.Name = "btnThoat";
@@ -278,24 +271,6 @@ namespace QL_ShopDongHo.Forms
             this.btnThoat.UseVisualStyleBackColor = false;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // btnTaoDon
-            // 
-            this.btnTaoDon.BackColor = System.Drawing.Color.LightSlateGray;
-            this.btnTaoDon.FlatAppearance.BorderColor = System.Drawing.Color.LightSlateGray;
-            this.btnTaoDon.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
-            this.btnTaoDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTaoDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnTaoDon.ForeColor = System.Drawing.Color.White;
-            this.btnTaoDon.Location = new System.Drawing.Point(28, 349);
-            this.btnTaoDon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnTaoDon.Name = "btnTaoDon";
-            this.btnTaoDon.Size = new System.Drawing.Size(127, 53);
-            this.btnTaoDon.TabIndex = 86;
-            this.btnTaoDon.Text = "Tạo đơn";
-            this.btnTaoDon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnTaoDon.UseVisualStyleBackColor = false;
-            this.btnTaoDon.Click += new System.EventHandler(this.btnTaoDon_Click_1);
-            // 
             // btnThanhToan
             // 
             this.btnThanhToan.BackColor = System.Drawing.Color.LightSlateGray;
@@ -304,6 +279,7 @@ namespace QL_ShopDongHo.Forms
             this.btnThanhToan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThanhToan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnThanhToan.ForeColor = System.Drawing.Color.White;
+            this.btnThanhToan.Image = global::QL_ShopDongHo.Properties.Resources.Price_list;
             this.btnThanhToan.Location = new System.Drawing.Point(173, 351);
             this.btnThanhToan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThanhToan.Name = "btnThanhToan";
@@ -371,6 +347,7 @@ namespace QL_ShopDongHo.Forms
             this.btnLamMoi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLamMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnLamMoi.ForeColor = System.Drawing.Color.White;
+            this.btnLamMoi.Image = global::QL_ShopDongHo.Properties.Resources.Refresh;
             this.btnLamMoi.Location = new System.Drawing.Point(317, 351);
             this.btnLamMoi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLamMoi.Name = "btnLamMoi";
@@ -400,6 +377,7 @@ namespace QL_ShopDongHo.Forms
             this.dgvDonHang.RowTemplate.Height = 24;
             this.dgvDonHang.Size = new System.Drawing.Size(875, 297);
             this.dgvDonHang.TabIndex = 88;
+            this.dgvDonHang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDonHang_CellClick);
             // 
             // panel1
             // 
@@ -411,6 +389,7 @@ namespace QL_ShopDongHo.Forms
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(459, 80);
             this.panel1.TabIndex = 84;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // txtTenKhachHang
             // 
@@ -423,16 +402,45 @@ namespace QL_ShopDongHo.Forms
             this.txtTenKhachHang.Size = new System.Drawing.Size(199, 26);
             this.txtTenKhachHang.TabIndex = 79;
             // 
+            // btnTaoDon
+            // 
+            this.btnTaoDon.BackColor = System.Drawing.Color.LightSlateGray;
+            this.btnTaoDon.FlatAppearance.BorderColor = System.Drawing.Color.LightSlateGray;
+            this.btnTaoDon.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.btnTaoDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTaoDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnTaoDon.ForeColor = System.Drawing.Color.White;
+            this.btnTaoDon.Image = global::QL_ShopDongHo.Properties.Resources.Add;
+            this.btnTaoDon.Location = new System.Drawing.Point(27, 351);
+            this.btnTaoDon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnTaoDon.Name = "btnTaoDon";
+            this.btnTaoDon.Size = new System.Drawing.Size(127, 53);
+            this.btnTaoDon.TabIndex = 91;
+            this.btnTaoDon.Text = "Tạo đơn";
+            this.btnTaoDon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnTaoDon.UseVisualStyleBackColor = false;
+            this.btnTaoDon.Click += new System.EventHandler(this.btnTaoDon_Click);
+            // 
+            // cboLoaiSP
+            // 
+            this.cboLoaiSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.cboLoaiSP.FormattingEnabled = true;
+            this.cboLoaiSP.Location = new System.Drawing.Point(560, 159);
+            this.cboLoaiSP.Name = "cboLoaiSP";
+            this.cboLoaiSP.Size = new System.Drawing.Size(199, 28);
+            this.cboLoaiSP.TabIndex = 92;
+            // 
             // QuanLyDonHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::QL_ShopDongHo.Properties.Resources.bg1_1;
             this.ClientSize = new System.Drawing.Size(928, 731);
+            this.Controls.Add(this.cboLoaiSP);
+            this.Controls.Add(this.btnTaoDon);
             this.Controls.Add(this.cboSDT);
             this.Controls.Add(this.dtpNgayIn);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.txtLoaiSanPham);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtMaNhanVien);
@@ -444,7 +452,6 @@ namespace QL_ShopDongHo.Forms
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnThoat);
-            this.Controls.Add(this.btnTaoDon);
             this.Controls.Add(this.btnThanhToan);
             this.Controls.Add(this.btnLamMoi);
             this.Controls.Add(this.dgvDonHang);
@@ -466,7 +473,6 @@ namespace QL_ShopDongHo.Forms
         private System.Windows.Forms.ComboBox cboSDT;
         private System.Windows.Forms.DateTimePicker dtpNgayIn;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtLoaiSanPham;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtMaNhanVien;
@@ -481,7 +487,6 @@ namespace QL_ShopDongHo.Forms
         private System.Windows.Forms.Button btnTimKiem;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnThoat;
-        private System.Windows.Forms.Button btnTaoDon;
         private System.Windows.Forms.Button btnThanhToan;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaNV;
         private System.Windows.Forms.DataGridViewTextBoxColumn NgayIn;
@@ -494,5 +499,7 @@ namespace QL_ShopDongHo.Forms
         private System.Windows.Forms.DataGridView dgvDonHang;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtTenKhachHang;
+        private System.Windows.Forms.Button btnTaoDon;
+        private System.Windows.Forms.ComboBox cboLoaiSP;
     }
 }

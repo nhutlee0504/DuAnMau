@@ -56,6 +56,7 @@ namespace QL_ShopDongHo.Forms
             this.chkHienMK.TabIndex = 96;
             this.chkHienMK.Text = "Hiện mật khẩu";
             this.chkHienMK.UseVisualStyleBackColor = false;
+            this.chkHienMK.CheckedChanged += new System.EventHandler(this.chkHienMK_CheckedChanged);
             // 
             // txtMatKhauXacNhan
             // 
@@ -152,6 +153,7 @@ namespace QL_ShopDongHo.Forms
             this.btnXacNhan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXacNhan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnXacNhan.ForeColor = System.Drawing.Color.White;
+            this.btnXacNhan.Image = global::QL_ShopDongHo.Properties.Resources.Save;
             this.btnXacNhan.Location = new System.Drawing.Point(106, 330);
             this.btnXacNhan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXacNhan.Name = "btnXacNhan";
@@ -160,6 +162,7 @@ namespace QL_ShopDongHo.Forms
             this.btnXacNhan.Text = "Xác nhận";
             this.btnXacNhan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnXacNhan.UseVisualStyleBackColor = false;
+            this.btnXacNhan.Click += new System.EventHandler(this.btnXacNhan_Click);
             // 
             // btnThoat
             // 
@@ -169,6 +172,7 @@ namespace QL_ShopDongHo.Forms
             this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnThoat.ForeColor = System.Drawing.Color.White;
+            this.btnThoat.Image = global::QL_ShopDongHo.Properties.Resources.Log_out1;
             this.btnThoat.Location = new System.Drawing.Point(275, 330);
             this.btnThoat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThoat.Name = "btnThoat";
@@ -177,6 +181,7 @@ namespace QL_ShopDongHo.Forms
             this.btnThoat.Text = "Thoát";
             this.btnThoat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // label1
             // 
