@@ -224,7 +224,7 @@ namespace QL_ShopDongHo.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::QL_ShopDongHo.Properties.Resources.bg1_3;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(17)))), ((int)(((byte)(28)))));
             this.ClientSize = new System.Drawing.Size(1189, 573);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.label3);
