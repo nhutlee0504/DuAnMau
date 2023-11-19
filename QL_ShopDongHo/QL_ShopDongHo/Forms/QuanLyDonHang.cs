@@ -110,7 +110,7 @@ namespace QL_ShopDongHo.Forms
             }
             catch (Exception)
             {
-                MessageBox.Show("Số lượng rỗng", "Thông báo");
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin đơn hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -131,6 +131,7 @@ namespace QL_ShopDongHo.Forms
                 txtMaNhanVien.Text = "";
                 cboMaDonTim.Text = "";
                 btnThanhToan.Enabled = false;
+                btnTaoDon.Enabled = true;
             }
         }
 
@@ -153,17 +154,31 @@ namespace QL_ShopDongHo.Forms
                     });
                     txtMaDon.Text = dgvDonHang.Rows[0].Cells[0].Value.ToString();
                     txtTenKhachHang.Text = dgvDonHang.Rows[0].Cells[1].Value.ToString();
-                    cboSDT.Text = dgvDonHang.Rows[0].Cells[1].Value.ToString();
+                    cboSDT.Text = dgvDonHang.Rows[0].Cells[2].Value.ToString();
                     cboLoaiSP.Text = dgvDonHang.Rows[0].Cells[3].Value.ToString();
                     txtSoLuong.Text = dgvDonHang.Rows[0].Cells[4].Value.ToString();
                     dtpNgayIn.Text = dgvDonHang.Rows[0].Cells[5].Value.ToString();
                     txtMaNhanVien.Text = dgvDonHang.Rows[0].Cells[6].Value.ToString();
+                    btnTaoDon.Enabled = false;
                     btnThanhToan.Enabled = true;
                 }
                 else
                 {
                     MessageBox.Show("Không tìm thấy tên khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     ShowDH();
+                    btnTaoDon.Enabled = true;
+                    btnThanhToan.Enabled = false;
+                    foreach (Control control in Controls)
+                    {
+                        if (control is TextBox)
+                        {
+                            ((TextBox)control).Text = string.Empty;
+                        }
+                        else if (control is ComboBox)
+                        {
+                            ((ComboBox)control).SelectedIndex = -1;
+                        }
+                    }
                 }
             }
         }
@@ -204,8 +219,8 @@ namespace QL_ShopDongHo.Forms
             txtSoLuong.Text = dgvDonHang.Rows[e.RowIndex].Cells[4].Value.ToString();
             dtpNgayIn.Text = dgvDonHang.Rows[e.RowIndex].Cells[5].Value.ToString();
             txtMaNhanVien.Text = dgvDonHang.Rows[e.RowIndex].Cells[6].Value.ToString();
+            btnTaoDon.Enabled = false;
             btnThanhToan.Enabled = true;
-
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

@@ -29,6 +29,8 @@ namespace QL_ShopDongHo.Forms
                 dgvKhachHang.Rows.Clear();
                 db.KhachHangs.ToList().ForEach(x => dgvKhachHang.Rows.Add(x.TenKH, x.SDT, x.DiaChi));
             }
+            btnCapNhat.Enabled = false;
+            btnXoa.Enabled = false;
         }
 
         private bool checkForm()
@@ -45,12 +47,12 @@ namespace QL_ShopDongHo.Forms
                 }
                 else if (txtSDT.Text.Length > 10 || txtSDT.Text.Length < 10)
                 {
-                    MessageBox.Show("Vui lòng nhập số điện thoại đủ 10 số", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Vui lòng nhập số điện thoại chỉ 10 số", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return false;
                 }
                 else if (regex.IsMatch(txtSDT.Text) == false)
                 {
-                    MessageBox.Show("Vui lòng nhập số điện thoại là số", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Vui lòng nhập đúng định dạng số điện thoại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return false;
                 }
                 else
@@ -129,7 +131,7 @@ namespace QL_ShopDongHo.Forms
             catch (Exception)
             {
 
-                MessageBox.Show("Vui lòng chọn khách hàng cần xóa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Lỗi - khách hàng đã đang có hóa đơn", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 

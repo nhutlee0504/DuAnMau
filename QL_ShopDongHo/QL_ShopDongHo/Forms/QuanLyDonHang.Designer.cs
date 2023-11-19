@@ -71,7 +71,7 @@ namespace QL_ShopDongHo.Forms
             this.cboSDT.Location = new System.Drawing.Point(182, 161);
             this.cboSDT.Name = "cboSDT";
             this.cboSDT.Size = new System.Drawing.Size(199, 28);
-            this.cboSDT.TabIndex = 90;
+            this.cboSDT.TabIndex = 1;
             // 
             // dtpNgayIn
             // 
@@ -82,8 +82,8 @@ namespace QL_ShopDongHo.Forms
             this.dtpNgayIn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpNgayIn.Name = "dtpNgayIn";
             this.dtpNgayIn.Size = new System.Drawing.Size(200, 26);
-            this.dtpNgayIn.TabIndex = 83;
-            this.dtpNgayIn.Value = new System.DateTime(2023, 11, 10, 0, 0, 0, 0);
+            this.dtpNgayIn.TabIndex = 4;
+            this.dtpNgayIn.Value = new System.DateTime(2023, 11, 20, 0, 0, 0, 0);
             // 
             // label7
             // 
@@ -128,7 +128,7 @@ namespace QL_ShopDongHo.Forms
             this.txtMaNhanVien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMaNhanVien.Name = "txtMaNhanVien";
             this.txtMaNhanVien.Size = new System.Drawing.Size(199, 26);
-            this.txtMaNhanVien.TabIndex = 77;
+            this.txtMaNhanVien.TabIndex = 5;
             // 
             // label5
             // 
@@ -149,7 +149,7 @@ namespace QL_ShopDongHo.Forms
             this.txtSoLuong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSoLuong.Name = "txtSoLuong";
             this.txtSoLuong.Size = new System.Drawing.Size(199, 26);
-            this.txtSoLuong.TabIndex = 75;
+            this.txtSoLuong.TabIndex = 3;
             // 
             // label4
             // 
@@ -184,7 +184,7 @@ namespace QL_ShopDongHo.Forms
             this.txtMaDon.Name = "txtMaDon";
             this.txtMaDon.ReadOnly = true;
             this.txtMaDon.Size = new System.Drawing.Size(199, 26);
-            this.txtMaDon.TabIndex = 72;
+            this.txtMaDon.TabIndex = 12;
             // 
             // label2
             // 
@@ -218,7 +218,7 @@ namespace QL_ShopDongHo.Forms
             this.cboMaDonTim.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboMaDonTim.Name = "cboMaDonTim";
             this.cboMaDonTim.Size = new System.Drawing.Size(183, 28);
-            this.cboMaDonTim.TabIndex = 23;
+            this.cboMaDonTim.TabIndex = 10;
             // 
             // btnTimKiem
             // 
@@ -234,7 +234,7 @@ namespace QL_ShopDongHo.Forms
             this.btnTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(119, 53);
-            this.btnTimKiem.TabIndex = 22;
+            this.btnTimKiem.TabIndex = 11;
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTimKiem.UseVisualStyleBackColor = false;
@@ -265,7 +265,7 @@ namespace QL_ShopDongHo.Forms
             this.btnThoat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(127, 53);
-            this.btnThoat.TabIndex = 87;
+            this.btnThoat.TabIndex = 9;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnThoat.UseVisualStyleBackColor = false;
@@ -284,7 +284,7 @@ namespace QL_ShopDongHo.Forms
             this.btnThanhToan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThanhToan.Name = "btnThanhToan";
             this.btnThanhToan.Size = new System.Drawing.Size(128, 53);
-            this.btnThanhToan.TabIndex = 85;
+            this.btnThanhToan.TabIndex = 7;
             this.btnThanhToan.Text = "Thanh toán";
             this.btnThanhToan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnThanhToan.UseVisualStyleBackColor = false;
@@ -352,7 +352,7 @@ namespace QL_ShopDongHo.Forms
             this.btnLamMoi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLamMoi.Name = "btnLamMoi";
             this.btnLamMoi.Size = new System.Drawing.Size(128, 53);
-            this.btnLamMoi.TabIndex = 89;
+            this.btnLamMoi.TabIndex = 8;
             this.btnLamMoi.Text = "Làm mới";
             this.btnLamMoi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLamMoi.UseVisualStyleBackColor = false;
@@ -415,7 +415,7 @@ namespace QL_ShopDongHo.Forms
             this.btnTaoDon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTaoDon.Name = "btnTaoDon";
             this.btnTaoDon.Size = new System.Drawing.Size(127, 53);
-            this.btnTaoDon.TabIndex = 91;
+            this.btnTaoDon.TabIndex = 6;
             this.btnTaoDon.Text = "Tạo đơn";
             this.btnTaoDon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTaoDon.UseVisualStyleBackColor = false;
@@ -428,7 +428,7 @@ namespace QL_ShopDongHo.Forms
             this.cboLoaiSP.Location = new System.Drawing.Point(560, 159);
             this.cboLoaiSP.Name = "cboLoaiSP";
             this.cboLoaiSP.Size = new System.Drawing.Size(199, 28);
-            this.cboLoaiSP.TabIndex = 92;
+            this.cboLoaiSP.TabIndex = 2;
             // 
             // QuanLyDonHang
             // 
