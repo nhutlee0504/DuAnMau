@@ -165,6 +165,15 @@
     <EmbeddedResource Include="Forms\QuanLyKhachHang.resx">
       <DependentUpon>QuanLyKhachHang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QuanLyLoaiSanPham.resx">
+      <DependentUpon>QuanLyLoaiSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QuanLyNhanVien.resx">
+      <DependentUpon>QuanLyNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QuanLySanPham.resx">
+      <DependentUpon>QuanLySanPham.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ThongKe.resx">
       <DependentUpon>ThongKe.cs</DependentUpon>
     </EmbeddedResource>
@@ -209,6 +218,13 @@
     <None Include="Resources\bg_dmk.png" />
     <None Include="Resources\bg_dmk1.png" />
     <None Include="Resources\bg_kh.jpg" />
+    <None Include="Resources\bg1_11.jpg" />
+    <None Include="Resources\Exit.png" />
+    <None Include="Resources\Search.png" />
+    <None Include="Resources\Add.png" />
+    <None Include="Resources\Edit.png" />
+    <None Include="Resources\Delete.png" />
+    <None Include="Resources\Refresh.png" />
     <Content Include="ShopDongHo.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ShopDongHo.edmx</DependentUpon>

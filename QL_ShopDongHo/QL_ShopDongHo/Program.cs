@@ -17,7 +17,7 @@ namespace QL_ShopDongHo
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new QuanLyDonHang());
+            Application.Run(new QuanLySanPham());
         }
     }
 }

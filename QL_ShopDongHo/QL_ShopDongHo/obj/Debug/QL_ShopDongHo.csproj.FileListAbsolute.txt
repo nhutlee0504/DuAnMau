@@ -13,3 +13,27 @@ F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QL_ShopDongHo\QL_ShopDongHo\obj\Debug\QL_ShopDo
 F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QL_ShopDongHo\QL_ShopDongHo\obj\Debug\QL_ShopDongHo.exe
 F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QL_ShopDongHo\QL_ShopDongHo\obj\Debug\QL_ShopDongHo.pdb
 F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QL_ShopDongHo\QL_ShopDongHo\obj\Debug\QL_ShopDongHo.Forms.QuanLyDonHang.resources
+D:\DuAn1\QL_ShopDongHo\QL_ShopDongHo\bin\Debug\QL_ShopDongHo.exe.config
+D:\DuAn1\QL_ShopDongHo\QL_ShopDongHo\bin\Debug\QL_ShopDongHo.exe
+D:\DuAn1\QL_ShopDongHo\QL_ShopDongHo\bin\Debug\QL_ShopDongHo.pdb
+D:\DuAn1\QL_ShopDongHo\QL_ShopDongHo\bin\Debug\EntityFramework.dll
+D:\DuAn1\QL_ShopDongHo\QL_ShopDongHo\bin\Debug\EntityFramework.SqlServer.dll
+D:\DuAn1\QL_ShopDongHo\QL_ShopDongHo\bin\Debug\EntityFramework.xml
+D:\DuAn1\QL_ShopDongHo\QL_ShopDongHo\bin\Debug\EntityFramework.SqlServer.xml
+D:\DuAn1\QL_ShopDongHo\QL_ShopDongHo\obj\Debug\QL_ShopDongHo.csproj.AssemblyReference.cache
+D:\DuAn1\QL_ShopDongHo\QL_ShopDongHo\obj\Debug\QL_ShopDongHo.Forms.DangNhap.resources
+D:\DuAn1\QL_ShopDongHo\QL_ShopDongHo\obj\Debug\QL_ShopDongHo.Forms.DoiMatKhau.resources
+D:\DuAn1\QL_ShopDongHo\QL_ShopDongHo\obj\Debug\QL_ShopDongHo.Forms.HuongDan.resources
+D:\DuAn1\QL_ShopDongHo\QL_ShopDongHo\obj\Debug\QL_ShopDongHo.Forms.QuanLyDonHang.resources
+D:\DuAn1\QL_ShopDongHo\QL_ShopDongHo\obj\Debug\QL_ShopDongHo.Forms.QuanLyKhachHang.resources
+D:\DuAn1\QL_ShopDongHo\QL_ShopDongHo\obj\Debug\QL_ShopDongHo.Forms.QuanLyLoaiSanPham.resources
+D:\DuAn1\QL_ShopDongHo\QL_ShopDongHo\obj\Debug\QL_ShopDongHo.Forms.QuanLyNhanVien.resources
+D:\DuAn1\QL_ShopDongHo\QL_ShopDongHo\obj\Debug\QL_ShopDongHo.Forms.QuanLySanPham.resources
+D:\DuAn1\QL_ShopDongHo\QL_ShopDongHo\obj\Debug\QL_ShopDongHo.Forms.ThongKe.resources
+D:\DuAn1\QL_ShopDongHo\QL_ShopDongHo\obj\Debug\QL_ShopDongHo.Forms.TrangChu.resources
+D:\DuAn1\QL_ShopDongHo\QL_ShopDongHo\obj\Debug\QL_ShopDongHo.Properties.Resources.resources
+D:\DuAn1\QL_ShopDongHo\QL_ShopDongHo\obj\Debug\QL_ShopDongHo.csproj.GenerateResource.cache
+D:\DuAn1\QL_ShopDongHo\QL_ShopDongHo\obj\Debug\QL_ShopDongHo.csproj.CoreCompileInputs.cache
+D:\DuAn1\QL_ShopDongHo\QL_ShopDongHo\obj\Debug\QL_ShopDongHo.csproj.CopyComplete
+D:\DuAn1\QL_ShopDongHo\QL_ShopDongHo\obj\Debug\QL_ShopDongHo.exe
+D:\DuAn1\QL_ShopDongHo\QL_ShopDongHo\obj\Debug\QL_ShopDongHo.pdb
