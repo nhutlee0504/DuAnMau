@@ -12,9 +12,84 @@ namespace QL_ShopDongHo.Forms
 {
     public partial class TrangChu : Form
     {
-        public TrangChu()
+        string inputdata1 = "";
+        string inputdata2 = "";
+        string inputdata3 = "";
+        public TrangChu(string input1, string input2, string input3)
         {
             InitializeComponent();
+            this.inputdata1 = input1;
+            this.inputdata2 = input2;
+            this.inputdata3 = input3;
+        }
+
+        private void TrangChu_Load(object sender, EventArgs e)
+        {
+            tennv.Text = inputdata1;
+            vaitro.Text = inputdata2;
+            manv.Text = inputdata3;
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            if(vaitro.Text == "Nhân Viên")
+            {
+                btnThongKe.Enabled = false;
+            }
+        }
+
+        private void btnDangXuat_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            DangNhap dn = new DangNhap();
+            dn.Show();
+        }
+
+        private void btnDoiMK_Click(object sender, EventArgs e)
+        {
+            string inputdata1 = tennv.Text;
+            string inputdata2 = vaitro.Text;
+            string inputdata3 = manv.Text;
+            this.Dispose();
+            DoiMatKhau dmk = new DoiMatKhau(inputdata1, inputdata2, inputdata3);
+            dmk.Show();
+        }
+
+        private void btnHuongDan_Click(object sender, EventArgs e)
+        {
+            string inputdata1 = tennv.Text;
+            string inputdata2 = vaitro.Text;
+            string inputdata3 = manv.Text;
+            this.Dispose();
+            HuongDan hd = new HuongDan(inputdata1, inputdata2, inputdata3);
+            hd.Show();
+        }
+
+        private void btnThongKe_Click(object sender, EventArgs e)
+        {
+            string inputdata1 = tennv.Text;
+            string inputdata2 = vaitro.Text;
+            string inputdata3 = manv.Text;
+            this.Dispose();
+            ThongKe tke = new ThongKe(inputdata1, inputdata2, inputdata3);
+            tke.Show();
+        }
+
+        private void btnDonHang_Click(object sender, EventArgs e)
+        {
+            string inputdata1 = tennv.Text;
+            string inputdata2 = vaitro.Text;
+            string inputdata3 = manv.Text;
+            this.Dispose();
+            QuanLyDonHang dhg = new QuanLyDonHang(inputdata1, inputdata2, inputdata3);
+            dhg.Show();
+        }
+
+        private void btnKhachHang_Click(object sender, EventArgs e)
+        {
+            string inputdata1 = tennv.Text;
+            string inputdata2 = vaitro.Text;
+            string inputdata3 = manv.Text;
+            this.Dispose();
+            QuanLyKhachHang khg = new QuanLyKhachHang(inputdata1, inputdata2, inputdata3);
+            khg.Show();
         }
     }
 }

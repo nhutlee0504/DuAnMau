@@ -209,6 +209,18 @@
     <None Include="Resources\bg_dmk.png" />
     <None Include="Resources\bg_dmk1.png" />
     <None Include="Resources\bg_kh.jpg" />
+    <None Include="Resources\key1_1.png" />
+    <None Include="Resources\icon_NhanVien.png" />
+    <None Include="Resources\icon_SanPham.png" />
+    <None Include="Resources\icon_PhanLoai.png" />
+    <None Include="Resources\icon_KhachHang.png" />
+    <None Include="Resources\icon_DonHang.png" />
+    <None Include="Resources\icon_ThongKe.png" />
+    <None Include="Resources\earth.png" />
+    <None Include="Resources\icon_DoiMK.png" />
+    <None Include="Resources\icon_Exit.png" />
+    <None Include="Resources\bia.jpg" />
+    <None Include="Resources\Log out.png" />
     <Content Include="ShopDongHo.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ShopDongHo.edmx</DependentUpon>

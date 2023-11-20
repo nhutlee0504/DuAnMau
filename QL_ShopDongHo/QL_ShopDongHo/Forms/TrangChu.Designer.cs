@@ -29,49 +29,53 @@ namespace QL_ShopDongHo.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.button9 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.btnHuongDan = new System.Windows.Forms.Button();
+            this.tennv = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnDangXuat = new System.Windows.Forms.Button();
+            this.btnDoiMK = new System.Windows.Forms.Button();
+            this.btnThongKe = new System.Windows.Forms.Button();
+            this.btnDonHang = new System.Windows.Forms.Button();
+            this.btnKhachHang = new System.Windows.Forms.Button();
+            this.btnLoaiSP = new System.Windows.Forms.Button();
+            this.btnSanPham = new System.Windows.Forms.Button();
+            this.btnNhanVien = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.manv = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.vaitro = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button9
+            // btnHuongDan
             // 
-            this.button9.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.Location = new System.Drawing.Point(1010, 55);
-            this.button9.Margin = new System.Windows.Forms.Padding(4);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(151, 39);
-            this.button9.TabIndex = 37;
-            this.button9.Text = "Hướng dẫn";
-            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button9.UseVisualStyleBackColor = false;
+            this.btnHuongDan.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnHuongDan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHuongDan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHuongDan.Image = global::QL_ShopDongHo.Properties.Resources.earth;
+            this.btnHuongDan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHuongDan.Location = new System.Drawing.Point(758, 45);
+            this.btnHuongDan.Name = "btnHuongDan";
+            this.btnHuongDan.Size = new System.Drawing.Size(113, 32);
+            this.btnHuongDan.TabIndex = 37;
+            this.btnHuongDan.Text = "Hướng dẫn";
+            this.btnHuongDan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnHuongDan.UseVisualStyleBackColor = false;
+            this.btnHuongDan.Click += new System.EventHandler(this.btnHuongDan_Click);
             // 
-            // label3
+            // tennv
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Location = new System.Drawing.Point(182, 70);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 25);
-            this.label3.TabIndex = 36;
-            this.label3.Text = "label3";
+            this.tennv.AutoSize = true;
+            this.tennv.BackColor = System.Drawing.Color.Transparent;
+            this.tennv.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tennv.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.tennv.Location = new System.Drawing.Point(136, 57);
+            this.tennv.Name = "tennv";
+            this.tennv.Size = new System.Drawing.Size(51, 20);
+            this.tennv.TabIndex = 36;
+            this.tennv.Text = "label3";
             // 
             // label2
             // 
@@ -79,131 +83,135 @@ namespace QL_ShopDongHo.Forms
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(28, 70);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(21, 57);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(137, 25);
+            this.label2.Size = new System.Drawing.Size(109, 20);
             this.label2.TabIndex = 35;
             this.label2.Text = "Tên tài khoản:";
             // 
-            // button8
+            // btnDangXuat
             // 
-            this.button8.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.Location = new System.Drawing.Point(34, 493);
-            this.button8.Margin = new System.Windows.Forms.Padding(4);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(424, 62);
-            this.button8.TabIndex = 34;
-            this.button8.Text = "Đăng xuất";
-            this.button8.UseVisualStyleBackColor = false;
+            this.btnDangXuat.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnDangXuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDangXuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangXuat.Image = global::QL_ShopDongHo.Properties.Resources.icon_Exit;
+            this.btnDangXuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDangXuat.Location = new System.Drawing.Point(26, 401);
+            this.btnDangXuat.Name = "btnDangXuat";
+            this.btnDangXuat.Size = new System.Drawing.Size(318, 50);
+            this.btnDangXuat.TabIndex = 34;
+            this.btnDangXuat.Text = "Đăng xuất";
+            this.btnDangXuat.UseVisualStyleBackColor = false;
+            this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click);
             // 
-            // button7
+            // btnDoiMK
             // 
-            this.button7.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(34, 436);
-            this.button7.Margin = new System.Windows.Forms.Padding(4);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(424, 62);
-            this.button7.TabIndex = 33;
-            this.button7.Text = "Đổi mật khẩu";
-            this.button7.UseVisualStyleBackColor = false;
+            this.btnDoiMK.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnDoiMK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDoiMK.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDoiMK.Image = global::QL_ShopDongHo.Properties.Resources.icon_DoiMK;
+            this.btnDoiMK.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDoiMK.Location = new System.Drawing.Point(26, 354);
+            this.btnDoiMK.Name = "btnDoiMK";
+            this.btnDoiMK.Size = new System.Drawing.Size(318, 50);
+            this.btnDoiMK.TabIndex = 33;
+            this.btnDoiMK.Text = "Đổi mật khẩu";
+            this.btnDoiMK.UseVisualStyleBackColor = false;
+            this.btnDoiMK.Click += new System.EventHandler(this.btnDoiMK_Click);
             // 
-            // button6
+            // btnThongKe
             // 
-            this.button6.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(34, 380);
-            this.button6.Margin = new System.Windows.Forms.Padding(4);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(424, 62);
-            this.button6.TabIndex = 32;
-            this.button6.Text = "Thống kê và báo cáo";
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnThongKe.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThongKe.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThongKe.Image = global::QL_ShopDongHo.Properties.Resources.icon_ThongKe;
+            this.btnThongKe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThongKe.Location = new System.Drawing.Point(26, 309);
+            this.btnThongKe.Name = "btnThongKe";
+            this.btnThongKe.Size = new System.Drawing.Size(318, 50);
+            this.btnThongKe.TabIndex = 32;
+            this.btnThongKe.Text = "Thống kê và báo cáo";
+            this.btnThongKe.UseVisualStyleBackColor = false;
+            this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
             // 
-            // button5
+            // btnDonHang
             // 
-            this.button5.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(34, 322);
-            this.button5.Margin = new System.Windows.Forms.Padding(4);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(424, 62);
-            this.button5.TabIndex = 31;
-            this.button5.Text = "Quản lý đơn hàng";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnDonHang.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnDonHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDonHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDonHang.Image = global::QL_ShopDongHo.Properties.Resources.icon_DonHang;
+            this.btnDonHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDonHang.Location = new System.Drawing.Point(26, 262);
+            this.btnDonHang.Name = "btnDonHang";
+            this.btnDonHang.Size = new System.Drawing.Size(318, 50);
+            this.btnDonHang.TabIndex = 31;
+            this.btnDonHang.Text = "Quản lý đơn hàng";
+            this.btnDonHang.UseVisualStyleBackColor = false;
+            this.btnDonHang.Click += new System.EventHandler(this.btnDonHang_Click);
             // 
-            // button4
+            // btnKhachHang
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(34, 268);
-            this.button4.Margin = new System.Windows.Forms.Padding(4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(424, 62);
-            this.button4.TabIndex = 30;
-            this.button4.Text = "Quản lý khách hàng";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnKhachHang.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnKhachHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnKhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKhachHang.Image = global::QL_ShopDongHo.Properties.Resources.icon_KhachHang;
+            this.btnKhachHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnKhachHang.Location = new System.Drawing.Point(26, 218);
+            this.btnKhachHang.Name = "btnKhachHang";
+            this.btnKhachHang.Size = new System.Drawing.Size(318, 50);
+            this.btnKhachHang.TabIndex = 30;
+            this.btnKhachHang.Text = "Quản lý khách hàng";
+            this.btnKhachHang.UseVisualStyleBackColor = false;
+            this.btnKhachHang.Click += new System.EventHandler(this.btnKhachHang_Click);
             // 
-            // button3
+            // btnLoaiSP
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(34, 211);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(424, 62);
-            this.button3.TabIndex = 29;
-            this.button3.Text = "Quản lý loại SP";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnLoaiSP.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnLoaiSP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLoaiSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLoaiSP.Image = global::QL_ShopDongHo.Properties.Resources.icon_PhanLoai;
+            this.btnLoaiSP.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLoaiSP.Location = new System.Drawing.Point(26, 171);
+            this.btnLoaiSP.Name = "btnLoaiSP";
+            this.btnLoaiSP.Size = new System.Drawing.Size(318, 50);
+            this.btnLoaiSP.TabIndex = 29;
+            this.btnLoaiSP.Text = "Quản lý loại SP";
+            this.btnLoaiSP.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnSanPham
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(34, 157);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(424, 62);
-            this.button2.TabIndex = 28;
-            this.button2.Text = "Quản lý sản phẩm";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnSanPham.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnSanPham.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSanPham.Image = global::QL_ShopDongHo.Properties.Resources.icon_SanPham;
+            this.btnSanPham.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSanPham.Location = new System.Drawing.Point(26, 128);
+            this.btnSanPham.Name = "btnSanPham";
+            this.btnSanPham.Size = new System.Drawing.Size(318, 50);
+            this.btnSanPham.TabIndex = 28;
+            this.btnSanPham.Text = "Quản lý sản phẩm";
+            this.btnSanPham.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnNhanVien
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(34, 98);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(424, 63);
-            this.button1.TabIndex = 27;
-            this.button1.Text = "Quản lý nhân viên";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnNhanVien.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnNhanVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNhanVien.Image = global::QL_ShopDongHo.Properties.Resources.icon_NhanVien;
+            this.btnNhanVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNhanVien.Location = new System.Drawing.Point(26, 80);
+            this.btnNhanVien.Name = "btnNhanVien";
+            this.btnNhanVien.Size = new System.Drawing.Size(318, 51);
+            this.btnNhanVien.TabIndex = 27;
+            this.btnNhanVien.Text = "Quản lý nhân viên";
+            this.btnNhanVien.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(488, 98);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Image = global::QL_ShopDongHo.Properties.Resources.bia;
+            this.pictureBox1.Location = new System.Drawing.Point(366, 80);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(672, 457);
+            this.pictureBox1.Size = new System.Drawing.Size(504, 371);
             this.pictureBox1.TabIndex = 26;
             this.pictureBox1.TabStop = false;
             // 
@@ -213,34 +221,91 @@ namespace QL_ShopDongHo.Forms
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(67, 17);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(50, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(872, 52);
+            this.label1.Size = new System.Drawing.Size(701, 40);
             this.label1.TabIndex = 25;
             this.label1.Text = "PHẦN MỀM QUẢN LÝ SHOP ĐỒNG HỒ";
             // 
+            // manv
+            // 
+            this.manv.AutoSize = true;
+            this.manv.BackColor = System.Drawing.Color.Transparent;
+            this.manv.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.manv.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.manv.Location = new System.Drawing.Point(425, 54);
+            this.manv.Name = "manv";
+            this.manv.Size = new System.Drawing.Size(51, 20);
+            this.manv.TabIndex = 39;
+            this.manv.Text = "label4";
+            this.manv.Visible = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label5.Location = new System.Drawing.Point(362, 54);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(57, 20);
+            this.label5.TabIndex = 38;
+            this.label5.Text = "Mã NV";
+            this.label5.Visible = false;
+            // 
+            // vaitro
+            // 
+            this.vaitro.AutoSize = true;
+            this.vaitro.BackColor = System.Drawing.Color.Transparent;
+            this.vaitro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.vaitro.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.vaitro.Location = new System.Drawing.Point(584, 54);
+            this.vaitro.Name = "vaitro";
+            this.vaitro.Size = new System.Drawing.Size(51, 20);
+            this.vaitro.TabIndex = 41;
+            this.vaitro.Text = "label6";
+            this.vaitro.Visible = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label7.Location = new System.Drawing.Point(521, 54);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(55, 20);
+            this.label7.TabIndex = 40;
+            this.label7.Text = "Vai trò";
+            this.label7.Visible = false;
+            // 
             // TrangChu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::QL_ShopDongHo.Properties.Resources.bg1_3;
-            this.ClientSize = new System.Drawing.Size(1189, 573);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.label3);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(17)))), ((int)(((byte)(28)))));
+            this.ClientSize = new System.Drawing.Size(892, 466);
+            this.Controls.Add(this.vaitro);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.manv);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.btnHuongDan);
+            this.Controls.Add(this.tennv);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnDangXuat);
+            this.Controls.Add(this.btnDoiMK);
+            this.Controls.Add(this.btnThongKe);
+            this.Controls.Add(this.btnDonHang);
+            this.Controls.Add(this.btnKhachHang);
+            this.Controls.Add(this.btnLoaiSP);
+            this.Controls.Add(this.btnSanPham);
+            this.Controls.Add(this.btnNhanVien);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "TrangChu";
             this.Text = "TrangChu";
+            this.Load += new System.EventHandler(this.TrangChu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -249,18 +314,22 @@ namespace QL_ShopDongHo.Forms
 
         #endregion
 
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnHuongDan;
+        private System.Windows.Forms.Label tennv;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnDangXuat;
+        private System.Windows.Forms.Button btnDoiMK;
+        private System.Windows.Forms.Button btnThongKe;
+        private System.Windows.Forms.Button btnDonHang;
+        private System.Windows.Forms.Button btnKhachHang;
+        private System.Windows.Forms.Button btnLoaiSP;
+        private System.Windows.Forms.Button btnSanPham;
+        private System.Windows.Forms.Button btnNhanVien;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label manv;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label vaitro;
+        private System.Windows.Forms.Label label7;
     }
 }
