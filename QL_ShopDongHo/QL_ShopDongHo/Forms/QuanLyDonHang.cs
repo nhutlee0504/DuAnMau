@@ -105,12 +105,14 @@ namespace QL_ShopDongHo.Forms
                         db.DonHangs.Add(dh);
                         db.SaveChanges();
                         ShowDH();
+                        Rong();
                     }
                 }
             }
             catch (Exception)
             {
-                MessageBox.Show("Vui lòng nhập đầy đủ thông tin đơn hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Số lượng là số nguyên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtSoLuong.Focus();
             }
         }
 
@@ -221,6 +223,17 @@ namespace QL_ShopDongHo.Forms
             txtMaNhanVien.Text = dgvDonHang.Rows[e.RowIndex].Cells[6].Value.ToString();
             btnTaoDon.Enabled = false;
             btnThanhToan.Enabled = true;
+        }
+
+        private void Rong()
+        {
+            txtMaDon.Text = "";
+            txtTenKhachHang.Text = "";
+            cboSDT.Text = "";
+            cboLoaiSP.Text = "";
+            txtSoLuong.Text = "";
+            txtMaNhanVien.Text = "";
+            cboMaDonTim.Text = "";
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

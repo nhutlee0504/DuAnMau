@@ -100,7 +100,7 @@ namespace QL_ShopDongHo.Forms
             this.btnCapNhat.Location = new System.Drawing.Point(577, 335);
             this.btnCapNhat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCapNhat.Name = "btnCapNhat";
-            this.btnCapNhat.Size = new System.Drawing.Size(137, 53);
+            this.btnCapNhat.Size = new System.Drawing.Size(137, 55);
             this.btnCapNhat.TabIndex = 72;
             this.btnCapNhat.Text = "Cập nhật";
             this.btnCapNhat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;

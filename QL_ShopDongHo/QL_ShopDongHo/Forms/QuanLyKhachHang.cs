@@ -76,6 +76,7 @@ namespace QL_ShopDongHo.Forms
                         db.SaveChanges();
                     }
                 }
+                Rong();
                 ShowKH();
             }
             catch (Exception)
@@ -101,11 +102,12 @@ namespace QL_ShopDongHo.Forms
             txtSDT.Text = "";
             txtDiaChi.Text = "";
             txtTenKhachTim.Text = "";
-            ShowKH();
             btnThem.Enabled = true;
             txtSDT.ReadOnly = false;
             btnCapNhat.Enabled = false;
             btnXoa.Enabled = false;
+            Rong();
+            ShowKH();
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -117,10 +119,7 @@ namespace QL_ShopDongHo.Forms
                     var xoa = db.KhachHangs.Where(x => x.SDT == txtSDT.Text).FirstOrDefault();
                     db.KhachHangs.Remove(xoa);
                     db.SaveChanges();
-                    txtTenKhachHang.Text = "";
-                    txtSDT.Text = "";
-                    txtDiaChi.Text = "";
-                    txtTenKhachTim.Text = "";
+                    Rong();
                     ShowKH();
                     btnThem.Enabled = true;
                     txtSDT.ReadOnly = false;
@@ -131,7 +130,7 @@ namespace QL_ShopDongHo.Forms
             catch (Exception)
             {
 
-                MessageBox.Show("Lỗi - khách hàng đã đang có hóa đơn", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Lỗi - khách hàng đã có hóa đơn", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -186,6 +185,14 @@ namespace QL_ShopDongHo.Forms
                 btnCapNhat.Enabled = true;
                 btnXoa.Enabled = true;
             }
+        }
+
+        private void Rong()
+        {
+            txtTenKhachHang.Text = "";
+            txtSDT.Text = "";
+            txtDiaChi.Text = "";
+            txtTenKhachTim.Text = "";
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
