@@ -37,7 +37,7 @@ namespace QL_ShopDongHo.Forms
             this.btnThongKe = new System.Windows.Forms.Button();
             this.btnDonHang = new System.Windows.Forms.Button();
             this.btnKhachHang = new System.Windows.Forms.Button();
-            this.btnLoaiSP = new System.Windows.Forms.Button();
+            this.btnChiTietSP = new System.Windows.Forms.Button();
             this.btnSanPham = new System.Windows.Forms.Button();
             this.btnNhanVien = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -164,19 +164,20 @@ namespace QL_ShopDongHo.Forms
             this.btnKhachHang.UseVisualStyleBackColor = false;
             this.btnKhachHang.Click += new System.EventHandler(this.btnKhachHang_Click);
             // 
-            // btnLoaiSP
+            // btnChiTietSP
             // 
-            this.btnLoaiSP.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btnLoaiSP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLoaiSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLoaiSP.Image = global::QL_ShopDongHo.Properties.Resources.icon_PhanLoai;
-            this.btnLoaiSP.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLoaiSP.Location = new System.Drawing.Point(26, 171);
-            this.btnLoaiSP.Name = "btnLoaiSP";
-            this.btnLoaiSP.Size = new System.Drawing.Size(318, 50);
-            this.btnLoaiSP.TabIndex = 29;
-            this.btnLoaiSP.Text = "Quản lý loại SP";
-            this.btnLoaiSP.UseVisualStyleBackColor = false;
+            this.btnChiTietSP.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnChiTietSP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnChiTietSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChiTietSP.Image = global::QL_ShopDongHo.Properties.Resources.icon_PhanLoai;
+            this.btnChiTietSP.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnChiTietSP.Location = new System.Drawing.Point(26, 171);
+            this.btnChiTietSP.Name = "btnChiTietSP";
+            this.btnChiTietSP.Size = new System.Drawing.Size(318, 50);
+            this.btnChiTietSP.TabIndex = 29;
+            this.btnChiTietSP.Text = "Chi tiết sản phẩm";
+            this.btnChiTietSP.UseVisualStyleBackColor = false;
+            this.btnChiTietSP.Click += new System.EventHandler(this.btnChiTietSP_Click);
             // 
             // btnSanPham
             // 
@@ -297,7 +298,7 @@ namespace QL_ShopDongHo.Forms
             this.Controls.Add(this.btnThongKe);
             this.Controls.Add(this.btnDonHang);
             this.Controls.Add(this.btnKhachHang);
-            this.Controls.Add(this.btnLoaiSP);
+            this.Controls.Add(this.btnChiTietSP);
             this.Controls.Add(this.btnSanPham);
             this.Controls.Add(this.btnNhanVien);
             this.Controls.Add(this.pictureBox1);
@@ -322,7 +323,7 @@ namespace QL_ShopDongHo.Forms
         private System.Windows.Forms.Button btnThongKe;
         private System.Windows.Forms.Button btnDonHang;
         private System.Windows.Forms.Button btnKhachHang;
-        private System.Windows.Forms.Button btnLoaiSP;
+        private System.Windows.Forms.Button btnChiTietSP;
         private System.Windows.Forms.Button btnSanPham;
         private System.Windows.Forms.Button btnNhanVien;
         private System.Windows.Forms.PictureBox pictureBox1;

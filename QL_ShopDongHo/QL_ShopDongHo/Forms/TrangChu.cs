@@ -91,5 +91,10 @@ namespace QL_ShopDongHo.Forms
             QuanLyKhachHang khg = new QuanLyKhachHang(inputdata1, inputdata2, inputdata3);
             khg.Show();
         }
+
+        private void btnChiTietSP_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
