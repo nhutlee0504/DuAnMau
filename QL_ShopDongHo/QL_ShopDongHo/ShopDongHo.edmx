@@ -200,7 +200,7 @@
           <NavigationProperty Name="LoaiSanPhams" Relationship="Self.FK__LoaiSanPha__MaSP__403A8C7D" FromRole="SanPham" ToRole="LoaiSanPham" />
         </EntityType>
         <Association Name="FK__DonHang__LoaiSP__4222D4EF">
-          <End Role="LoaiSanPham" Type="Self.LoaiSanPham" Multiplicity="1" />
+          <End Role="LoaiSanPham" Type="QuanLyShopDongHoModel.LoaiSanPham" Multiplicity="1" />
           <End Role="DonHang" Type="Self.DonHang" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="LoaiSanPham">
@@ -237,7 +237,7 @@
         </Association>
         <Association Name="FK__LoaiSanPha__MaSP__403A8C7D">
           <End Role="SanPham" Type="Self.SanPham" Multiplicity="1" />
-          <End Role="LoaiSanPham" Type="Self.LoaiSanPham" Multiplicity="*" />
+          <End Role="LoaiSanPham" Type="QuanLyShopDongHoModel.LoaiSanPham" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="SanPham">
               <PropertyRef Name="MaSanPham" />
@@ -250,7 +250,7 @@
         <EntityContainer Name="QuanLyShopDongHoEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="DonHangs" EntityType="Self.DonHang" />
           <EntitySet Name="KhachHangs" EntityType="Self.KhachHang" />
-          <EntitySet Name="LoaiSanPhams" EntityType="Self.LoaiSanPham" />
+          <EntitySet Name="LoaiSanPhams" EntityType="QuanLyShopDongHoModel.LoaiSanPham" />
           <EntitySet Name="NhanViens" EntityType="Self.NhanVien" />
           <EntitySet Name="SanPhams" EntityType="Self.SanPham" />
           <AssociationSet Name="FK__DonHang__LoaiSP__4222D4EF" Association="Self.FK__DonHang__LoaiSP__4222D4EF">

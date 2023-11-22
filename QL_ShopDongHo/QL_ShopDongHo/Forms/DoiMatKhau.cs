@@ -21,7 +21,7 @@ namespace QL_ShopDongHo.Forms
         private void btnXacNhan_Click(object sender, EventArgs e)
         {
             MD5 md5 = MD5.Create();
-            byte[] pass = System.Text.Encoding.ASCII.GetBytes(txtMatKhauCu.Text);
+            byte[] pass = Encoding.UTF8.GetBytes(txtMatKhauCu.Text);
             byte[] hash = md5.ComputeHash(pass);
             StringBuilder builder = new StringBuilder();
             for (int i = 0; i < hash.Length; i++)

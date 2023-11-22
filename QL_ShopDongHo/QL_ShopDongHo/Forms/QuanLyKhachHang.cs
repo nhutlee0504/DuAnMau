@@ -48,11 +48,13 @@ namespace QL_ShopDongHo.Forms
                 else if (txtSDT.Text.Length > 10 || txtSDT.Text.Length < 10)
                 {
                     MessageBox.Show("Vui lòng nhập số điện thoại chỉ 10 số", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtSDT.Focus();
                     return false;
                 }
                 else if (regex.IsMatch(txtSDT.Text) == false)
                 {
                     MessageBox.Show("Vui lòng nhập đúng định dạng số điện thoại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtSDT.Focus();
                     return false;
                 }
                 else
@@ -140,6 +142,7 @@ namespace QL_ShopDongHo.Forms
             txtSDT.Text = "";
             txtDiaChi.Text = "";
             txtTenKhachTim.Text = "";
+            
             ShowKH();
             btnThem.Enabled = true;
             txtSDT.ReadOnly = false;

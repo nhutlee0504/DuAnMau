@@ -27,6 +27,7 @@ namespace QL_ShopDongHo.Forms
                 db.KhachHangs.ToList().ForEach(x => cboSDT.Items.Add(x.SDT));
                 db.LoaiSanPhams.ToList().ForEach(x => cboLoaiSP.Items.Add(x.LoaiSP));
             }
+            dtpNgayIn.Text = DateTime.Now.ToString("dd/MM/yyyy");
             btnThanhToan.Enabled = false;
         }
 
@@ -72,7 +73,7 @@ namespace QL_ShopDongHo.Forms
                     }
                     else if (cboSDT.Text.Length > 10 || cboSDT.Text.Length < 10)
                     {
-                        MessageBox.Show("Vui lòng nhập số điện thoại đủ 10 số", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Vui lòng nhập số điện thoại đủ 10 số nguyên dương", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         cboSDT.Focus();
                     }
                     else if (SDT.Contains(cboSDT.Text) == false)
@@ -111,7 +112,7 @@ namespace QL_ShopDongHo.Forms
             }
             catch (Exception)
             {
-                MessageBox.Show("Số lượng là số nguyên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Vui lòng nhập số lượng là số", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtSoLuong.Focus();
             }
         }
@@ -131,6 +132,7 @@ namespace QL_ShopDongHo.Forms
                 cboLoaiSP.Text = "";
                 txtSoLuong.Text = "";
                 txtMaNhanVien.Text = "";
+                dtpNgayIn.Text = DateTime.Now.ToString("dd/MM/yyyy");
                 cboMaDonTim.Text = "";
                 btnThanhToan.Enabled = false;
                 btnTaoDon.Enabled = true;
@@ -201,7 +203,7 @@ namespace QL_ShopDongHo.Forms
             {
                 int index;
                 ma = "DH";
-                index = Convert.ToInt32(table.Rows[table.Rows.Count - 1][0].ToString().Substring(2, 2));
+                index = int.Parse(table.Rows[table.Rows.Count - 1][0].ToString().Substring(2, 2));
                 index += 1;
                 if (index < 10)
                 {
@@ -233,6 +235,7 @@ namespace QL_ShopDongHo.Forms
             cboLoaiSP.Text = "";
             txtSoLuong.Text = "";
             txtMaNhanVien.Text = "";
+            dtpNgayIn.Text = DateTime.Now.ToString("dd/MM/yyyy");
             cboMaDonTim.Text = "";
         }
 
