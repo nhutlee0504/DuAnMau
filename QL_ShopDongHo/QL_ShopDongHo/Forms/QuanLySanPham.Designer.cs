@@ -29,17 +29,15 @@ namespace QL_ShopDongHo.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.MoTa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GiaNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HinhAnh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenSanPham = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaSanPham = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.MaSanPham = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenSanPham = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GiaNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgayNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MoTa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnthemhinh = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtma = new System.Windows.Forms.TextBox();
             this.btnlammoi = new System.Windows.Forms.Button();
             this.btnxoa = new System.Windows.Forms.Button();
             this.btncapnhat = new System.Windows.Forms.Button();
@@ -61,52 +59,11 @@ namespace QL_ShopDongHo.Forms
             this.label1 = new System.Windows.Forms.Label();
             this.txttensp = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtngaynhap = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // MoTa
-            // 
-            this.MoTa.HeaderText = "Mô tả";
-            this.MoTa.MinimumWidth = 8;
-            this.MoTa.Name = "MoTa";
-            this.MoTa.Width = 150;
-            // 
-            // GiaNhap
-            // 
-            this.GiaNhap.HeaderText = "Giá nhập";
-            this.GiaNhap.MinimumWidth = 8;
-            this.GiaNhap.Name = "GiaNhap";
-            this.GiaNhap.Width = 150;
-            // 
-            // SoLuong
-            // 
-            this.SoLuong.HeaderText = "Số lượng";
-            this.SoLuong.MinimumWidth = 8;
-            this.SoLuong.Name = "SoLuong";
-            this.SoLuong.Width = 150;
-            // 
-            // HinhAnh
-            // 
-            this.HinhAnh.HeaderText = "Hình ảnh";
-            this.HinhAnh.MinimumWidth = 8;
-            this.HinhAnh.Name = "HinhAnh";
-            this.HinhAnh.Width = 150;
-            // 
-            // TenSanPham
-            // 
-            this.TenSanPham.HeaderText = "Tên sản phẩm";
-            this.TenSanPham.MinimumWidth = 8;
-            this.TenSanPham.Name = "TenSanPham";
-            this.TenSanPham.Width = 150;
-            // 
-            // MaSanPham
-            // 
-            this.MaSanPham.HeaderText = "Mã sản phẩm";
-            this.MaSanPham.MinimumWidth = 8;
-            this.MaSanPham.Name = "MaSanPham";
-            this.MaSanPham.Width = 150;
             // 
             // dataGridView1
             // 
@@ -114,7 +71,6 @@ namespace QL_ShopDongHo.Forms
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaSanPham,
             this.TenSanPham,
-            this.HinhAnh,
             this.SoLuong,
             this.GiaNhap,
             this.NgayNhap,
@@ -125,6 +81,35 @@ namespace QL_ShopDongHo.Forms
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(747, 234);
             this.dataGridView1.TabIndex = 67;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CellClick_dgv);
+            // 
+            // MaSanPham
+            // 
+            this.MaSanPham.HeaderText = "Mã sản phẩm";
+            this.MaSanPham.MinimumWidth = 8;
+            this.MaSanPham.Name = "MaSanPham";
+            this.MaSanPham.Width = 150;
+            // 
+            // TenSanPham
+            // 
+            this.TenSanPham.HeaderText = "Tên sản phẩm";
+            this.TenSanPham.MinimumWidth = 8;
+            this.TenSanPham.Name = "TenSanPham";
+            this.TenSanPham.Width = 150;
+            // 
+            // SoLuong
+            // 
+            this.SoLuong.HeaderText = "Số lượng";
+            this.SoLuong.MinimumWidth = 8;
+            this.SoLuong.Name = "SoLuong";
+            this.SoLuong.Width = 150;
+            // 
+            // GiaNhap
+            // 
+            this.GiaNhap.HeaderText = "Giá nhập";
+            this.GiaNhap.MinimumWidth = 8;
+            this.GiaNhap.Name = "GiaNhap";
+            this.GiaNhap.Width = 150;
             // 
             // NgayNhap
             // 
@@ -132,6 +117,13 @@ namespace QL_ShopDongHo.Forms
             this.NgayNhap.MinimumWidth = 8;
             this.NgayNhap.Name = "NgayNhap";
             this.NgayNhap.Width = 150;
+            // 
+            // MoTa
+            // 
+            this.MoTa.HeaderText = "Mô tả";
+            this.MoTa.MinimumWidth = 8;
+            this.MoTa.Name = "MoTa";
+            this.MoTa.Width = 150;
             // 
             // btnthemhinh
             // 
@@ -144,20 +136,15 @@ namespace QL_ShopDongHo.Forms
             this.btnthemhinh.TabIndex = 66;
             this.btnthemhinh.Text = "Thêm hình ảnh";
             this.btnthemhinh.UseVisualStyleBackColor = false;
+            this.btnthemhinh.Click += new System.EventHandler(this.btnthemhinh_Click);
             // 
-            // dateTimePicker1
+            // txtma
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(198, 326);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(196, 26);
-            this.dateTimePicker1.TabIndex = 64;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(198, 195);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(196, 26);
-            this.textBox1.TabIndex = 63;
+            this.txtma.Enabled = false;
+            this.txtma.Location = new System.Drawing.Point(198, 195);
+            this.txtma.Name = "txtma";
+            this.txtma.Size = new System.Drawing.Size(196, 26);
+            this.txtma.TabIndex = 63;
             // 
             // btnlammoi
             // 
@@ -172,6 +159,7 @@ namespace QL_ShopDongHo.Forms
             this.btnlammoi.Text = "Làm mới";
             this.btnlammoi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnlammoi.UseVisualStyleBackColor = false;
+            this.btnlammoi.Click += new System.EventHandler(this.btnlammoi_Click);
             // 
             // btnxoa
             // 
@@ -186,6 +174,7 @@ namespace QL_ShopDongHo.Forms
             this.btnxoa.Text = "Xóa";
             this.btnxoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnxoa.UseVisualStyleBackColor = false;
+            this.btnxoa.Click += new System.EventHandler(this.btnxoa_Click);
             // 
             // btncapnhat
             // 
@@ -200,6 +189,7 @@ namespace QL_ShopDongHo.Forms
             this.btncapnhat.Text = "Cập nhật ";
             this.btncapnhat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btncapnhat.UseVisualStyleBackColor = false;
+            this.btncapnhat.Click += new System.EventHandler(this.btncapnhat_Click);
             // 
             // btnthem
             // 
@@ -214,6 +204,7 @@ namespace QL_ShopDongHo.Forms
             this.btnthem.Text = "Thêm";
             this.btnthem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnthem.UseVisualStyleBackColor = false;
+            this.btnthem.Click += new System.EventHandler(this.btnthem_Click);
             // 
             // btnthoat
             // 
@@ -281,6 +272,7 @@ namespace QL_ShopDongHo.Forms
             this.btntim.Text = "Tìm kiếm";
             this.btntim.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btntim.UseVisualStyleBackColor = false;
+            this.btntim.Click += new System.EventHandler(this.btntim_Click);
             // 
             // label2
             // 
@@ -372,7 +364,7 @@ namespace QL_ShopDongHo.Forms
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(19, 17);
+            this.label1.Location = new System.Drawing.Point(24, 5);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(430, 58);
             this.label1.TabIndex = 46;
@@ -380,9 +372,9 @@ namespace QL_ShopDongHo.Forms
             // 
             // txttensp
             // 
-            this.txttensp.Location = new System.Drawing.Point(557, 191);
+            this.txttensp.Location = new System.Drawing.Point(576, 191);
             this.txttensp.Name = "txttensp";
-            this.txttensp.Size = new System.Drawing.Size(224, 26);
+            this.txttensp.Size = new System.Drawing.Size(205, 26);
             this.txttensp.TabIndex = 56;
             // 
             // pictureBox1
@@ -393,17 +385,24 @@ namespace QL_ShopDongHo.Forms
             this.pictureBox1.TabIndex = 65;
             this.pictureBox1.TabStop = false;
             // 
+            // txtngaynhap
+            // 
+            this.txtngaynhap.Location = new System.Drawing.Point(198, 325);
+            this.txtngaynhap.Name = "txtngaynhap";
+            this.txtngaynhap.Size = new System.Drawing.Size(196, 26);
+            this.txtngaynhap.TabIndex = 68;
+            // 
             // QuanLySanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::QL_ShopDongHo.Properties.Resources.bg1_11;
             this.ClientSize = new System.Drawing.Size(950, 724);
+            this.Controls.Add(this.txtngaynhap);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnthemhinh);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtma);
             this.Controls.Add(this.btnlammoi);
             this.Controls.Add(this.btnxoa);
             this.Controls.Add(this.btncapnhat);
@@ -423,6 +422,7 @@ namespace QL_ShopDongHo.Forms
             this.Controls.Add(this.txttensp);
             this.Name = "QuanLySanPham";
             this.Text = "QuanLySanPham";
+            this.Load += new System.EventHandler(this.QuanLySanPham_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -433,19 +433,10 @@ namespace QL_ShopDongHo.Forms
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridViewTextBoxColumn MoTa;
-        private System.Windows.Forms.DataGridViewTextBoxColumn GiaNhap;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SoLuong;
-        private System.Windows.Forms.DataGridViewTextBoxColumn HinhAnh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenSanPham;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaSanPham;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NgayNhap;
         private System.Windows.Forms.Button btnthemhinh;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtma;
         private System.Windows.Forms.Button btnlammoi;
         private System.Windows.Forms.Button btnxoa;
         private System.Windows.Forms.Button btncapnhat;
@@ -466,5 +457,12 @@ namespace QL_ShopDongHo.Forms
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txttensp;
+        private System.Windows.Forms.TextBox txtngaynhap;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaSanPham;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenSanPham;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoLuong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GiaNhap;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgayNhap;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MoTa;
     }
 }

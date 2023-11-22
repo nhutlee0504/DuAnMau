@@ -16,5 +16,20 @@ namespace QL_ShopDongHo.Forms
         {
             InitializeComponent();
         }
+
+        private void btnthem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void QuanLyNhanVien_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnthoat_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

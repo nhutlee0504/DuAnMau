@@ -29,7 +29,6 @@ namespace QL_ShopDongHo.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.cbbkhuyenmai = new System.Windows.Forms.ComboBox();
             this.btnxoa = new System.Windows.Forms.Button();
             this.btncapnhat = new System.Windows.Forms.Button();
             this.btnthem = new System.Windows.Forms.Button();
@@ -54,19 +53,12 @@ namespace QL_ShopDongHo.Forms
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtmasp = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.cbbmasp = new System.Windows.Forms.ComboBox();
+            this.txtkhuyenmai = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // cbbkhuyenmai
-            // 
-            this.cbbkhuyenmai.FormattingEnabled = true;
-            this.cbbkhuyenmai.Location = new System.Drawing.Point(202, 343);
-            this.cbbkhuyenmai.Name = "cbbkhuyenmai";
-            this.cbbkhuyenmai.Size = new System.Drawing.Size(196, 28);
-            this.cbbkhuyenmai.TabIndex = 40;
             // 
             // btnxoa
             // 
@@ -81,6 +73,7 @@ namespace QL_ShopDongHo.Forms
             this.btnxoa.Text = "Xóa";
             this.btnxoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnxoa.UseVisualStyleBackColor = false;
+            this.btnxoa.Click += new System.EventHandler(this.btnxoa_Click);
             // 
             // btncapnhat
             // 
@@ -109,6 +102,7 @@ namespace QL_ShopDongHo.Forms
             this.btnthem.Text = "Thêm";
             this.btnthem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnthem.UseVisualStyleBackColor = false;
+            this.btnthem.Click += new System.EventHandler(this.btnthem_Click);
             // 
             // btnthoat
             // 
@@ -165,6 +159,7 @@ namespace QL_ShopDongHo.Forms
             this.btnlammoi.Text = "Làm mới";
             this.btnlammoi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnlammoi.UseVisualStyleBackColor = false;
+            this.btnlammoi.Click += new System.EventHandler(this.btnlammoi_Click);
             // 
             // dataGridView1
             // 
@@ -325,24 +320,32 @@ namespace QL_ShopDongHo.Forms
             this.label3.TabIndex = 22;
             this.label3.Text = "Loại sản phẩm: ";
             // 
-            // txtmasp
-            // 
-            this.txtmasp.Location = new System.Drawing.Point(202, 276);
-            this.txtmasp.Name = "txtmasp";
-            this.txtmasp.Size = new System.Drawing.Size(196, 26);
-            this.txtmasp.TabIndex = 31;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(23, 21);
+            this.label1.Location = new System.Drawing.Point(28, 3);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(521, 58);
             this.label1.TabIndex = 21;
             this.label1.Text = "Quản lý loại sản phẩm";
+            // 
+            // cbbmasp
+            // 
+            this.cbbmasp.FormattingEnabled = true;
+            this.cbbmasp.Location = new System.Drawing.Point(202, 273);
+            this.cbbmasp.Name = "cbbmasp";
+            this.cbbmasp.Size = new System.Drawing.Size(194, 28);
+            this.cbbmasp.TabIndex = 47;
+            // 
+            // txtkhuyenmai
+            // 
+            this.txtkhuyenmai.Location = new System.Drawing.Point(202, 343);
+            this.txtkhuyenmai.Name = "txtkhuyenmai";
+            this.txtkhuyenmai.Size = new System.Drawing.Size(194, 26);
+            this.txtkhuyenmai.TabIndex = 48;
             // 
             // QuanLyLoaiSanPham
             // 
@@ -350,7 +353,8 @@ namespace QL_ShopDongHo.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::QL_ShopDongHo.Properties.Resources.bg_dmk;
             this.ClientSize = new System.Drawing.Size(943, 741);
-            this.Controls.Add(this.cbbkhuyenmai);
+            this.Controls.Add(this.txtkhuyenmai);
+            this.Controls.Add(this.cbbmasp);
             this.Controls.Add(this.btnxoa);
             this.Controls.Add(this.btncapnhat);
             this.Controls.Add(this.btnthem);
@@ -368,10 +372,10 @@ namespace QL_ShopDongHo.Forms
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtmasp);
             this.Controls.Add(this.label1);
             this.Name = "QuanLyLoaiSanPham";
             this.Text = "QuanLyLoaiSanPham";
+            this.Load += new System.EventHandler(this.QuanLyLoaiSanPham_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -381,8 +385,6 @@ namespace QL_ShopDongHo.Forms
         }
 
         #endregion
-
-        private System.Windows.Forms.ComboBox cbbkhuyenmai;
         private System.Windows.Forms.Button btnxoa;
         private System.Windows.Forms.Button btncapnhat;
         private System.Windows.Forms.Button btnthem;
@@ -407,7 +409,8 @@ namespace QL_ShopDongHo.Forms
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtmasp;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cbbmasp;
+        private System.Windows.Forms.TextBox txtkhuyenmai;
     }
 }
