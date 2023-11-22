@@ -58,6 +58,9 @@ namespace QL_ShopDongHo.Forms
             this.label3 = new System.Windows.Forms.Label();
             this.txtemail = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.manv = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.tennv = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -369,12 +372,42 @@ namespace QL_ShopDongHo.Forms
             this.label1.TabIndex = 22;
             this.label1.Text = "Quản lý nhân viên";
             // 
+            // manv
+            // 
+            this.manv.AutoSize = true;
+            this.manv.Location = new System.Drawing.Point(658, 44);
+            this.manv.Name = "manv";
+            this.manv.Size = new System.Drawing.Size(60, 20);
+            this.manv.TabIndex = 54;
+            this.manv.Text = "label11";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(562, 44);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(60, 20);
+            this.label9.TabIndex = 53;
+            this.label9.Text = "label10";
+            // 
+            // tennv
+            // 
+            this.tennv.AutoSize = true;
+            this.tennv.Location = new System.Drawing.Point(463, 44);
+            this.tennv.Name = "tennv";
+            this.tennv.Size = new System.Drawing.Size(51, 20);
+            this.tennv.TabIndex = 52;
+            this.tennv.Text = "label9";
+            // 
             // QuanLyNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::QL_ShopDongHo.Properties.Resources.bg_dmk;
             this.ClientSize = new System.Drawing.Size(971, 689);
+            this.Controls.Add(this.manv);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.tennv);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnlammoi);
             this.Controls.Add(this.btnxoa);
@@ -437,5 +470,8 @@ namespace QL_ShopDongHo.Forms
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtemail;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label manv;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label tennv;
     }
 }

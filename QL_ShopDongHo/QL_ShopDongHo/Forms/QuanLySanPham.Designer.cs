@@ -60,6 +60,9 @@ namespace QL_ShopDongHo.Forms
             this.txttensp = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtngaynhap = new System.Windows.Forms.TextBox();
+            this.manv = new System.Windows.Forms.Label();
+            this.vaitro = new System.Windows.Forms.Label();
+            this.tennv = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -392,12 +395,42 @@ namespace QL_ShopDongHo.Forms
             this.txtngaynhap.Size = new System.Drawing.Size(196, 26);
             this.txtngaynhap.TabIndex = 68;
             // 
+            // manv
+            // 
+            this.manv.AutoSize = true;
+            this.manv.Location = new System.Drawing.Point(655, 30);
+            this.manv.Name = "manv";
+            this.manv.Size = new System.Drawing.Size(60, 20);
+            this.manv.TabIndex = 71;
+            this.manv.Text = "label11";
+            // 
+            // vaitro
+            // 
+            this.vaitro.AutoSize = true;
+            this.vaitro.Location = new System.Drawing.Point(559, 30);
+            this.vaitro.Name = "vaitro";
+            this.vaitro.Size = new System.Drawing.Size(60, 20);
+            this.vaitro.TabIndex = 70;
+            this.vaitro.Text = "label10";
+            // 
+            // tennv
+            // 
+            this.tennv.AutoSize = true;
+            this.tennv.Location = new System.Drawing.Point(460, 30);
+            this.tennv.Name = "tennv";
+            this.tennv.Size = new System.Drawing.Size(51, 20);
+            this.tennv.TabIndex = 69;
+            this.tennv.Text = "label9";
+            // 
             // QuanLySanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::QL_ShopDongHo.Properties.Resources.bg1_11;
             this.ClientSize = new System.Drawing.Size(950, 724);
+            this.Controls.Add(this.manv);
+            this.Controls.Add(this.vaitro);
+            this.Controls.Add(this.tennv);
             this.Controls.Add(this.txtngaynhap);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnthemhinh);
@@ -464,5 +497,8 @@ namespace QL_ShopDongHo.Forms
         private System.Windows.Forms.DataGridViewTextBoxColumn GiaNhap;
         private System.Windows.Forms.DataGridViewTextBoxColumn NgayNhap;
         private System.Windows.Forms.DataGridViewTextBoxColumn MoTa;
+        private System.Windows.Forms.Label manv;
+        private System.Windows.Forms.Label vaitro;
+        private System.Windows.Forms.Label tennv;
     }
 }

@@ -56,6 +56,9 @@ namespace QL_ShopDongHo.Forms
             this.label1 = new System.Windows.Forms.Label();
             this.cbbmasp = new System.Windows.Forms.ComboBox();
             this.txtkhuyenmai = new System.Windows.Forms.TextBox();
+            this.tennv = new System.Windows.Forms.Label();
+            this.vaitro = new System.Windows.Forms.Label();
+            this.manv = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -326,11 +329,11 @@ namespace QL_ShopDongHo.Forms
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(28, 3);
+            this.label1.Location = new System.Drawing.Point(28, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(521, 58);
+            this.label1.Size = new System.Drawing.Size(413, 58);
             this.label1.TabIndex = 21;
-            this.label1.Text = "Quản lý loại sản phẩm";
+            this.label1.Text = "Chi tiết sản phẩm";
             // 
             // cbbmasp
             // 
@@ -347,12 +350,42 @@ namespace QL_ShopDongHo.Forms
             this.txtkhuyenmai.Size = new System.Drawing.Size(194, 26);
             this.txtkhuyenmai.TabIndex = 48;
             // 
+            // tennv
+            // 
+            this.tennv.AutoSize = true;
+            this.tennv.Location = new System.Drawing.Point(462, 21);
+            this.tennv.Name = "tennv";
+            this.tennv.Size = new System.Drawing.Size(51, 20);
+            this.tennv.TabIndex = 49;
+            this.tennv.Text = "label9";
+            // 
+            // vaitro
+            // 
+            this.vaitro.AutoSize = true;
+            this.vaitro.Location = new System.Drawing.Point(561, 21);
+            this.vaitro.Name = "vaitro";
+            this.vaitro.Size = new System.Drawing.Size(60, 20);
+            this.vaitro.TabIndex = 50;
+            this.vaitro.Text = "label10";
+            // 
+            // manv
+            // 
+            this.manv.AutoSize = true;
+            this.manv.Location = new System.Drawing.Point(657, 21);
+            this.manv.Name = "manv";
+            this.manv.Size = new System.Drawing.Size(60, 20);
+            this.manv.TabIndex = 51;
+            this.manv.Text = "label11";
+            // 
             // QuanLyLoaiSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::QL_ShopDongHo.Properties.Resources.bg_dmk;
             this.ClientSize = new System.Drawing.Size(943, 741);
+            this.Controls.Add(this.manv);
+            this.Controls.Add(this.vaitro);
+            this.Controls.Add(this.tennv);
             this.Controls.Add(this.txtkhuyenmai);
             this.Controls.Add(this.cbbmasp);
             this.Controls.Add(this.btnxoa);
@@ -412,5 +445,8 @@ namespace QL_ShopDongHo.Forms
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbbmasp;
         private System.Windows.Forms.TextBox txtkhuyenmai;
+        private System.Windows.Forms.Label tennv;
+        private System.Windows.Forms.Label vaitro;
+        private System.Windows.Forms.Label manv;
     }
 }
