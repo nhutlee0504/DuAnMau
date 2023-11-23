@@ -41,6 +41,7 @@ namespace QuanLyShopDongHo.Forms
             this.btnXacNhan = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // chkHienMK
@@ -56,6 +57,7 @@ namespace QuanLyShopDongHo.Forms
             this.chkHienMK.TabIndex = 108;
             this.chkHienMK.Text = "Hiện mật khẩu";
             this.chkHienMK.UseVisualStyleBackColor = false;
+            this.chkHienMK.CheckedChanged += new System.EventHandler(this.chkHienMK_CheckedChanged);
             // 
             // txtMatKhauXacNhan
             // 
@@ -161,6 +163,7 @@ namespace QuanLyShopDongHo.Forms
             this.btnXacNhan.Text = "Xác nhận";
             this.btnXacNhan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnXacNhan.UseVisualStyleBackColor = false;
+            this.btnXacNhan.Click += new System.EventHandler(this.btnXacNhan_Click);
             // 
             // btnThoat
             // 
@@ -179,6 +182,7 @@ namespace QuanLyShopDongHo.Forms
             this.btnThoat.Text = "Thoát";
             this.btnThoat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // label1
             // 
@@ -192,12 +196,22 @@ namespace QuanLyShopDongHo.Forms
             this.label1.TabIndex = 97;
             this.label1.Text = "ĐỔI MẬT KHẨU";
             // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.textBox1.Location = new System.Drawing.Point(96, 80);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(350, 26);
+            this.textBox1.TabIndex = 109;
+            // 
             // DoiMatKhau
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::QuanLyShopDongHo.Properties.Resources.bg_dmk;
             this.ClientSize = new System.Drawing.Size(505, 423);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.chkHienMK);
             this.Controls.Add(this.txtMatKhauXacNhan);
             this.Controls.Add(this.label5);
@@ -210,6 +224,7 @@ namespace QuanLyShopDongHo.Forms
             this.Controls.Add(this.btnXacNhan);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.label1);
+            this.ForeColor = System.Drawing.Color.Black;
             this.Name = "DoiMatKhau";
             this.Text = "DoiMatKhau";
             this.ResumeLayout(false);
@@ -231,5 +246,6 @@ namespace QuanLyShopDongHo.Forms
         private System.Windows.Forms.Button btnXacNhan;
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

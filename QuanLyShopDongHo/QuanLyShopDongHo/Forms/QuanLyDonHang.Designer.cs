@@ -93,6 +93,7 @@ namespace QuanLyShopDongHo.Forms
             this.btnLamMoi.Text = "Làm mới";
             this.btnLamMoi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLamMoi.UseVisualStyleBackColor = false;
+            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
             // panel1
             // 
@@ -104,6 +105,7 @@ namespace QuanLyShopDongHo.Forms
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(459, 80);
             this.panel1.TabIndex = 108;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // cboMaDonTim
             // 
@@ -133,6 +135,7 @@ namespace QuanLyShopDongHo.Forms
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTimKiem.UseVisualStyleBackColor = false;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // label6
             // 
@@ -174,6 +177,7 @@ namespace QuanLyShopDongHo.Forms
             this.btnThanhToan.Text = "Thanh toán";
             this.btnThanhToan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnThanhToan.UseVisualStyleBackColor = false;
+            this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
             // 
             // btnThoat
             // 
@@ -192,6 +196,7 @@ namespace QuanLyShopDongHo.Forms
             this.btnThoat.Text = "Thoát";
             this.btnThoat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnTaoDon
             // 
@@ -210,6 +215,7 @@ namespace QuanLyShopDongHo.Forms
             this.btnTaoDon.Text = "Tạo đơn";
             this.btnTaoDon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTaoDon.UseVisualStyleBackColor = false;
+            this.btnTaoDon.Click += new System.EventHandler(this.btnTaoDon_Click);
             // 
             // cboSDT
             // 
@@ -400,6 +406,7 @@ namespace QuanLyShopDongHo.Forms
             this.dgvDonHang.RowTemplate.Height = 24;
             this.dgvDonHang.Size = new System.Drawing.Size(875, 297);
             this.dgvDonHang.TabIndex = 112;
+            this.dgvDonHang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDonHang_CellClick);
             // 
             // MaDon
             // 
@@ -488,6 +495,7 @@ namespace QuanLyShopDongHo.Forms
             this.Controls.Add(this.label1);
             this.Name = "QuanLyDonHang";
             this.Text = "QuanLyDonHang";
+            this.Load += new System.EventHandler(this.QuanLyDonHang_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDonHang)).EndInit();
