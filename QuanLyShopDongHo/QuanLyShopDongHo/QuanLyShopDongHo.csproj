@@ -150,6 +150,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ShopDongHo.edmx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TrangChu.resx">
+      <DependentUpon>TrangChu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -158,6 +164,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -181,6 +188,15 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\bg1_3.jpg" />
+    <None Include="Resources\key1_1.png" />
+    <None Include="Resources\bia.jpg" />
+    <None Include="Resources\earth.png" />
+    <None Include="Resources\icon_NhanVien.png" />
+    <None Include="Resources\icon_SanPham.png" />
+    <None Include="Resources\icon_PhanLoai.png" />
+    <None Include="Resources\icon_KhachHang.png" />
+    <None Include="Resources\icon_KhachHang1.png" />
     <Content Include="ShopDongHo.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ShopDongHo.edmx</DependentUpon>
