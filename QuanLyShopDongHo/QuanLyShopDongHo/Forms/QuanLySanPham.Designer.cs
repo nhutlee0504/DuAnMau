@@ -153,7 +153,6 @@ namespace QuanLyShopDongHo.Forms
             // 
             this.btnlammoi.BackColor = System.Drawing.Color.LightBlue;
             this.btnlammoi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnlammoi.Image = global::QL_ShopDongHo.Properties.Resources.Refresh;
             this.btnlammoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnlammoi.Location = new System.Drawing.Point(801, 636);
             this.btnlammoi.Name = "btnlammoi";
@@ -168,7 +167,6 @@ namespace QuanLyShopDongHo.Forms
             // 
             this.btnxoa.BackColor = System.Drawing.Color.LightBlue;
             this.btnxoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnxoa.Image = global::QL_ShopDongHo.Properties.Resources.Delete;
             this.btnxoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnxoa.Location = new System.Drawing.Point(801, 574);
             this.btnxoa.Name = "btnxoa";
@@ -183,7 +181,6 @@ namespace QuanLyShopDongHo.Forms
             // 
             this.btncapnhat.BackColor = System.Drawing.Color.LightBlue;
             this.btncapnhat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncapnhat.Image = global::QL_ShopDongHo.Properties.Resources.Edit;
             this.btncapnhat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btncapnhat.Location = new System.Drawing.Point(801, 511);
             this.btncapnhat.Name = "btncapnhat";
@@ -198,7 +195,6 @@ namespace QuanLyShopDongHo.Forms
             // 
             this.btnthem.BackColor = System.Drawing.Color.LightBlue;
             this.btnthem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnthem.Image = global::QL_ShopDongHo.Properties.Resources.Add;
             this.btnthem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnthem.Location = new System.Drawing.Point(801, 448);
             this.btnthem.Name = "btnthem";
@@ -213,7 +209,6 @@ namespace QuanLyShopDongHo.Forms
             // 
             this.btnthoat.BackColor = System.Drawing.Color.LightBlue;
             this.btnthoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnthoat.Image = global::QL_ShopDongHo.Properties.Resources.Exit;
             this.btnthoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnthoat.Location = new System.Drawing.Point(801, 17);
             this.btnthoat.Name = "btnthoat";
@@ -266,7 +261,6 @@ namespace QuanLyShopDongHo.Forms
             // 
             this.btntim.BackColor = System.Drawing.Color.LightBlue;
             this.btntim.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btntim.Image = global::QL_ShopDongHo.Properties.Resources.Search;
             this.btntim.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btntim.Location = new System.Drawing.Point(501, 20);
             this.btntim.Name = "btntim";
@@ -426,7 +420,6 @@ namespace QuanLyShopDongHo.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::QL_ShopDongHo.Properties.Resources.bg1_11;
             this.ClientSize = new System.Drawing.Size(950, 724);
             this.Controls.Add(this.manv);
             this.Controls.Add(this.vaitro);
