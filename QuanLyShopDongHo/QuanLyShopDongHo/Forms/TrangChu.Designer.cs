@@ -36,12 +36,12 @@ namespace QuanLyShopDongHo.Forms
             this.tennv = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnDangXuat = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnHuongDan = new System.Windows.Forms.Button();
             this.btnDoiMK = new System.Windows.Forms.Button();
             this.btnThongKe = new System.Windows.Forms.Button();
             this.btnDonHang = new System.Windows.Forms.Button();
             this.btnKhachHang = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnHuongDan = new System.Windows.Forms.Button();
             this.btnChiTietSP = new System.Windows.Forms.Button();
             this.btnSanPham = new System.Windows.Forms.Button();
             this.btnNhanVien = new System.Windows.Forms.Button();
@@ -130,6 +130,7 @@ namespace QuanLyShopDongHo.Forms
             this.btnDangXuat.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.btnDangXuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDangXuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangXuat.Image = global::QuanLyShopDongHo.Properties.Resources.icon_Exit;
             this.btnDangXuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDangXuat.Location = new System.Drawing.Point(47, 400);
             this.btnDangXuat.Name = "btnDangXuat";
@@ -137,59 +138,6 @@ namespace QuanLyShopDongHo.Forms
             this.btnDangXuat.TabIndex = 51;
             this.btnDangXuat.Text = "Đăng xuất";
             this.btnDangXuat.UseVisualStyleBackColor = false;
-            // 
-            // btnDoiMK
-            // 
-            this.btnDoiMK.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btnDoiMK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDoiMK.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDoiMK.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDoiMK.Location = new System.Drawing.Point(47, 353);
-            this.btnDoiMK.Name = "btnDoiMK";
-            this.btnDoiMK.Size = new System.Drawing.Size(318, 50);
-            this.btnDoiMK.TabIndex = 50;
-            this.btnDoiMK.Text = "Đổi mật khẩu";
-            this.btnDoiMK.UseVisualStyleBackColor = false;
-            // 
-            // btnThongKe
-            // 
-            this.btnThongKe.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btnThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThongKe.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThongKe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThongKe.Location = new System.Drawing.Point(47, 308);
-            this.btnThongKe.Name = "btnThongKe";
-            this.btnThongKe.Size = new System.Drawing.Size(318, 50);
-            this.btnThongKe.TabIndex = 49;
-            this.btnThongKe.Text = "Thống kê và báo cáo";
-            this.btnThongKe.UseVisualStyleBackColor = false;
-            // 
-            // btnDonHang
-            // 
-            this.btnDonHang.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btnDonHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDonHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDonHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDonHang.Location = new System.Drawing.Point(47, 261);
-            this.btnDonHang.Name = "btnDonHang";
-            this.btnDonHang.Size = new System.Drawing.Size(318, 50);
-            this.btnDonHang.TabIndex = 48;
-            this.btnDonHang.Text = "Quản lý đơn hàng";
-            this.btnDonHang.UseVisualStyleBackColor = false;
-            // 
-            // btnKhachHang
-            // 
-            this.btnKhachHang.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btnKhachHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnKhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKhachHang.Image = global::QuanLyShopDongHo.Properties.Resources.icon_KhachHang1;
-            this.btnKhachHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnKhachHang.Location = new System.Drawing.Point(47, 217);
-            this.btnKhachHang.Name = "btnKhachHang";
-            this.btnKhachHang.Size = new System.Drawing.Size(318, 50);
-            this.btnKhachHang.TabIndex = 47;
-            this.btnKhachHang.Text = "Quản lý khách hàng";
-            this.btnKhachHang.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -217,6 +165,62 @@ namespace QuanLyShopDongHo.Forms
             this.btnHuongDan.Text = "Hướng dẫn";
             this.btnHuongDan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnHuongDan.UseVisualStyleBackColor = false;
+            // 
+            // btnDoiMK
+            // 
+            this.btnDoiMK.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnDoiMK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDoiMK.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDoiMK.Image = global::QuanLyShopDongHo.Properties.Resources.icon_DoiMK;
+            this.btnDoiMK.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDoiMK.Location = new System.Drawing.Point(47, 353);
+            this.btnDoiMK.Name = "btnDoiMK";
+            this.btnDoiMK.Size = new System.Drawing.Size(318, 50);
+            this.btnDoiMK.TabIndex = 50;
+            this.btnDoiMK.Text = "Đổi mật khẩu";
+            this.btnDoiMK.UseVisualStyleBackColor = false;
+            // 
+            // btnThongKe
+            // 
+            this.btnThongKe.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThongKe.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThongKe.Image = global::QuanLyShopDongHo.Properties.Resources.icon_ThongKe;
+            this.btnThongKe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThongKe.Location = new System.Drawing.Point(47, 308);
+            this.btnThongKe.Name = "btnThongKe";
+            this.btnThongKe.Size = new System.Drawing.Size(318, 50);
+            this.btnThongKe.TabIndex = 49;
+            this.btnThongKe.Text = "Thống kê và báo cáo";
+            this.btnThongKe.UseVisualStyleBackColor = false;
+            // 
+            // btnDonHang
+            // 
+            this.btnDonHang.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnDonHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDonHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDonHang.Image = global::QuanLyShopDongHo.Properties.Resources.icon_DonHang;
+            this.btnDonHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDonHang.Location = new System.Drawing.Point(47, 261);
+            this.btnDonHang.Name = "btnDonHang";
+            this.btnDonHang.Size = new System.Drawing.Size(318, 50);
+            this.btnDonHang.TabIndex = 48;
+            this.btnDonHang.Text = "Quản lý đơn hàng";
+            this.btnDonHang.UseVisualStyleBackColor = false;
+            // 
+            // btnKhachHang
+            // 
+            this.btnKhachHang.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnKhachHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnKhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKhachHang.Image = global::QuanLyShopDongHo.Properties.Resources.icon_KhachHang1;
+            this.btnKhachHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnKhachHang.Location = new System.Drawing.Point(47, 217);
+            this.btnKhachHang.Name = "btnKhachHang";
+            this.btnKhachHang.Size = new System.Drawing.Size(318, 50);
+            this.btnKhachHang.TabIndex = 47;
+            this.btnKhachHang.Text = "Quản lý khách hàng";
+            this.btnKhachHang.UseVisualStyleBackColor = false;
             // 
             // btnChiTietSP
             // 

@@ -153,6 +153,12 @@
     <EmbeddedResource Include="Forms\DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HuongDan.resx">
+      <DependentUpon>HuongDan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ThongKe.resx">
+      <DependentUpon>ThongKe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\TrangChu.resx">
       <DependentUpon>TrangChu.cs</DependentUpon>
     </EmbeddedResource>
@@ -197,6 +203,13 @@
     <None Include="Resources\icon_PhanLoai.png" />
     <None Include="Resources\icon_KhachHang.png" />
     <None Include="Resources\icon_KhachHang1.png" />
+    <None Include="Resources\icon_DonHang.png" />
+    <None Include="Resources\icon_ThongKe.png" />
+    <None Include="Resources\key1_11.png" />
+    <None Include="Resources\icon_DoiMK.png" />
+    <None Include="Resources\icon_Exit.png" />
+    <None Include="Resources\Exit.png" />
+    <None Include="Resources\bg_dmk.png" />
     <Content Include="ShopDongHo.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ShopDongHo.edmx</DependentUpon>
