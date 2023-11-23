@@ -150,6 +150,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ShopDongHo.edmx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\QuanLyChiTietSanPham.resx">
+      <DependentUpon>QuanLyChiTietSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QuanLyNhanVien.resx">
+      <DependentUpon>QuanLyNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QuanLySanPham.resx">
+      <DependentUpon>QuanLySanPham.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -158,6 +167,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -181,6 +191,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Search.png" />
+    <None Include="Resources\bg1_1.jpg" />
+    <None Include="Resources\Add.png" />
+    <None Include="Resources\Delete.png" />
+    <None Include="Resources\Edit.png" />
+    <None Include="Resources\Exit.png" />
+    <None Include="Resources\Refresh.png" />
+    <None Include="Resources\bg_dmk.png" />
     <Content Include="ShopDongHo.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ShopDongHo.edmx</DependentUpon>
