@@ -150,6 +150,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ShopDongHo.edmx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HuongDan.resx">
+      <DependentUpon>HuongDan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ThongKe.resx">
+      <DependentUpon>ThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TrangChu.resx">
+      <DependentUpon>TrangChu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\DoiMatKhau.resx">
       <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </EmbeddedResource>
@@ -191,13 +203,27 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\bg1_3.jpg" />
+    <None Include="Resources\key1_1.png" />
+    <None Include="Resources\bia.jpg" />
+    <None Include="Resources\earth.png" />
+    <None Include="Resources\icon_NhanVien.png" />
+    <None Include="Resources\icon_SanPham.png" />
+    <None Include="Resources\icon_PhanLoai.png" />
+    <None Include="Resources\icon_KhachHang.png" />
+    <None Include="Resources\icon_KhachHang1.png" />
+    <None Include="Resources\icon_DonHang.png" />
+    <None Include="Resources\icon_ThongKe.png" />
+    <None Include="Resources\key1_11.png" />
+    <None Include="Resources\icon_DoiMK.png" />
+    <None Include="Resources\icon_Exit.png" />
+    <None Include="Resources\Exit.png" />
     <None Include="Resources\bg_kh.jpg" />
     <None Include="Resources\Search.png" />
     <None Include="Resources\Add.png" />
     <None Include="Resources\Edit.png" />
     <None Include="Resources\Delete.png" />
     <None Include="Resources\Refresh.png" />
-    <None Include="Resources\Exit.png" />
     <None Include="Resources\bg1_1.jpg" />
     <None Include="Resources\dollar.png" />
     <None Include="Resources\bg_dmk.png" />
