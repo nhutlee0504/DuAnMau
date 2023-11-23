@@ -22,7 +22,7 @@ namespace QL_ShopDongHo
         public System.DateTime NgayIn { get; set; }
         public string MaNV { get; set; }
     
-        public virtual LoaiSanPham LoaiSanPham { get; set; }
+        public virtual ChiTietSanPham ChiTietSanPham { get; set; }
         public virtual NhanVien NhanVien { get; set; }
         public virtual KhachHang KhachHang { get; set; }
     }

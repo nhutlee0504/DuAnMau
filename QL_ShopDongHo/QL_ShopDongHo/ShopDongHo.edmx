@@ -5,6 +5,17 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
       <Schema Namespace="QuanLyShopDongHoModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="ChiTietSanPham">
+          <Key>
+            <PropertyRef Name="LoaiSP" />
+          </Key>
+          <Property Name="LoaiSP" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="TenLoai" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="MaSP" Type="int" Nullable="false" />
+          <Property Name="GiaBan" Type="float" Nullable="false" />
+          <Property Name="KhuyenMai" Type="float" />
+          <Property Name="MoTa" Type="nvarchar" MaxLength="255" />
+        </EntityType>
         <EntityType Name="DonHang">
           <Key>
             <PropertyRef Name="MaDon" />
@@ -25,23 +36,12 @@
           <Property Name="SDT" Type="varchar" MaxLength="12" Nullable="false" />
           <Property Name="DiaChi" Type="nvarchar" MaxLength="255" Nullable="false" />
         </EntityType>
-        <EntityType Name="LoaiSanPham">
-          <Key>
-            <PropertyRef Name="LoaiSP" />
-          </Key>
-          <Property Name="LoaiSP" Type="varchar" MaxLength="10" Nullable="false" />
-          <Property Name="TenLoai" Type="nvarchar" MaxLength="255" Nullable="false" />
-          <Property Name="MaSP" Type="int" Nullable="false" />
-          <Property Name="GiaBan" Type="float" Nullable="false" />
-          <Property Name="KhuyenMai" Type="float" />
-          <Property Name="MoTa" Type="nvarchar" MaxLength="255" />
-        </EntityType>
         <EntityType Name="NhanVien">
           <Key>
             <PropertyRef Name="MaNV" />
           </Key>
           <Property Name="MaNV" Type="varchar" MaxLength="10" Nullable="false" />
-          <Property Name="MatKhau" Type="varchar" MaxLength="15" Nullable="false" />
+          <Property Name="MatKhau" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="VaiTro" Type="nvarchar" MaxLength="100" Nullable="false" />
           <Property Name="HoTen" Type="nvarchar" MaxLength="100" Nullable="false" />
           <Property Name="NgaySinh" Type="date" Nullable="false" />
@@ -60,11 +60,23 @@
           <Property Name="NgayNhap" Type="date" Nullable="false" />
           <Property Name="Mota" Type="nvarchar" MaxLength="255" />
         </EntityType>
+        <Association Name="FK__ChiTietSan__MaSP__403A8C7D">
+          <End Role="SanPham" Type="Self.SanPham" Multiplicity="1" />
+          <End Role="ChiTietSanPham" Type="Self.ChiTietSanPham" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SanPham">
+              <PropertyRef Name="MaSanPham" />
+            </Principal>
+            <Dependent Role="ChiTietSanPham">
+              <PropertyRef Name="MaSP" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK__DonHang__LoaiSP__4222D4EF">
-          <End Role="LoaiSanPham" Type="Self.LoaiSanPham" Multiplicity="1" />
+          <End Role="ChiTietSanPham" Type="Self.ChiTietSanPham" Multiplicity="1" />
           <End Role="DonHang" Type="Self.DonHang" Multiplicity="*" />
           <ReferentialConstraint>
-            <Principal Role="LoaiSanPham">
+            <Principal Role="ChiTietSanPham">
               <PropertyRef Name="LoaiSP" />
             </Principal>
             <Dependent Role="DonHang">
@@ -96,26 +108,18 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__LoaiSanPha__MaSP__403A8C7D">
-          <End Role="SanPham" Type="Self.SanPham" Multiplicity="1" />
-          <End Role="LoaiSanPham" Type="Self.LoaiSanPham" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="SanPham">
-              <PropertyRef Name="MaSanPham" />
-            </Principal>
-            <Dependent Role="LoaiSanPham">
-              <PropertyRef Name="MaSP" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <EntityContainer Name="QuanLyShopDongHoModelStoreContainer">
+          <EntitySet Name="ChiTietSanPham" EntityType="Self.ChiTietSanPham" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="DonHang" EntityType="Self.DonHang" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="KhachHang" EntityType="Self.KhachHang" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="LoaiSanPham" EntityType="Self.LoaiSanPham" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="NhanVien" EntityType="Self.NhanVien" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="SanPham" EntityType="Self.SanPham" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__ChiTietSan__MaSP__403A8C7D" Association="Self.FK__ChiTietSan__MaSP__403A8C7D">
+            <End Role="SanPham" EntitySet="SanPham" />
+            <End Role="ChiTietSanPham" EntitySet="ChiTietSanPham" />
+          </AssociationSet>
           <AssociationSet Name="FK__DonHang__LoaiSP__4222D4EF" Association="Self.FK__DonHang__LoaiSP__4222D4EF">
-            <End Role="LoaiSanPham" EntitySet="LoaiSanPham" />
+            <End Role="ChiTietSanPham" EntitySet="ChiTietSanPham" />
             <End Role="DonHang" EntitySet="DonHang" />
           </AssociationSet>
           <AssociationSet Name="FK__DonHang__MaNV__4316F928" Association="Self.FK__DonHang__MaNV__4316F928">
@@ -126,16 +130,25 @@
             <End Role="KhachHang" EntitySet="KhachHang" />
             <End Role="DonHang" EntitySet="DonHang" />
           </AssociationSet>
-          <AssociationSet Name="FK__LoaiSanPha__MaSP__403A8C7D" Association="Self.FK__LoaiSanPha__MaSP__403A8C7D">
-            <End Role="SanPham" EntitySet="SanPham" />
-            <End Role="LoaiSanPham" EntitySet="LoaiSanPham" />
-          </AssociationSet>
         </EntityContainer>
       </Schema>
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="QuanLyShopDongHoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="ChiTietSanPham">
+          <Key>
+            <PropertyRef Name="LoaiSP" />
+          </Key>
+          <Property Name="LoaiSP" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TenLoai" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MaSP" Type="Int32" Nullable="false" />
+          <Property Name="GiaBan" Type="Double" Nullable="false" />
+          <Property Name="KhuyenMai" Type="Double" />
+          <Property Name="MoTa" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="SanPham" Relationship="Self.FK__ChiTietSan__MaSP__403A8C7D" FromRole="ChiTietSanPham" ToRole="SanPham" />
+          <NavigationProperty Name="DonHangs" Relationship="Self.FK__DonHang__LoaiSP__4222D4EF" FromRole="ChiTietSanPham" ToRole="DonHang" />
+        </EntityType>
         <EntityType Name="DonHang">
           <Key>
             <PropertyRef Name="MaDon" />
@@ -147,7 +160,7 @@
           <Property Name="SoLuong" Type="Int32" Nullable="false" />
           <Property Name="NgayIn" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="MaNV" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="LoaiSanPham" Relationship="Self.FK__DonHang__LoaiSP__4222D4EF" FromRole="DonHang" ToRole="LoaiSanPham" />
+          <NavigationProperty Name="ChiTietSanPham" Relationship="Self.FK__DonHang__LoaiSP__4222D4EF" FromRole="DonHang" ToRole="ChiTietSanPham" />
           <NavigationProperty Name="NhanVien" Relationship="Self.FK__DonHang__MaNV__4316F928" FromRole="DonHang" ToRole="NhanVien" />
           <NavigationProperty Name="KhachHang" Relationship="Self.FK__DonHang__SDT__412EB0B6" FromRole="DonHang" ToRole="KhachHang" />
         </EntityType>
@@ -160,25 +173,12 @@
           <Property Name="DiaChi" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="DonHangs" Relationship="Self.FK__DonHang__SDT__412EB0B6" FromRole="KhachHang" ToRole="DonHang" />
         </EntityType>
-        <EntityType Name="LoaiSanPham">
-          <Key>
-            <PropertyRef Name="LoaiSP" />
-          </Key>
-          <Property Name="LoaiSP" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="TenLoai" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="MaSP" Type="Int32" Nullable="false" />
-          <Property Name="GiaBan" Type="Double" Nullable="false" />
-          <Property Name="KhuyenMai" Type="Double" />
-          <Property Name="MoTa" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="DonHangs" Relationship="Self.FK__DonHang__LoaiSP__4222D4EF" FromRole="LoaiSanPham" ToRole="DonHang" />
-          <NavigationProperty Name="SanPham" Relationship="Self.FK__LoaiSanPha__MaSP__403A8C7D" FromRole="LoaiSanPham" ToRole="SanPham" />
-        </EntityType>
         <EntityType Name="NhanVien">
           <Key>
             <PropertyRef Name="MaNV" />
           </Key>
           <Property Name="MaNV" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="MatKhau" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="MatKhau" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="VaiTro" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="HoTen" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="NgaySinh" Type="DateTime" Nullable="false" Precision="0" />
@@ -197,13 +197,25 @@
           <Property Name="GiaNhap" Type="Double" Nullable="false" />
           <Property Name="NgayNhap" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="Mota" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="LoaiSanPhams" Relationship="Self.FK__LoaiSanPha__MaSP__403A8C7D" FromRole="SanPham" ToRole="LoaiSanPham" />
+          <NavigationProperty Name="ChiTietSanPhams" Relationship="Self.FK__ChiTietSan__MaSP__403A8C7D" FromRole="SanPham" ToRole="ChiTietSanPham" />
         </EntityType>
+        <Association Name="FK__ChiTietSan__MaSP__403A8C7D">
+          <End Role="SanPham" Type="Self.SanPham" Multiplicity="1" />
+          <End Role="ChiTietSanPham" Type="Self.ChiTietSanPham" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SanPham">
+              <PropertyRef Name="MaSanPham" />
+            </Principal>
+            <Dependent Role="ChiTietSanPham">
+              <PropertyRef Name="MaSP" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK__DonHang__LoaiSP__4222D4EF">
-          <End Role="LoaiSanPham" Type="Self.LoaiSanPham" Multiplicity="1" />
+          <End Role="ChiTietSanPham" Type="Self.ChiTietSanPham" Multiplicity="1" />
           <End Role="DonHang" Type="Self.DonHang" Multiplicity="*" />
           <ReferentialConstraint>
-            <Principal Role="LoaiSanPham">
+            <Principal Role="ChiTietSanPham">
               <PropertyRef Name="LoaiSP" />
             </Principal>
             <Dependent Role="DonHang">
@@ -235,26 +247,18 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__LoaiSanPha__MaSP__403A8C7D">
-          <End Role="SanPham" Type="Self.SanPham" Multiplicity="1" />
-          <End Role="LoaiSanPham" Type="Self.LoaiSanPham" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="SanPham">
-              <PropertyRef Name="MaSanPham" />
-            </Principal>
-            <Dependent Role="LoaiSanPham">
-              <PropertyRef Name="MaSP" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <EntityContainer Name="QuanLyShopDongHoEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="QuanLyShopDongHoEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ChiTietSanPhams" EntityType="Self.ChiTietSanPham" />
           <EntitySet Name="DonHangs" EntityType="Self.DonHang" />
           <EntitySet Name="KhachHangs" EntityType="Self.KhachHang" />
-          <EntitySet Name="LoaiSanPhams" EntityType="Self.LoaiSanPham" />
           <EntitySet Name="NhanViens" EntityType="Self.NhanVien" />
           <EntitySet Name="SanPhams" EntityType="Self.SanPham" />
+          <AssociationSet Name="FK__ChiTietSan__MaSP__403A8C7D" Association="Self.FK__ChiTietSan__MaSP__403A8C7D">
+            <End Role="SanPham" EntitySet="SanPhams" />
+            <End Role="ChiTietSanPham" EntitySet="ChiTietSanPhams" />
+          </AssociationSet>
           <AssociationSet Name="FK__DonHang__LoaiSP__4222D4EF" Association="Self.FK__DonHang__LoaiSP__4222D4EF">
-            <End Role="LoaiSanPham" EntitySet="LoaiSanPhams" />
+            <End Role="ChiTietSanPham" EntitySet="ChiTietSanPhams" />
             <End Role="DonHang" EntitySet="DonHangs" />
           </AssociationSet>
           <AssociationSet Name="FK__DonHang__MaNV__4316F928" Association="Self.FK__DonHang__MaNV__4316F928">
@@ -265,17 +269,25 @@
             <End Role="KhachHang" EntitySet="KhachHangs" />
             <End Role="DonHang" EntitySet="DonHangs" />
           </AssociationSet>
-          <AssociationSet Name="FK__LoaiSanPha__MaSP__403A8C7D" Association="Self.FK__LoaiSanPha__MaSP__403A8C7D">
-            <End Role="SanPham" EntitySet="SanPhams" />
-            <End Role="LoaiSanPham" EntitySet="LoaiSanPhams" />
-          </AssociationSet>
         </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="QuanLyShopDongHoModelStoreContainer" CdmEntityContainer="QuanLyShopDongHoEntities">
+        <EntityContainerMapping StorageEntityContainer="QuanLyShopDongHoModelStoreContainer" CdmEntityContainer="QuanLyShopDongHoEntities1">
+          <EntitySetMapping Name="ChiTietSanPhams">
+            <EntityTypeMapping TypeName="QuanLyShopDongHoModel.ChiTietSanPham">
+              <MappingFragment StoreEntitySet="ChiTietSanPham">
+                <ScalarProperty Name="LoaiSP" ColumnName="LoaiSP" />
+                <ScalarProperty Name="TenLoai" ColumnName="TenLoai" />
+                <ScalarProperty Name="MaSP" ColumnName="MaSP" />
+                <ScalarProperty Name="GiaBan" ColumnName="GiaBan" />
+                <ScalarProperty Name="KhuyenMai" ColumnName="KhuyenMai" />
+                <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="DonHangs">
             <EntityTypeMapping TypeName="QuanLyShopDongHoModel.DonHang">
               <MappingFragment StoreEntitySet="DonHang">
@@ -295,18 +307,6 @@
                 <ScalarProperty Name="TenKH" ColumnName="TenKH" />
                 <ScalarProperty Name="SDT" ColumnName="SDT" />
                 <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="LoaiSanPhams">
-            <EntityTypeMapping TypeName="QuanLyShopDongHoModel.LoaiSanPham">
-              <MappingFragment StoreEntitySet="LoaiSanPham">
-                <ScalarProperty Name="LoaiSP" ColumnName="LoaiSP" />
-                <ScalarProperty Name="TenLoai" ColumnName="TenLoai" />
-                <ScalarProperty Name="MaSP" ColumnName="MaSP" />
-                <ScalarProperty Name="GiaBan" ColumnName="GiaBan" />
-                <ScalarProperty Name="KhuyenMai" ColumnName="KhuyenMai" />
-                <ScalarProperty Name="MoTa" ColumnName="MoTa" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

@@ -13,10 +13,10 @@ namespace QL_ShopDongHo
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class QuanLyShopDongHoEntities : DbContext
+    public partial class QuanLyShopDongHoEntities1 : DbContext
     {
-        public QuanLyShopDongHoEntities()
-            : base("name=QuanLyShopDongHoEntities")
+        public QuanLyShopDongHoEntities1()
+            : base("name=QuanLyShopDongHoEntities1")
         {
         }
     
@@ -25,9 +25,9 @@ namespace QL_ShopDongHo
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<ChiTietSanPham> ChiTietSanPhams { get; set; }
         public virtual DbSet<DonHang> DonHangs { get; set; }
         public virtual DbSet<KhachHang> KhachHangs { get; set; }
-        public virtual DbSet<LoaiSanPham> LoaiSanPhams { get; set; }
         public virtual DbSet<NhanVien> NhanViens { get; set; }
         public virtual DbSet<SanPham> SanPhams { get; set; }
     }

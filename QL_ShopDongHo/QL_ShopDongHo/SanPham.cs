@@ -17,7 +17,7 @@ namespace QL_ShopDongHo
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public SanPham()
         {
-            this.LoaiSanPhams = new HashSet<LoaiSanPham>();
+            this.ChiTietSanPhams = new HashSet<ChiTietSanPham>();
         }
     
         public int MaSanPham { get; set; }
@@ -29,6 +29,6 @@ namespace QL_ShopDongHo
         public string Mota { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<LoaiSanPham> LoaiSanPhams { get; set; }
+        public virtual ICollection<ChiTietSanPham> ChiTietSanPhams { get; set; }
     }
 }
