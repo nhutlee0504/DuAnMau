@@ -75,6 +75,7 @@ namespace QuanLyShopDongHo.Forms
             this.cboLoaiSP.Name = "cboLoaiSP";
             this.cboLoaiSP.Size = new System.Drawing.Size(199, 28);
             this.cboLoaiSP.TabIndex = 90;
+            this.cboLoaiSP.SelectedIndexChanged += new System.EventHandler(this.cboLoaiSP_SelectedIndexChanged);
             // 
             // btnLamMoi
             // 
@@ -225,6 +226,7 @@ namespace QuanLyShopDongHo.Forms
             this.cboSDT.Name = "cboSDT";
             this.cboSDT.Size = new System.Drawing.Size(199, 28);
             this.cboSDT.TabIndex = 89;
+            this.cboSDT.SelectedIndexChanged += new System.EventHandler(this.cboSDT_SelectedIndexChanged);
             // 
             // dtpNgayIn
             // 

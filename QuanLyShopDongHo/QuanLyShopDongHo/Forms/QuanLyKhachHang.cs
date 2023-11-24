@@ -48,7 +48,7 @@ namespace QuanLyShopDongHo.Forms
                 }
                 else if (txtSDT.Text.Length > 10 || txtSDT.Text.Length < 10)
                 {
-                    MessageBox.Show("Vui lòng nhập số điện thoại chỉ 10 số", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Vui lòng nhập số điện thoại đủ 10 số", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     txtSDT.Focus();
                     return false;
                 }
@@ -77,9 +77,9 @@ namespace QuanLyShopDongHo.Forms
                         kh.DiaChi = txtDiaChi.Text;
                         db.KhachHangs.Add(kh);
                         db.SaveChanges();
+                        Rong();
                     }
-                }
-                Rong();
+                }            
                 ShowKH();
             }
             catch (Exception)

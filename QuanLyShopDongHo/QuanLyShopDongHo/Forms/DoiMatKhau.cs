@@ -20,17 +20,7 @@ namespace QuanLyShopDongHo.Forms
 
         private void btnXacNhan_Click(object sender, EventArgs e)
         {
-            MD5 md5 = MD5.Create();
-            byte[] pass = Encoding.UTF8.GetBytes(txtMatKhauCu.Text);
-            byte[] hash = md5.ComputeHash(pass);
-            StringBuilder builder = new StringBuilder();
-            for (int i = 0; i < hash.Length; i++)
-            {
-                builder.Append(hash[i].ToString("x"));
-            }
-            string matKhauCu = builder.ToString();
-            textBox1.Text = builder.ToString();
-
+            string matKhauCu = MaHoaPass(txtMatKhauCu.Text);
             using (QuanLyShopDongHoEntities db = new QuanLyShopDongHoEntities())
             {
                 var MaNV = db.NhanViens.Where(x => x.MaNV == txtTaiKhoan.Text && x.MatKhau == matKhauCu).Select(x => x.MaNV);
@@ -39,15 +29,8 @@ namespace QuanLyShopDongHo.Forms
                 {
                     if (txtMatKhauMoi.Text == txtMatKhauXacNhan.Text)
                     {
-                        byte[] matKhau = System.Text.Encoding.UTF8.GetBytes(txtMatKhauMoi.Text);
-                        byte[] maHoa = md5.ComputeHash(pass);
-                        StringBuilder builder1 = new StringBuilder();
-                        for (int i = 0; i < maHoa.Length; i++)
-                        {
-                            builder1.Append(maHoa[i].ToString("x"));
-                        }
                         var MaCanDoi = db.NhanViens.Where(x => x.MaNV == txtTaiKhoan.Text).FirstOrDefault();
-                        MaCanDoi.MatKhau = builder1.ToString();
+                        MaCanDoi.MatKhau = MaHoaPass(txtMatKhauMoi.Text);
                         db.SaveChanges();
                         MessageBox.Show("Mật khẩu đã đổi thành công của nhân viên có mã: " + txtTaiKhoan.Text, "Thông báo");
                     }
@@ -61,6 +44,21 @@ namespace QuanLyShopDongHo.Forms
                     MessageBox.Show("Mã nhân viên hoặc mật khẩu cũ không đúng", "Thông báo");
                 }
             }
+        }
+
+        private string MaHoaPass(string chuoi)
+        {
+            using(MD5 mD5 = MD5.Create())
+            {
+                byte[] pass = Encoding.UTF8.GetBytes(chuoi);
+                byte[] hash = mD5.ComputeHash(pass);
+                StringBuilder builder = new StringBuilder();
+                for (int i = 0; i < hash.Length; i++)
+                {
+                    builder.Append(hash[i].ToString("x2"));
+                }
+                return builder.ToString();
+            }         
         }
 
         private void btnThoat_Click(object sender, EventArgs e)

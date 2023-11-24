@@ -17,6 +17,8 @@ namespace QuanLyShopDongHo.Forms
         public QuanLyDonHang()
         {
             InitializeComponent();
+            cboSDT.SelectedIndexChanged += cboSDT_SelectedIndexChanged;
+            cboLoaiSP.SelectedIndexChanged += cboLoaiSP_SelectedIndexChanged;
         }
 
         private void QuanLyDonHang_Load(object sender, EventArgs e)
@@ -244,5 +246,20 @@ namespace QuanLyShopDongHo.Forms
            Color.Silver, 3, ButtonBorderStyle.Solid);
         }
 
+        private void cboLoaiSP_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            using (var db = new QuanLyShopDongHoEntities())
+            {
+                txtTenLoai.Text = db.ChiTietSanPhams.Where(x => x.LoaiSP == cboLoaiSP.Text).Select(x => x.TenLoai).FirstOrDefault().ToString();
+            }
+        }
+
+        private void cboSDT_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            using (var db = new QuanLyShopDongHoEntities())
+            {
+                txtTenKhachHang.Text = db.KhachHangs.Where(x => x.SDT == cboSDT.Text).Select(x => x.TenKH).FirstOrDefault().ToString();
+            }
+        }
     }
 }
