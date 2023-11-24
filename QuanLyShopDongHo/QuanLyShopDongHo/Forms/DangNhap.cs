@@ -26,6 +26,12 @@ namespace QuanLyShopDongHo.Forms
                 return;
             }
 
+            if(txtMK.Text.Length < 6)
+            {
+                MessageBox.Show("Mật khẩu phải >= 6 kí tự");
+                return;
+            }
+
             MD5 md5 = MD5.Create();
             byte[] pass = Encoding.UTF8.GetBytes(txtMK.Text);
             byte[] hash = md5.ComputeHash(pass);
