@@ -784,6 +784,7 @@ namespace QuanLyShopDongHo.Forms
             this.btnThoat.Text = "Thoát";
             this.btnThoat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // tennv
             // 
@@ -833,6 +834,7 @@ namespace QuanLyShopDongHo.Forms
             this.Controls.Add(this.manv);
             this.Name = "ThongKe";
             this.Text = "ThongKe";
+            this.Load += new System.EventHandler(this.ThongKe_Load);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

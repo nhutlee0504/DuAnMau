@@ -12,9 +12,29 @@ namespace QuanLyShopDongHo.Forms
 {
     public partial class QuanLyDonHang : Form
     {
-        public QuanLyDonHang()
+        string inputdata1 = "";
+        string inputdata2 = "";
+        string inputdata3 = "";
+        public QuanLyDonHang(string input1, string input2, string input3)
         {
+            this.inputdata1 = input1;
+            this.inputdata2 = input2;
+            this.inputdata3 = input3;
             InitializeComponent();
+        }
+
+        private void QuanLyDonHang_Load(object sender, EventArgs e)
+        {
+            tennv.Text = inputdata1;
+            vaitro.Text = inputdata2;
+            manvv.Text = inputdata3;
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            TrangChu dn = new TrangChu(inputdata1, inputdata2, inputdata3);
+            dn.Show();
         }
     }
 }

@@ -51,6 +51,7 @@ namespace QuanLyShopDongHo.Forms
             this.btnDangNhap.Text = "Đăng nhập";
             this.btnDangNhap.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDangNhap.UseVisualStyleBackColor = true;
+            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
             // 
             // checkBox1
             // 
@@ -64,6 +65,7 @@ namespace QuanLyShopDongHo.Forms
             this.checkBox1.TabIndex = 26;
             this.checkBox1.Text = "Hiện mật khẩu";
             this.checkBox1.UseVisualStyleBackColor = false;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // txtMK
             // 
@@ -132,6 +134,7 @@ namespace QuanLyShopDongHo.Forms
             this.Controls.Add(this.label1);
             this.Name = "DangNhap";
             this.Text = "DangNhap";
+            this.Load += new System.EventHandler(this.DangNhap_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
