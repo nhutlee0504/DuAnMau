@@ -106,6 +106,7 @@ namespace QuanLyShopDongHo.Forms
             this.btntim.Text = "Tìm kiếm";
             this.btntim.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btntim.UseVisualStyleBackColor = false;
+            this.btntim.Click += new System.EventHandler(this.btntim_Click_1);
             // 
             // txttim
             // 
@@ -151,6 +152,7 @@ namespace QuanLyShopDongHo.Forms
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(747, 234);
             this.dataGridView1.TabIndex = 92;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.cellclick);
             // 
             // MaSanPham
             // 
@@ -321,6 +323,7 @@ namespace QuanLyShopDongHo.Forms
             this.btnthemhinh.TabIndex = 91;
             this.btnthemhinh.Text = "Thêm hình ảnh";
             this.btnthemhinh.UseVisualStyleBackColor = false;
+            this.btnthemhinh.Click += new System.EventHandler(this.btnthemhinh_Click_1);
             // 
             // txtma
             // 
@@ -343,6 +346,7 @@ namespace QuanLyShopDongHo.Forms
             this.btnlammoi.Text = "Làm mới";
             this.btnlammoi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnlammoi.UseVisualStyleBackColor = false;
+            this.btnlammoi.Click += new System.EventHandler(this.btnlammoi_Click_1);
             // 
             // btnxoa
             // 
@@ -357,6 +361,7 @@ namespace QuanLyShopDongHo.Forms
             this.btnxoa.Text = "Xóa";
             this.btnxoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnxoa.UseVisualStyleBackColor = false;
+            this.btnxoa.Click += new System.EventHandler(this.btnxoa_Click_1);
             // 
             // btncapnhat
             // 
@@ -371,6 +376,7 @@ namespace QuanLyShopDongHo.Forms
             this.btncapnhat.Text = "Cập nhật ";
             this.btncapnhat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btncapnhat.UseVisualStyleBackColor = false;
+            this.btncapnhat.Click += new System.EventHandler(this.btncapnhat_Click_1);
             // 
             // btnthem
             // 
@@ -385,6 +391,7 @@ namespace QuanLyShopDongHo.Forms
             this.btnthem.Text = "Thêm";
             this.btnthem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnthem.UseVisualStyleBackColor = false;
+            this.btnthem.Click += new System.EventHandler(this.btnthem_Click_1);
             // 
             // btnthoat
             // 
@@ -399,7 +406,6 @@ namespace QuanLyShopDongHo.Forms
             this.btnthoat.Text = "Thoát";
             this.btnthoat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnthoat.UseVisualStyleBackColor = false;
-            this.btnthoat.Click += new System.EventHandler(this.btnthoat_Click);
             // 
             // richTextBox1
             // 
