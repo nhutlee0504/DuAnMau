@@ -271,16 +271,16 @@ namespace QuanLyShopDongHo.Forms
             upDateDGV();
         }
 
-             private void btnthoat_Click(object sender, EventArgs e)
-        {
-
-            this.Dispose();
-            TrangChu dn = new TrangChu(inputdata1, inputdata2, inputdata3);
-            dn.Show();
-        }
         private void btnlammoi_Click_1(object sender, EventArgs e)
         {
             rong();
+        }
+
+        private void btnthoat_Click_1(object sender, EventArgs e)
+        {
+            this.Dispose();
+            TrangChu dn = new TrangChu(inputdata1, inputdata2, inputdata3);
+            dn.Show();
         }
     }
 }
