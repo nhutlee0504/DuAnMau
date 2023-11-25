@@ -48,7 +48,12 @@ namespace QuanLyShopDongHo.Forms
                 var MKCu = db.NhanViens.Where(x => x.MaNV == txtTaiKhoan.Text && x.MatKhau == matKhauCu).Select(x => x.MatKhau);
                 if (MaNV.Contains(txtTaiKhoan.Text) && MKCu.Contains(matKhauCu))
                 {
-                    if (txtMatKhauMoi.Text == txtMatKhauXacNhan.Text)
+                    if (txtMatKhauMoi.Text.Length < 6)
+                    {
+                        MessageBox.Show("Mật khẩu mới ít nhất có 6 kí tự", "Thông báo");
+                        txtMatKhauMoi.Focus();
+                    }
+                    else if (txtMatKhauMoi.Text == txtMatKhauXacNhan.Text)
                     {
                         var MaCanDoi = db.NhanViens.Where(x => x.MaNV == txtTaiKhoan.Text).FirstOrDefault();
                         MaCanDoi.MatKhau = MaHoaPass(txtMatKhauMoi.Text);
