@@ -52,7 +52,8 @@ namespace QuanLyShopDongHo.Forms
             this.LoaiSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenLoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MoTa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GiaBanRa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Mota = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.btnxoa = new System.Windows.Forms.Button();
             this.btncapnhat = new System.Windows.Forms.Button();
@@ -138,6 +139,7 @@ namespace QuanLyShopDongHo.Forms
             this.btntim.Text = "Tìm kiếm";
             this.btntim.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btntim.UseVisualStyleBackColor = false;
+            this.btntim.Click += new System.EventHandler(this.btntim_Click);
             // 
             // txttim
             // 
@@ -281,6 +283,7 @@ namespace QuanLyShopDongHo.Forms
             this.btnlammoi.Text = "Làm mới";
             this.btnlammoi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnlammoi.UseVisualStyleBackColor = false;
+            this.btnlammoi.Click += new System.EventHandler(this.btnlammoi_Click);
             // 
             // dataGridView1
             // 
@@ -289,7 +292,8 @@ namespace QuanLyShopDongHo.Forms
             this.LoaiSP,
             this.TenLoai,
             this.MaSP,
-            this.MoTa});
+            this.GiaBanRa,
+            this.Mota});
             this.dataGridView1.Location = new System.Drawing.Point(37, 293);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
@@ -297,6 +301,7 @@ namespace QuanLyShopDongHo.Forms
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(484, 152);
             this.dataGridView1.TabIndex = 64;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CellClick_dgv);
             // 
             // LoaiSP
             // 
@@ -319,12 +324,20 @@ namespace QuanLyShopDongHo.Forms
             this.MaSP.Name = "MaSP";
             this.MaSP.Width = 150;
             // 
-            // MoTa
+            // GiaBanRa
             // 
-            this.MoTa.HeaderText = "Mô tả";
-            this.MoTa.MinimumWidth = 8;
-            this.MoTa.Name = "MoTa";
-            this.MoTa.Width = 150;
+            this.GiaBanRa.HeaderText = "Giá bán ra";
+            this.GiaBanRa.MinimumWidth = 8;
+            this.GiaBanRa.Name = "GiaBanRa";
+            this.GiaBanRa.Width = 150;
+            // 
+            // Mota
+            // 
+            this.Mota.HeaderText = "Mô tả";
+            this.Mota.MinimumWidth = 8;
+            this.Mota.Name = "Mota";
+            this.Mota.ReadOnly = true;
+            this.Mota.Width = 150;
             // 
             // richTextBox1
             // 
@@ -349,6 +362,7 @@ namespace QuanLyShopDongHo.Forms
             this.btnxoa.Text = "Xóa";
             this.btnxoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnxoa.UseVisualStyleBackColor = false;
+            this.btnxoa.Click += new System.EventHandler(this.btnxoa_Click);
             // 
             // btncapnhat
             // 
@@ -364,6 +378,7 @@ namespace QuanLyShopDongHo.Forms
             this.btncapnhat.Text = "Cập nhật ";
             this.btncapnhat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btncapnhat.UseVisualStyleBackColor = false;
+            this.btncapnhat.Click += new System.EventHandler(this.btncapnhat_Click);
             // 
             // btnthem
             // 
@@ -379,6 +394,7 @@ namespace QuanLyShopDongHo.Forms
             this.btnthem.Text = "Thêm";
             this.btnthem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnthem.UseVisualStyleBackColor = false;
+            this.btnthem.Click += new System.EventHandler(this.btnthem_Click);
             // 
             // btnthoat
             // 
@@ -467,15 +483,16 @@ namespace QuanLyShopDongHo.Forms
         private System.Windows.Forms.TextBox txtgiaban;
         private System.Windows.Forms.Button btnlammoi;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn LoaiSP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenLoai;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaSP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MoTa;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button btnxoa;
         private System.Windows.Forms.Button btncapnhat;
         private System.Windows.Forms.Button btnthem;
         private System.Windows.Forms.Button btnthoat;
         private System.Windows.Forms.TextBox txtloaisp;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LoaiSP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenLoai;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaSP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GiaBanRa;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Mota;
     }
 }

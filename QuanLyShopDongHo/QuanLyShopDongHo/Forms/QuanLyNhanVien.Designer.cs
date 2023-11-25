@@ -50,7 +50,6 @@ namespace QuanLyShopDongHo.Forms
             this.SoDienThoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtsdt = new System.Windows.Forms.TextBox();
-            this.txtvaitro = new System.Windows.Forms.TextBox();
             this.txtmanv = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
@@ -61,6 +60,7 @@ namespace QuanLyShopDongHo.Forms
             this.txtemail = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtngaysinh = new System.Windows.Forms.TextBox();
+            this.cbbvaitro = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -102,6 +102,7 @@ namespace QuanLyShopDongHo.Forms
             this.btntim.Text = "Tìm kiếm";
             this.btntim.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btntim.UseVisualStyleBackColor = false;
+            this.btntim.Click += new System.EventHandler(this.btntim_Click);
             // 
             // txttim
             // 
@@ -182,6 +183,7 @@ namespace QuanLyShopDongHo.Forms
             this.btnlammoi.Text = "Làm mới";
             this.btnlammoi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnlammoi.UseVisualStyleBackColor = false;
+            this.btnlammoi.Click += new System.EventHandler(this.btnlammoi_Click);
             // 
             // btnxoa
             // 
@@ -198,6 +200,7 @@ namespace QuanLyShopDongHo.Forms
             this.btnxoa.Text = "Xóa";
             this.btnxoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnxoa.UseVisualStyleBackColor = false;
+            this.btnxoa.Click += new System.EventHandler(this.btnxoa_Click);
             // 
             // btncapnhat
             // 
@@ -214,6 +217,7 @@ namespace QuanLyShopDongHo.Forms
             this.btncapnhat.Text = "Cập nhật";
             this.btncapnhat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btncapnhat.UseVisualStyleBackColor = false;
+            this.btncapnhat.Click += new System.EventHandler(this.btncapnhat_Click);
             // 
             // btnthem
             // 
@@ -230,6 +234,7 @@ namespace QuanLyShopDongHo.Forms
             this.btnthem.Text = "Thêm";
             this.btnthem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnthem.UseVisualStyleBackColor = false;
+            this.btnthem.Click += new System.EventHandler(this.btnthem_Click);
             // 
             // btnthoat
             // 
@@ -273,6 +278,7 @@ namespace QuanLyShopDongHo.Forms
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(511, 146);
             this.dataGridView1.TabIndex = 67;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CellClick_dgv);
             // 
             // NgaySinh
             // 
@@ -424,12 +430,21 @@ namespace QuanLyShopDongHo.Forms
             this.txtngaysinh.Size = new System.Drawing.Size(145, 20);
             this.txtngaysinh.TabIndex = 78;
             // 
+            // cbbvaitro
+            // 
+            this.cbbvaitro.FormattingEnabled = true;
+            this.cbbvaitro.Location = new System.Drawing.Point(616, 202);
+            this.cbbvaitro.Name = "cbbvaitro";
+            this.cbbvaitro.Size = new System.Drawing.Size(177, 28);
+            this.cbbvaitro.TabIndex = 79;
+            // 
             // QuanLyNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::QuanLyShopDongHo.Properties.Resources.bg_dmk;
             this.ClientSize = new System.Drawing.Size(647, 448);
+            this.Controls.Add(this.cbbvaitro);
             this.Controls.Add(this.txtngaysinh);
             this.Controls.Add(this.manv);
             this.Controls.Add(this.tennv);
@@ -443,7 +458,6 @@ namespace QuanLyShopDongHo.Forms
             this.Controls.Add(this.txthoten);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtsdt);
-            this.Controls.Add(this.txtvaitro);
             this.Controls.Add(this.txtmanv);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label7);
@@ -488,7 +502,6 @@ namespace QuanLyShopDongHo.Forms
         private System.Windows.Forms.DataGridViewTextBoxColumn SoDienThoai;
         private System.Windows.Forms.DataGridViewTextBoxColumn Email;
         private System.Windows.Forms.TextBox txtsdt;
-        private System.Windows.Forms.TextBox txtvaitro;
         private System.Windows.Forms.TextBox txtmanv;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label7;
@@ -499,5 +512,6 @@ namespace QuanLyShopDongHo.Forms
         private System.Windows.Forms.TextBox txtemail;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtngaysinh;
+        private System.Windows.Forms.ComboBox cbbvaitro;
     }
 }
