@@ -33,6 +33,22 @@ namespace QuanLyShopDongHo.Forms
             {
                 btnThongKe.Enabled = false;
             }
+            using (QuanLyShopDongHoEntities db = new QuanLyShopDongHoEntities())
+            {
+                List<NhanVien> list = db.NhanViens
+                   .Where(x => (x.MaNV == manv.Text))
+                   .ToList();//sắp xếp ở đây
+                list.ForEach(tk =>
+                {
+                    if(tk.MatKhau == "e99a18c428cb38d5f260853678922e03")
+                    {
+                        MessageBox.Show("Tài khoản vừa đăng nhập chưa bảo mật." +
+                            "Vui lòng đổi mật khẩu để tăng tính bảo mật");
+                    }
+                    else 
+                    { }
+                });
+            }
         }
 
         private void btnDangXuat_Click(object sender, EventArgs e)
