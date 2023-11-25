@@ -82,11 +82,6 @@ namespace QuanLyShopDongHo.Forms
             }         
         }
 
-        private void btnThoat_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void chkHienMK_CheckedChanged(object sender, EventArgs e)
         {
             if (chkHienMK.Checked)

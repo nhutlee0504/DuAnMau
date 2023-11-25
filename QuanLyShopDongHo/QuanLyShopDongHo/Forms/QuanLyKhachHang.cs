@@ -13,7 +13,7 @@ namespace QuanLyShopDongHo.Forms
 {
     public partial class QuanLyKhachHang : Form
     {
-        public QuanLyKhachHang()
+        public QuanLyKhachHang() { }
         string inputdata1 = "";
         string inputdata2 = "";
         string inputdata3 = "";

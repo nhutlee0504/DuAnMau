@@ -25,6 +25,9 @@ namespace QuanLyShopDongHo.Forms
 
         private void QuanLyChiTietSanPham_Load(object sender, EventArgs e)
         {
+            tennv.Text = inputdata1;
+            vaitro.Text = inputdata2;
+            manv.Text = inputdata3;
             btnthem.Enabled = true;
             btncapnhat.Enabled = false;
             btnxoa.Enabled = false;
@@ -219,13 +222,6 @@ namespace QuanLyShopDongHo.Forms
             btnthem.Enabled = false;
             btnxoa.Enabled = true;
 
-        }
-
-        private void QuanLyChiTietSanPham_Load(object sender, EventArgs e)
-        {
-            tennv.Text = inputdata1;
-            vaitro.Text = inputdata2;
-            manv.Text = inputdata3;          
         }
 
         private void btnthoat_Click(object sender, EventArgs e)

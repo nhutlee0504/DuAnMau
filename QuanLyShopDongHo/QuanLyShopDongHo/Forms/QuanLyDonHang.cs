@@ -29,6 +29,9 @@ namespace QuanLyShopDongHo.Forms
 
         private void QuanLyDonHang_Load(object sender, EventArgs e)
         {
+            tennv.Text = inputdata1;
+            vaitro.Text = inputdata2;
+            manvv.Text = inputdata3;
             ShowDH();
             using (var db = new QuanLyShopDongHoEntities())
             {
@@ -150,11 +153,6 @@ namespace QuanLyShopDongHo.Forms
             }
         }
 
-        private void btnThoat_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
             using (var db = new QuanLyShopDongHoEntities())
@@ -268,12 +266,6 @@ namespace QuanLyShopDongHo.Forms
             }
         }
 
-        private void QuanLyDonHang_Load(object sender, EventArgs e)
-        {
-            tennv.Text = inputdata1;
-            vaitro.Text = inputdata2;
-            manvv.Text = inputdata3;
-        }
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
