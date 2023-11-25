@@ -6,20 +6,31 @@ D:\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\bin\Debug\EntityFramework.SqlServer.d
 D:\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\bin\Debug\EntityFramework.xml
 D:\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\bin\Debug\EntityFramework.SqlServer.xml
 D:\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.csproj.AssemblyReference.cache
+D:\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.Forms.QuanLySanPham.resources
 D:\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.Properties.Resources.resources
 D:\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.csproj.GenerateResource.cache
 D:\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.csproj.CoreCompileInputs.cache
 D:\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.csproj.CopyComplete
 D:\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.exe
 D:\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.pdb
-D:\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.csproj.SuggestedBindingRedirects.cache
-D:\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.Forms.DangNhap.resources
-D:\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.Forms.HuongDan.resources
-D:\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.Forms.QuanLyChiTietSanPham.resources
-D:\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.Forms.QuanLyNhanVien.resources
-D:\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.Forms.ThongKe.resources
-D:\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.Forms.TrangChu.resources
-D:\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.Forms.DoiMatKhau.resources
-D:\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.Forms.QuanLyDonHang.resources
-D:\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.Forms.QuanLyKhachHang.resources
-D:\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.Forms.QuanLySanPham.resources
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\bin\Debug\QuanLyShopDongHo.exe.config
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\bin\Debug\QuanLyShopDongHo.exe
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\bin\Debug\QuanLyShopDongHo.pdb
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\bin\Debug\EntityFramework.dll
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\bin\Debug\EntityFramework.SqlServer.dll
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\bin\Debug\EntityFramework.xml
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\bin\Debug\EntityFramework.SqlServer.xml
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.csproj.AssemblyReference.cache
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.Forms.DangNhap.resources
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.Forms.HuongDan.resources
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.Forms.ThongKe.resources
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.Forms.TrangChu.resources
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.Forms.DoiMatKhau.resources
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.Forms.QuanLyDonHang.resources
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.Forms.QuanLyKhachHang.resources
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.Properties.Resources.resources
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.csproj.GenerateResource.cache
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.csproj.CoreCompileInputs.cache
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.csproj.CopyComplete
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.exe
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.pdb

@@ -59,6 +59,7 @@ namespace QuanLyShopDongHo.Forms
             this.chkHienMK.TabIndex = 108;
             this.chkHienMK.Text = "Hiện mật khẩu";
             this.chkHienMK.UseVisualStyleBackColor = false;
+            this.chkHienMK.CheckedChanged += new System.EventHandler(this.chkHienMK_CheckedChanged);
             // 
             // txtMatKhauXacNhan
             // 
@@ -169,6 +170,7 @@ namespace QuanLyShopDongHo.Forms
             this.btnXacNhan.Text = "Xác nhận";
             this.btnXacNhan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnXacNhan.UseVisualStyleBackColor = false;
+            this.btnXacNhan.Click += new System.EventHandler(this.btnXacNhan_Click);
             // 
             // btnThoat
             // 
@@ -253,6 +255,7 @@ namespace QuanLyShopDongHo.Forms
             this.Controls.Add(this.btnXacNhan);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.label1);
+            this.ForeColor = System.Drawing.Color.Black;
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "DoiMatKhau";
             this.Text = "DoiMatKhau";

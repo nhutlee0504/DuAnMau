@@ -237,6 +237,7 @@
     <None Include="Resources\dollar.png" />
     <None Include="Resources\bg_dmk.png" />
     <None Include="Resources\Save.png" />
+    <None Include="Resources\bg_dmk1.png" />
     <Content Include="ShopDongHo.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ShopDongHo.edmx</DependentUpon>
