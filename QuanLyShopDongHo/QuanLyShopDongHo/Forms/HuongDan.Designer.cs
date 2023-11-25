@@ -277,6 +277,7 @@ namespace QuanLyShopDongHo.Forms
             this.btnThoat.Text = "Thoát";
             this.btnThoat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // HuongDan
             // 
@@ -292,6 +293,7 @@ namespace QuanLyShopDongHo.Forms
             this.Controls.Add(this.btnThoat);
             this.Name = "HuongDan";
             this.Text = "HuongDan";
+            this.Load += new System.EventHandler(this.HuongDan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();

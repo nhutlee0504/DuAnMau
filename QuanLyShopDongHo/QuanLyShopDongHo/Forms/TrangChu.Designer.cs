@@ -138,6 +138,7 @@ namespace QuanLyShopDongHo.Forms
             this.btnDangXuat.TabIndex = 51;
             this.btnDangXuat.Text = "Đăng xuất";
             this.btnDangXuat.UseVisualStyleBackColor = false;
+            this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click);
             // 
             // label1
             // 
@@ -165,6 +166,7 @@ namespace QuanLyShopDongHo.Forms
             this.btnHuongDan.Text = "Hướng dẫn";
             this.btnHuongDan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnHuongDan.UseVisualStyleBackColor = false;
+            this.btnHuongDan.Click += new System.EventHandler(this.btnHuongDan_Click);
             // 
             // btnDoiMK
             // 
@@ -179,6 +181,7 @@ namespace QuanLyShopDongHo.Forms
             this.btnDoiMK.TabIndex = 50;
             this.btnDoiMK.Text = "Đổi mật khẩu";
             this.btnDoiMK.UseVisualStyleBackColor = false;
+            this.btnDoiMK.Click += new System.EventHandler(this.btnDoiMK_Click);
             // 
             // btnThongKe
             // 
@@ -193,6 +196,7 @@ namespace QuanLyShopDongHo.Forms
             this.btnThongKe.TabIndex = 49;
             this.btnThongKe.Text = "Thống kê và báo cáo";
             this.btnThongKe.UseVisualStyleBackColor = false;
+            this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
             // 
             // btnDonHang
             // 
@@ -207,6 +211,7 @@ namespace QuanLyShopDongHo.Forms
             this.btnDonHang.TabIndex = 48;
             this.btnDonHang.Text = "Quản lý đơn hàng";
             this.btnDonHang.UseVisualStyleBackColor = false;
+            this.btnDonHang.Click += new System.EventHandler(this.btnDonHang_Click);
             // 
             // btnKhachHang
             // 
@@ -221,6 +226,7 @@ namespace QuanLyShopDongHo.Forms
             this.btnKhachHang.TabIndex = 47;
             this.btnKhachHang.Text = "Quản lý khách hàng";
             this.btnKhachHang.UseVisualStyleBackColor = false;
+            this.btnKhachHang.Click += new System.EventHandler(this.btnKhachHang_Click);
             // 
             // btnChiTietSP
             // 
@@ -235,6 +241,7 @@ namespace QuanLyShopDongHo.Forms
             this.btnChiTietSP.TabIndex = 46;
             this.btnChiTietSP.Text = "Chi tiết sản phẩm";
             this.btnChiTietSP.UseVisualStyleBackColor = false;
+            this.btnChiTietSP.Click += new System.EventHandler(this.btnChiTietSP_Click);
             // 
             // btnSanPham
             // 
@@ -249,6 +256,7 @@ namespace QuanLyShopDongHo.Forms
             this.btnSanPham.TabIndex = 45;
             this.btnSanPham.Text = "Quản lý sản phẩm";
             this.btnSanPham.UseVisualStyleBackColor = false;
+            this.btnSanPham.Click += new System.EventHandler(this.btnSanPham_Click);
             // 
             // btnNhanVien
             // 
@@ -263,6 +271,7 @@ namespace QuanLyShopDongHo.Forms
             this.btnNhanVien.TabIndex = 44;
             this.btnNhanVien.Text = "Quản lý nhân viên";
             this.btnNhanVien.UseVisualStyleBackColor = false;
+            this.btnNhanVien.Click += new System.EventHandler(this.btnNhanVien_Click);
             // 
             // pictureBox1
             // 
@@ -298,6 +307,7 @@ namespace QuanLyShopDongHo.Forms
             this.Controls.Add(this.label1);
             this.Name = "TrangChu";
             this.Text = "TrangChu";
+            this.Load += new System.EventHandler(this.TrangChu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

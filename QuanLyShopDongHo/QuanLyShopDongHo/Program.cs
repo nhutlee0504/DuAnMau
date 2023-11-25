@@ -17,9 +17,7 @@ namespace QuanLyShopDongHo
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DoiMatKhau());
-            Application.Run(new QuanLyDonHang());
-            Application.Run(new QuanLyKhachHang());
+            Application.Run(new DangNhap());
         }
     }
 }
