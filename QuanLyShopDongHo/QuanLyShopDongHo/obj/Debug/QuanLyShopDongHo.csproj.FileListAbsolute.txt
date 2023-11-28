@@ -47,3 +47,5 @@ F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\bin\Debug\Ent
 F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\bin\Debug\EntityFramework.xml
 F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\bin\Debug\EntityFramework.SqlServer.xml
 F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.csproj.CopyComplete
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.Forms.ThanhToanDonHang.resources
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.csproj.ResolveComReference.cache

@@ -59,6 +59,9 @@ namespace QuanLyShopDongHo.Forms
                         MaCanDoi.MatKhau = MaHoaPass(txtMatKhauMoi.Text);
                         db.SaveChanges();
                         MessageBox.Show("Mật khẩu đã đổi thành công của nhân viên có mã: " + txtTaiKhoan.Text, "Thông báo");
+                        this.Dispose();
+                        DangNhap dn = new DangNhap();
+                        dn.Show();
                     }
                     else
                     {

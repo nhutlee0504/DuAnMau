@@ -48,7 +48,9 @@ namespace QuanLyShopDongHo.Forms
             using (var db = new QuanLyShopDongHoEntities())
             {
                 dgvDonHang.Rows.Clear();
-                db.DonHangs.ToList().ForEach(x => dgvDonHang.Rows.Add(x.MaDon, x.TenKH, x.SDT, x.LoaiSP, x.ChiTietSanPham.TenLoai, x.SoLuong, x.NgayIn, x.MaNV));
+                db.DonHangs.ToList().ForEach(x =>
+                    dgvDonHang.Rows.Add(x.MaDon, x.TenKH, x.SDT, x.LoaiSP, x.ChiTietSanPham.TenLoai, 
+                    x.SoLuong, x.NgayIn.ToString("dd/MM/yyyy"), x.MaNV));
             }
         }
 
@@ -64,7 +66,7 @@ namespace QuanLyShopDongHo.Forms
                     dh.SDT = cboSDT.Text;
                     dh.LoaiSP = cboLoaiSP.Text;
                     dh.SoLuong = int.Parse(txtSoLuong.Text);
-                    dh.NgayIn = dtpNgayIn.Value;
+                    dh.NgayIn = DateTime.Parse(dtpNgayIn.Text);
                     dh.MaNV = txtMaNhanVien.Text;
 
                     string isNumber = @"^[-+]?[0-9]*.?[0-9]+$";
@@ -131,7 +133,8 @@ namespace QuanLyShopDongHo.Forms
 
         private void btnThanhToan_Click(object sender, EventArgs e)
         {
-
+            ThanhToanDonHang thanhToan = new ThanhToanDonHang(txtMaDon.Text);
+            thanhToan.Show();
         }
 
         private void btnLamMoi_Click(object sender, EventArgs e)
@@ -163,7 +166,7 @@ namespace QuanLyShopDongHo.Forms
                     dgvDonHang.Rows.Clear();
                     maDon.ForEach(x =>
                     {
-                        dgvDonHang.Rows.Add(x.MaDon, x.TenKH, x.SDT, x.LoaiSP, x.ChiTietSanPham.TenLoai,x.SoLuong, x.NgayIn, x.MaNV);
+                        dgvDonHang.Rows.Add(x.MaDon, x.TenKH, x.SDT, x.LoaiSP, x.ChiTietSanPham.TenLoai, x.SoLuong, x.NgayIn, x.MaNV);
                     });
                     txtMaDon.Text = dgvDonHang.Rows[0].Cells[0].Value.ToString();
                     txtTenKhachHang.Text = dgvDonHang.Rows[0].Cells[1].Value.ToString();
@@ -254,7 +257,8 @@ namespace QuanLyShopDongHo.Forms
         {
             using (var db = new QuanLyShopDongHoEntities())
             {
-                txtTenLoai.Text = db.ChiTietSanPhams.Where(x => x.LoaiSP == cboLoaiSP.Text).Select(x => x.TenLoai).FirstOrDefault().ToString();
+                txtTenLoai.Text = db.ChiTietSanPhams.Where(x => x.LoaiSP == cboLoaiSP.Text)
+                                    .Select(x => x.TenLoai).FirstOrDefault().ToString();
             }
         }
 
@@ -262,7 +266,8 @@ namespace QuanLyShopDongHo.Forms
         {
             using (var db = new QuanLyShopDongHoEntities())
             {
-                txtTenKhachHang.Text = db.KhachHangs.Where(x => x.SDT == cboSDT.Text).Select(x => x.TenKH).FirstOrDefault().ToString();
+                txtTenKhachHang.Text = db.KhachHangs.Where(x => x.SDT == cboSDT.Text)
+                                        .Select(x => x.TenKH).FirstOrDefault().ToString();
             }
         }
 
