@@ -44,40 +44,38 @@ namespace QuanLyShopDongHo.Forms
             string matKhauCu = MaHoaPass(txtMatKhauCu.Text);
             using (QuanLyShopDongHoEntities db = new QuanLyShopDongHoEntities())
             {
-                var MaNV = db.NhanViens.Where(x => x.MaNV == txtTaiKhoan.Text && x.MatKhau == matKhauCu).Select(x => x.MaNV);
-                var MKCu = db.NhanViens.Where(x => x.MaNV == txtTaiKhoan.Text && x.MatKhau == matKhauCu).Select(x => x.MatKhau);
-                if (MaNV.Contains(txtTaiKhoan.Text) && MKCu.Contains(matKhauCu))
+                var taiKhoan = db.NhanViens.Where(x => x.MaNV == txtTaiKhoan.Text).ToList();
+                taiKhoan.ForEach(x =>
                 {
-                    if (txtMatKhauMoi.Text.Length < 6)
+                    if (matKhauCu == x.MatKhau)
                     {
-                        MessageBox.Show("Mật khẩu mới ít nhất có 6 kí tự", "Thông báo");
-                        txtMatKhauMoi.Focus();
-                    }
-                    else if (txtMatKhauMoi.Text == txtMatKhauXacNhan.Text)
-                    {
-                        var MaCanDoi = db.NhanViens.Where(x => x.MaNV == txtTaiKhoan.Text).FirstOrDefault();
-                        MaCanDoi.MatKhau = MaHoaPass(txtMatKhauMoi.Text);
-                        db.SaveChanges();
-                        MessageBox.Show("Mật khẩu đã đổi thành công của nhân viên có mã: " + txtTaiKhoan.Text, "Thông báo");
-                        this.Dispose();
-                        DangNhap dn = new DangNhap();
-                        dn.Show();
+                        if (txtMatKhauMoi.Text.Length < 6)
+                        {
+                            MessageBox.Show("Mật khẩu mới ít nhất có 6 kí tự", "Thông báo");
+                            txtMatKhauMoi.Focus();
+                        }
+                        else if (txtMatKhauMoi.Text == txtMatKhauXacNhan.Text)
+                        {
+                            var taiKhoanDoi = db.NhanViens.Where(y => y.MaNV == txtTaiKhoan.Text).FirstOrDefault();
+                            taiKhoanDoi.MatKhau = MaHoaPass(txtMatKhauMoi.Text);
+                            db.SaveChanges();
+                            MessageBox.Show("Mật khẩu đã đổi thành công của nhân viên có mã: " + txtTaiKhoan.Text, "Thông báo");
+                            this.Dispose();
+                            DangNhap dn = new DangNhap();
+                            dn.Show();
+                        }
+                        else
+                            MessageBox.Show("Mật khẩu xác nhận lại không đúng", "Thông báo");
                     }
                     else
-                    {
-                        MessageBox.Show("Mật khẩu xác nhận lại không đúng", "Thông báo");
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Mã nhân viên hoặc mật khẩu cũ không đúng", "Thông báo");
-                }
+                        MessageBox.Show("Mật khẩu cũ không đúng", "Thông báo");
+                });
             }
         }
 
         private string MaHoaPass(string chuoi)
         {
-            using(MD5 mD5 = MD5.Create())
+            using (MD5 mD5 = MD5.Create())
             {
                 byte[] pass = Encoding.UTF8.GetBytes(chuoi);
                 byte[] hash = mD5.ComputeHash(pass);
@@ -87,7 +85,7 @@ namespace QuanLyShopDongHo.Forms
                     builder.Append(hash[i].ToString("x2"));
                 }
                 return builder.ToString();
-            }         
+            }
         }
 
         private void chkHienMK_CheckedChanged(object sender, EventArgs e)

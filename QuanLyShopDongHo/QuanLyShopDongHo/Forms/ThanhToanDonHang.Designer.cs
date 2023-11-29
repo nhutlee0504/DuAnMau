@@ -39,7 +39,6 @@ namespace QuanLyShopDongHo.Forms
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.btnXuatDon = new System.Windows.Forms.Button();
             this.lblSDT = new System.Windows.Forms.Label();
             this.lblMaDon = new System.Windows.Forms.Label();
             this.lblDonGia = new System.Windows.Forms.Label();
@@ -49,6 +48,7 @@ namespace QuanLyShopDongHo.Forms
             this.lblMaLoai = new System.Windows.Forms.Label();
             this.lblNgayIn = new System.Windows.Forms.Label();
             this.lblTenKH = new System.Windows.Forms.Label();
+            this.btnXuatWord = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -171,25 +171,6 @@ namespace QuanLyShopDongHo.Forms
             this.label10.TabIndex = 113;
             this.label10.Text = "NGÀY IN: ";
             // 
-            // btnXuatDon
-            // 
-            this.btnXuatDon.BackColor = System.Drawing.Color.LightSlateGray;
-            this.btnXuatDon.FlatAppearance.BorderColor = System.Drawing.Color.LightSlateGray;
-            this.btnXuatDon.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
-            this.btnXuatDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXuatDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnXuatDon.ForeColor = System.Drawing.Color.White;
-            this.btnXuatDon.Image = global::QuanLyShopDongHo.Properties.Resources.Price_list;
-            this.btnXuatDon.Location = new System.Drawing.Point(224, 460);
-            this.btnXuatDon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnXuatDon.Name = "btnXuatDon";
-            this.btnXuatDon.Size = new System.Drawing.Size(153, 53);
-            this.btnXuatDon.TabIndex = 116;
-            this.btnXuatDon.Text = "XUẤT ĐƠN";
-            this.btnXuatDon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnXuatDon.UseVisualStyleBackColor = false;
-            this.btnXuatDon.Click += new System.EventHandler(this.btnXuatDon_Click);
-            // 
             // lblSDT
             // 
             this.lblSDT.AutoSize = true;
@@ -256,7 +237,7 @@ namespace QuanLyShopDongHo.Forms
             this.lblTenLoai.BackColor = System.Drawing.Color.Transparent;
             this.lblTenLoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblTenLoai.ForeColor = System.Drawing.Color.Black;
-            this.lblTenLoai.Location = new System.Drawing.Point(161, 291);
+            this.lblTenLoai.Location = new System.Drawing.Point(182, 291);
             this.lblTenLoai.Name = "lblTenLoai";
             this.lblTenLoai.Size = new System.Drawing.Size(86, 20);
             this.lblTenLoai.TabIndex = 123;
@@ -298,11 +279,31 @@ namespace QuanLyShopDongHo.Forms
             this.lblTenKH.TabIndex = 126;
             this.lblTenKH.Text = "lblTenKH";
             // 
+            // btnXuatWord
+            // 
+            this.btnXuatWord.BackColor = System.Drawing.Color.LightSlateGray;
+            this.btnXuatWord.FlatAppearance.BorderColor = System.Drawing.Color.LightSlateGray;
+            this.btnXuatWord.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.btnXuatWord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXuatWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnXuatWord.ForeColor = System.Drawing.Color.White;
+            this.btnXuatWord.Image = global::QuanLyShopDongHo.Properties.Resources.Price_list;
+            this.btnXuatWord.Location = new System.Drawing.Point(215, 440);
+            this.btnXuatWord.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnXuatWord.Name = "btnXuatWord";
+            this.btnXuatWord.Size = new System.Drawing.Size(153, 53);
+            this.btnXuatWord.TabIndex = 127;
+            this.btnXuatWord.Text = "XUẤT WORD";
+            this.btnXuatWord.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnXuatWord.UseVisualStyleBackColor = false;
+            this.btnXuatWord.Click += new System.EventHandler(this.btnXuatWord_Click);
+            // 
             // ThanhToanDonHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(634, 570);
+            this.Controls.Add(this.btnXuatWord);
             this.Controls.Add(this.lblTenKH);
             this.Controls.Add(this.lblNgayIn);
             this.Controls.Add(this.lblMaLoai);
@@ -312,7 +313,6 @@ namespace QuanLyShopDongHo.Forms
             this.Controls.Add(this.lblDonGia);
             this.Controls.Add(this.lblMaDon);
             this.Controls.Add(this.lblSDT);
-            this.Controls.Add(this.btnXuatDon);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label7);
@@ -343,7 +343,6 @@ namespace QuanLyShopDongHo.Forms
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button btnXuatDon;
         private System.Windows.Forms.Label lblSDT;
         private System.Windows.Forms.Label lblMaDon;
         private System.Windows.Forms.Label lblDonGia;
@@ -353,5 +352,6 @@ namespace QuanLyShopDongHo.Forms
         private System.Windows.Forms.Label lblMaLoai;
         private System.Windows.Forms.Label lblNgayIn;
         private System.Windows.Forms.Label lblTenKH;
+        private System.Windows.Forms.Button btnXuatWord;
     }
 }

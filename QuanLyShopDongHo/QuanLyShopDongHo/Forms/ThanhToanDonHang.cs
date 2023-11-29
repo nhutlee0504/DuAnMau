@@ -44,7 +44,7 @@ namespace QuanLyShopDongHo.Forms
             }
         }
 
-        private void btnXuatDon_Click(object sender, EventArgs e)
+        private void btnXuatWord_Click(object sender, EventArgs e)
         {
             Word.Application wordApp = new Word.Application();
             Word.Document doc = wordApp.Documents.Add();
@@ -81,18 +81,18 @@ namespace QuanLyShopDongHo.Forms
                 doc.SaveAs2($@"F:\FPOLY\2. DuAn_1_SD18301\{maDon}.docx");
                 doc.Close();
                 wordApp.Quit();
-                MessageBox.Show("Xuất đơn thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Xuất Word thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Lỗi xuất đơn: " + ex.Message);
+                Console.WriteLine("Lỗi xuất Word: " + ex);
             }
             finally
             {
-                // Giải phóng bộ nhớ
                 System.Runtime.InteropServices.Marshal.ReleaseComObject(doc);
                 System.Runtime.InteropServices.Marshal.ReleaseComObject(wordApp);
             }
+
         }
     }
 }
