@@ -70,7 +70,7 @@ namespace QuanLyShopDongHo.Forms
         }
         private bool checkk()
         {
-            if (txtloaisp.Text == "" || txttenloai.Text == "" || cbbmasp.Text == "" || txtgiaban.Text == "")
+            if (txtloaisp.Text == "" || txttenloai.Text == "" || cbbmasp.Text == "" || txtgiaban.Text == "" || txtkhuyenmai.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin.");
                 return false;

@@ -1,5 +1,4 @@
 D:\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.csproj.AssemblyReference.cache
-D:\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.csproj.SuggestedBindingRedirects.cache
 D:\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.Forms.DangNhap.resources
 D:\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.Forms.HuongDan.resources
 D:\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.Forms.QuanLyChiTietSanPham.resources
