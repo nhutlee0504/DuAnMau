@@ -23,8 +23,6 @@ namespace QuanLyShopDongHo.Forms
             this.inputdata2 = input2;
             this.inputdata3 = input3;
             InitializeComponent();
-            cboSDT.SelectedIndexChanged += cboSDT_SelectedIndexChanged;
-            cboLoaiSP.SelectedIndexChanged += cboLoaiSP_SelectedIndexChanged;
         }
 
         private void QuanLyDonHang_Load(object sender, EventArgs e)
@@ -50,7 +48,7 @@ namespace QuanLyShopDongHo.Forms
                 dgvDonHang.Rows.Clear();
                 db.DonHangs.ToList().ForEach(x =>
                     dgvDonHang.Rows.Add(x.MaDon, x.TenKH, x.SDT, x.LoaiSP, x.ChiTietSanPham.TenLoai, 
-                    x.SoLuong, x.NgayIn.ToString("dd/MM/yyyy"), x.MaNV));
+                    x.SoLuong,x.ChiTietSanPham.GiaBan.ToString("#,##0"), x.NgayIn.ToString("dd/MM/yyyy"), x.MaNV));
             }
         }
 
@@ -166,15 +164,17 @@ namespace QuanLyShopDongHo.Forms
                     dgvDonHang.Rows.Clear();
                     maDon.ForEach(x =>
                     {
-                        dgvDonHang.Rows.Add(x.MaDon, x.TenKH, x.SDT, x.LoaiSP, x.ChiTietSanPham.TenLoai, x.SoLuong, x.NgayIn, x.MaNV);
+                        dgvDonHang.Rows.Add(x.MaDon, x.TenKH, x.SDT, x.LoaiSP, x.ChiTietSanPham.TenLoai, x.SoLuong,x.ChiTietSanPham.GiaBan, x.NgayIn, x.MaNV);
                     });
                     txtMaDon.Text = dgvDonHang.Rows[0].Cells[0].Value.ToString();
                     txtTenKhachHang.Text = dgvDonHang.Rows[0].Cells[1].Value.ToString();
                     cboSDT.Text = dgvDonHang.Rows[0].Cells[2].Value.ToString();
                     cboLoaiSP.Text = dgvDonHang.Rows[0].Cells[3].Value.ToString();
+                    txtTenLoai.Text = dgvDonHang.Rows[0].Cells[4].Value.ToString();
                     txtSoLuong.Text = dgvDonHang.Rows[0].Cells[5].Value.ToString();
-                    dtpNgayIn.Text = dgvDonHang.Rows[0].Cells[6].Value.ToString();
-                    txtMaNhanVien.Text = dgvDonHang.Rows[0].Cells[7].Value.ToString();
+                    txtDonGia.Text = dgvDonHang.Rows[0].Cells[6].Value.ToString();
+                    dtpNgayIn.Text = dgvDonHang.Rows[0].Cells[7].Value.ToString();
+                    txtMaNhanVien.Text = dgvDonHang.Rows[0].Cells[8].Value.ToString();
                     btnTaoDon.Enabled = false;
                     btnThanhToan.Enabled = true;
                 }
@@ -225,8 +225,9 @@ namespace QuanLyShopDongHo.Forms
             cboLoaiSP.Text = dgvDonHang.Rows[e.RowIndex].Cells[3].Value.ToString();
             txtTenLoai.Text = dgvDonHang.Rows[e.RowIndex].Cells[4].Value.ToString();
             txtSoLuong.Text = dgvDonHang.Rows[e.RowIndex].Cells[5].Value.ToString();
-            dtpNgayIn.Text = dgvDonHang.Rows[e.RowIndex].Cells[6].Value.ToString();
-            txtMaNhanVien.Text = dgvDonHang.Rows[e.RowIndex].Cells[7].Value.ToString();
+            txtDonGia.Text = dgvDonHang.Rows[e.RowIndex].Cells[6].Value.ToString();
+            dtpNgayIn.Text = dgvDonHang.Rows[e.RowIndex].Cells[7].Value.ToString();
+            txtMaNhanVien.Text = dgvDonHang.Rows[e.RowIndex].Cells[8].Value.ToString();
             btnTaoDon.Enabled = false;
             btnThanhToan.Enabled = true;
         }
@@ -239,6 +240,7 @@ namespace QuanLyShopDongHo.Forms
             cboLoaiSP.Text = "";
             txtTenLoai.Text = "";
             txtSoLuong.Text = "";
+            txtDonGia.Text = "";
             txtMaNhanVien.Text = "";
             dtpNgayIn.Text = DateTime.Now.ToString("dd/MM/yyyy");
             cboMaDonTim.Text = "";
@@ -259,6 +261,8 @@ namespace QuanLyShopDongHo.Forms
             {
                 txtTenLoai.Text = db.ChiTietSanPhams.Where(x => x.LoaiSP == cboLoaiSP.Text)
                                     .Select(x => x.TenLoai).FirstOrDefault().ToString();
+                txtDonGia.Text = db.ChiTietSanPhams.Where(x => x.LoaiSP == cboLoaiSP.Text)
+                                   .Select(x => x.GiaBan).FirstOrDefault().ToString();
             }
         }
 
