@@ -99,8 +99,6 @@ namespace QuanLyShopDongHo.Forms
             }
         }
 
-      
-
         private void btnCapNhat_Click(object sender, EventArgs e)
         {
             using (var db = new QuanLyShopDongHoEntities())

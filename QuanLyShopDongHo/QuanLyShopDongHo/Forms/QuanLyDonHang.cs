@@ -75,7 +75,7 @@ namespace QuanLyShopDongHo.Forms
                     var loaiSP = db.ChiTietSanPhams.Select(x => x.LoaiSP);
                     if (cboSDT.Text == "" || cboLoaiSP.Text == "" || txtSoLuong.Text == "" || txtMaNhanVien.Text == "")
                     {
-                        MessageBox.Show("Vui lòng nhập đầy đủ thông tin khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         txtMaDon.Focus();
                     }
                     else if (maDHTrung.Contains(txtMaDon.Text))
@@ -145,6 +145,7 @@ namespace QuanLyShopDongHo.Forms
                 cboLoaiSP.Text = "";
                 txtTenLoai.Text = "";
                 txtSoLuong.Text = "";
+                txtDonGia.Text = "";
                 txtMaNhanVien.Text = "";
                 dtpNgayIn.Text = DateTime.Now.ToString("dd/MM/yyyy");
                 cboMaDonTim.Text = "";
@@ -158,23 +159,24 @@ namespace QuanLyShopDongHo.Forms
         {
             using (var db = new QuanLyShopDongHoEntities())
             {
-                List<DonHang> maDon = db.DonHangs.Where(x => x.MaDon.Contains(cboMaDonTim.Text)).ToList();
+                List<DonHang> maDon = db.DonHangs.Where(x => x.MaDon.Contains(cboMaDonTim.Text.Trim())).ToList();
                 if (maDon.Count > 0)
                 {
                     dgvDonHang.Rows.Clear();
                     maDon.ForEach(x =>
                     {
-                        dgvDonHang.Rows.Add(x.MaDon, x.TenKH, x.SDT, x.LoaiSP, x.ChiTietSanPham.TenLoai, x.SoLuong,x.ChiTietSanPham.GiaBan, x.NgayIn, x.MaNV);
+                        dgvDonHang.Rows.Add(x.MaDon, x.TenKH, x.SDT, x.LoaiSP, x.ChiTietSanPham.TenLoai, 
+                                            x.SoLuong,x.ChiTietSanPham.GiaBan, x.NgayIn, x.MaNV);
+                        txtMaDon.Text = x.MaDon;
+                        txtTenKhachHang.Text = x.TenKH;
+                        cboSDT.Text = x.SDT;
+                        cboLoaiSP.Text = x.LoaiSP;
+                        txtTenLoai.Text = x.ChiTietSanPham.TenLoai;
+                        txtSoLuong.Text = x.SoLuong.ToString();
+                        txtDonGia.Text = x.ChiTietSanPham.GiaBan.ToString("#,##0");
+                        dtpNgayIn.Text = x.NgayIn.ToString("dd/MM/yyyy");
+                        txtMaNhanVien.Text = x.MaNV;
                     });
-                    txtMaDon.Text = dgvDonHang.Rows[0].Cells[0].Value.ToString();
-                    txtTenKhachHang.Text = dgvDonHang.Rows[0].Cells[1].Value.ToString();
-                    cboSDT.Text = dgvDonHang.Rows[0].Cells[2].Value.ToString();
-                    cboLoaiSP.Text = dgvDonHang.Rows[0].Cells[3].Value.ToString();
-                    txtTenLoai.Text = dgvDonHang.Rows[0].Cells[4].Value.ToString();
-                    txtSoLuong.Text = dgvDonHang.Rows[0].Cells[5].Value.ToString();
-                    txtDonGia.Text = dgvDonHang.Rows[0].Cells[6].Value.ToString();
-                    dtpNgayIn.Text = dgvDonHang.Rows[0].Cells[7].Value.ToString();
-                    txtMaNhanVien.Text = dgvDonHang.Rows[0].Cells[8].Value.ToString();
                     btnTaoDon.Enabled = false;
                     btnThanhToan.Enabled = true;
                 }
@@ -246,13 +248,11 @@ namespace QuanLyShopDongHo.Forms
             cboMaDonTim.Text = "";
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void btnThoat_Click(object sender, EventArgs e)
         {
-            ControlPaint.DrawBorder(e.Graphics, panel1.ClientRectangle,
-           Color.Silver, 3, ButtonBorderStyle.Solid,
-           Color.Silver, 3, ButtonBorderStyle.Solid,
-           Color.Silver, 3, ButtonBorderStyle.Solid,
-           Color.Silver, 3, ButtonBorderStyle.Solid);
+            this.Dispose();
+            TrangChu dn = new TrangChu(inputdata1, inputdata2, inputdata3);
+            dn.Show();
         }
 
         private void cboLoaiSP_SelectedIndexChanged(object sender, EventArgs e)
@@ -275,12 +275,14 @@ namespace QuanLyShopDongHo.Forms
             }
         }
 
-
-        private void btnThoat_Click(object sender, EventArgs e)
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            this.Dispose();
-            TrangChu dn = new TrangChu(inputdata1, inputdata2, inputdata3);
-            dn.Show();
+            ControlPaint.DrawBorder(e.Graphics, panel1.ClientRectangle,
+           Color.Silver, 3, ButtonBorderStyle.Solid,
+           Color.Silver, 3, ButtonBorderStyle.Solid,
+           Color.Silver, 3, ButtonBorderStyle.Solid,
+           Color.Silver, 3, ButtonBorderStyle.Solid);
         }
+       
     }
 }

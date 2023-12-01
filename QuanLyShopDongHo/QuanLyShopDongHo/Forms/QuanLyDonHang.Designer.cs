@@ -29,6 +29,7 @@ namespace QuanLyShopDongHo.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.cboLoaiSP = new System.Windows.Forms.ComboBox();
             this.btnLamMoi = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -55,9 +56,6 @@ namespace QuanLyShopDongHo.Forms
             this.txtTenLoai = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.dgvDonHang = new System.Windows.Forms.DataGridView();
-            this.tennv = new System.Windows.Forms.Label();
-            this.vaitro = new System.Windows.Forms.Label();
-            this.manvv = new System.Windows.Forms.Label();
             this.MaDon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenKhachHang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -67,6 +65,9 @@ namespace QuanLyShopDongHo.Forms
             this.DonGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgayIn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tennv = new System.Windows.Forms.Label();
+            this.vaitro = new System.Windows.Forms.Label();
+            this.manvv = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.txtDonGia = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
@@ -105,6 +106,7 @@ namespace QuanLyShopDongHo.Forms
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel1.Controls.Add(this.cboMaDonTim);
             this.panel1.Controls.Add(this.btnTimKiem);
             this.panel1.Controls.Add(this.label6);
@@ -251,7 +253,7 @@ namespace QuanLyShopDongHo.Forms
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.SlateGray;
+            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(76)))), ((int)(((byte)(88)))));
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(474, 248);
@@ -263,7 +265,7 @@ namespace QuanLyShopDongHo.Forms
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.SlateGray;
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(76)))), ((int)(((byte)(88)))));
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(474, 163);
@@ -275,7 +277,7 @@ namespace QuanLyShopDongHo.Forms
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.SlateGray;
+            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(76)))), ((int)(((byte)(88)))));
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(474, 112);
@@ -296,7 +298,7 @@ namespace QuanLyShopDongHo.Forms
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.SlateGray;
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(76)))), ((int)(((byte)(88)))));
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(477, 292);
@@ -317,7 +319,7 @@ namespace QuanLyShopDongHo.Forms
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.SlateGray;
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(76)))), ((int)(((byte)(88)))));
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(113, 210);
@@ -329,7 +331,7 @@ namespace QuanLyShopDongHo.Forms
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.SlateGray;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(76)))), ((int)(((byte)(88)))));
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(113, 163);
@@ -352,7 +354,7 @@ namespace QuanLyShopDongHo.Forms
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.SlateGray;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(76)))), ((int)(((byte)(88)))));
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(113, 112);
@@ -387,7 +389,7 @@ namespace QuanLyShopDongHo.Forms
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.SlateGray;
+            this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(76)))), ((int)(((byte)(88)))));
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(474, 204);
@@ -398,6 +400,9 @@ namespace QuanLyShopDongHo.Forms
             // 
             // dgvDonHang
             // 
+            this.dgvDonHang.AllowUserToAddRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dgvDonHang.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvDonHang.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.dgvDonHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDonHang.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -414,44 +419,12 @@ namespace QuanLyShopDongHo.Forms
             this.dgvDonHang.Location = new System.Drawing.Point(24, 493);
             this.dgvDonHang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvDonHang.Name = "dgvDonHang";
+            this.dgvDonHang.RowHeadersVisible = false;
             this.dgvDonHang.RowHeadersWidth = 51;
             this.dgvDonHang.RowTemplate.Height = 24;
             this.dgvDonHang.Size = new System.Drawing.Size(929, 335);
             this.dgvDonHang.TabIndex = 112;
             this.dgvDonHang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDonHang_CellClick);
-            // 
-            // tennv
-            // 
-            this.tennv.AutoSize = true;
-            this.tennv.Location = new System.Drawing.Point(683, 16);
-            this.tennv.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.tennv.Name = "tennv";
-            this.tennv.Size = new System.Drawing.Size(54, 17);
-            this.tennv.TabIndex = 113;
-            this.tennv.Text = "label11";
-            this.tennv.Visible = false;
-            // 
-            // vaitro
-            // 
-            this.vaitro.AutoSize = true;
-            this.vaitro.Location = new System.Drawing.Point(745, 16);
-            this.vaitro.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.vaitro.Name = "vaitro";
-            this.vaitro.Size = new System.Drawing.Size(54, 17);
-            this.vaitro.TabIndex = 114;
-            this.vaitro.Text = "label12";
-            this.vaitro.Visible = false;
-            // 
-            // manvv
-            // 
-            this.manvv.AutoSize = true;
-            this.manvv.Location = new System.Drawing.Point(808, 16);
-            this.manvv.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.manvv.Name = "manvv";
-            this.manvv.Size = new System.Drawing.Size(54, 17);
-            this.manvv.TabIndex = 115;
-            this.manvv.Text = "label13";
-            this.manvv.Visible = false;
             // 
             // MaDon
             // 
@@ -516,10 +489,46 @@ namespace QuanLyShopDongHo.Forms
             this.MaNV.Name = "MaNV";
             this.MaNV.Width = 125;
             // 
+            // tennv
+            // 
+            this.tennv.AutoSize = true;
+            this.tennv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tennv.Location = new System.Drawing.Point(683, 16);
+            this.tennv.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.tennv.Name = "tennv";
+            this.tennv.Size = new System.Drawing.Size(54, 17);
+            this.tennv.TabIndex = 113;
+            this.tennv.Text = "label11";
+            this.tennv.Visible = false;
+            // 
+            // vaitro
+            // 
+            this.vaitro.AutoSize = true;
+            this.vaitro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.vaitro.Location = new System.Drawing.Point(745, 16);
+            this.vaitro.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.vaitro.Name = "vaitro";
+            this.vaitro.Size = new System.Drawing.Size(54, 17);
+            this.vaitro.TabIndex = 114;
+            this.vaitro.Text = "label12";
+            this.vaitro.Visible = false;
+            // 
+            // manvv
+            // 
+            this.manvv.AutoSize = true;
+            this.manvv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.manvv.Location = new System.Drawing.Point(808, 16);
+            this.manvv.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.manvv.Name = "manvv";
+            this.manvv.Size = new System.Drawing.Size(54, 17);
+            this.manvv.TabIndex = 115;
+            this.manvv.Text = "label13";
+            this.manvv.Visible = false;
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.SlateGray;
+            this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(76)))), ((int)(((byte)(88)))));
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label11.ForeColor = System.Drawing.Color.White;
             this.label11.Location = new System.Drawing.Point(113, 254);
@@ -543,6 +552,7 @@ namespace QuanLyShopDongHo.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(76)))), ((int)(((byte)(88)))));
             this.BackgroundImage = global::QuanLyShopDongHo.Properties.Resources.bg1_1;
             this.ClientSize = new System.Drawing.Size(979, 851);
             this.Controls.Add(this.txtDonGia);
