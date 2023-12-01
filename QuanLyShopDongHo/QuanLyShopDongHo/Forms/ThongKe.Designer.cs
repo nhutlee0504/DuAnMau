@@ -30,17 +30,16 @@ namespace QuanLyShopDongHo.Forms
         private void InitializeComponent()
         {
             this.Column25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btnLMDT = new System.Windows.Forms.Button();
+            this.btnLDT = new System.Windows.Forms.Button();
+            this.DTden = new System.Windows.Forms.TextBox();
+            this.DTtu = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnTimMDT = new System.Windows.Forms.Button();
+            this.txtTimMDT = new System.Windows.Forms.TextBox();
+            this.dgvDT = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,37 +48,38 @@ namespace QuanLyShopDongHo.Forms
             this.vaitro = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.btnLMLN = new System.Windows.Forms.Button();
+            this.btnLOI = new System.Windows.Forms.Button();
+            this.btnLO = new System.Windows.Forms.Button();
+            this.btnMLN = new System.Windows.Forms.Button();
+            this.txtTLN = new System.Windows.Forms.TextBox();
+            this.btnLLN = new System.Windows.Forms.Button();
+            this.txtLNden = new System.Windows.Forms.TextBox();
+            this.txtLNtu = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dgvLN = new System.Windows.Forms.DataGridView();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.button11 = new System.Windows.Forms.Button();
+            this.btnLMKH = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.rdSDT = new System.Windows.Forms.RadioButton();
+            this.rdTen = new System.Windows.Forms.RadioButton();
+            this.txtTimKH = new System.Windows.Forms.TextBox();
+            this.dgvKH = new System.Windows.Forms.DataGridView();
             this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.btnLMDH = new System.Windows.Forms.Button();
+            this.btntimDH = new System.Windows.Forms.Button();
+            this.txttimDH = new System.Windows.Forms.TextBox();
+            this.dgvDH = new System.Windows.Forms.DataGridView();
             this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -87,7 +87,7 @@ namespace QuanLyShopDongHo.Forms
             this.Column19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.dataGridView5 = new System.Windows.Forms.DataGridView();
+            this.dgvXNK = new System.Windows.Forms.DataGridView();
             this.Column21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -97,16 +97,16 @@ namespace QuanLyShopDongHo.Forms
             this.label1 = new System.Windows.Forms.Label();
             this.manv = new System.Windows.Forms.Label();
             this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDT)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLN)).BeginInit();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKH)).BeginInit();
             this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDH)).BeginInit();
             this.tabPage5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvXNK)).BeginInit();
             this.SuspendLayout();
             // 
             // Column25
@@ -117,25 +117,17 @@ namespace QuanLyShopDongHo.Forms
             this.Column25.ReadOnly = true;
             this.Column25.Width = 120;
             // 
-            // Column9
-            // 
-            this.Column9.HeaderText = "Tổng giá bán ra";
-            this.Column9.MinimumWidth = 6;
-            this.Column9.Name = "Column9";
-            this.Column9.ReadOnly = true;
-            this.Column9.Width = 150;
-            // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.button10);
-            this.tabPage1.Controls.Add(this.button3);
-            this.tabPage1.Controls.Add(this.textBox3);
-            this.tabPage1.Controls.Add(this.textBox2);
+            this.tabPage1.Controls.Add(this.btnLMDT);
+            this.tabPage1.Controls.Add(this.btnLDT);
+            this.tabPage1.Controls.Add(this.DTden);
+            this.tabPage1.Controls.Add(this.DTtu);
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.button2);
-            this.tabPage1.Controls.Add(this.textBox1);
-            this.tabPage1.Controls.Add(this.dataGridView1);
+            this.tabPage1.Controls.Add(this.btnTimMDT);
+            this.tabPage1.Controls.Add(this.txtTimMDT);
+            this.tabPage1.Controls.Add(this.dgvDT);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -144,49 +136,51 @@ namespace QuanLyShopDongHo.Forms
             this.tabPage1.Text = "Doanh thu";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // button10
+            // btnLMDT
             // 
-            this.button10.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button10.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button10.Location = new System.Drawing.Point(627, 86);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(153, 33);
-            this.button10.TabIndex = 8;
-            this.button10.Text = "Làm mới";
-            this.button10.UseVisualStyleBackColor = false;
+            this.btnLMDT.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnLMDT.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnLMDT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLMDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLMDT.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnLMDT.Location = new System.Drawing.Point(627, 86);
+            this.btnLMDT.Name = "btnLMDT";
+            this.btnLMDT.Size = new System.Drawing.Size(153, 33);
+            this.btnLMDT.TabIndex = 8;
+            this.btnLMDT.Text = "Làm mới";
+            this.btnLMDT.UseVisualStyleBackColor = false;
+            this.btnLMDT.Click += new System.EventHandler(this.btnLMDT_Click);
             // 
-            // button3
+            // btnLDT
             // 
-            this.button3.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button3.Location = new System.Drawing.Point(627, 47);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(153, 33);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Lọc theo doanh thu";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnLDT.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnLDT.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnLDT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLDT.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnLDT.Location = new System.Drawing.Point(627, 47);
+            this.btnLDT.Name = "btnLDT";
+            this.btnLDT.Size = new System.Drawing.Size(153, 33);
+            this.btnLDT.TabIndex = 7;
+            this.btnLDT.Text = "Lọc theo doanh thu";
+            this.btnLDT.UseVisualStyleBackColor = false;
+            this.btnLDT.Click += new System.EventHandler(this.btnLDT_Click);
             // 
-            // textBox3
+            // DTden
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(339, 52);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(244, 23);
-            this.textBox3.TabIndex = 6;
+            this.DTden.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DTden.Location = new System.Drawing.Point(339, 52);
+            this.DTden.Name = "DTden";
+            this.DTden.Size = new System.Drawing.Size(244, 23);
+            this.DTden.TabIndex = 6;
             // 
-            // textBox2
+            // DTtu
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(38, 52);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(246, 23);
-            this.textBox2.TabIndex = 5;
+            this.DTtu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DTtu.Location = new System.Drawing.Point(38, 52);
+            this.DTtu.Name = "DTtu";
+            this.DTtu.Size = new System.Drawing.Size(246, 23);
+            this.DTtu.TabIndex = 5;
             // 
             // label3
             // 
@@ -208,43 +202,46 @@ namespace QuanLyShopDongHo.Forms
             this.label2.TabIndex = 3;
             this.label2.Text = "Từ";
             // 
-            // button2
+            // btnTimMDT
             // 
-            this.button2.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.Location = new System.Drawing.Point(627, 6);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(153, 33);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Tìm mã sản phẩm";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnTimMDT.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnTimMDT.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnTimMDT.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnTimMDT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTimMDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTimMDT.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnTimMDT.Location = new System.Drawing.Point(627, 6);
+            this.btnTimMDT.Name = "btnTimMDT";
+            this.btnTimMDT.Size = new System.Drawing.Size(153, 33);
+            this.btnTimMDT.TabIndex = 2;
+            this.btnTimMDT.Text = "Tìm mã sản phẩm";
+            this.btnTimMDT.UseVisualStyleBackColor = false;
+            this.btnTimMDT.Click += new System.EventHandler(this.btnTimMDT_Click);
             // 
-            // textBox1
+            // txtTimMDT
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(10, 11);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(573, 23);
-            this.textBox1.TabIndex = 1;
+            this.txtTimMDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTimMDT.Location = new System.Drawing.Point(10, 11);
+            this.txtTimMDT.Name = "txtTimMDT";
+            this.txtTimMDT.Size = new System.Drawing.Size(573, 23);
+            this.txtTimMDT.TabIndex = 1;
             // 
-            // dataGridView1
+            // dgvDT
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvDT.AllowUserToAddRows = false;
+            this.dgvDT.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDT.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
             this.Column4,
             this.Column5});
-            this.dataGridView1.Location = new System.Drawing.Point(6, 125);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(774, 233);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvDT.Location = new System.Drawing.Point(6, 125);
+            this.dgvDT.Name = "dgvDT";
+            this.dgvDT.RowHeadersVisible = false;
+            this.dgvDT.RowHeadersWidth = 51;
+            this.dgvDT.Size = new System.Drawing.Size(774, 233);
+            this.dgvDT.TabIndex = 0;
             // 
             // Column1
             // 
@@ -312,17 +309,17 @@ namespace QuanLyShopDongHo.Forms
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.button9);
-            this.tabPage2.Controls.Add(this.button7);
-            this.tabPage2.Controls.Add(this.button6);
-            this.tabPage2.Controls.Add(this.button5);
-            this.tabPage2.Controls.Add(this.textBox6);
-            this.tabPage2.Controls.Add(this.button4);
-            this.tabPage2.Controls.Add(this.textBox5);
-            this.tabPage2.Controls.Add(this.textBox4);
+            this.tabPage2.Controls.Add(this.btnLMLN);
+            this.tabPage2.Controls.Add(this.btnLOI);
+            this.tabPage2.Controls.Add(this.btnLO);
+            this.tabPage2.Controls.Add(this.btnMLN);
+            this.tabPage2.Controls.Add(this.txtTLN);
+            this.tabPage2.Controls.Add(this.btnLLN);
+            this.tabPage2.Controls.Add(this.txtLNden);
+            this.tabPage2.Controls.Add(this.txtLNtu);
             this.tabPage2.Controls.Add(this.label5);
             this.tabPage2.Controls.Add(this.label4);
-            this.tabPage2.Controls.Add(this.dataGridView2);
+            this.tabPage2.Controls.Add(this.dgvLN);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -331,94 +328,99 @@ namespace QuanLyShopDongHo.Forms
             this.tabPage2.Text = "Lợi nhuận";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // btnLMLN
             // 
-            this.button9.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button9.Location = new System.Drawing.Point(623, 89);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(153, 33);
-            this.button9.TabIndex = 10;
-            this.button9.Text = "Làm mới";
-            this.button9.UseVisualStyleBackColor = false;
+            this.btnLMLN.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnLMLN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLMLN.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLMLN.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnLMLN.Location = new System.Drawing.Point(623, 89);
+            this.btnLMLN.Name = "btnLMLN";
+            this.btnLMLN.Size = new System.Drawing.Size(153, 33);
+            this.btnLMLN.TabIndex = 10;
+            this.btnLMLN.Text = "Làm mới";
+            this.btnLMLN.UseVisualStyleBackColor = false;
+            this.btnLMLN.Click += new System.EventHandler(this.btnLMLN_Click);
             // 
-            // button7
+            // btnLOI
             // 
-            this.button7.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button7.Location = new System.Drawing.Point(335, 89);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(257, 33);
-            this.button7.TabIndex = 9;
-            this.button7.Text = "Lọc sản phẩm lời";
-            this.button7.UseVisualStyleBackColor = false;
+            this.btnLOI.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnLOI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLOI.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLOI.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnLOI.Location = new System.Drawing.Point(335, 89);
+            this.btnLOI.Name = "btnLOI";
+            this.btnLOI.Size = new System.Drawing.Size(257, 33);
+            this.btnLOI.TabIndex = 9;
+            this.btnLOI.Text = "Lọc sản phẩm lời";
+            this.btnLOI.UseVisualStyleBackColor = false;
+            this.btnLOI.Click += new System.EventHandler(this.btnLOI_Click);
             // 
-            // button6
+            // btnLO
             // 
-            this.button6.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button6.Location = new System.Drawing.Point(19, 89);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(270, 33);
-            this.button6.TabIndex = 8;
-            this.button6.Text = "Lọc sản phẩm lỗ";
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnLO.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnLO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLO.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLO.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnLO.Location = new System.Drawing.Point(19, 89);
+            this.btnLO.Name = "btnLO";
+            this.btnLO.Size = new System.Drawing.Size(270, 33);
+            this.btnLO.TabIndex = 8;
+            this.btnLO.Text = "Lọc sản phẩm lỗ";
+            this.btnLO.UseVisualStyleBackColor = false;
+            this.btnLO.Click += new System.EventHandler(this.btnLO_Click);
             // 
-            // button5
+            // btnMLN
             // 
-            this.button5.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button5.Location = new System.Drawing.Point(623, 16);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(153, 33);
-            this.button5.TabIndex = 7;
-            this.button5.Text = "Tìm mã sản phẩm";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnMLN.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnMLN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMLN.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMLN.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnMLN.Location = new System.Drawing.Point(623, 16);
+            this.btnMLN.Name = "btnMLN";
+            this.btnMLN.Size = new System.Drawing.Size(153, 33);
+            this.btnMLN.TabIndex = 7;
+            this.btnMLN.Text = "Tìm mã sản phẩm";
+            this.btnMLN.UseVisualStyleBackColor = false;
+            this.btnMLN.Click += new System.EventHandler(this.btnMLN_Click);
             // 
-            // textBox6
+            // txtTLN
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(19, 21);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(573, 23);
-            this.textBox6.TabIndex = 6;
+            this.txtTLN.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTLN.Location = new System.Drawing.Point(19, 21);
+            this.txtTLN.Name = "txtTLN";
+            this.txtTLN.Size = new System.Drawing.Size(573, 23);
+            this.txtTLN.TabIndex = 6;
             // 
-            // button4
+            // btnLLN
             // 
-            this.button4.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button4.Location = new System.Drawing.Point(623, 55);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(153, 33);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Lọc lợi nhuận";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnLLN.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnLLN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLLN.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLLN.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnLLN.Location = new System.Drawing.Point(623, 55);
+            this.btnLLN.Name = "btnLLN";
+            this.btnLLN.Size = new System.Drawing.Size(153, 33);
+            this.btnLLN.TabIndex = 5;
+            this.btnLLN.Text = "Lọc lợi nhuận";
+            this.btnLLN.UseVisualStyleBackColor = false;
+            this.btnLLN.Click += new System.EventHandler(this.btnLLN_Click);
             // 
-            // textBox5
+            // txtLNden
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(335, 60);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(257, 23);
-            this.textBox5.TabIndex = 4;
+            this.txtLNden.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLNden.Location = new System.Drawing.Point(335, 60);
+            this.txtLNden.Name = "txtLNden";
+            this.txtLNden.Size = new System.Drawing.Size(257, 23);
+            this.txtLNden.TabIndex = 4;
             // 
-            // textBox4
+            // txtLNtu
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(53, 60);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(236, 23);
-            this.textBox4.TabIndex = 3;
+            this.txtLNtu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLNtu.Location = new System.Drawing.Point(53, 60);
+            this.txtLNtu.Name = "txtLNtu";
+            this.txtLNtu.Size = new System.Drawing.Size(236, 23);
+            this.txtLNtu.TabIndex = 3;
             // 
             // label5
             // 
@@ -440,20 +442,22 @@ namespace QuanLyShopDongHo.Forms
             this.label4.TabIndex = 1;
             this.label4.Text = "Từ";
             // 
-            // dataGridView2
+            // dgvLN
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvLN.AllowUserToAddRows = false;
+            this.dgvLN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvLN.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column6,
             this.Column7,
             this.Column8,
             this.Column9,
             this.Column10});
-            this.dataGridView2.Location = new System.Drawing.Point(3, 131);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.Size = new System.Drawing.Size(774, 227);
-            this.dataGridView2.TabIndex = 0;
+            this.dgvLN.Location = new System.Drawing.Point(3, 131);
+            this.dgvLN.Name = "dgvLN";
+            this.dgvLN.RowHeadersVisible = false;
+            this.dgvLN.RowHeadersWidth = 51;
+            this.dgvLN.Size = new System.Drawing.Size(774, 227);
+            this.dgvLN.TabIndex = 0;
             // 
             // Column6
             // 
@@ -473,11 +477,19 @@ namespace QuanLyShopDongHo.Forms
             // 
             // Column8
             // 
-            this.Column8.HeaderText = "Tổng giá nhập hàng";
+            this.Column8.HeaderText = "Giá bán TB";
             this.Column8.MinimumWidth = 6;
             this.Column8.Name = "Column8";
             this.Column8.ReadOnly = true;
             this.Column8.Width = 150;
+            // 
+            // Column9
+            // 
+            this.Column9.HeaderText = "Tổng giá bán ra";
+            this.Column9.MinimumWidth = 6;
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
+            this.Column9.Width = 150;
             // 
             // Column10
             // 
@@ -489,12 +501,12 @@ namespace QuanLyShopDongHo.Forms
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.button11);
+            this.tabPage3.Controls.Add(this.btnLMKH);
             this.tabPage3.Controls.Add(this.button8);
-            this.tabPage3.Controls.Add(this.radioButton2);
-            this.tabPage3.Controls.Add(this.radioButton1);
-            this.tabPage3.Controls.Add(this.textBox7);
-            this.tabPage3.Controls.Add(this.dataGridView3);
+            this.tabPage3.Controls.Add(this.rdSDT);
+            this.tabPage3.Controls.Add(this.rdTen);
+            this.tabPage3.Controls.Add(this.txtTimKH);
+            this.tabPage3.Controls.Add(this.dgvKH);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(786, 364);
@@ -502,18 +514,19 @@ namespace QuanLyShopDongHo.Forms
             this.tabPage3.Text = "Khách hàng";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // button11
+            // btnLMKH
             // 
-            this.button11.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button11.Location = new System.Drawing.Point(597, 305);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(184, 36);
-            this.button11.TabIndex = 5;
-            this.button11.Text = "Làm mới";
-            this.button11.UseVisualStyleBackColor = false;
+            this.btnLMKH.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnLMKH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLMKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLMKH.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnLMKH.Location = new System.Drawing.Point(597, 305);
+            this.btnLMKH.Name = "btnLMKH";
+            this.btnLMKH.Size = new System.Drawing.Size(184, 36);
+            this.btnLMKH.TabIndex = 5;
+            this.btnLMKH.Text = "Làm mới";
+            this.btnLMKH.UseVisualStyleBackColor = false;
+            this.btnLMKH.Click += new System.EventHandler(this.btnLMKH_Click);
             // 
             // button8
             // 
@@ -527,50 +540,53 @@ namespace QuanLyShopDongHo.Forms
             this.button8.TabIndex = 4;
             this.button8.Text = "Tìm khách hàng";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
-            // radioButton2
+            // rdSDT
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(597, 87);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(88, 17);
-            this.radioButton2.TabIndex = 3;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Số điện thoại";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rdSDT.AutoSize = true;
+            this.rdSDT.Location = new System.Drawing.Point(597, 87);
+            this.rdSDT.Name = "rdSDT";
+            this.rdSDT.Size = new System.Drawing.Size(88, 17);
+            this.rdSDT.TabIndex = 3;
+            this.rdSDT.TabStop = true;
+            this.rdSDT.Text = "Số điện thoại";
+            this.rdSDT.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rdTen
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(597, 54);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(104, 17);
-            this.radioButton1.TabIndex = 2;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Tên khách hàng";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rdTen.AutoSize = true;
+            this.rdTen.Location = new System.Drawing.Point(597, 54);
+            this.rdTen.Name = "rdTen";
+            this.rdTen.Size = new System.Drawing.Size(104, 17);
+            this.rdTen.TabIndex = 2;
+            this.rdTen.TabStop = true;
+            this.rdTen.Text = "Tên khách hàng";
+            this.rdTen.UseVisualStyleBackColor = true;
             // 
-            // textBox7
+            // txtTimKH
             // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(597, 14);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(184, 23);
-            this.textBox7.TabIndex = 1;
+            this.txtTimKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTimKH.Location = new System.Drawing.Point(597, 14);
+            this.txtTimKH.Name = "txtTimKH";
+            this.txtTimKH.Size = new System.Drawing.Size(184, 23);
+            this.txtTimKH.TabIndex = 1;
             // 
-            // dataGridView3
+            // dgvKH
             // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvKH.AllowUserToAddRows = false;
+            this.dgvKH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvKH.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column11,
             this.Column12,
             this.Column13,
             this.Column14});
-            this.dataGridView3.Location = new System.Drawing.Point(14, 14);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.RowHeadersWidth = 51;
-            this.dataGridView3.Size = new System.Drawing.Size(563, 327);
-            this.dataGridView3.TabIndex = 0;
+            this.dgvKH.Location = new System.Drawing.Point(3, 14);
+            this.dgvKH.Name = "dgvKH";
+            this.dgvKH.RowHeadersVisible = false;
+            this.dgvKH.RowHeadersWidth = 51;
+            this.dgvKH.Size = new System.Drawing.Size(574, 327);
+            this.dgvKH.TabIndex = 0;
             // 
             // Column11
             // 
@@ -606,10 +622,10 @@ namespace QuanLyShopDongHo.Forms
             // 
             // tabPage4
             // 
-            this.tabPage4.Controls.Add(this.button13);
-            this.tabPage4.Controls.Add(this.button12);
-            this.tabPage4.Controls.Add(this.textBox8);
-            this.tabPage4.Controls.Add(this.dataGridView4);
+            this.tabPage4.Controls.Add(this.btnLMDH);
+            this.tabPage4.Controls.Add(this.btntimDH);
+            this.tabPage4.Controls.Add(this.txttimDH);
+            this.tabPage4.Controls.Add(this.dgvDH);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Size = new System.Drawing.Size(786, 364);
@@ -617,55 +633,59 @@ namespace QuanLyShopDongHo.Forms
             this.tabPage4.Text = "Đơn hàng";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // button13
+            // btnLMDH
             // 
-            this.button13.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button13.Location = new System.Drawing.Point(668, 15);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(113, 33);
-            this.button13.TabIndex = 10;
-            this.button13.Text = "Làm mới";
-            this.button13.UseVisualStyleBackColor = false;
+            this.btnLMDH.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnLMDH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLMDH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLMDH.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnLMDH.Location = new System.Drawing.Point(668, 15);
+            this.btnLMDH.Name = "btnLMDH";
+            this.btnLMDH.Size = new System.Drawing.Size(113, 33);
+            this.btnLMDH.TabIndex = 10;
+            this.btnLMDH.Text = "Làm mới";
+            this.btnLMDH.UseVisualStyleBackColor = false;
+            this.btnLMDH.Click += new System.EventHandler(this.btnLMDH_Click);
             // 
-            // button12
+            // btntimDH
             // 
-            this.button12.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button12.Location = new System.Drawing.Point(509, 15);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(153, 33);
-            this.button12.TabIndex = 9;
-            this.button12.Text = "Tìm mã đơn hàng";
-            this.button12.UseVisualStyleBackColor = false;
+            this.btntimDH.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btntimDH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btntimDH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btntimDH.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btntimDH.Location = new System.Drawing.Point(509, 15);
+            this.btntimDH.Name = "btntimDH";
+            this.btntimDH.Size = new System.Drawing.Size(153, 33);
+            this.btntimDH.TabIndex = 9;
+            this.btntimDH.Text = "Tìm mã đơn hàng";
+            this.btntimDH.UseVisualStyleBackColor = false;
+            this.btntimDH.Click += new System.EventHandler(this.btntimDH_Click);
             // 
-            // textBox8
+            // txttimDH
             // 
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(5, 20);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(498, 23);
-            this.textBox8.TabIndex = 8;
+            this.txttimDH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttimDH.Location = new System.Drawing.Point(5, 20);
+            this.txttimDH.Name = "txttimDH";
+            this.txttimDH.Size = new System.Drawing.Size(498, 23);
+            this.txttimDH.TabIndex = 8;
             // 
-            // dataGridView4
+            // dgvDH
             // 
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvDH.AllowUserToAddRows = false;
+            this.dgvDH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDH.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column15,
             this.Column16,
             this.Column17,
             this.Column18,
             this.Column19,
             this.Column20});
-            this.dataGridView4.Location = new System.Drawing.Point(5, 54);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.RowHeadersWidth = 51;
-            this.dataGridView4.Size = new System.Drawing.Size(778, 274);
-            this.dataGridView4.TabIndex = 0;
+            this.dgvDH.Location = new System.Drawing.Point(5, 54);
+            this.dgvDH.Name = "dgvDH";
+            this.dgvDH.RowHeadersVisible = false;
+            this.dgvDH.RowHeadersWidth = 51;
+            this.dgvDH.Size = new System.Drawing.Size(778, 306);
+            this.dgvDH.TabIndex = 0;
             // 
             // Column15
             // 
@@ -717,7 +737,7 @@ namespace QuanLyShopDongHo.Forms
             // 
             // tabPage5
             // 
-            this.tabPage5.Controls.Add(this.dataGridView5);
+            this.tabPage5.Controls.Add(this.dgvXNK);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Size = new System.Drawing.Size(786, 364);
@@ -725,20 +745,22 @@ namespace QuanLyShopDongHo.Forms
             this.tabPage5.Text = "Xuất nhập kho";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
-            // dataGridView5
+            // dgvXNK
             // 
-            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvXNK.AllowUserToAddRows = false;
+            this.dgvXNK.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvXNK.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column21,
             this.Column22,
             this.Column23,
             this.Column24,
             this.Column25});
-            this.dataGridView5.Location = new System.Drawing.Point(3, 20);
-            this.dataGridView5.Name = "dataGridView5";
-            this.dataGridView5.RowHeadersWidth = 51;
-            this.dataGridView5.Size = new System.Drawing.Size(778, 243);
-            this.dataGridView5.TabIndex = 0;
+            this.dgvXNK.Location = new System.Drawing.Point(5, 20);
+            this.dgvXNK.Name = "dgvXNK";
+            this.dgvXNK.RowHeadersVisible = false;
+            this.dgvXNK.RowHeadersWidth = 51;
+            this.dgvXNK.Size = new System.Drawing.Size(778, 340);
+            this.dgvXNK.TabIndex = 0;
             // 
             // Column21
             // 
@@ -837,19 +859,19 @@ namespace QuanLyShopDongHo.Forms
             this.Load += new System.EventHandler(this.ThongKe_Load);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDT)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLN)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKH)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDH)).EndInit();
             this.tabPage5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvXNK)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -858,17 +880,16 @@ namespace QuanLyShopDongHo.Forms
         #endregion
 
         private System.Windows.Forms.DataGridViewTextBoxColumn Column25;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button btnLMDT;
+        private System.Windows.Forms.Button btnLDT;
+        private System.Windows.Forms.TextBox DTden;
+        private System.Windows.Forms.TextBox DTtu;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnTimMDT;
+        private System.Windows.Forms.TextBox txtTimMDT;
+        private System.Windows.Forms.DataGridView dgvDT;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
@@ -877,37 +898,33 @@ namespace QuanLyShopDongHo.Forms
         private System.Windows.Forms.Label vaitro;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Button btnLMLN;
+        private System.Windows.Forms.Button btnLOI;
+        private System.Windows.Forms.Button btnLO;
+        private System.Windows.Forms.Button btnMLN;
+        private System.Windows.Forms.TextBox txtTLN;
+        private System.Windows.Forms.Button btnLLN;
+        private System.Windows.Forms.TextBox txtLNden;
+        private System.Windows.Forms.TextBox txtLNtu;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
+        private System.Windows.Forms.DataGridView dgvLN;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button btnLMKH;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.RadioButton rdSDT;
+        private System.Windows.Forms.RadioButton rdTen;
+        private System.Windows.Forms.TextBox txtTimKH;
+        private System.Windows.Forms.DataGridView dgvKH;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.DataGridView dataGridView4;
+        private System.Windows.Forms.Button btnLMDH;
+        private System.Windows.Forms.Button btntimDH;
+        private System.Windows.Forms.TextBox txttimDH;
+        private System.Windows.Forms.DataGridView dgvDH;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column15;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column16;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column17;
@@ -915,7 +932,7 @@ namespace QuanLyShopDongHo.Forms
         private System.Windows.Forms.DataGridViewTextBoxColumn Column19;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column20;
         private System.Windows.Forms.TabPage tabPage5;
-        private System.Windows.Forms.DataGridView dataGridView5;
+        private System.Windows.Forms.DataGridView dgvXNK;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column21;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column22;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column23;
@@ -924,5 +941,10 @@ namespace QuanLyShopDongHo.Forms
         private System.Windows.Forms.Label tennv;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label manv;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
     }
 }

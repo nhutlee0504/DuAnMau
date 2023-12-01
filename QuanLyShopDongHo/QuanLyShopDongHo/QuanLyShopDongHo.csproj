@@ -76,6 +76,12 @@
     <Compile Include="Forms\DoiMatKhau.Designer.cs">
       <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\DoiMKMoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DoiMKMoi.Designer.cs">
+      <DependentUpon>DoiMKMoi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\HuongDan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,12 @@
     </Compile>
     <Compile Include="Forms\QuanLySanPham.Designer.cs">
       <DependentUpon>QuanLySanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\QuenMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\QuenMatKhau.Designer.cs">
+      <DependentUpon>QuenMatKhau.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\ThongKe.cs">
       <SubType>Form</SubType>
@@ -153,6 +165,9 @@
     <EmbeddedResource Include="Forms\DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DoiMKMoi.resx">
+      <DependentUpon>DoiMKMoi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\HuongDan.resx">
       <DependentUpon>HuongDan.cs</DependentUpon>
     </EmbeddedResource>
@@ -164,6 +179,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\QuanLySanPham.resx">
       <DependentUpon>QuanLySanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QuenMatKhau.resx">
+      <DependentUpon>QuenMatKhau.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ThongKe.resx">
       <DependentUpon>ThongKe.cs</DependentUpon>

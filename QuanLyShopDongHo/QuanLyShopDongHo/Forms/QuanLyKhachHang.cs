@@ -187,6 +187,18 @@ namespace QuanLyShopDongHo.Forms
                     MessageBox.Show("Không tìm thấy tên khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     ShowKH();
                 }
+                if (vaitro.Text == "Nhân Viên")
+                {
+                    btnCapNhat.Enabled = true;
+                    btnThem.Enabled = false;
+                    btnXoa.Enabled = false;
+                }
+                else
+                {
+                    btnCapNhat.Enabled = true;
+                    btnThem.Enabled = false;
+                    btnXoa.Enabled = true;
+                }
             }
         }
 
@@ -197,11 +209,21 @@ namespace QuanLyShopDongHo.Forms
                 txtTenKhachHang.Text = dgvKhachHang.Rows[e.RowIndex].Cells[0].Value.ToString();
                 txtSDT.Text = dgvKhachHang.Rows[e.RowIndex].Cells[1].Value.ToString();
                 txtDiaChi.Text = dgvKhachHang.Rows[e.RowIndex].Cells[2].Value.ToString();
-                btnThem.Enabled = false;
                 txtSDT.ReadOnly = true;
-                btnCapNhat.Enabled = true;
-                btnXoa.Enabled = true;
+                if (vaitro.Text == "Nhân Viên")
+                {
+                    btnCapNhat.Enabled = true;
+                    btnThem.Enabled = false;
+                    btnXoa.Enabled = false;
+                }
+                else
+                {
+                    btnCapNhat.Enabled = true;
+                    btnThem.Enabled = false;
+                    btnXoa.Enabled = true;
+                }
             }
+
         }
 
         private void Rong()

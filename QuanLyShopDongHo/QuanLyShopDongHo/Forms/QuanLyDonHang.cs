@@ -119,8 +119,19 @@ namespace QuanLyShopDongHo.Forms
                         db.SaveChanges();
                         ShowDH();
                         Rong();
+                        btnTaoDon.Enabled = true;
+                        btnThanhToan.Enabled = false;
                     }
                 }
+                //DialogResult result = MessageBox.Show("Có muốn in hóa đơn không?", "Xác nhận", MessageBoxButtons.YesNo);
+                //if (result == DialogResult.Yes)
+                //{
+                //    // Xử lý khi người dùng chọn Yes
+                //}
+                //else
+                //{
+                //    // Xử lý khi người dùng chọn No
+                //}
             }
             catch (Exception)
             {
@@ -131,7 +142,7 @@ namespace QuanLyShopDongHo.Forms
 
         private void btnThanhToan_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnLamMoi_Click(object sender, EventArgs e)

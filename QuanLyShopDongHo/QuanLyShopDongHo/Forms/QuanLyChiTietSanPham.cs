@@ -200,6 +200,18 @@ namespace QuanLyShopDongHo.Forms
                     });
 
                 }
+                if (vaitro.Text == "Nhân Viên")
+                {
+                    btncapnhat.Enabled = true;
+                    btnthem.Enabled = false;
+                    btnxoa.Enabled = false;
+                }
+                else
+                {
+                    btncapnhat.Enabled = true;
+                    btnthem.Enabled = false;
+                    btnxoa.Enabled = true;
+                }
             }
         }
 
@@ -218,9 +230,18 @@ namespace QuanLyShopDongHo.Forms
                 txtkhuyenmai.Text = kh.KhuyenMai.ToString();
                 richTextBox1.Text = kh.MoTa;
             }
-            btncapnhat.Enabled = true;
-            btnthem.Enabled = false;
-            btnxoa.Enabled = true;
+            if (vaitro.Text == "Nhân Viên")
+            {
+                btncapnhat.Enabled = true;
+                btnthem.Enabled = false;
+                btnxoa.Enabled = false;
+            }
+            else
+            {
+                btncapnhat.Enabled = true;
+                btnthem.Enabled = false;
+                btnxoa.Enabled = true;
+            }
 
         }
 

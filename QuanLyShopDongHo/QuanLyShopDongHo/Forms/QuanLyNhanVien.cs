@@ -234,9 +234,19 @@ namespace QuanLyShopDongHo.Forms
                         txtemail.Text = nh.Email;
                         txtsdt.Text = nh.SDT;
                     });
-                    btncapnhat.Enabled = true;
-                    btnthem.Enabled = false;
-                    btnxoa.Enabled = true;
+                    if(vaitroo.Text == "Nhân Viên")
+                    {
+                        btncapnhat.Enabled = true;
+                        btnthem.Enabled = false;
+                        btnxoa.Enabled = false;
+                    }
+                    else
+                    {
+                        btncapnhat.Enabled = true;
+                        btnthem.Enabled = false;
+                        btnxoa.Enabled = true;
+                    }
+                   
                 }
             }
         }
@@ -256,9 +266,18 @@ namespace QuanLyShopDongHo.Forms
                 txtemail.Text = kh.Email;
                 txtsdt.Text = kh.SDT;
             }
-            btncapnhat.Enabled = true;
-            btnthem.Enabled = false;
-            btnxoa.Enabled = true;
+            if (vaitroo.Text == "Nhân Viên")
+            {
+                btncapnhat.Enabled = true;
+                btnthem.Enabled = false;
+                btnxoa.Enabled = false;
+            }
+            else
+            {
+                btncapnhat.Enabled = true;
+                btnthem.Enabled = false;
+                btnxoa.Enabled = true;
+            }
         }
 		private void btnthoat_Click(object sender, EventArgs e)
         {

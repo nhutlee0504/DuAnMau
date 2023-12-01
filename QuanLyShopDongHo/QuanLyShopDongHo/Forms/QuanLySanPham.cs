@@ -225,9 +225,19 @@ namespace QuanLyShopDongHo.Forms
                         pictureBox1.Tag = file;
                         richTextBox1.Text = nh.Mota;
                     });
-                    btncapnhat.Enabled = true;
-                    btnthem.Enabled = false;
-                    btnxoa.Enabled = true;
+                    if (vaitro.Text == "Nhân Viên")
+                    {
+                        btncapnhat.Enabled = true;
+                        btnthem.Enabled = false;
+                        btnxoa.Enabled = false;
+                    }
+                    else
+                    {
+                        btncapnhat.Enabled = true;
+                        btnthem.Enabled = false;
+                        btnxoa.Enabled = true;
+                    }
+                   
                 }
 
             }
@@ -253,9 +263,18 @@ namespace QuanLyShopDongHo.Forms
                 pictureBox1.Tag = file;
                 richTextBox1.Text = kh.Mota;
             }
-            btncapnhat.Enabled = true;
-            btnthem.Enabled = false;
-            btnxoa.Enabled = true;
+            if (vaitro.Text == "Nhân Viên")
+            {
+                btncapnhat.Enabled = true;
+                btnthem.Enabled = false;
+                btnxoa.Enabled = false;
+            }
+            else
+            {
+                btncapnhat.Enabled = true;
+                btnthem.Enabled = false;
+                btnxoa.Enabled = true;
+            }
         }
 
         private void btnxoa_Click_1(object sender, EventArgs e)
