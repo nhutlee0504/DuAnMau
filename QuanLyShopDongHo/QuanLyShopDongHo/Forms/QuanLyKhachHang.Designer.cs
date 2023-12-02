@@ -50,9 +50,6 @@ namespace QuanLyShopDongHo.Forms
             this.txtTenKhachHang = new System.Windows.Forms.TextBox();
             this.dgvKhachHang = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
-            this.tennv = new System.Windows.Forms.Label();
-            this.vaitro = new System.Windows.Forms.Label();
-            this.manv = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).BeginInit();
             this.SuspendLayout();
@@ -317,48 +314,12 @@ namespace QuanLyShopDongHo.Forms
             this.label3.TabIndex = 76;
             this.label3.Text = "SĐT";
             // 
-            // tennv
-            // 
-            this.tennv.AutoSize = true;
-            this.tennv.Location = new System.Drawing.Point(599, 16);
-            this.tennv.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.tennv.Name = "tennv";
-            this.tennv.Size = new System.Drawing.Size(46, 17);
-            this.tennv.TabIndex = 89;
-            this.tennv.Text = "label1";
-            this.tennv.Visible = false;
-            // 
-            // vaitro
-            // 
-            this.vaitro.AutoSize = true;
-            this.vaitro.Location = new System.Drawing.Point(648, 16);
-            this.vaitro.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.vaitro.Name = "vaitro";
-            this.vaitro.Size = new System.Drawing.Size(46, 17);
-            this.vaitro.TabIndex = 90;
-            this.vaitro.Text = "label4";
-            this.vaitro.Visible = false;
-            // 
-            // manv
-            // 
-            this.manv.AutoSize = true;
-            this.manv.Location = new System.Drawing.Point(707, 16);
-            this.manv.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.manv.Name = "manv";
-            this.manv.Size = new System.Drawing.Size(46, 17);
-            this.manv.TabIndex = 91;
-            this.manv.Text = "label7";
-            this.manv.Visible = false;
-            // 
             // QuanLyKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::QuanLyShopDongHo.Properties.Resources.bg_kh;
             this.ClientSize = new System.Drawing.Size(769, 588);
-            this.Controls.Add(this.manv);
-            this.Controls.Add(this.vaitro);
-            this.Controls.Add(this.tennv);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.panel1);
@@ -407,8 +368,5 @@ namespace QuanLyShopDongHo.Forms
         private System.Windows.Forms.TextBox txtTenKhachHang;
         private System.Windows.Forms.DataGridView dgvKhachHang;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label tennv;
-        private System.Windows.Forms.Label vaitro;
-        private System.Windows.Forms.Label manv;
     }
 }
