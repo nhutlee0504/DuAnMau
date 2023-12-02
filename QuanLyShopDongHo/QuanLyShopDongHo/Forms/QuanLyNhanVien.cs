@@ -30,8 +30,8 @@ namespace QuanLyShopDongHo.Forms
  			tennv.Text = inputdata1;
             vaitroo.Text = inputdata2;
             manv.Text = inputdata3;
-            cbbvaitro.Items.Add("Quản trị");
-            cbbvaitro.Items.Add("Nhân viên");
+            cbbvaitro.Items.Add("Quản Trị");
+            cbbvaitro.Items.Add("Nhân Viên");
             btnthem.Enabled = true;
             btncapnhat.Enabled = false;
             btnxoa.Enabled = false;
@@ -284,6 +284,11 @@ namespace QuanLyShopDongHo.Forms
             this.Dispose();
             TrangChu dn = new TrangChu(inputdata1, inputdata2, inputdata3);
             dn.Show();
+        }
+
+        private void cbbvaitro_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

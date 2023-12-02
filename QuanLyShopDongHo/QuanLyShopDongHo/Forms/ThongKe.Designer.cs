@@ -53,7 +53,6 @@ namespace QuanLyShopDongHo.Forms
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vaitro = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.btnLMLN = new System.Windows.Forms.Button();
@@ -101,8 +100,9 @@ namespace QuanLyShopDongHo.Forms
             this.Column23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnThoat = new System.Windows.Forms.Button();
-            this.tennv = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.tennv = new System.Windows.Forms.Label();
+            this.vaitro = new System.Windows.Forms.Label();
             this.manv = new System.Windows.Forms.Label();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDT)).BeginInit();
@@ -295,17 +295,6 @@ namespace QuanLyShopDongHo.Forms
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
             this.Column5.Width = 170;
-            // 
-            // vaitro
-            // 
-            this.vaitro.AutoSize = true;
-            this.vaitro.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.vaitro.Location = new System.Drawing.Point(505, 9);
-            this.vaitro.Name = "vaitro";
-            this.vaitro.Size = new System.Drawing.Size(35, 13);
-            this.vaitro.TabIndex = 16;
-            this.vaitro.Text = "label7";
-            this.vaitro.Visible = false;
             // 
             // tabControl1
             // 
@@ -836,17 +825,6 @@ namespace QuanLyShopDongHo.Forms
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // tennv
-            // 
-            this.tennv.AutoSize = true;
-            this.tennv.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.tennv.Location = new System.Drawing.Point(441, 9);
-            this.tennv.Name = "tennv";
-            this.tennv.Size = new System.Drawing.Size(35, 13);
-            this.tennv.TabIndex = 15;
-            this.tennv.Text = "label6";
-            this.tennv.Visible = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -858,6 +836,28 @@ namespace QuanLyShopDongHo.Forms
             this.label1.Size = new System.Drawing.Size(394, 35);
             this.label1.TabIndex = 12;
             this.label1.Text = "THỐNG KÊ VÀ BÁO CÁO";
+            // 
+            // tennv
+            // 
+            this.tennv.AutoSize = true;
+            this.tennv.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.tennv.Location = new System.Drawing.Point(441, 9);
+            this.tennv.Name = "tennv";
+            this.tennv.Size = new System.Drawing.Size(35, 13);
+            this.tennv.TabIndex = 15;
+            this.tennv.Text = "label6";
+            this.tennv.Visible = false;
+            // 
+            // vaitro
+            // 
+            this.vaitro.AutoSize = true;
+            this.vaitro.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.vaitro.Location = new System.Drawing.Point(505, 9);
+            this.vaitro.Name = "vaitro";
+            this.vaitro.Size = new System.Drawing.Size(35, 13);
+            this.vaitro.TabIndex = 16;
+            this.vaitro.Text = "label7";
+            this.vaitro.Visible = false;
             // 
             // manv
             // 
@@ -923,7 +923,6 @@ namespace QuanLyShopDongHo.Forms
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.Label vaitro;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Button btnLMLN;
@@ -966,13 +965,14 @@ namespace QuanLyShopDongHo.Forms
         private System.Windows.Forms.DataGridViewTextBoxColumn Column23;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column24;
         private System.Windows.Forms.Button btnThoat;
-        private System.Windows.Forms.Label tennv;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label manv;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
+        private System.Windows.Forms.Label tennv;
+        private System.Windows.Forms.Label vaitro;
+        private System.Windows.Forms.Label manv;
     }
 }

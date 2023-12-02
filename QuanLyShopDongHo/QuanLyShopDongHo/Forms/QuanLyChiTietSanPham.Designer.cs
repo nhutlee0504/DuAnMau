@@ -29,9 +29,8 @@ namespace QuanLyShopDongHo.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.manv = new System.Windows.Forms.Label();
-            this.vaitro = new System.Windows.Forms.Label();
-            this.tennv = new System.Windows.Forms.Label();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtkhuyenmai = new System.Windows.Forms.TextBox();
             this.cbbmasp = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -60,42 +59,12 @@ namespace QuanLyShopDongHo.Forms
             this.btnthem = new System.Windows.Forms.Button();
             this.btnthoat = new System.Windows.Forms.Button();
             this.txtloaisp = new System.Windows.Forms.TextBox();
+            this.tennv = new System.Windows.Forms.Label();
+            this.vaitro = new System.Windows.Forms.Label();
+            this.manv = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // manv
-            // 
-            this.manv.AutoSize = true;
-            this.manv.Location = new System.Drawing.Point(436, 13);
-            this.manv.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.manv.Name = "manv";
-            this.manv.Size = new System.Drawing.Size(41, 13);
-            this.manv.TabIndex = 74;
-            this.manv.Text = "label11";
-            this.manv.Visible = false;
-            // 
-            // vaitro
-            // 
-            this.vaitro.AutoSize = true;
-            this.vaitro.Location = new System.Drawing.Point(372, 13);
-            this.vaitro.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.vaitro.Name = "vaitro";
-            this.vaitro.Size = new System.Drawing.Size(41, 13);
-            this.vaitro.TabIndex = 73;
-            this.vaitro.Text = "label10";
-            this.vaitro.Visible = false;
-            // 
-            // tennv
-            // 
-            this.tennv.AutoSize = true;
-            this.tennv.Location = new System.Drawing.Point(306, 13);
-            this.tennv.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.tennv.Name = "tennv";
-            this.tennv.Size = new System.Drawing.Size(35, 13);
-            this.tennv.TabIndex = 72;
-            this.tennv.Text = "label9";
-            this.tennv.Visible = false;
             // 
             // txtkhuyenmai
             // 
@@ -287,6 +256,9 @@ namespace QuanLyShopDongHo.Forms
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            dataGridViewCellStyle1.Format = "#,##0";
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.LoaiSP,
@@ -294,9 +266,19 @@ namespace QuanLyShopDongHo.Forms
             this.MaSP,
             this.GiaBanRa,
             this.Mota});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.Format = "#,##0";
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.Location = new System.Drawing.Point(37, 293);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(484, 152);
@@ -420,6 +402,39 @@ namespace QuanLyShopDongHo.Forms
             this.txtloaisp.Size = new System.Drawing.Size(132, 20);
             this.txtloaisp.TabIndex = 56;
             // 
+            // tennv
+            // 
+            this.tennv.AutoSize = true;
+            this.tennv.Location = new System.Drawing.Point(306, 13);
+            this.tennv.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.tennv.Name = "tennv";
+            this.tennv.Size = new System.Drawing.Size(35, 13);
+            this.tennv.TabIndex = 72;
+            this.tennv.Text = "label9";
+            this.tennv.Visible = false;
+            // 
+            // vaitro
+            // 
+            this.vaitro.AutoSize = true;
+            this.vaitro.Location = new System.Drawing.Point(372, 13);
+            this.vaitro.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.vaitro.Name = "vaitro";
+            this.vaitro.Size = new System.Drawing.Size(41, 13);
+            this.vaitro.TabIndex = 73;
+            this.vaitro.Text = "label10";
+            this.vaitro.Visible = false;
+            // 
+            // manv
+            // 
+            this.manv.AutoSize = true;
+            this.manv.Location = new System.Drawing.Point(436, 13);
+            this.manv.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.manv.Name = "manv";
+            this.manv.Size = new System.Drawing.Size(41, 13);
+            this.manv.TabIndex = 74;
+            this.manv.Text = "label11";
+            this.manv.Visible = false;
+            // 
             // QuanLyChiTietSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -462,10 +477,6 @@ namespace QuanLyShopDongHo.Forms
         }
 
         #endregion
-
-        private System.Windows.Forms.Label manv;
-        private System.Windows.Forms.Label vaitro;
-        private System.Windows.Forms.Label tennv;
         private System.Windows.Forms.TextBox txtkhuyenmai;
         private System.Windows.Forms.ComboBox cbbmasp;
         private System.Windows.Forms.Panel panel1;
@@ -494,5 +505,8 @@ namespace QuanLyShopDongHo.Forms
         private System.Windows.Forms.DataGridViewTextBoxColumn MaSP;
         private System.Windows.Forms.DataGridViewTextBoxColumn GiaBanRa;
         private System.Windows.Forms.DataGridViewTextBoxColumn Mota;
+        private System.Windows.Forms.Label tennv;
+        private System.Windows.Forms.Label vaitro;
+        private System.Windows.Forms.Label manv;
     }
 }

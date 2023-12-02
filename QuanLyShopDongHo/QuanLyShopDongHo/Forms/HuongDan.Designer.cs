@@ -98,7 +98,7 @@ namespace QuanLyShopDongHo.Forms
             this.label8.Size = new System.Drawing.Size(605, 40);
             this.label8.TabIndex = 11;
             this.label8.Text = "Quản lý đơn hàng cho phép tạo hóa đơn, kiểm tra thông tin hóa đơn của khách hàng." +
-    "\r\nIn hóa đơn cho khách hàng nếu cần thiết.";
+    "\r\nXuất hóa đơn cho khách hàng nếu cần thiết.";
             // 
             // pictureBox5
             // 

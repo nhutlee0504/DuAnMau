@@ -255,7 +255,7 @@ namespace QuanLyShopDongHo.Forms
                 txtma.Text = kh.MaSanPham.ToString();
                 txttensp.Text = kh.TenSanPham;
                 txtsoluong.Text = kh.SoLuong.ToString();
-                txtgianhap.Text = kh.GiaNhap.ToString();
+                txtgianhap.Text = kh.GiaNhap.ToString("#,##0");
                 txtngaynhap.Text = kh.NgayNhap.ToString().Split(' ')[0];
                 string file = kh.HinhAnh.ToString();
                 pictureBox1.Image = Image.FromFile(@"" + file);
