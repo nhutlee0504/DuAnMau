@@ -70,7 +70,7 @@ namespace QuanLyShopDongHo.Forms
         }
         private bool checkk()
         {
-            if (txtloaisp.Text == "" || txttenloai.Text == "" || cbbmasp.Text == "" || txtgiaban.Text == "")
+            if (txtloaisp.Text == "" || txttenloai.Text == "" || cbbmasp.Text == "" || txtgiaban.Text == "" || txtkhuyenmai.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin.");
                 return false;
@@ -200,6 +200,18 @@ namespace QuanLyShopDongHo.Forms
                     });
 
                 }
+                if (vaitro.Text == "Nhân Viên")
+                {
+                    btncapnhat.Enabled = true;
+                    btnthem.Enabled = false;
+                    btnxoa.Enabled = false;
+                }
+                else
+                {
+                    btncapnhat.Enabled = true;
+                    btnthem.Enabled = false;
+                    btnxoa.Enabled = true;
+                }
             }
         }
 
@@ -214,13 +226,22 @@ namespace QuanLyShopDongHo.Forms
                 txtloaisp.Text = kh.LoaiSP.ToString();
                 txttenloai.Text = kh.TenLoai;
                 cbbmasp.Text = kh.MaSP.ToString();
-                txtgiaban.Text = kh.GiaBan.ToString();
+                txtgiaban.Text = kh.GiaBan.ToString("#,##0");
                 txtkhuyenmai.Text = kh.KhuyenMai.ToString();
                 richTextBox1.Text = kh.MoTa;
             }
-            btncapnhat.Enabled = true;
-            btnthem.Enabled = false;
-            btnxoa.Enabled = true;
+            if (vaitro.Text == "Nhân Viên")
+            {
+                btncapnhat.Enabled = true;
+                btnthem.Enabled = false;
+                btnxoa.Enabled = false;
+            }
+            else
+            {
+                btncapnhat.Enabled = true;
+                btnthem.Enabled = false;
+                btnxoa.Enabled = true;
+            }
 
         }
 

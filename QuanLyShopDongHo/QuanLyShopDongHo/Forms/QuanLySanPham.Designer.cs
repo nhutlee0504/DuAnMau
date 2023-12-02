@@ -29,13 +29,12 @@ namespace QuanLyShopDongHo.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.manv = new System.Windows.Forms.Label();
-            this.tennv = new System.Windows.Forms.Label();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtngaynhap = new System.Windows.Forms.TextBox();
             this.btntim = new System.Windows.Forms.Button();
             this.txttim = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.vaitro = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.MaSanPham = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenSanPham = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -63,37 +62,18 @@ namespace QuanLyShopDongHo.Forms
             this.btnthoat = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.txtgianhap = new System.Windows.Forms.TextBox();
+            this.tennv = new System.Windows.Forms.Label();
+            this.vaitro = new System.Windows.Forms.Label();
+            this.manv = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // manv
-            // 
-            this.manv.AutoSize = true;
-            this.manv.Location = new System.Drawing.Point(439, 30);
-            this.manv.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.manv.Name = "manv";
-            this.manv.Size = new System.Drawing.Size(41, 13);
-            this.manv.TabIndex = 96;
-            this.manv.Text = "label11";
-            this.manv.Visible = false;
-            // 
-            // tennv
-            // 
-            this.tennv.AutoSize = true;
-            this.tennv.Location = new System.Drawing.Point(309, 30);
-            this.tennv.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.tennv.Name = "tennv";
-            this.tennv.Size = new System.Drawing.Size(35, 13);
-            this.tennv.TabIndex = 94;
-            this.tennv.Text = "label9";
-            this.tennv.Visible = false;
-            // 
             // txtngaynhap
             // 
             this.txtngaynhap.Location = new System.Drawing.Point(135, 222);
-            this.txtngaynhap.Margin = new System.Windows.Forms.Padding(2);
+            this.txtngaynhap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtngaynhap.Name = "txtngaynhap";
             this.txtngaynhap.Size = new System.Drawing.Size(132, 20);
             this.txtngaynhap.TabIndex = 93;
@@ -105,7 +85,7 @@ namespace QuanLyShopDongHo.Forms
             this.btntim.Image = global::QuanLyShopDongHo.Properties.Resources.Search;
             this.btntim.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btntim.Location = new System.Drawing.Point(334, 13);
-            this.btntim.Margin = new System.Windows.Forms.Padding(2);
+            this.btntim.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btntim.Name = "btntim";
             this.btntim.Size = new System.Drawing.Size(76, 30);
             this.btntim.TabIndex = 15;
@@ -117,7 +97,7 @@ namespace QuanLyShopDongHo.Forms
             // txttim
             // 
             this.txttim.Location = new System.Drawing.Point(136, 20);
-            this.txttim.Margin = new System.Windows.Forms.Padding(2);
+            this.txttim.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txttim.Name = "txttim";
             this.txttim.Size = new System.Drawing.Size(173, 20);
             this.txttim.TabIndex = 2;
@@ -135,19 +115,12 @@ namespace QuanLyShopDongHo.Forms
             this.label2.TabIndex = 1;
             this.label2.Text = "Tìm sản phẩm";
             // 
-            // vaitro
-            // 
-            this.vaitro.AutoSize = true;
-            this.vaitro.Location = new System.Drawing.Point(375, 30);
-            this.vaitro.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.vaitro.Name = "vaitro";
-            this.vaitro.Size = new System.Drawing.Size(41, 13);
-            this.vaitro.TabIndex = 95;
-            this.vaitro.Text = "label10";
-            this.vaitro.Visible = false;
-            // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle1.Format = "#,##0";
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaSanPham,
@@ -157,9 +130,12 @@ namespace QuanLyShopDongHo.Forms
             this.NgayNhap,
             this.MoTa});
             this.dataGridView1.Location = new System.Drawing.Point(25, 302);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 62;
+            dataGridViewCellStyle2.Format = "#,##0";
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(498, 152);
             this.dataGridView1.TabIndex = 92;
@@ -210,7 +186,7 @@ namespace QuanLyShopDongHo.Forms
             // txtsoluong
             // 
             this.txtsoluong.Location = new System.Drawing.Point(135, 179);
-            this.txtsoluong.Margin = new System.Windows.Forms.Padding(2);
+            this.txtsoluong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtsoluong.Name = "txtsoluong";
             this.txtsoluong.Size = new System.Drawing.Size(132, 20);
             this.txtsoluong.TabIndex = 81;
@@ -218,7 +194,7 @@ namespace QuanLyShopDongHo.Forms
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(537, 73);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(85, 88);
             this.pictureBox1.TabIndex = 90;
@@ -318,7 +294,7 @@ namespace QuanLyShopDongHo.Forms
             // txttensp
             // 
             this.txttensp.Location = new System.Drawing.Point(387, 135);
-            this.txttensp.Margin = new System.Windows.Forms.Padding(2);
+            this.txttensp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txttensp.Name = "txttensp";
             this.txttensp.Size = new System.Drawing.Size(138, 20);
             this.txttensp.TabIndex = 82;
@@ -329,7 +305,7 @@ namespace QuanLyShopDongHo.Forms
             this.panel1.Controls.Add(this.txttim);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(25, 73);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(498, 51);
             this.panel1.TabIndex = 80;
@@ -340,7 +316,7 @@ namespace QuanLyShopDongHo.Forms
             this.btnthemhinh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnthemhinh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnthemhinh.Location = new System.Drawing.Point(537, 179);
-            this.btnthemhinh.Margin = new System.Windows.Forms.Padding(2);
+            this.btnthemhinh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnthemhinh.Name = "btnthemhinh";
             this.btnthemhinh.Size = new System.Drawing.Size(85, 30);
             this.btnthemhinh.TabIndex = 91;
@@ -352,7 +328,7 @@ namespace QuanLyShopDongHo.Forms
             // 
             this.txtma.Enabled = false;
             this.txtma.Location = new System.Drawing.Point(135, 137);
-            this.txtma.Margin = new System.Windows.Forms.Padding(2);
+            this.txtma.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtma.Name = "txtma";
             this.txtma.Size = new System.Drawing.Size(132, 20);
             this.txtma.TabIndex = 89;
@@ -364,7 +340,7 @@ namespace QuanLyShopDongHo.Forms
             this.btnlammoi.Image = global::QuanLyShopDongHo.Properties.Resources.Refresh;
             this.btnlammoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnlammoi.Location = new System.Drawing.Point(537, 424);
-            this.btnlammoi.Margin = new System.Windows.Forms.Padding(2);
+            this.btnlammoi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnlammoi.Name = "btnlammoi";
             this.btnlammoi.Size = new System.Drawing.Size(85, 30);
             this.btnlammoi.TabIndex = 88;
@@ -380,7 +356,7 @@ namespace QuanLyShopDongHo.Forms
             this.btnxoa.Image = global::QuanLyShopDongHo.Properties.Resources.Delete;
             this.btnxoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnxoa.Location = new System.Drawing.Point(537, 384);
-            this.btnxoa.Margin = new System.Windows.Forms.Padding(2);
+            this.btnxoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnxoa.Name = "btnxoa";
             this.btnxoa.Size = new System.Drawing.Size(85, 30);
             this.btnxoa.TabIndex = 87;
@@ -396,7 +372,7 @@ namespace QuanLyShopDongHo.Forms
             this.btncapnhat.Image = global::QuanLyShopDongHo.Properties.Resources.Edit;
             this.btncapnhat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btncapnhat.Location = new System.Drawing.Point(537, 343);
-            this.btncapnhat.Margin = new System.Windows.Forms.Padding(2);
+            this.btncapnhat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btncapnhat.Name = "btncapnhat";
             this.btncapnhat.Size = new System.Drawing.Size(85, 30);
             this.btncapnhat.TabIndex = 86;
@@ -412,7 +388,7 @@ namespace QuanLyShopDongHo.Forms
             this.btnthem.Image = global::QuanLyShopDongHo.Properties.Resources.Add;
             this.btnthem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnthem.Location = new System.Drawing.Point(537, 302);
-            this.btnthem.Margin = new System.Windows.Forms.Padding(2);
+            this.btnthem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnthem.Name = "btnthem";
             this.btnthem.Size = new System.Drawing.Size(85, 30);
             this.btnthem.TabIndex = 85;
@@ -428,7 +404,7 @@ namespace QuanLyShopDongHo.Forms
             this.btnthoat.Image = global::QuanLyShopDongHo.Properties.Resources.Exit;
             this.btnthoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnthoat.Location = new System.Drawing.Point(537, 21);
-            this.btnthoat.Margin = new System.Windows.Forms.Padding(2);
+            this.btnthoat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnthoat.Name = "btnthoat";
             this.btnthoat.Size = new System.Drawing.Size(85, 30);
             this.btnthoat.TabIndex = 84;
@@ -440,7 +416,7 @@ namespace QuanLyShopDongHo.Forms
             // richTextBox1
             // 
             this.richTextBox1.Location = new System.Drawing.Point(387, 222);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(138, 68);
             this.richTextBox1.TabIndex = 83;
@@ -449,10 +425,43 @@ namespace QuanLyShopDongHo.Forms
             // txtgianhap
             // 
             this.txtgianhap.Location = new System.Drawing.Point(387, 180);
-            this.txtgianhap.Margin = new System.Windows.Forms.Padding(2);
+            this.txtgianhap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtgianhap.Name = "txtgianhap";
             this.txtgianhap.Size = new System.Drawing.Size(138, 20);
             this.txtgianhap.TabIndex = 75;
+            // 
+            // tennv
+            // 
+            this.tennv.AutoSize = true;
+            this.tennv.Location = new System.Drawing.Point(309, 30);
+            this.tennv.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.tennv.Name = "tennv";
+            this.tennv.Size = new System.Drawing.Size(35, 13);
+            this.tennv.TabIndex = 94;
+            this.tennv.Text = "label9";
+            this.tennv.Visible = false;
+            // 
+            // vaitro
+            // 
+            this.vaitro.AutoSize = true;
+            this.vaitro.Location = new System.Drawing.Point(375, 30);
+            this.vaitro.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.vaitro.Name = "vaitro";
+            this.vaitro.Size = new System.Drawing.Size(41, 13);
+            this.vaitro.TabIndex = 95;
+            this.vaitro.Text = "label10";
+            this.vaitro.Visible = false;
+            // 
+            // manv
+            // 
+            this.manv.AutoSize = true;
+            this.manv.Location = new System.Drawing.Point(439, 30);
+            this.manv.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.manv.Name = "manv";
+            this.manv.Size = new System.Drawing.Size(41, 13);
+            this.manv.TabIndex = 96;
+            this.manv.Text = "label11";
+            this.manv.Visible = false;
             // 
             // QuanLySanPham
             // 
@@ -485,7 +494,7 @@ namespace QuanLyShopDongHo.Forms
             this.Controls.Add(this.btnthoat);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.txtgianhap);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "QuanLySanPham";
             this.Text = "QuanLySanPham";
             this.Load += new System.EventHandler(this.QuanLySanPham_Load);
@@ -499,14 +508,10 @@ namespace QuanLyShopDongHo.Forms
         }
 
         #endregion
-
-        private System.Windows.Forms.Label manv;
-        private System.Windows.Forms.Label tennv;
         private System.Windows.Forms.TextBox txtngaynhap;
         private System.Windows.Forms.Button btntim;
         private System.Windows.Forms.TextBox txttim;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label vaitro;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaSanPham;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenSanPham;
@@ -534,5 +539,8 @@ namespace QuanLyShopDongHo.Forms
         private System.Windows.Forms.Button btnthoat;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.TextBox txtgianhap;
+        private System.Windows.Forms.Label tennv;
+        private System.Windows.Forms.Label vaitro;
+        private System.Windows.Forms.Label manv;
     }
 }

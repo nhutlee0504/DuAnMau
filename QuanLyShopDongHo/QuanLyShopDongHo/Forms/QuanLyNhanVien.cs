@@ -30,8 +30,8 @@ namespace QuanLyShopDongHo.Forms
  			tennv.Text = inputdata1;
             vaitroo.Text = inputdata2;
             manv.Text = inputdata3;
-            cbbvaitro.Items.Add("Quản trị");
-            cbbvaitro.Items.Add("Nhân viên");
+            cbbvaitro.Items.Add("Quản Trị");
+            cbbvaitro.Items.Add("Nhân Viên");
             btnthem.Enabled = true;
             btncapnhat.Enabled = false;
             btnxoa.Enabled = false;
@@ -234,9 +234,19 @@ namespace QuanLyShopDongHo.Forms
                         txtemail.Text = nh.Email;
                         txtsdt.Text = nh.SDT;
                     });
-                    btncapnhat.Enabled = true;
-                    btnthem.Enabled = false;
-                    btnxoa.Enabled = true;
+                    if(vaitroo.Text == "Nhân Viên")
+                    {
+                        btncapnhat.Enabled = true;
+                        btnthem.Enabled = false;
+                        btnxoa.Enabled = false;
+                    }
+                    else
+                    {
+                        btncapnhat.Enabled = true;
+                        btnthem.Enabled = false;
+                        btnxoa.Enabled = true;
+                    }
+                   
                 }
             }
         }
@@ -256,15 +266,29 @@ namespace QuanLyShopDongHo.Forms
                 txtemail.Text = kh.Email;
                 txtsdt.Text = kh.SDT;
             }
-            btncapnhat.Enabled = true;
-            btnthem.Enabled = false;
-            btnxoa.Enabled = true;
+            if (vaitroo.Text == "Nhân Viên")
+            {
+                btncapnhat.Enabled = true;
+                btnthem.Enabled = false;
+                btnxoa.Enabled = false;
+            }
+            else
+            {
+                btncapnhat.Enabled = true;
+                btnthem.Enabled = false;
+                btnxoa.Enabled = true;
+            }
         }
 		private void btnthoat_Click(object sender, EventArgs e)
         {
             this.Dispose();
             TrangChu dn = new TrangChu(inputdata1, inputdata2, inputdata3);
             dn.Show();
+        }
+
+        private void cbbvaitro_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

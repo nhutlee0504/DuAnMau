@@ -36,6 +36,7 @@ namespace QuanLyShopDongHo.Forms
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.Quenmk = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnDangNhap
@@ -119,12 +120,26 @@ namespace QuanLyShopDongHo.Forms
             this.label1.TabIndex = 21;
             this.label1.Text = "ĐĂNG NHẬP";
             // 
+            // Quenmk
+            // 
+            this.Quenmk.AutoSize = true;
+            this.Quenmk.BackColor = System.Drawing.Color.Transparent;
+            this.Quenmk.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Quenmk.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Quenmk.Location = new System.Drawing.Point(219, 245);
+            this.Quenmk.Name = "Quenmk";
+            this.Quenmk.Size = new System.Drawing.Size(118, 20);
+            this.Quenmk.TabIndex = 28;
+            this.Quenmk.Text = "Quên mật khẩu";
+            this.Quenmk.Click += new System.EventHandler(this.Quenmk_Click);
+            // 
             // DangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::QuanLyShopDongHo.Properties.Resources.bg1_3;
             this.ClientSize = new System.Drawing.Size(976, 450);
+            this.Controls.Add(this.Quenmk);
             this.Controls.Add(this.btnDangNhap);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.txtMK);
@@ -149,5 +164,6 @@ namespace QuanLyShopDongHo.Forms
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label Quenmk;
     }
 }

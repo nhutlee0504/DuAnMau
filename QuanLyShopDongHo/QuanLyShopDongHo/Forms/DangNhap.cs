@@ -49,6 +49,7 @@ namespace QuanLyShopDongHo.Forms
                 if (!list.Any())
                 {
                     MessageBox.Show("Tài khoản hoặc mật khẩu không đúng");
+                    return;
                 }
                 else
                 {
@@ -103,6 +104,15 @@ namespace QuanLyShopDongHo.Forms
         private void DangNhap_Load(object sender, EventArgs e)
         {
             txtMK.PasswordChar = '\u2022';
+        }
+
+        private void Quenmk_Click(object sender, EventArgs e)
+        {
+            QuenMatKhau qmk = new QuenMatKhau();
+            this.Hide();
+            qmk.Show();
+            DangNhap dn = new DangNhap();
+            dn.Dispose();
         }
     }
 }
