@@ -149,10 +149,7 @@ namespace QuanLyShopDongHo.Forms
 
         private void btnLamMoi_Click(object sender, EventArgs e)
         {
-            txtTenKhachHang.Text = "";
-            txtSDT.Text = "";
-            txtDiaChi.Text = "";
-            txtTenKhachTim.Text = "";
+            Rong();
             ShowKH();
             btnThem.Enabled = true;
             txtSDT.ReadOnly = false;

@@ -47,8 +47,8 @@ namespace QuanLyShopDongHo.Forms
             {
                 dgvDonHang.Rows.Clear();
                 db.DonHangs.ToList().ForEach(x =>
-                    dgvDonHang.Rows.Add(x.MaDon, x.TenKH, x.SDT, x.LoaiSP, x.ChiTietSanPham.TenLoai, 
-                    x.SoLuong,x.ChiTietSanPham.GiaBan.ToString("#,##0"), x.NgayIn.ToString("dd/MM/yyyy"), x.MaNV));
+                    dgvDonHang.Rows.Add(x.MaDon, x.TenKH, x.SDT, x.LoaiSP, x.ChiTietSanPham.TenLoai,
+                    x.SoLuong, x.ChiTietSanPham.GiaBan.ToString("#,##0"), x.NgayIn.ToString("dd/MM/yyyy"), x.MaNV));
             }
         }
 
@@ -137,22 +137,23 @@ namespace QuanLyShopDongHo.Forms
 
         private void btnLamMoi_Click(object sender, EventArgs e)
         {
-            using (var db = new QuanLyShopDongHoEntities())
-            {
-                txtMaDon.Text = "";
-                txtTenKhachHang.Text = "";
-                cboSDT.Text = "";
-                cboLoaiSP.Text = "";
-                txtTenLoai.Text = "";
-                txtSoLuong.Text = "";
-                txtDonGia.Text = "";
-                txtMaNhanVien.Text = "";
-                dtpNgayIn.Text = DateTime.Now.ToString("dd/MM/yyyy");
-                cboMaDonTim.Text = "";
-                btnThanhToan.Enabled = false;
-                btnTaoDon.Enabled = true;
-                ShowDH();
-            }
+            Rong();
+            btnThanhToan.Enabled = false;
+            btnTaoDon.Enabled = true;
+            ShowDH();
+        }
+        private void Rong()
+        {
+            txtMaDon.Text = "";
+            txtTenKhachHang.Text = "";
+            cboSDT.Text = "";
+            cboLoaiSP.Text = "";
+            txtTenLoai.Text = "";
+            txtSoLuong.Text = "";
+            txtDonGia.Text = "";
+            txtMaNhanVien.Text = "";
+            dtpNgayIn.Text = DateTime.Now.ToString("dd/MM/yyyy");
+            cboMaDonTim.Text = "";
         }
 
         private void btnTimKiem_Click(object sender, EventArgs e)
@@ -165,8 +166,8 @@ namespace QuanLyShopDongHo.Forms
                     dgvDonHang.Rows.Clear();
                     maDon.ForEach(x =>
                     {
-                        dgvDonHang.Rows.Add(x.MaDon, x.TenKH, x.SDT, x.LoaiSP, x.ChiTietSanPham.TenLoai, 
-                                            x.SoLuong,x.ChiTietSanPham.GiaBan, x.NgayIn, x.MaNV);
+                        dgvDonHang.Rows.Add(x.MaDon, x.TenKH, x.SDT, x.LoaiSP, x.ChiTietSanPham.TenLoai,
+                                            x.SoLuong, x.ChiTietSanPham.GiaBan, x.NgayIn, x.MaNV);
                         txtMaDon.Text = x.MaDon;
                         txtTenKhachHang.Text = x.TenKH;
                         cboSDT.Text = x.SDT;
@@ -234,20 +235,6 @@ namespace QuanLyShopDongHo.Forms
             btnThanhToan.Enabled = true;
         }
 
-        private void Rong()
-        {
-            txtMaDon.Text = "";
-            txtTenKhachHang.Text = "";
-            cboSDT.Text = "";
-            cboLoaiSP.Text = "";
-            txtTenLoai.Text = "";
-            txtSoLuong.Text = "";
-            txtDonGia.Text = "";
-            txtMaNhanVien.Text = "";
-            dtpNgayIn.Text = DateTime.Now.ToString("dd/MM/yyyy");
-            cboMaDonTim.Text = "";
-        }
-
         private void btnThoat_Click(object sender, EventArgs e)
         {
             this.Dispose();
@@ -283,6 +270,5 @@ namespace QuanLyShopDongHo.Forms
            Color.Silver, 3, ButtonBorderStyle.Solid,
            Color.Silver, 3, ButtonBorderStyle.Solid);
         }
-       
     }
 }

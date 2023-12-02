@@ -401,7 +401,7 @@ namespace QuanLyShopDongHo.Forms
             // dgvDonHang
             // 
             this.dgvDonHang.AllowUserToAddRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightSteelBlue;
             this.dgvDonHang.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvDonHang.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.dgvDonHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
