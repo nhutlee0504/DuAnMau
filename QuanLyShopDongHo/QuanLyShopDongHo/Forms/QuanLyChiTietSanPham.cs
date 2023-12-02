@@ -49,7 +49,7 @@ namespace QuanLyShopDongHo.Forms
                         nh.LoaiSP,
                         nh.TenLoai,
                         nh.SanPham.MaSanPham,
-                        ((100 - nh.KhuyenMai) / 100) * nh.GiaBan,
+                       (((100 - nh.KhuyenMai) / 100) * nh.GiaBan),
                         nh.MoTa
                     );
                 });
