@@ -29,6 +29,14 @@ namespace QuanLyShopDongHo.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Column25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.btnLMDT = new System.Windows.Forms.Button();
@@ -229,6 +237,9 @@ namespace QuanLyShopDongHo.Forms
             // dgvDT
             // 
             this.dgvDT.AllowUserToAddRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.Format = "#,##0";
+            this.dgvDT.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvDT.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDT.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -240,6 +251,8 @@ namespace QuanLyShopDongHo.Forms
             this.dgvDT.Name = "dgvDT";
             this.dgvDT.RowHeadersVisible = false;
             this.dgvDT.RowHeadersWidth = 51;
+            dataGridViewCellStyle2.Format = "#,##0";
+            this.dgvDT.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvDT.Size = new System.Drawing.Size(774, 233);
             this.dgvDT.TabIndex = 0;
             // 
@@ -445,6 +458,9 @@ namespace QuanLyShopDongHo.Forms
             // dgvLN
             // 
             this.dgvLN.AllowUserToAddRows = false;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.Format = "#,##0";
+            this.dgvLN.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvLN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLN.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column6,
@@ -456,6 +472,8 @@ namespace QuanLyShopDongHo.Forms
             this.dgvLN.Name = "dgvLN";
             this.dgvLN.RowHeadersVisible = false;
             this.dgvLN.RowHeadersWidth = 51;
+            dataGridViewCellStyle4.Format = "#,##0";
+            this.dgvLN.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvLN.Size = new System.Drawing.Size(774, 227);
             this.dgvLN.TabIndex = 0;
             // 
@@ -575,6 +593,9 @@ namespace QuanLyShopDongHo.Forms
             // dgvKH
             // 
             this.dgvKH.AllowUserToAddRows = false;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Format = "#,##0";
+            this.dgvKH.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvKH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvKH.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column11,
@@ -585,6 +606,8 @@ namespace QuanLyShopDongHo.Forms
             this.dgvKH.Name = "dgvKH";
             this.dgvKH.RowHeadersVisible = false;
             this.dgvKH.RowHeadersWidth = 51;
+            dataGridViewCellStyle6.Format = "#,##0";
+            this.dgvKH.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvKH.Size = new System.Drawing.Size(574, 327);
             this.dgvKH.TabIndex = 0;
             // 
@@ -748,6 +771,9 @@ namespace QuanLyShopDongHo.Forms
             // dgvXNK
             // 
             this.dgvXNK.AllowUserToAddRows = false;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle7.Format = "#,##0";
+            this.dgvXNK.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvXNK.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvXNK.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column21,
@@ -759,6 +785,8 @@ namespace QuanLyShopDongHo.Forms
             this.dgvXNK.Name = "dgvXNK";
             this.dgvXNK.RowHeadersVisible = false;
             this.dgvXNK.RowHeadersWidth = 51;
+            dataGridViewCellStyle8.Format = "#,##0";
+            this.dgvXNK.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.dgvXNK.Size = new System.Drawing.Size(778, 340);
             this.dgvXNK.TabIndex = 0;
             // 
