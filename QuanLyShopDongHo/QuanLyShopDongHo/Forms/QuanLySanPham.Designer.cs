@@ -29,6 +29,8 @@ namespace QuanLyShopDongHo.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.manv = new System.Windows.Forms.Label();
             this.tennv = new System.Windows.Forms.Label();
             this.txtngaynhap = new System.Windows.Forms.TextBox();
@@ -142,6 +144,9 @@ namespace QuanLyShopDongHo.Forms
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle1.Format = "#,##0";
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaSanPham,
@@ -154,6 +159,8 @@ namespace QuanLyShopDongHo.Forms
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 62;
+            dataGridViewCellStyle2.Format = "#,##0";
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(747, 234);
             this.dataGridView1.TabIndex = 92;

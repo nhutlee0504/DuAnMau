@@ -29,6 +29,7 @@ namespace QuanLyShopDongHo.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.manv = new System.Windows.Forms.Label();
             this.tennv = new System.Windows.Forms.Label();
             this.btntim = new System.Windows.Forms.Button();
@@ -251,6 +252,8 @@ namespace QuanLyShopDongHo.Forms
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Silver;
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaNhanVien,
@@ -407,6 +410,7 @@ namespace QuanLyShopDongHo.Forms
             this.cbbvaitro.Name = "cbbvaitro";
             this.cbbvaitro.Size = new System.Drawing.Size(176, 28);
             this.cbbvaitro.TabIndex = 79;
+            this.cbbvaitro.SelectedIndexChanged += new System.EventHandler(this.cbbvaitro_SelectedIndexChanged);
             // 
             // QuanLyNhanVien
             // 

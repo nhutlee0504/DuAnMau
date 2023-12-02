@@ -214,7 +214,7 @@ namespace QuanLyShopDongHo.Forms
                 txtloaisp.Text = kh.LoaiSP.ToString();
                 txttenloai.Text = kh.TenLoai;
                 cbbmasp.Text = kh.MaSP.ToString();
-                txtgiaban.Text = kh.GiaBan.ToString();
+                txtgiaban.Text = kh.GiaBan.ToString("#,##0");
                 txtkhuyenmai.Text = kh.KhuyenMai.ToString();
                 richTextBox1.Text = kh.MoTa;
             }
