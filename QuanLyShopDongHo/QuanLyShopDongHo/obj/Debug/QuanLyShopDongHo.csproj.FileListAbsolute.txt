@@ -27,3 +27,4 @@ F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\Qua
 D:\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.csproj.AssemblyReference.cache
 D:\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.csproj.SuggestedBindingRedirects.cache
 D:\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\Interop.Office.dll
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\Interop.Office.dll

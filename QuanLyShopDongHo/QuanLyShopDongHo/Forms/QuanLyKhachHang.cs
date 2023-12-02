@@ -168,7 +168,7 @@ namespace QuanLyShopDongHo.Forms
         {
             using (var db = new QuanLyShopDongHoEntities())
             {
-                List<KhachHang> tenKH = db.KhachHangs.Where(x => x.TenKH.EndsWith(txtTenKhachTim.Text)).ToList();
+                List<KhachHang> tenKH = db.KhachHangs.Where(x => x.TenKH.EndsWith(txtTenKhachTim.Text.Trim())).ToList();
                 if (tenKH.Count > 0)
                 {
                     dgvKhachHang.Rows.Clear();
@@ -176,6 +176,7 @@ namespace QuanLyShopDongHo.Forms
                     {
                         dgvKhachHang.Rows.Add(x.TenKH, x.SDT, x.DiaChi);
                     });
+                    Rong();
                 }
                 else
                 {
@@ -199,12 +200,17 @@ namespace QuanLyShopDongHo.Forms
 
         private void dgvKhachHang_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            using (var db = new QuanLyShopDongHoEntities())
+            if (e.RowIndex == -1)
+                return;
+            else
             {
                 txtTenKhachHang.Text = dgvKhachHang.Rows[e.RowIndex].Cells[0].Value.ToString();
                 txtSDT.Text = dgvKhachHang.Rows[e.RowIndex].Cells[1].Value.ToString();
                 txtDiaChi.Text = dgvKhachHang.Rows[e.RowIndex].Cells[2].Value.ToString();
                 txtSDT.ReadOnly = true;
+            }        
+            using (var db = new QuanLyShopDongHoEntities())
+            {              
                 if (vaitro.Text == "Nhân Viên")
                 {
                     btnCapNhat.Enabled = true;
@@ -218,7 +224,6 @@ namespace QuanLyShopDongHo.Forms
                     btnXoa.Enabled = true;
                 }
             }
-
         }
 
         private void Rong()

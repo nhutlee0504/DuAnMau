@@ -78,10 +78,10 @@ namespace QuanLyShopDongHo.Forms
             // 
             this.cboLoaiSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.cboLoaiSP.FormattingEnabled = true;
-            this.cboLoaiSP.Location = new System.Drawing.Point(461, 127);
-            this.cboLoaiSP.Margin = new System.Windows.Forms.Padding(2);
+            this.cboLoaiSP.Location = new System.Drawing.Point(615, 156);
+            this.cboLoaiSP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboLoaiSP.Name = "cboLoaiSP";
-            this.cboLoaiSP.Size = new System.Drawing.Size(150, 24);
+            this.cboLoaiSP.Size = new System.Drawing.Size(199, 28);
             this.cboLoaiSP.TabIndex = 90;
             this.cboLoaiSP.SelectedIndexChanged += new System.EventHandler(this.cboLoaiSP_SelectedIndexChanged);
             // 
@@ -94,10 +94,10 @@ namespace QuanLyShopDongHo.Forms
             this.btnLamMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnLamMoi.ForeColor = System.Drawing.Color.White;
             this.btnLamMoi.Image = global::QuanLyShopDongHo.Properties.Resources.Refresh;
-            this.btnLamMoi.Location = new System.Drawing.Point(249, 295);
-            this.btnLamMoi.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLamMoi.Location = new System.Drawing.Point(332, 363);
+            this.btnLamMoi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLamMoi.Name = "btnLamMoi";
-            this.btnLamMoi.Size = new System.Drawing.Size(96, 43);
+            this.btnLamMoi.Size = new System.Drawing.Size(128, 53);
             this.btnLamMoi.TabIndex = 96;
             this.btnLamMoi.Text = "Làm mới";
             this.btnLamMoi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -110,10 +110,10 @@ namespace QuanLyShopDongHo.Forms
             this.panel1.Controls.Add(this.cboMaDonTim);
             this.panel1.Controls.Add(this.btnTimKiem);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Location = new System.Drawing.Point(379, 271);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Location = new System.Drawing.Point(505, 334);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(344, 65);
+            this.panel1.Size = new System.Drawing.Size(459, 80);
             this.panel1.TabIndex = 108;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -121,10 +121,10 @@ namespace QuanLyShopDongHo.Forms
             // 
             this.cboMaDonTim.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.cboMaDonTim.FormattingEnabled = true;
-            this.cboMaDonTim.Location = new System.Drawing.Point(85, 22);
-            this.cboMaDonTim.Margin = new System.Windows.Forms.Padding(2);
+            this.cboMaDonTim.Location = new System.Drawing.Point(113, 27);
+            this.cboMaDonTim.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboMaDonTim.Name = "cboMaDonTim";
-            this.cboMaDonTim.Size = new System.Drawing.Size(138, 24);
+            this.cboMaDonTim.Size = new System.Drawing.Size(183, 28);
             this.cboMaDonTim.TabIndex = 10;
             // 
             // btnTimKiem
@@ -137,10 +137,10 @@ namespace QuanLyShopDongHo.Forms
             this.btnTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnTimKiem.ForeColor = System.Drawing.Color.White;
             this.btnTimKiem.Image = global::QuanLyShopDongHo.Properties.Resources.Search;
-            this.btnTimKiem.Location = new System.Drawing.Point(233, 11);
-            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTimKiem.Location = new System.Drawing.Point(311, 14);
+            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(89, 43);
+            this.btnTimKiem.Size = new System.Drawing.Size(119, 53);
             this.btnTimKiem.TabIndex = 11;
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -153,10 +153,9 @@ namespace QuanLyShopDongHo.Forms
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(11, 24);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(15, 30);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(77, 17);
+            this.label6.Size = new System.Drawing.Size(92, 20);
             this.label6.TabIndex = 15;
             this.label6.Text = "Mã đơn tìm";
             // 
@@ -164,11 +163,11 @@ namespace QuanLyShopDongHo.Forms
             // 
             this.txtTenKhachHang.BackColor = System.Drawing.Color.LightSteelBlue;
             this.txtTenKhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtTenKhachHang.Location = new System.Drawing.Point(461, 86);
-            this.txtTenKhachHang.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTenKhachHang.Location = new System.Drawing.Point(615, 106);
+            this.txtTenKhachHang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTenKhachHang.Name = "txtTenKhachHang";
             this.txtTenKhachHang.ReadOnly = true;
-            this.txtTenKhachHang.Size = new System.Drawing.Size(150, 23);
+            this.txtTenKhachHang.Size = new System.Drawing.Size(199, 26);
             this.txtTenKhachHang.TabIndex = 105;
             // 
             // btnThanhToan
@@ -180,10 +179,10 @@ namespace QuanLyShopDongHo.Forms
             this.btnThanhToan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnThanhToan.ForeColor = System.Drawing.Color.White;
             this.btnThanhToan.Image = global::QuanLyShopDongHo.Properties.Resources.dollar;
-            this.btnThanhToan.Location = new System.Drawing.Point(127, 293);
-            this.btnThanhToan.Margin = new System.Windows.Forms.Padding(2);
+            this.btnThanhToan.Location = new System.Drawing.Point(169, 361);
+            this.btnThanhToan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThanhToan.Name = "btnThanhToan";
-            this.btnThanhToan.Size = new System.Drawing.Size(118, 43);
+            this.btnThanhToan.Size = new System.Drawing.Size(157, 53);
             this.btnThanhToan.TabIndex = 95;
             this.btnThanhToan.Text = "Thanh toán";
             this.btnThanhToan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -199,10 +198,10 @@ namespace QuanLyShopDongHo.Forms
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnThoat.ForeColor = System.Drawing.Color.White;
             this.btnThoat.Image = global::QuanLyShopDongHo.Properties.Resources.Exit;
-            this.btnThoat.Location = new System.Drawing.Point(628, 20);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(2);
+            this.btnThoat.Location = new System.Drawing.Point(837, 25);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(95, 39);
+            this.btnThoat.Size = new System.Drawing.Size(127, 48);
             this.btnThoat.TabIndex = 97;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -218,10 +217,10 @@ namespace QuanLyShopDongHo.Forms
             this.btnTaoDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnTaoDon.ForeColor = System.Drawing.Color.White;
             this.btnTaoDon.Image = global::QuanLyShopDongHo.Properties.Resources.Add;
-            this.btnTaoDon.Location = new System.Drawing.Point(28, 293);
-            this.btnTaoDon.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTaoDon.Location = new System.Drawing.Point(37, 361);
+            this.btnTaoDon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTaoDon.Name = "btnTaoDon";
-            this.btnTaoDon.Size = new System.Drawing.Size(95, 43);
+            this.btnTaoDon.Size = new System.Drawing.Size(127, 53);
             this.btnTaoDon.TabIndex = 94;
             this.btnTaoDon.Text = "Tạo đơn";
             this.btnTaoDon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -232,10 +231,10 @@ namespace QuanLyShopDongHo.Forms
             // 
             this.cboSDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.cboSDT.FormattingEnabled = true;
-            this.cboSDT.Location = new System.Drawing.Point(178, 128);
-            this.cboSDT.Margin = new System.Windows.Forms.Padding(2);
+            this.cboSDT.Location = new System.Drawing.Point(237, 158);
+            this.cboSDT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboSDT.Name = "cboSDT";
-            this.cboSDT.Size = new System.Drawing.Size(150, 24);
+            this.cboSDT.Size = new System.Drawing.Size(199, 28);
             this.cboSDT.TabIndex = 89;
             this.cboSDT.SelectedIndexChanged += new System.EventHandler(this.cboSDT_SelectedIndexChanged);
             // 
@@ -244,10 +243,10 @@ namespace QuanLyShopDongHo.Forms
             this.dtpNgayIn.CustomFormat = "";
             this.dtpNgayIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.dtpNgayIn.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpNgayIn.Location = new System.Drawing.Point(460, 197);
-            this.dtpNgayIn.Margin = new System.Windows.Forms.Padding(2);
+            this.dtpNgayIn.Location = new System.Drawing.Point(613, 242);
+            this.dtpNgayIn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpNgayIn.Name = "dtpNgayIn";
-            this.dtpNgayIn.Size = new System.Drawing.Size(151, 23);
+            this.dtpNgayIn.Size = new System.Drawing.Size(200, 26);
             this.dtpNgayIn.TabIndex = 92;
             this.dtpNgayIn.Value = new System.DateTime(2023, 11, 20, 0, 0, 0, 0);
             // 
@@ -257,10 +256,9 @@ namespace QuanLyShopDongHo.Forms
             this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(76)))), ((int)(((byte)(88)))));
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(356, 202);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(475, 249);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(56, 17);
+            this.label7.Size = new System.Drawing.Size(65, 20);
             this.label7.TabIndex = 107;
             this.label7.Text = "Ngày in";
             // 
@@ -270,10 +268,9 @@ namespace QuanLyShopDongHo.Forms
             this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(76)))), ((int)(((byte)(88)))));
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(356, 132);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(475, 162);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(101, 17);
+            this.label8.Size = new System.Drawing.Size(119, 20);
             this.label8.TabIndex = 106;
             this.label8.Text = "Loại sản phẩm";
             // 
@@ -283,20 +280,19 @@ namespace QuanLyShopDongHo.Forms
             this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(76)))), ((int)(((byte)(88)))));
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(356, 91);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Location = new System.Drawing.Point(475, 112);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(111, 17);
+            this.label9.Size = new System.Drawing.Size(127, 20);
             this.label9.TabIndex = 104;
             this.label9.Text = "Tên khách hàng";
             // 
             // txtMaNhanVien
             // 
             this.txtMaNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtMaNhanVien.Location = new System.Drawing.Point(461, 232);
-            this.txtMaNhanVien.Margin = new System.Windows.Forms.Padding(2);
+            this.txtMaNhanVien.Location = new System.Drawing.Point(615, 286);
+            this.txtMaNhanVien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMaNhanVien.Name = "txtMaNhanVien";
-            this.txtMaNhanVien.Size = new System.Drawing.Size(150, 23);
+            this.txtMaNhanVien.Size = new System.Drawing.Size(199, 26);
             this.txtMaNhanVien.TabIndex = 93;
             // 
             // label5
@@ -305,20 +301,19 @@ namespace QuanLyShopDongHo.Forms
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(76)))), ((int)(((byte)(88)))));
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(358, 237);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(477, 292);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(93, 17);
+            this.label5.Size = new System.Drawing.Size(108, 20);
             this.label5.TabIndex = 103;
             this.label5.Text = "Mã nhân viên";
             // 
             // txtSoLuong
             // 
             this.txtSoLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtSoLuong.Location = new System.Drawing.Point(178, 163);
-            this.txtSoLuong.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSoLuong.Location = new System.Drawing.Point(237, 201);
+            this.txtSoLuong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSoLuong.Name = "txtSoLuong";
-            this.txtSoLuong.Size = new System.Drawing.Size(150, 23);
+            this.txtSoLuong.Size = new System.Drawing.Size(199, 26);
             this.txtSoLuong.TabIndex = 91;
             // 
             // label4
@@ -327,10 +322,9 @@ namespace QuanLyShopDongHo.Forms
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(76)))), ((int)(((byte)(88)))));
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(85, 171);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(113, 210);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 17);
+            this.label4.Size = new System.Drawing.Size(74, 20);
             this.label4.TabIndex = 102;
             this.label4.Text = "Số lượng";
             // 
@@ -340,10 +334,9 @@ namespace QuanLyShopDongHo.Forms
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(76)))), ((int)(((byte)(88)))));
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(85, 132);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(113, 162);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(36, 17);
+            this.label3.Size = new System.Drawing.Size(42, 20);
             this.label3.TabIndex = 101;
             this.label3.Text = "SĐT";
             // 
@@ -351,11 +344,11 @@ namespace QuanLyShopDongHo.Forms
             // 
             this.txtMaDon.BackColor = System.Drawing.Color.LightSteelBlue;
             this.txtMaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtMaDon.Location = new System.Drawing.Point(178, 89);
-            this.txtMaDon.Margin = new System.Windows.Forms.Padding(2);
+            this.txtMaDon.Location = new System.Drawing.Point(237, 110);
+            this.txtMaDon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMaDon.Name = "txtMaDon";
             this.txtMaDon.ReadOnly = true;
-            this.txtMaDon.Size = new System.Drawing.Size(150, 23);
+            this.txtMaDon.Size = new System.Drawing.Size(199, 26);
             this.txtMaDon.TabIndex = 98;
             // 
             // label2
@@ -364,10 +357,9 @@ namespace QuanLyShopDongHo.Forms
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(76)))), ((int)(((byte)(88)))));
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(85, 91);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(113, 112);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 17);
+            this.label2.Size = new System.Drawing.Size(64, 20);
             this.label2.TabIndex = 100;
             this.label2.Text = "Mã đơn";
             // 
@@ -377,10 +369,9 @@ namespace QuanLyShopDongHo.Forms
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(147, 20);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(196, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(359, 39);
+            this.label1.Size = new System.Drawing.Size(439, 48);
             this.label1.TabIndex = 99;
             this.label1.Text = "QUẢN LÝ ĐƠN HÀNG";
             // 
@@ -388,11 +379,11 @@ namespace QuanLyShopDongHo.Forms
             // 
             this.txtTenLoai.BackColor = System.Drawing.Color.LightSteelBlue;
             this.txtTenLoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtTenLoai.Location = new System.Drawing.Point(461, 160);
-            this.txtTenLoai.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTenLoai.Location = new System.Drawing.Point(615, 197);
+            this.txtTenLoai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTenLoai.Name = "txtTenLoai";
             this.txtTenLoai.ReadOnly = true;
-            this.txtTenLoai.Size = new System.Drawing.Size(150, 23);
+            this.txtTenLoai.Size = new System.Drawing.Size(199, 26);
             this.txtTenLoai.TabIndex = 111;
             // 
             // label10
@@ -401,10 +392,9 @@ namespace QuanLyShopDongHo.Forms
             this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(76)))), ((int)(((byte)(88)))));
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(356, 166);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Location = new System.Drawing.Point(475, 204);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(59, 17);
+            this.label10.Size = new System.Drawing.Size(68, 20);
             this.label10.TabIndex = 110;
             this.label10.Text = "Tên loại";
             // 
@@ -426,13 +416,13 @@ namespace QuanLyShopDongHo.Forms
             this.NgayIn,
             this.MaNV});
             this.dgvDonHang.GridColor = System.Drawing.SystemColors.ControlLight;
-            this.dgvDonHang.Location = new System.Drawing.Point(26, 340);
-            this.dgvDonHang.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvDonHang.Location = new System.Drawing.Point(35, 418);
+            this.dgvDonHang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvDonHang.Name = "dgvDonHang";
             this.dgvDonHang.RowHeadersVisible = false;
             this.dgvDonHang.RowHeadersWidth = 51;
             this.dgvDonHang.RowTemplate.Height = 24;
-            this.dgvDonHang.Size = new System.Drawing.Size(697, 225);
+            this.dgvDonHang.Size = new System.Drawing.Size(929, 277);
             this.dgvDonHang.TabIndex = 112;
             this.dgvDonHang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDonHang_CellClick);
             // 
@@ -505,10 +495,9 @@ namespace QuanLyShopDongHo.Forms
             this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(76)))), ((int)(((byte)(88)))));
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(85, 206);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Location = new System.Drawing.Point(113, 254);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(57, 17);
+            this.label11.Size = new System.Drawing.Size(66, 20);
             this.label11.TabIndex = 117;
             this.label11.Text = "Đơn giá";
             // 
@@ -516,20 +505,21 @@ namespace QuanLyShopDongHo.Forms
             // 
             this.txtDonGia.BackColor = System.Drawing.Color.LightSteelBlue;
             this.txtDonGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtDonGia.Location = new System.Drawing.Point(178, 199);
-            this.txtDonGia.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDonGia.Location = new System.Drawing.Point(237, 245);
+            this.txtDonGia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDonGia.Name = "txtDonGia";
             this.txtDonGia.ReadOnly = true;
-            this.txtDonGia.Size = new System.Drawing.Size(150, 23);
+            this.txtDonGia.Size = new System.Drawing.Size(199, 26);
             this.txtDonGia.TabIndex = 118;
             // 
             // tennv
             // 
             this.tennv.AutoSize = true;
             this.tennv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tennv.Location = new System.Drawing.Point(479, 9);
+            this.tennv.Location = new System.Drawing.Point(639, 11);
+            this.tennv.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tennv.Name = "tennv";
-            this.tennv.Size = new System.Drawing.Size(41, 13);
+            this.tennv.Size = new System.Drawing.Size(54, 17);
             this.tennv.TabIndex = 113;
             this.tennv.Text = "label11";
             this.tennv.Visible = false;
@@ -538,9 +528,10 @@ namespace QuanLyShopDongHo.Forms
             // 
             this.vaitro.AutoSize = true;
             this.vaitro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.vaitro.Location = new System.Drawing.Point(526, 9);
+            this.vaitro.Location = new System.Drawing.Point(701, 11);
+            this.vaitro.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.vaitro.Name = "vaitro";
-            this.vaitro.Size = new System.Drawing.Size(41, 13);
+            this.vaitro.Size = new System.Drawing.Size(54, 17);
             this.vaitro.TabIndex = 114;
             this.vaitro.Text = "label12";
             this.vaitro.Visible = false;
@@ -549,20 +540,21 @@ namespace QuanLyShopDongHo.Forms
             // 
             this.manvv.AutoSize = true;
             this.manvv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.manvv.Location = new System.Drawing.Point(573, 9);
+            this.manvv.Location = new System.Drawing.Point(764, 11);
+            this.manvv.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.manvv.Name = "manvv";
-            this.manvv.Size = new System.Drawing.Size(41, 13);
+            this.manvv.Size = new System.Drawing.Size(54, 17);
             this.manvv.TabIndex = 115;
             this.manvv.Text = "label13";
             this.manvv.Visible = false;
             // 
             // QuanLyDonHang
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(76)))), ((int)(((byte)(88)))));
             this.BackgroundImage = global::QuanLyShopDongHo.Properties.Resources.bg1_1;
-            this.ClientSize = new System.Drawing.Size(740, 588);
+            this.ClientSize = new System.Drawing.Size(987, 724);
             this.Controls.Add(this.txtDonGia);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.dgvDonHang);
@@ -591,7 +583,7 @@ namespace QuanLyShopDongHo.Forms
             this.Controls.Add(this.txtMaDon);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "QuanLyDonHang";
             this.Text = "QuanLyDonHang";
             this.Load += new System.EventHandler(this.QuanLyDonHang_Load);

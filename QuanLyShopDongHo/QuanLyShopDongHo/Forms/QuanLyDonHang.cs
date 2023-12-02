@@ -221,18 +221,24 @@ namespace QuanLyShopDongHo.Forms
 
         private void dgvDonHang_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-
-            txtMaDon.Text = dgvDonHang.Rows[e.RowIndex].Cells[0].Value.ToString();
-            txtTenKhachHang.Text = dgvDonHang.Rows[e.RowIndex].Cells[1].Value.ToString();
-            cboSDT.Text = dgvDonHang.Rows[e.RowIndex].Cells[2].Value.ToString();
-            cboLoaiSP.Text = dgvDonHang.Rows[e.RowIndex].Cells[3].Value.ToString();
-            txtTenLoai.Text = dgvDonHang.Rows[e.RowIndex].Cells[4].Value.ToString();
-            txtSoLuong.Text = dgvDonHang.Rows[e.RowIndex].Cells[5].Value.ToString();
-            txtDonGia.Text = dgvDonHang.Rows[e.RowIndex].Cells[6].Value.ToString();
-            dtpNgayIn.Text = dgvDonHang.Rows[e.RowIndex].Cells[7].Value.ToString();
-            txtMaNhanVien.Text = dgvDonHang.Rows[e.RowIndex].Cells[8].Value.ToString();
-            btnTaoDon.Enabled = false;
-            btnThanhToan.Enabled = true;
+            if (e.RowIndex == -1)
+            {
+                return;
+            }
+            else
+            {
+                txtMaDon.Text = dgvDonHang.Rows[e.RowIndex].Cells[0].Value.ToString();
+                txtTenKhachHang.Text = dgvDonHang.Rows[e.RowIndex].Cells[1].Value.ToString();
+                cboSDT.Text = dgvDonHang.Rows[e.RowIndex].Cells[2].Value.ToString();
+                cboLoaiSP.Text = dgvDonHang.Rows[e.RowIndex].Cells[3].Value.ToString();
+                txtTenLoai.Text = dgvDonHang.Rows[e.RowIndex].Cells[4].Value.ToString();
+                txtSoLuong.Text = dgvDonHang.Rows[e.RowIndex].Cells[5].Value.ToString();
+                txtDonGia.Text = dgvDonHang.Rows[e.RowIndex].Cells[6].Value.ToString();
+                dtpNgayIn.Text = dgvDonHang.Rows[e.RowIndex].Cells[7].Value.ToString();
+                txtMaNhanVien.Text = dgvDonHang.Rows[e.RowIndex].Cells[8].Value.ToString();
+                btnTaoDon.Enabled = false;
+                btnThanhToan.Enabled = true;
+            }          
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
