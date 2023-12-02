@@ -63,32 +63,31 @@ namespace QuanLyShopDongHo.Forms
                         randomNumberString += random.Next(0, 10).ToString(); // Tạo số ngẫu nhiên từ 0 đến 9 và thêm vào chuỗi
                     }
                     mxn = (randomNumberString);
-                    MessageBox.Show(mxn);
-                    //var fromAddress = new MailAddress("nle040525@gmail.com", "From Name");
-                    //var toAddress = new MailAddress(txtEmail.Text, "To Name");
-                    //const string fromPassword = "pxpn njhs jzjr qmof";
-                    //const string subject = "Mã xác nhận";
-                    //const string body = "Mã xác nhận của bạn là:";
+                    var fromAddress = new MailAddress("nle040525@gmail.com", "From Name");
+                    var toAddress = new MailAddress(txtEmail.Text, "To Name");
+                    const string fromPassword = "pxpn njhs jzjr qmof";
+                    const string subject = "Mã xác nhận";
+                    const string body = "Mã xác nhận của bạn là:";
 
-                    //var smtp = new SmtpClient
-                    //{
-                    //    Host = "smtp.gmail.com",
-                    //    Port = 587,
-                    //    EnableSsl = true,
-                    //    DeliveryMethod = SmtpDeliveryMethod.Network,
-                    //    UseDefaultCredentials = false,
-                    //    Credentials = new NetworkCredential(fromAddress.Address, fromPassword)
-                    //};
-                    //using (var message = new MailMessage(fromAddress, toAddress)
-                    //{
-                    //    Subject = subject,
-                    //    Body = body + mxn
-                    //})
-                    //{
-                    //    smtp.Send(message);
-                    //}
+                    var smtp = new SmtpClient
+                    {
+                        Host = "smtp.gmail.com",
+                        Port = 587,
+                        EnableSsl = true,
+                        DeliveryMethod = SmtpDeliveryMethod.Network,
+                        UseDefaultCredentials = false,
+                        Credentials = new NetworkCredential(fromAddress.Address, fromPassword)
+                    };
+                    using (var message = new MailMessage(fromAddress, toAddress)
+                    {
+                        Subject = subject,
+                        Body = body + mxn
+                    })
+                    {
+                        smtp.Send(message);
+                    }
 
-                    //MessageBox.Show("Mã xác nhận đã được gửi. Vui lòng check Email");
+                    MessageBox.Show("Mã xác nhận đã được gửi. Vui lòng check Email");
                 }
             }
 
