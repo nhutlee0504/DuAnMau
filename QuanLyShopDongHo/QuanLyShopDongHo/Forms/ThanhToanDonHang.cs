@@ -78,7 +78,7 @@ namespace QuanLyShopDongHo.Forms
                     + maLoai + "\t\t\t" + tenLoai + "\t\t" + soLuong + "\t\t" + donGia + Environment.NewLine
                     + Environment.NewLine + "\t\t\t\t\t\t\t" + lbl9 + tongTien;
 
-                doc.SaveAs2($@"F:\FPOLY\2. DuAn_1_SD18301\{maDon}.docx");
+                doc.SaveAs2($@"D:\DuAn1\{maDon}.docx");
                 doc.Close();
                 wordApp.Quit();
                 MessageBox.Show("Xuất Word thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
