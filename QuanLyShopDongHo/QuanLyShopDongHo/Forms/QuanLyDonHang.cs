@@ -37,6 +37,7 @@ namespace QuanLyShopDongHo.Forms
                 db.KhachHangs.ToList().ForEach(x => cboSDT.Items.Add(x.SDT));
                 db.ChiTietSanPhams.ToList().ForEach(x => cboLoaiSP.Items.Add(x.LoaiSP));
             }
+            txtMaNhanVien.Text = manvv.Text;
             dtpNgayIn.Text = DateTime.Now.ToString("dd/MM/yyyy");
             btnThanhToan.Enabled = false;
         }
@@ -70,7 +71,6 @@ namespace QuanLyShopDongHo.Forms
                     string isNumber = @"^[-+]?[0-9]*.?[0-9]+$";
                     Regex regex = new Regex(isNumber);
                     var maDHTrung = db.DonHangs.Select(x => x.MaDon);
-                    var maNV = db.NhanViens.Select(x => x.MaNV);
                     var SDT = db.KhachHangs.Select(x => x.SDT);
                     var loaiSP = db.ChiTietSanPhams.Select(x => x.LoaiSP);
                     if (cboSDT.Text == "" || cboLoaiSP.Text == "" || txtSoLuong.Text == "" || txtMaNhanVien.Text == "")
@@ -103,11 +103,6 @@ namespace QuanLyShopDongHo.Forms
                         MessageBox.Show("Vui lòng nhập số lượng lớn hơn 0", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         cboSDT.Focus();
                     }
-                    else if (maNV.Contains(txtMaNhanVien.Text) == false)
-                    {
-                        MessageBox.Show("Mã nhân viên không tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        cboSDT.Focus();
-                    }
                     else if (loaiSP.Contains(cboLoaiSP.Text) == false)
                     {
                         MessageBox.Show("Mã loại sản phẩm không tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -124,7 +119,7 @@ namespace QuanLyShopDongHo.Forms
             }
             catch (Exception)
             {
-                MessageBox.Show("Vui lòng nhập số lượng là số", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Vui lòng nhập số lượng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtSoLuong.Focus();
             }
         }
@@ -151,7 +146,7 @@ namespace QuanLyShopDongHo.Forms
             txtTenLoai.Text = "";
             txtSoLuong.Text = "";
             txtDonGia.Text = "";
-            txtMaNhanVien.Text = "";
+            txtMaNhanVien.Text = manvv.Text;
             dtpNgayIn.Text = DateTime.Now.ToString("dd/MM/yyyy");
             cboMaDonTim.Text = "";
         }

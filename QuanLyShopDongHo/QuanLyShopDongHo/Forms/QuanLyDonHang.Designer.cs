@@ -29,7 +29,7 @@ namespace QuanLyShopDongHo.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.cboLoaiSP = new System.Windows.Forms.ComboBox();
             this.btnLamMoi = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -161,7 +161,7 @@ namespace QuanLyShopDongHo.Forms
             // 
             // txtTenKhachHang
             // 
-            this.txtTenKhachHang.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.txtTenKhachHang.BackColor = System.Drawing.Color.White;
             this.txtTenKhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtTenKhachHang.Location = new System.Drawing.Point(615, 106);
             this.txtTenKhachHang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -198,10 +198,10 @@ namespace QuanLyShopDongHo.Forms
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnThoat.ForeColor = System.Drawing.Color.White;
             this.btnThoat.Image = global::QuanLyShopDongHo.Properties.Resources.Exit;
-            this.btnThoat.Location = new System.Drawing.Point(837, 25);
+            this.btnThoat.Location = new System.Drawing.Point(908, 11);
             this.btnThoat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(127, 48);
+            this.btnThoat.Size = new System.Drawing.Size(115, 39);
             this.btnThoat.TabIndex = 97;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -288,10 +288,12 @@ namespace QuanLyShopDongHo.Forms
             // 
             // txtMaNhanVien
             // 
+            this.txtMaNhanVien.BackColor = System.Drawing.Color.White;
             this.txtMaNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtMaNhanVien.Location = new System.Drawing.Point(615, 286);
             this.txtMaNhanVien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMaNhanVien.Name = "txtMaNhanVien";
+            this.txtMaNhanVien.ReadOnly = true;
             this.txtMaNhanVien.Size = new System.Drawing.Size(199, 26);
             this.txtMaNhanVien.TabIndex = 93;
             // 
@@ -342,7 +344,7 @@ namespace QuanLyShopDongHo.Forms
             // 
             // txtMaDon
             // 
-            this.txtMaDon.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.txtMaDon.BackColor = System.Drawing.Color.White;
             this.txtMaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtMaDon.Location = new System.Drawing.Point(237, 110);
             this.txtMaDon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -369,7 +371,7 @@ namespace QuanLyShopDongHo.Forms
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(196, 25);
+            this.label1.Location = new System.Drawing.Point(29, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(439, 48);
             this.label1.TabIndex = 99;
@@ -377,7 +379,7 @@ namespace QuanLyShopDongHo.Forms
             // 
             // txtTenLoai
             // 
-            this.txtTenLoai.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.txtTenLoai.BackColor = System.Drawing.Color.White;
             this.txtTenLoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtTenLoai.Location = new System.Drawing.Point(615, 197);
             this.txtTenLoai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -401,8 +403,8 @@ namespace QuanLyShopDongHo.Forms
             // dgvDonHang
             // 
             this.dgvDonHang.AllowUserToAddRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.dgvDonHang.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.dgvDonHang.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvDonHang.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.dgvDonHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDonHang.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -422,7 +424,7 @@ namespace QuanLyShopDongHo.Forms
             this.dgvDonHang.RowHeadersVisible = false;
             this.dgvDonHang.RowHeadersWidth = 51;
             this.dgvDonHang.RowTemplate.Height = 24;
-            this.dgvDonHang.Size = new System.Drawing.Size(929, 277);
+            this.dgvDonHang.Size = new System.Drawing.Size(964, 277);
             this.dgvDonHang.TabIndex = 112;
             this.dgvDonHang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDonHang_CellClick);
             // 
@@ -503,7 +505,7 @@ namespace QuanLyShopDongHo.Forms
             // 
             // txtDonGia
             // 
-            this.txtDonGia.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.txtDonGia.BackColor = System.Drawing.Color.White;
             this.txtDonGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtDonGia.Location = new System.Drawing.Point(237, 245);
             this.txtDonGia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -554,7 +556,7 @@ namespace QuanLyShopDongHo.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(76)))), ((int)(((byte)(88)))));
             this.BackgroundImage = global::QuanLyShopDongHo.Properties.Resources.bg1_1;
-            this.ClientSize = new System.Drawing.Size(987, 724);
+            this.ClientSize = new System.Drawing.Size(1035, 724);
             this.Controls.Add(this.txtDonGia);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.dgvDonHang);
