@@ -81,15 +81,31 @@ namespace QuanLyShopDongHo.Forms
                 MessageBox.Show("Loại sản phẩm không được lớn hơn 8 ký tự");
                 return false;
             }
-
-            if (int.Parse(txtkhuyenmai.Text) < 0)
+            int number;
+            if (int.TryParse(txtkhuyenmai.Text, out number))
             {
-                MessageBox.Show("Khuyến mãi phải là số nguyên dương");
+                if (number < 0)
+                {
+                    MessageBox.Show("Khuyễn mãi phải là số nguyên dương.");
+                    return false;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Khuyến mãi phải là số nguyên dương.");
                 return false;
             }
-            if (float.Parse(txtgiaban.Text) < 0)
+            if (int.TryParse(txtgiaban.Text, out number))
             {
-                MessageBox.Show("Giá bán phải là số nguyên dương");
+                if (number < 0)
+                {
+                    MessageBox.Show("Giá bán phải là số nguyên dương.");
+                    return false;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Giá bán phải là số nguyên dương.");
                 return false;
             }
             return true;

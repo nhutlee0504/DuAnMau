@@ -46,6 +46,12 @@ namespace QuanLyShopDongHo.Forms
 
         private bool checkForm()
         {
+            string input = txtTenKhachHang.Text;
+            if (!IsValidInput(input))
+            {
+                MessageBox.Show("Họ tên chỉ nhập chữ cái và khoảng trắng.");
+                return false;
+            }
             using (var db = new QuanLyShopDongHoEntities())
             {
                 var sdtTrung = db.KhachHangs.Select(x => x.SDT).FirstOrDefault();
@@ -69,6 +75,18 @@ namespace QuanLyShopDongHo.Forms
                 else
                     return true;
             }
+        }
+        private bool IsValidInput(string input)
+        {
+            foreach (char c in input)
+            {
+                if (!char.IsLetter(c) && !char.IsWhiteSpace(c))
+                {
+                    return false;
+                }
+            }
+
+            return true;
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -107,18 +125,18 @@ namespace QuanLyShopDongHo.Forms
                     capNhat.TenKH = txtTenKhachHang.Text;
                     capNhat.DiaChi = txtDiaChi.Text;
                     db.SaveChanges();
+                    txtTenKhachHang.Text = "";
+                    txtSDT.Text = "";
+                    txtDiaChi.Text = "";
+                    txtTenKhachTim.Text = "";
+                    btnThem.Enabled = true;
+                    txtSDT.ReadOnly = false;
+                    btnCapNhat.Enabled = false;
+                    btnXoa.Enabled = false;
+                    Rong();
+                    ShowKH();
                 }
             }
-            txtTenKhachHang.Text = "";
-            txtSDT.Text = "";
-            txtDiaChi.Text = "";
-            txtTenKhachTim.Text = "";
-            btnThem.Enabled = true;
-            txtSDT.ReadOnly = false;
-            btnCapNhat.Enabled = false;
-            btnXoa.Enabled = false;
-            Rong();
-            ShowKH();
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
