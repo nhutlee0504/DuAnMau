@@ -27,7 +27,7 @@ namespace QuanLyShopDongHo.Forms
 
         private void QuanLyKhachHang_Load(object sender, EventArgs e)
         {
-            tennv.Text = inputdata1;
+             tennv.Text = inputdata1;
             vaitro.Text = inputdata2;
             manv.Text = inputdata3;
             ShowKH();
