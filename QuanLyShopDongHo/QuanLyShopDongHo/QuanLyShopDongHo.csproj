@@ -171,6 +171,9 @@
     <EmbeddedResource Include="Forms\DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DoiMKMoi.resx">
+      <DependentUpon>DoiMKMoi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\HuongDan.resx">
       <DependentUpon>HuongDan.cs</DependentUpon>
     </EmbeddedResource>

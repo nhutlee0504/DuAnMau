@@ -736,8 +736,6 @@ namespace QuanLyShopDongHo.Forms
                                     datareader["HoTen"]);
                             }
                         }
-
-
                         conn.Close();
                     }
                 }
