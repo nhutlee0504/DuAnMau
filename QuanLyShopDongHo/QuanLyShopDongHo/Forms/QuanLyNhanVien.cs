@@ -102,7 +102,7 @@ namespace QuanLyShopDongHo.Forms
 
             if (txtmanv.Text.Length > 8)
             {
-                MessageBox.Show("Mã người học không được quá 8 ký tự");
+                MessageBox.Show("Mã nhân viên không được quá 8 ký tự");
                 return false;
             }
             int number;
