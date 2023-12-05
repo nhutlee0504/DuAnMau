@@ -58,15 +58,23 @@ namespace QuanLyShopDongHo.Forms
         }
         private void btnthemhinh_Click_1(object sender, EventArgs e)
         {
-            OpenFileDialog filelog = new OpenFileDialog();
-            DialogResult result = filelog.ShowDialog();
-            if (result == DialogResult.OK)
+            try
             {
-                string file = filelog.FileName;
-                pictureBox1.Image = Image.FromFile(file);
-                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-                pictureBox1.Tag = file;
+                OpenFileDialog filelog = new OpenFileDialog();
+                DialogResult result = filelog.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+                    string file = filelog.FileName;
+                    pictureBox1.Image = Image.FromFile(file);
+                    pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                    pictureBox1.Tag = file;
 
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Vui lòng chọn file hình ảnh");
+                return;
             }
         }
 

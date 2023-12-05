@@ -103,24 +103,29 @@
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(197, 176);
+            this.button1.Image = global::QuanLyShopDongHo.Properties.Resources.Save;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(218, 176);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(148, 39);
+            this.button1.Size = new System.Drawing.Size(127, 39);
             this.button1.TabIndex = 6;
             this.button1.Text = "Xác nhận";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
+            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
             this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.checkBox1.Location = new System.Drawing.Point(359, 150);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(118, 21);
             this.checkBox1.TabIndex = 7;
             this.checkBox1.Text = "Hiện mật khẩu";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.UseVisualStyleBackColor = false;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // DoiMKMoi

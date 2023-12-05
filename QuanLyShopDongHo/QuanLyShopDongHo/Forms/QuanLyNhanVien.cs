@@ -59,32 +59,32 @@ namespace QuanLyShopDongHo.Forms
 
         private void btnthem_Click(object sender, EventArgs e)
         {
-            if (checkk())
-            {
-                try
+                if (checkk())
                 {
-                    NhanVien them = new NhanVien();
-                    them.MaNV = txtmanv.Text;
-                    them.HoTen = txthoten.Text;
-                    them.VaiTro = cbbvaitro.Text;
-                    them.NgaySinh = DateTime.ParseExact(txtngaysinh.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture);
-                    them.SDT = txtsdt.Text;
-                    them.Email = txtemail.Text;
-                    them.MatKhau = "e99a18c428cb38d5f260853678922e03";
-                    using (QuanLyShopDongHoEntities db = new QuanLyShopDongHoEntities())
+                    try
                     {
-                        db.NhanViens.Add(them);
-                        db.SaveChanges();
+                        NhanVien them = new NhanVien();
+                        them.MaNV = txtmanv.Text;
+                        them.HoTen = txthoten.Text;
+                        them.VaiTro = cbbvaitro.Text;
+                        them.NgaySinh = DateTime.ParseExact(txtngaysinh.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture);
+                        them.SDT = txtsdt.Text;
+                        them.Email = txtemail.Text;
+                        them.MatKhau = "e99a18c428cb38d5f260853678922e03";
+                        using (QuanLyShopDongHoEntities db = new QuanLyShopDongHoEntities())
+                        {
+                            db.NhanViens.Add(them);
+                            db.SaveChanges();
+                        }
+                        rong();
+                        upDateDGV();
                     }
-                    rong();
-                    upDateDGV();
+                    catch (Exception)
+                    {
+                        MessageBox.Show("Dữ liệu không hợp lệ");
+                        return;
+                    }
                 }
-                catch (Exception)
-                {
-                    MessageBox.Show("Dữ liệu không hợp lệ");
-                    return;
-                }
-            }
         }
         public static bool IsValidEmail(string email)
         {
