@@ -249,7 +249,6 @@ namespace QuanLyShopDongHo.Forms
                     return;
                 }
             }
-
         }
 
         private void btntim_Click(object sender, EventArgs e)

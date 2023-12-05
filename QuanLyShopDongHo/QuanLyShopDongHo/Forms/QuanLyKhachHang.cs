@@ -48,24 +48,22 @@ namespace QuanLyShopDongHo.Forms
         {
             using (var db = new QuanLyShopDongHoEntities())
             {
-                string isNumber = @"^[-+]?[0-9]*.?[0-9]+$";
-                Regex regex = new Regex(isNumber);
                 var sdtTrung = db.KhachHangs.Select(x => x.SDT).FirstOrDefault();
+                int so;
                 if (txtTenKhachHang.Text == "" || txtSDT.Text == "" || txtDiaChi.Text == "")
                 {
                     MessageBox.Show("Vui lòng nhập đầy đủ thông tin khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return false;
                 }
-                else if (txtSDT.Text.Length > 10 || txtSDT.Text.Length < 10)
+                else if (txtSDT.Text.Length != 10)
                 {
                     MessageBox.Show("Vui lòng nhập số điện thoại đủ 10 số", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     txtSDT.Focus();
                     return false;
-                }
-                else if (regex.IsMatch(txtSDT.Text) == false)
+                }      
+                else if (int.TryParse(txtSDT.Text, out so) == false)
                 {
-                    MessageBox.Show("Vui lòng nhập đúng định dạng số điện thoại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    txtSDT.Focus();
+                    MessageBox.Show("Vui lòng nhập số điện thoại là số", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return false;
                 }
                 else
