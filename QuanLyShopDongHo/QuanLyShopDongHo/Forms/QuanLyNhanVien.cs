@@ -32,9 +32,18 @@ namespace QuanLyShopDongHo.Forms
             manv.Text = inputdata3;
             cbbvaitro.Items.Add("Quản Trị");
             cbbvaitro.Items.Add("Nhân Viên");
-            btnthem.Enabled = true;
-            btncapnhat.Enabled = false;
-            btnxoa.Enabled = false;
+            if (vaitroo.Text == "Nhân Viên")
+            {
+                btncapnhat.Enabled = false;
+                btnthem.Enabled = false;
+                btnxoa.Enabled = false;
+            }
+            else
+            {
+                btncapnhat.Enabled = false;
+                btnthem.Enabled = true; 
+                btnxoa.Enabled = false;
+            }
             upDateDGV();
         }
         private void upDateDGV()
@@ -59,29 +68,43 @@ namespace QuanLyShopDongHo.Forms
 
         private void btnthem_Click(object sender, EventArgs e)
         {
-            if (checkk())
+            using (QuanLyShopDongHoEntities hb = new QuanLyShopDongHoEntities())
             {
-                try
+                List<NhanVien> list = hb.NhanViens
+                    .Where(x => x.MaNV == txtmanv.Text)
+                    .ToList();//sắp xếp ở đây
+                if (!list.Any())
                 {
-                    NhanVien them = new NhanVien();
-                    them.MaNV = txtmanv.Text;
-                    them.HoTen = txthoten.Text;
-                    them.VaiTro = cbbvaitro.Text;
-                    them.NgaySinh = DateTime.ParseExact(txtngaysinh.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture);
-                    them.SDT = txtsdt.Text;
-                    them.Email = txtemail.Text;
-                    them.MatKhau = "e99a18c428cb38d5f260853678922e03";
-                    using (QuanLyShopDongHoEntities db = new QuanLyShopDongHoEntities())
+                    if (checkk())
                     {
-                        db.NhanViens.Add(them);
-                        db.SaveChanges();
+                        try
+                        {
+                            NhanVien them = new NhanVien();
+                            them.MaNV = txtmanv.Text;
+                            them.HoTen = txthoten.Text;
+                            them.VaiTro = cbbvaitro.Text;
+                            them.NgaySinh = DateTime.ParseExact(txtngaysinh.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture);
+                            them.SDT = txtsdt.Text;
+                            them.Email = txtemail.Text;
+                            them.MatKhau = "e99a18c428cb38d5f260853678922e03";
+                            using (QuanLyShopDongHoEntities db = new QuanLyShopDongHoEntities())
+                            {
+                                db.NhanViens.Add(them);
+                                db.SaveChanges();
+                            }
+                            rong();
+                            upDateDGV();
+                        }
+                        catch (Exception)
+                        {
+                            MessageBox.Show("Dữ liệu không hợp lệ");
+                            return;
+                        }
                     }
-                    rong();
-                    upDateDGV();
                 }
-                catch (Exception)
+                else
                 {
-                    MessageBox.Show("Dữ liệu không hợp lệ");
+                    MessageBox.Show("Mã nhân viên đã tồn tại");
                     return;
                 }
             }
@@ -99,16 +122,22 @@ namespace QuanLyShopDongHo.Forms
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin.");
                 return false;
             }
+            string input = txthoten.Text;
 
+            if (!IsValidInput(input))
+            {
+                MessageBox.Show("Họ tên chỉ nhập chữ cái và khoảng trắng.");
+                return false;
+            }
             if (txtmanv.Text.Length > 8)
             {
-                MessageBox.Show("Mã người học không được quá 8 ký tự");
+                MessageBox.Show("Mã nhân viên không được quá 8 ký tự");
                 return false;
             }
             int number;
             if (int.TryParse(txtsdt.Text, out number))
             {
-                if (txtsdt.Text.Length <= 0 || txtsdt.Text.Length > 10 || txtsdt.Text.Length != 10)
+                if (txtsdt.Text.Length != 10)
                 {
                     MessageBox.Show("Số điện thoại phải đầy đủ 10 số.");
                     return false;
@@ -147,6 +176,18 @@ namespace QuanLyShopDongHo.Forms
                 MessageBox.Show("Vui lòng nhập theo dạng datetime.");
                 return false;
             }
+            return true;
+        }
+        private bool IsValidInput(string input)
+        {
+            foreach (char c in input)
+            {
+                if (!char.IsLetter(c) && !char.IsWhiteSpace(c))
+                {
+                    return false;
+                }
+            }
+
             return true;
         }
         private void rong()
@@ -229,14 +270,14 @@ namespace QuanLyShopDongHo.Forms
                     {
                         txtmanv.Text = nh.MaNV;
                         txthoten.Text = nh.HoTen;
-                        txtngaysinh.Text = nh.NgaySinh.ToString();
+                        txtngaysinh.Text = nh.NgaySinh.ToString().Split(' ')[0];
                         cbbvaitro.Text = nh.VaiTro;
                         txtemail.Text = nh.Email;
                         txtsdt.Text = nh.SDT;
                     });
                     if(vaitroo.Text == "Nhân Viên")
                     {
-                        btncapnhat.Enabled = true;
+                        btncapnhat.Enabled = false;
                         btnthem.Enabled = false;
                         btnxoa.Enabled = false;
                     }
@@ -246,7 +287,7 @@ namespace QuanLyShopDongHo.Forms
                         btnthem.Enabled = false;
                         btnxoa.Enabled = true;
                     }
-                   
+                    txtmanv.Enabled = false;
                 }
             }
         }
@@ -268,7 +309,7 @@ namespace QuanLyShopDongHo.Forms
             }
             if (vaitroo.Text == "Nhân Viên")
             {
-                btncapnhat.Enabled = true;
+                btncapnhat.Enabled = false;
                 btnthem.Enabled = false;
                 btnxoa.Enabled = false;
             }
@@ -278,6 +319,7 @@ namespace QuanLyShopDongHo.Forms
                 btnthem.Enabled = false;
                 btnxoa.Enabled = true;
             }
+            txtmanv.Enabled = false;
         }
 		private void btnthoat_Click(object sender, EventArgs e)
         {

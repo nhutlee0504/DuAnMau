@@ -129,39 +129,41 @@ namespace QuanLyShopDongHo.Forms
                 MessageBox.Show("Thiếu hình ảnh");
                 return false;
             }
-
-
-            //if (txtma.Text.Length > 8)
-            //{
-            //    MessageBox.Show("Mã sản phẩm không được quá 8 ký tự.");
-            //    return false;
-            //}
-
+            DateTime nam;
+            if (DateTime.TryParse(txtngaynhap.Text, out nam))
+            {
+                
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng nhập theo dạng datetime.");
+                return false;
+            }
             int number;
-            //if (int.TryParse(txtthoiluong.Text, out number))
-            //{
-            //    if (number < 0)
-            //    {
-            //        MessageBox.Show("Thời lượng học phải là số nguyên dương");
-            //        return false;
-            //    }
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Vui lòng nhập số nguyên dương.");
-            //    return false;
-            //}
             if (int.TryParse(txtsoluong.Text, out number))
             {
                 if (number < 0)
                 {
-                    MessageBox.Show("Vui lòng nhập số nguyên dương.");
+                    MessageBox.Show("Số lượng phải là số nguyên dương.");
                     return false;
                 }
             }
             else
             {
-                MessageBox.Show("Vui lòng nhập số nguyên dương.");
+                MessageBox.Show("Số lượng phải là số nguyên dương.");
+                return false;
+            }
+            if (int.TryParse(txtgianhap.Text, out number))
+            {
+                if (number < 0)
+                {
+                    MessageBox.Show("Giá nhập phải là số nguyên dương.");
+                    return false;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Giá nhập phải là số nguyên dương.");
                 return false;
             }
             return true;
@@ -255,7 +257,7 @@ namespace QuanLyShopDongHo.Forms
                 txtma.Text = kh.MaSanPham.ToString();
                 txttensp.Text = kh.TenSanPham;
                 txtsoluong.Text = kh.SoLuong.ToString();
-                txtgianhap.Text = kh.GiaNhap.ToString("#,##0");
+                txtgianhap.Text = kh.GiaNhap.ToString();
                 txtngaynhap.Text = kh.NgayNhap.ToString().Split(' ')[0];
                 string file = kh.HinhAnh.ToString();
                 pictureBox1.Image = Image.FromFile(@"" + file);

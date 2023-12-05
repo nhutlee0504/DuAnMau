@@ -97,33 +97,46 @@ namespace QuanLyShopDongHo.Forms
 
         private void btnthem_Click(object sender, EventArgs e)
         {
-            if (checkk())
+            using(QuanLyShopDongHoEntities hb = new QuanLyShopDongHoEntities())
             {
-                try
+                List<ChiTietSanPham> list = hb.ChiTietSanPhams
+                    .Where(x => x.LoaiSP == txtloaisp.Text)
+                    .ToList();//sắp xếp ở đây
+                if (!list.Any())
                 {
-                    ChiTietSanPham them = new ChiTietSanPham();
-                    them.LoaiSP = txtloaisp.Text;
-                    them.TenLoai = txttenloai.Text;
-                    them.GiaBan = float.Parse(txtgiaban.Text);
-                    them.KhuyenMai = int.Parse(txtkhuyenmai.Text);
-                    using (QuanLyShopDongHoEntities db = new QuanLyShopDongHoEntities())
+                    if (checkk())
                     {
-                        SanPham maspduocchon = db.SanPhams
-                            .Where(x => x.MaSanPham.ToString() == cbbmasp.SelectedItem.ToString()).FirstOrDefault();
-                        them.MaSP = maspduocchon.MaSanPham;
-                        db.ChiTietSanPhams.Add(them);
-                        db.SaveChanges();
+                        try
+                        {
+                            ChiTietSanPham them = new ChiTietSanPham();
+                            them.LoaiSP = txtloaisp.Text;
+                            them.TenLoai = txttenloai.Text;
+                            them.GiaBan = float.Parse(txtgiaban.Text);
+                            them.KhuyenMai = int.Parse(txtkhuyenmai.Text);
+                            using (QuanLyShopDongHoEntities db = new QuanLyShopDongHoEntities())
+                            {
+                                SanPham maspduocchon = db.SanPhams
+                                    .Where(x => x.MaSanPham.ToString() == cbbmasp.SelectedItem.ToString()).FirstOrDefault();
+                                them.MaSP = maspduocchon.MaSanPham;
+                                db.ChiTietSanPhams.Add(them);
+                                db.SaveChanges();
+                            }
+                            rong();
+                            updatedgv();
+                        }
+                        catch (Exception)
+                        {
+                            MessageBox.Show("Dữ liệu không hợp lệ.");
+                            return;
+                        }
                     }
-                    rong();
-                    updatedgv();
                 }
-                catch (Exception)
+                else
                 {
-                    MessageBox.Show("Dữ liệu không hợp lệ.");
+                    MessageBox.Show("Loại sản phẩm đã tồn tại");
                     return;
                 }
             }
-
         }
 
         private void btnxoa_Click(object sender, EventArgs e)
@@ -226,7 +239,7 @@ namespace QuanLyShopDongHo.Forms
                 txtloaisp.Text = kh.LoaiSP.ToString();
                 txttenloai.Text = kh.TenLoai;
                 cbbmasp.Text = kh.MaSP.ToString();
-                txtgiaban.Text = kh.GiaBan.ToString("#,##0");
+                txtgiaban.Text = kh.GiaBan.ToString();
                 txtkhuyenmai.Text = kh.KhuyenMai.ToString();
                 richTextBox1.Text = kh.MoTa;
             }
