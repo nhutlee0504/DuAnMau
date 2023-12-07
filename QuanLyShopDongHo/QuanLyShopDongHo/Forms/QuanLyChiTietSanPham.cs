@@ -157,15 +157,24 @@ namespace QuanLyShopDongHo.Forms
 
         private void btnxoa_Click(object sender, EventArgs e)
         {
-            using (QuanLyShopDongHoEntities db = new QuanLyShopDongHoEntities())
+            try
             {
-                ChiTietSanPham xoa = db.ChiTietSanPhams.Where(x => x.LoaiSP == txtloaisp.Text)
-                    .FirstOrDefault();
-                db.ChiTietSanPhams.Remove(xoa);
-                db.SaveChanges();
+                using (QuanLyShopDongHoEntities db = new QuanLyShopDongHoEntities())
+                {
+                    ChiTietSanPham xoa = db.ChiTietSanPhams.Where(x => x.LoaiSP == txtloaisp.Text)
+                        .FirstOrDefault();
+                    db.ChiTietSanPhams.Remove(xoa);
+                    db.SaveChanges();
+                }
+                rong();
+                updatedgv();
             }
-            rong();
-            updatedgv();
+            catch (Exception)
+            {
+                MessageBox.Show("Không thể xóa sản phẩm!!!");
+                return;
+            }
+           
 
         }
 
