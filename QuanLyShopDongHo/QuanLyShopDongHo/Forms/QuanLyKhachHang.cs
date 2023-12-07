@@ -184,7 +184,7 @@ namespace QuanLyShopDongHo.Forms
         {
             using (var db = new QuanLyShopDongHoEntities())
             {
-                List<KhachHang> tenKH = db.KhachHangs.Where(x => x.TenKH.EndsWith(txtTenKhachTim.Text.Trim())).ToList();
+                List<KhachHang> tenKH = db.KhachHangs.Where(x => x.TenKH.Contains(txtTenKhachTim.Text.Trim())).ToList();
                 if (tenKH.Count > 0)
                 {
                     dgvKhachHang.Rows.Clear();

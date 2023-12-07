@@ -53,3 +53,5 @@ D:\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.csproj.Cor
 D:\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.csproj.CopyComplete
 D:\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.exe
 D:\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.pdb
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\Interop.Office.dll
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.Forms.DoiMKMoi.resources

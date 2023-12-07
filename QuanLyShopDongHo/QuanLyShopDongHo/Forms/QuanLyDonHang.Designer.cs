@@ -29,6 +29,7 @@ namespace QuanLyShopDongHo.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.cboLoaiSP = new System.Windows.Forms.ComboBox();
             this.btnLamMoi = new System.Windows.Forms.Button();
@@ -67,11 +68,22 @@ namespace QuanLyShopDongHo.Forms
             this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label11 = new System.Windows.Forms.Label();
             this.txtDonGia = new System.Windows.Forms.TextBox();
-            this.tennv = new System.Windows.Forms.Label();
-            this.vaitro = new System.Windows.Forms.Label();
             this.manvv = new System.Windows.Forms.Label();
+            this.vaitro = new System.Windows.Forms.Label();
+            this.tennv = new System.Windows.Forms.Label();
+            this.dgvKhachHang = new System.Windows.Forms.DataGridView();
+            this.TenKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnTimSDT = new System.Windows.Forms.Button();
+            this.pnlTimSDT = new System.Windows.Forms.Panel();
+            this.btnThoatChon = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtSDT = new System.Windows.Forms.TextBox();
+            this.btnTim = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDonHang)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).BeginInit();
+            this.pnlTimSDT.SuspendLayout();
             this.SuspendLayout();
             // 
             // cboLoaiSP
@@ -403,8 +415,8 @@ namespace QuanLyShopDongHo.Forms
             // dgvDonHang
             // 
             this.dgvDonHang.AllowUserToAddRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.dgvDonHang.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.dgvDonHang.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvDonHang.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.dgvDonHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDonHang.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -514,17 +526,17 @@ namespace QuanLyShopDongHo.Forms
             this.txtDonGia.Size = new System.Drawing.Size(199, 26);
             this.txtDonGia.TabIndex = 118;
             // 
-            // tennv
+            // manvv
             // 
-            this.tennv.AutoSize = true;
-            this.tennv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tennv.Location = new System.Drawing.Point(639, 11);
-            this.tennv.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.tennv.Name = "tennv";
-            this.tennv.Size = new System.Drawing.Size(54, 17);
-            this.tennv.TabIndex = 113;
-            this.tennv.Text = "label11";
-            this.tennv.Visible = false;
+            this.manvv.AutoSize = true;
+            this.manvv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.manvv.Location = new System.Drawing.Point(764, 11);
+            this.manvv.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.manvv.Name = "manvv";
+            this.manvv.Size = new System.Drawing.Size(54, 17);
+            this.manvv.TabIndex = 115;
+            this.manvv.Text = "label13";
+            this.manvv.Visible = false;
             // 
             // vaitro
             // 
@@ -538,17 +550,138 @@ namespace QuanLyShopDongHo.Forms
             this.vaitro.Text = "label12";
             this.vaitro.Visible = false;
             // 
-            // manvv
+            // tennv
             // 
-            this.manvv.AutoSize = true;
-            this.manvv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.manvv.Location = new System.Drawing.Point(764, 11);
-            this.manvv.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.manvv.Name = "manvv";
-            this.manvv.Size = new System.Drawing.Size(54, 17);
-            this.manvv.TabIndex = 115;
-            this.manvv.Text = "label13";
-            this.manvv.Visible = false;
+            this.tennv.AutoSize = true;
+            this.tennv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tennv.Location = new System.Drawing.Point(639, 11);
+            this.tennv.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.tennv.Name = "tennv";
+            this.tennv.Size = new System.Drawing.Size(54, 17);
+            this.tennv.TabIndex = 113;
+            this.tennv.Text = "label11";
+            this.tennv.Visible = false;
+            // 
+            // dgvKhachHang
+            // 
+            this.dgvKhachHang.AllowUserToAddRows = false;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.dgvKhachHang.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvKhachHang.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dgvKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvKhachHang.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.TenKH,
+            this.dataGridViewTextBoxColumn1});
+            this.dgvKhachHang.Location = new System.Drawing.Point(12, 38);
+            this.dgvKhachHang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvKhachHang.Name = "dgvKhachHang";
+            this.dgvKhachHang.RowHeadersVisible = false;
+            this.dgvKhachHang.RowHeadersWidth = 51;
+            this.dgvKhachHang.RowTemplate.Height = 24;
+            this.dgvKhachHang.Size = new System.Drawing.Size(330, 192);
+            this.dgvKhachHang.TabIndex = 122;
+            this.dgvKhachHang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKhachHang_CellClick);
+            // 
+            // TenKH
+            // 
+            this.TenKH.HeaderText = "Tên khách hàng";
+            this.TenKH.MinimumWidth = 6;
+            this.TenKH.Name = "TenKH";
+            this.TenKH.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "Số điện thoại";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // btnTimSDT
+            // 
+            this.btnTimSDT.BackColor = System.Drawing.Color.SlateGray;
+            this.btnTimSDT.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnTimSDT.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.btnTimSDT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTimSDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnTimSDT.ForeColor = System.Drawing.Color.White;
+            this.btnTimSDT.Image = global::QuanLyShopDongHo.Properties.Resources.Search;
+            this.btnTimSDT.Location = new System.Drawing.Point(161, 158);
+            this.btnTimSDT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnTimSDT.Name = "btnTimSDT";
+            this.btnTimSDT.Size = new System.Drawing.Size(48, 33);
+            this.btnTimSDT.TabIndex = 123;
+            this.btnTimSDT.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnTimSDT.UseVisualStyleBackColor = false;
+            this.btnTimSDT.Click += new System.EventHandler(this.btnTimSDT_Click);
+            // 
+            // pnlTimSDT
+            // 
+            this.pnlTimSDT.Controls.Add(this.btnThoatChon);
+            this.pnlTimSDT.Controls.Add(this.label12);
+            this.pnlTimSDT.Controls.Add(this.txtSDT);
+            this.pnlTimSDT.Controls.Add(this.btnTim);
+            this.pnlTimSDT.Controls.Add(this.dgvKhachHang);
+            this.pnlTimSDT.Location = new System.Drawing.Point(90, 196);
+            this.pnlTimSDT.Name = "pnlTimSDT";
+            this.pnlTimSDT.Size = new System.Drawing.Size(424, 240);
+            this.pnlTimSDT.TabIndex = 124;
+            // 
+            // btnThoatChon
+            // 
+            this.btnThoatChon.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.btnThoatChon.FlatAppearance.BorderSize = 0;
+            this.btnThoatChon.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
+            this.btnThoatChon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThoatChon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnThoatChon.ForeColor = System.Drawing.Color.White;
+            this.btnThoatChon.Location = new System.Drawing.Point(343, 95);
+            this.btnThoatChon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnThoatChon.Name = "btnThoatChon";
+            this.btnThoatChon.Size = new System.Drawing.Size(72, 39);
+            this.btnThoatChon.TabIndex = 126;
+            this.btnThoatChon.Text = "Thoát";
+            this.btnThoatChon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnThoatChon.UseVisualStyleBackColor = false;
+            this.btnThoatChon.Click += new System.EventHandler(this.btnThoatChon_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(13, 14);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(114, 20);
+            this.label12.TabIndex = 125;
+            this.label12.Text = "Nhập SĐT tìm";
+            // 
+            // txtSDT
+            // 
+            this.txtSDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtSDT.Location = new System.Drawing.Point(143, 8);
+            this.txtSDT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtSDT.Name = "txtSDT";
+            this.txtSDT.Size = new System.Drawing.Size(199, 26);
+            this.txtSDT.TabIndex = 124;
+            // 
+            // btnTim
+            // 
+            this.btnTim.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnTim.FlatAppearance.BorderSize = 0;
+            this.btnTim.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
+            this.btnTim.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTim.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnTim.ForeColor = System.Drawing.Color.White;
+            this.btnTim.Location = new System.Drawing.Point(343, 40);
+            this.btnTim.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnTim.Name = "btnTim";
+            this.btnTim.Size = new System.Drawing.Size(72, 39);
+            this.btnTim.TabIndex = 123;
+            this.btnTim.Text = "Tìm";
+            this.btnTim.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnTim.UseVisualStyleBackColor = false;
+            this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
             // 
             // QuanLyDonHang
             // 
@@ -557,6 +690,7 @@ namespace QuanLyShopDongHo.Forms
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(76)))), ((int)(((byte)(88)))));
             this.BackgroundImage = global::QuanLyShopDongHo.Properties.Resources.bg1_1;
             this.ClientSize = new System.Drawing.Size(1035, 724);
+            this.Controls.Add(this.btnTimSDT);
             this.Controls.Add(this.txtDonGia);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.dgvDonHang);
@@ -585,6 +719,7 @@ namespace QuanLyShopDongHo.Forms
             this.Controls.Add(this.txtMaDon);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.pnlTimSDT);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "QuanLyDonHang";
             this.Text = "QuanLyDonHang";
@@ -592,6 +727,9 @@ namespace QuanLyShopDongHo.Forms
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDonHang)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).EndInit();
+            this.pnlTimSDT.ResumeLayout(false);
+            this.pnlTimSDT.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -636,8 +774,17 @@ namespace QuanLyShopDongHo.Forms
         private System.Windows.Forms.DataGridViewTextBoxColumn MaNV;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtDonGia;
-        private System.Windows.Forms.Label tennv;
-        private System.Windows.Forms.Label vaitro;
         private System.Windows.Forms.Label manvv;
+        private System.Windows.Forms.Label vaitro;
+        private System.Windows.Forms.Label tennv;
+        private System.Windows.Forms.DataGridView dgvKhachHang;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenKH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.Button btnTimSDT;
+        private System.Windows.Forms.Panel pnlTimSDT;
+        private System.Windows.Forms.Button btnThoatChon;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox txtSDT;
+        private System.Windows.Forms.Button btnTim;
     }
 }
