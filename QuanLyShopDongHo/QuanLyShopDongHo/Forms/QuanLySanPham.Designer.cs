@@ -497,6 +497,7 @@ namespace QuanLyShopDongHo.Forms
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "QuanLySanPham";
             this.Text = "QuanLySanPham";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Closing_SanPham);
             this.Load += new System.EventHandler(this.QuanLySanPham_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

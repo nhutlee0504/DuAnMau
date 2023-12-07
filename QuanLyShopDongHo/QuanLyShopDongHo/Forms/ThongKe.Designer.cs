@@ -884,6 +884,7 @@ namespace QuanLyShopDongHo.Forms
             this.Controls.Add(this.manv);
             this.Name = "ThongKe";
             this.Text = "ThongKe";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Closing_ThongKe);
             this.Load += new System.EventHandler(this.ThongKe_Load);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();

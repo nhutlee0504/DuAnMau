@@ -103,5 +103,11 @@ namespace QuanLyShopDongHo.Forms
                 txtMatKhauXacNhan.UseSystemPasswordChar = true;
             }
         }
+
+        private void Closing_DMK(object sender, FormClosingEventArgs e)
+        {
+            TrangChu dn = new TrangChu(inputdata1, inputdata2, inputdata3);
+            dn.Show();
+        }
     }
 }

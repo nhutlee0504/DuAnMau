@@ -259,6 +259,7 @@ namespace QuanLyShopDongHo.Forms
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "DoiMatKhau";
             this.Text = "DoiMatKhau";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Closing_DMK);
             this.Load += new System.EventHandler(this.DoiMatKhau_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

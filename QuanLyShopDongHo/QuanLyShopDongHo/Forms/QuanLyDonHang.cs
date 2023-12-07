@@ -271,5 +271,11 @@ namespace QuanLyShopDongHo.Forms
            Color.Silver, 3, ButtonBorderStyle.Solid,
            Color.Silver, 3, ButtonBorderStyle.Solid);
         }
+
+        private void Closing_DonHang(object sender, FormClosingEventArgs e)
+        {
+            TrangChu dn = new TrangChu(inputdata1, inputdata2, inputdata3);
+            dn.Show();
+        }
     }
 }

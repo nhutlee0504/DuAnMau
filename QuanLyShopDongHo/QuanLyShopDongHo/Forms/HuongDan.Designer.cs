@@ -293,6 +293,7 @@ namespace QuanLyShopDongHo.Forms
             this.Controls.Add(this.btnThoat);
             this.Name = "HuongDan";
             this.Text = "HuongDan";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Closing_HDSD);
             this.Load += new System.EventHandler(this.HuongDan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();

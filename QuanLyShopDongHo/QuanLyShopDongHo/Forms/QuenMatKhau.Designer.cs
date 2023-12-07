@@ -142,6 +142,7 @@
             this.Controls.Add(this.label1);
             this.Name = "QuenMatKhau";
             this.Text = "QuenMatKhau";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Closing_QMK);
             this.Load += new System.EventHandler(this.QuenMatKhau_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
