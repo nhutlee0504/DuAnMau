@@ -13,7 +13,6 @@ namespace QuanLyShopDongHo.Forms
 {
     public partial class QuanLyKhachHang : Form
     {
-        public QuanLyKhachHang() { }
         string inputdata1 = "";
         string inputdata2 = "";
         string inputdata3 = "";
@@ -49,7 +48,7 @@ namespace QuanLyShopDongHo.Forms
             string input = txtTenKhachHang.Text;
             if (!IsValidInput(input))
             {
-                MessageBox.Show("Họ tên chỉ nhập chữ cái và khoảng trắng.");
+                MessageBox.Show("Họ tên chỉ nhập chữ cái và khoảng trắng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
             using (var db = new QuanLyShopDongHoEntities())
@@ -81,11 +80,8 @@ namespace QuanLyShopDongHo.Forms
             foreach (char c in input)
             {
                 if (!char.IsLetter(c) && !char.IsWhiteSpace(c))
-                {
                     return false;
-                }
             }
-
             return true;
         }
 
@@ -192,7 +188,6 @@ namespace QuanLyShopDongHo.Forms
                     {
                         dgvKhachHang.Rows.Add(x.TenKH, x.SDT, x.DiaChi);
                     });
-                    Rong();
                 }
                 else
                 {

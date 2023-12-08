@@ -7,16 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Word = Microsoft.Office.Interop.Word;
+using System.Drawing.Printing;
 
 namespace QuanLyShopDongHo.Forms
 {
     public partial class ThanhToanDonHang : Form
     {
+        private PrintDocument printDocument = new PrintDocument();
+
         public ThanhToanDonHang(string maDH)
         {
             InitializeComponent();
             lblMaDon.Text = maDH;
+            label11.Height = 2;
         }
 
         private void ThanhToanDonHang_Load(object sender, EventArgs e)
@@ -44,55 +47,61 @@ namespace QuanLyShopDongHo.Forms
             }
         }
 
-        private void btnXuatWord_Click(object sender, EventArgs e)
+        private void btnXuatDon_Click(object sender, EventArgs e)
         {
-            Word.Application wordApp = new Word.Application();
-            Word.Document doc = wordApp.Documents.Add();
-            try
+            PrintDialog print = new PrintDialog();
+            printDocument.DefaultPageSettings.PaperSize = new PaperSize("MyPaper", 228, 300);
+            print.AllowSomePages = true;
+            print.ShowHelp = true;
+            print.Document = printDocument;
+            DialogResult result = print.ShowDialog();
+            if (result == DialogResult.OK)
             {
-                string lbl1 = label1.Text;
-                string lbl2 = label2.Text;
-                string maDon = lblMaDon.Text;
-                string lbl4 = label4.Text;
-                string sdt = lblSDT.Text;
-                string lbl3 = label3.Text;
-                string tenKH = lblTenKH.Text;
-                string lbl10 = label10.Text;
-                string ngayIn = lblNgayIn.Text;
-                string lbl5 = label5.Text;
-                string lbl6 = label6.Text;
-                string lbl7 = label7.Text;
-                string lbl8 = label8.Text;
-                string maLoai = lblMaLoai.Text;
-                string tenLoai = lblTenLoai.Text;
-                string soLuong = lblSoLuong.Text;
-                string donGia = lblDonGia.Text;
-                string lbl9 = label9.Text;
-                string tongTien = lblTongTien.Text;
-                doc.Content.Text += "\t\t\t\t\t" + lbl1 + Environment.NewLine
-                    + lbl2 + maDon + Environment.NewLine
-                    + lbl4 + sdt + Environment.NewLine
-                    + lbl3 + tenKH + Environment.NewLine
-                    + lbl10 + ngayIn + Environment.NewLine
-                    + lbl5 + "\t\t" + lbl6 + "\t\t" + lbl8 + "\t\t" + lbl7 + Environment.NewLine
-                    + maLoai + "\t\t\t" + tenLoai + "\t\t" + soLuong + "\t\t" + donGia + Environment.NewLine
-                    + Environment.NewLine + "\t\t\t\t\t\t\t" + lbl9 + tongTien;
+                printDocument.PrintPage += new PrintPageEventHandler(document_PrintPage);
+                printDocument.Print();
+            }
+        }
 
-                doc.SaveAs2($@"D:\DuAn1\{maDon}.docx");
-                doc.Close();
-                wordApp.Quit();
-                MessageBox.Show("Xuất Word thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Lỗi xuất Word: " + ex);
-            }
-            finally
-            {
-                System.Runtime.InteropServices.Marshal.ReleaseComObject(doc);
-                System.Runtime.InteropServices.Marshal.ReleaseComObject(wordApp);
-            }
+        private void document_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            string lbl2 = label2.Text;
+            string maDon = lblMaDon.Text;
+            string lbl4 = label4.Text;
+            string sdt = lblSDT.Text;
+            string lbl3 = label3.Text;
+            string tenKH = lblTenKH.Text;
+            string lbl10 = label10.Text;
+            string ngayIn = lblNgayIn.Text;
+            string lbl5 = label5.Text;
+            string lbl6 = label6.Text;
+            string lbl7 = label7.Text;
+            string lbl8 = label8.Text;
+            string maLoai = lblMaLoai.Text;
+            string tenLoai = lblTenLoai.Text;
+            string soLuong = lblSoLuong.Text;
+            string donGia = lblDonGia.Text;
+            string lbl9 = label9.Text;
+            string tongTien = lblTongTien.Text;
 
+            string title = "\t\t\t\t\tĐƠN HÀNG";
+            string text = Environment.NewLine + "\t\t" + lbl2 + maDon + Environment.NewLine
+             + "\t\t" + lbl4 + sdt + Environment.NewLine
+             + "\t\t" + lbl3 + tenKH + Environment.NewLine
+             + "\t\t" + lbl10 + ngayIn + Environment.NewLine
+             + "\t\t" + lbl5 + "\t" + lbl6 + "\t\t" + lbl8 + "\t" + lbl7 + Environment.NewLine
+             + "\t\t" + maLoai + "\t\t" + tenLoai + "\t" + soLuong + "\t\t" + donGia + Environment.NewLine
+             + "\t\t" + label11.Text
+             + Environment.NewLine + "\t\t\t\t\t\t\t" + lbl9 + tongTien;
+
+            System.Drawing.Font printFont1 = new System.Drawing.Font
+                ("Times New Roman", 12, System.Drawing.FontStyle.Bold);
+            e.Graphics.DrawString(title, printFont1,
+                System.Drawing.Brushes.Black, 10, 10);
+            System.Drawing.Font printFont2 = new System.Drawing.Font
+                ("Times New Roman", 12, System.Drawing.FontStyle.Regular);
+            e.Graphics.DrawString(text, printFont2,
+                System.Drawing.Brushes.Black, 10, 10);
+            MessageBox.Show("Đơn hàng đã được xuất", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
