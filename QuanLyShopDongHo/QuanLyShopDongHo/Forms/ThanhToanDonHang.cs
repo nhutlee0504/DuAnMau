@@ -64,34 +64,15 @@ namespace QuanLyShopDongHo.Forms
 
         private void document_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            string lbl2 = label2.Text;
-            string maDon = lblMaDon.Text;
-            string lbl4 = label4.Text;
-            string sdt = lblSDT.Text;
-            string lbl3 = label3.Text;
-            string tenKH = lblTenKH.Text;
-            string lbl10 = label10.Text;
-            string ngayIn = lblNgayIn.Text;
-            string lbl5 = label5.Text;
-            string lbl6 = label6.Text;
-            string lbl7 = label7.Text;
-            string lbl8 = label8.Text;
-            string maLoai = lblMaLoai.Text;
-            string tenLoai = lblTenLoai.Text;
-            string soLuong = lblSoLuong.Text;
-            string donGia = lblDonGia.Text;
-            string lbl9 = label9.Text;
-            string tongTien = lblTongTien.Text;
-
             string title = "\t\t\t\t\tĐƠN HÀNG";
-            string text = Environment.NewLine + "\t\t" + lbl2 + maDon + Environment.NewLine
-             + "\t\t" + lbl4 + sdt + Environment.NewLine
-             + "\t\t" + lbl3 + tenKH + Environment.NewLine
-             + "\t\t" + lbl10 + ngayIn + Environment.NewLine
-             + "\t\t" + lbl5 + "\t" + lbl6 + "\t\t" + lbl8 + "\t" + lbl7 + Environment.NewLine
-             + "\t\t" + maLoai + "\t\t" + tenLoai + "\t" + soLuong + "\t\t" + donGia + Environment.NewLine
+            string text = Environment.NewLine + "\t\t" + label2.Text + lblMaDon.Text + Environment.NewLine
+             + "\t\t" + label4.Text + lblSDT.Text + Environment.NewLine
+             + "\t\t" + label3.Text + lblTenKH.Text + Environment.NewLine
+             + "\t\t" + label10.Text + lblNgayIn.Text + Environment.NewLine
+             + "\t\t" + label5.Text+ "\t" + label6.Text + "\t\t" + label8.Text + "\t" + label7.Text+ Environment.NewLine
+             + "\t\t" + lblMaLoai.Text + "\t\t" + lblTenLoai.Text + "\t\t" + lblSoLuong.Text + "\t\t" + lblDonGia.Text + Environment.NewLine
              + "\t\t" + label11.Text
-             + Environment.NewLine + "\t\t\t\t\t\t\t" + lbl9 + tongTien;
+             + Environment.NewLine + "\t\t\t\t\t\t\t" + label9.Text + lblTongTien.Text;
 
             System.Drawing.Font printFont1 = new System.Drawing.Font
                 ("Times New Roman", 12, System.Drawing.FontStyle.Bold);
@@ -102,6 +83,7 @@ namespace QuanLyShopDongHo.Forms
             e.Graphics.DrawString(text, printFont2,
                 System.Drawing.Brushes.Black, 10, 10);
             MessageBox.Show("Đơn hàng đã được xuất", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.Dispose();
         }
     }
 }

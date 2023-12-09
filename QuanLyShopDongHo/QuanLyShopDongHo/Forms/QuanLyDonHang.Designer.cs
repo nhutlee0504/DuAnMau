@@ -173,7 +173,7 @@ namespace QuanLyShopDongHo.Forms
             // 
             // txtTenKhachHang
             // 
-            this.txtTenKhachHang.BackColor = System.Drawing.Color.White;
+            this.txtTenKhachHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtTenKhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtTenKhachHang.Location = new System.Drawing.Point(615, 106);
             this.txtTenKhachHang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -300,7 +300,7 @@ namespace QuanLyShopDongHo.Forms
             // 
             // txtMaNhanVien
             // 
-            this.txtMaNhanVien.BackColor = System.Drawing.Color.White;
+            this.txtMaNhanVien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtMaNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtMaNhanVien.Location = new System.Drawing.Point(615, 286);
             this.txtMaNhanVien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -356,7 +356,7 @@ namespace QuanLyShopDongHo.Forms
             // 
             // txtMaDon
             // 
-            this.txtMaDon.BackColor = System.Drawing.Color.White;
+            this.txtMaDon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtMaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtMaDon.Location = new System.Drawing.Point(237, 110);
             this.txtMaDon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -391,7 +391,7 @@ namespace QuanLyShopDongHo.Forms
             // 
             // txtTenLoai
             // 
-            this.txtTenLoai.BackColor = System.Drawing.Color.White;
+            this.txtTenLoai.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtTenLoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtTenLoai.Location = new System.Drawing.Point(615, 197);
             this.txtTenLoai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -517,7 +517,7 @@ namespace QuanLyShopDongHo.Forms
             // 
             // txtDonGia
             // 
-            this.txtDonGia.BackColor = System.Drawing.Color.White;
+            this.txtDonGia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtDonGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtDonGia.Location = new System.Drawing.Point(237, 245);
             this.txtDonGia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -690,7 +690,6 @@ namespace QuanLyShopDongHo.Forms
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(76)))), ((int)(((byte)(88)))));
             this.BackgroundImage = global::QuanLyShopDongHo.Properties.Resources.bg1_1;
             this.ClientSize = new System.Drawing.Size(1035, 724);
-            this.Controls.Add(this.pnlTimSDT);
             this.Controls.Add(this.btnTimSDT);
             this.Controls.Add(this.txtDonGia);
             this.Controls.Add(this.label11);
@@ -720,6 +719,7 @@ namespace QuanLyShopDongHo.Forms
             this.Controls.Add(this.txtMaDon);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.pnlTimSDT);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "QuanLyDonHang";
             this.Text = "QuanLyDonHang";

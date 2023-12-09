@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Text.RegularExpressions;
 using System.Data.SqlClient;
 
 namespace QuanLyShopDongHo.Forms
@@ -70,19 +69,11 @@ namespace QuanLyShopDongHo.Forms
                     dh.NgayIn = DateTime.Parse(dtpNgayIn.Text);
                     dh.MaNV = txtMaNhanVien.Text;
 
-                    string isNumber = @"^[-+]?[0-9]*.?[0-9]+$";
-                    Regex regex = new Regex(isNumber);
-                    var maDHTrung = db.DonHangs.Select(x => x.MaDon);
                     var SDT = db.KhachHangs.Select(x => x.SDT);
                     var loaiSP = db.ChiTietSanPhams.Select(x => x.LoaiSP);
                     if (cboSDT.Text == "" || cboLoaiSP.Text == "" || txtSoLuong.Text == "" || txtMaNhanVien.Text == "")
                     {
                         MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        txtMaDon.Focus();
-                    }
-                    else if (maDHTrung.Contains(txtMaDon.Text))
-                    {
-                        MessageBox.Show("Mã đơn hàng đã tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         txtMaDon.Focus();
                     }
                     else if (cboSDT.Text.Length > 10 || cboSDT.Text.Length < 10)
@@ -93,11 +84,6 @@ namespace QuanLyShopDongHo.Forms
                     else if (SDT.Contains(cboSDT.Text) == false)
                     {
                         MessageBox.Show("Số điện thoại không tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        cboSDT.Focus();
-                    }
-                    else if (regex.IsMatch(cboSDT.Text) == false)
-                    {
-                        MessageBox.Show("Vui lòng nhập số điện thoại là số", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         cboSDT.Focus();
                     }
                     else if (int.Parse(txtSoLuong.Text) <= 0)
