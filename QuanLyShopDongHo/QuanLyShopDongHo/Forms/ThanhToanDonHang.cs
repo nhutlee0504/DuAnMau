@@ -32,7 +32,7 @@ namespace QuanLyShopDongHo.Forms
                               .Select(x => x.TenKH).FirstOrDefault().ToString();
                 lblNgayIn.Text = db.DonHangs.Where(x => x.MaDon == lblMaDon.Text)
                               .Select(x => x.NgayIn).FirstOrDefault().ToString("dd/MM/yyyy");
-                lblMaLoai.Text = db.DonHangs.Where(x => x.MaDon == lblMaDon.Text)
+                lblLoaiSP.Text = db.DonHangs.Where(x => x.MaDon == lblMaDon.Text)
                               .Select(x => x.LoaiSP).FirstOrDefault().ToString();
                 lblTenLoai.Text = db.DonHangs.Where(x => x.MaDon == lblMaDon.Text)
                               .Select(x => x.ChiTietSanPham.TenLoai).FirstOrDefault().ToString();
@@ -64,18 +64,18 @@ namespace QuanLyShopDongHo.Forms
 
         private void document_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            string title = "\t\t\t\t\tĐƠN HÀNG";
+            string title = "\t\t\tĐƠN HÀNG";
             string text = Environment.NewLine + "\t\t" + label2.Text + lblMaDon.Text + Environment.NewLine
              + "\t\t" + label4.Text + lblSDT.Text + Environment.NewLine
              + "\t\t" + label3.Text + lblTenKH.Text + Environment.NewLine
              + "\t\t" + label10.Text + lblNgayIn.Text + Environment.NewLine
-             + "\t\t" + label5.Text+ "\t" + label6.Text + "\t\t" + label8.Text + "\t" + label7.Text+ Environment.NewLine
-             + "\t\t" + lblMaLoai.Text + "\t\t" + lblTenLoai.Text + "\t\t" + lblSoLuong.Text + "\t\t" + lblDonGia.Text + Environment.NewLine
-             + "\t\t" + label11.Text
-             + Environment.NewLine + "\t\t\t\t\t\t\t" + label9.Text + lblTongTien.Text;
+             + "\t\t" + label5.Text+ "\t\t" + label6.Text + "\t\t" + label8.Text + "\t" + label7.Text+ Environment.NewLine
+             + "\t\t" + lblLoaiSP.Text + "\t\t" + lblTenLoai.Text + "\t\t" + lblSoLuong.Text + "\t" + lblDonGia.Text + Environment.NewLine
+             + "\t\t" + label11.Text + Environment.NewLine
+             + "\t\t\t\t\t\t\t" + label9.Text + lblTongTien.Text;
 
             System.Drawing.Font printFont1 = new System.Drawing.Font
-                ("Times New Roman", 12, System.Drawing.FontStyle.Bold);
+                ("Times New Roman", 18, System.Drawing.FontStyle.Bold);
             e.Graphics.DrawString(title, printFont1,
                 System.Drawing.Brushes.Black, 10, 10);
             System.Drawing.Font printFont2 = new System.Drawing.Font

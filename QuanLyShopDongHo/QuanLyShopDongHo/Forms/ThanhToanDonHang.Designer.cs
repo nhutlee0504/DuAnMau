@@ -45,7 +45,7 @@ namespace QuanLyShopDongHo.Forms
             this.lblTongTien = new System.Windows.Forms.Label();
             this.lblSoLuong = new System.Windows.Forms.Label();
             this.lblTenLoai = new System.Windows.Forms.Label();
-            this.lblMaLoai = new System.Windows.Forms.Label();
+            this.lblLoaiSP = new System.Windows.Forms.Label();
             this.lblNgayIn = new System.Windows.Forms.Label();
             this.lblTenKH = new System.Windows.Forms.Label();
             this.btnXuatDon = new System.Windows.Forms.Button();
@@ -108,9 +108,9 @@ namespace QuanLyShopDongHo.Forms
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(45, 265);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(77, 20);
+            this.label5.Size = new System.Drawing.Size(74, 20);
             this.label5.TabIndex = 107;
-            this.label5.Text = "MÃ LOẠI";
+            this.label5.Text = "LOẠI SP";
             // 
             // label6
             // 
@@ -154,7 +154,7 @@ namespace QuanLyShopDongHo.Forms
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(295, 367);
+            this.label9.Location = new System.Drawing.Point(308, 367);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(109, 20);
             this.label9.TabIndex = 112;
@@ -214,7 +214,7 @@ namespace QuanLyShopDongHo.Forms
             this.lblTongTien.BackColor = System.Drawing.Color.Transparent;
             this.lblTongTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblTongTien.ForeColor = System.Drawing.Color.Black;
-            this.lblTongTien.Location = new System.Drawing.Point(410, 367);
+            this.lblTongTien.Location = new System.Drawing.Point(423, 367);
             this.lblTongTien.Name = "lblTongTien";
             this.lblTongTien.Size = new System.Drawing.Size(95, 20);
             this.lblTongTien.TabIndex = 121;
@@ -244,17 +244,17 @@ namespace QuanLyShopDongHo.Forms
             this.lblTenLoai.TabIndex = 123;
             this.lblTenLoai.Text = "lblTenLoai";
             // 
-            // lblMaLoai
+            // lblLoaiSP
             // 
-            this.lblMaLoai.AutoSize = true;
-            this.lblMaLoai.BackColor = System.Drawing.Color.Transparent;
-            this.lblMaLoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lblMaLoai.ForeColor = System.Drawing.Color.Black;
-            this.lblMaLoai.Location = new System.Drawing.Point(45, 301);
-            this.lblMaLoai.Name = "lblMaLoai";
-            this.lblMaLoai.Size = new System.Drawing.Size(81, 20);
-            this.lblMaLoai.TabIndex = 124;
-            this.lblMaLoai.Text = "lblMaLoai";
+            this.lblLoaiSP.AutoSize = true;
+            this.lblLoaiSP.BackColor = System.Drawing.Color.Transparent;
+            this.lblLoaiSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblLoaiSP.ForeColor = System.Drawing.Color.Black;
+            this.lblLoaiSP.Location = new System.Drawing.Point(45, 301);
+            this.lblLoaiSP.Name = "lblLoaiSP";
+            this.lblLoaiSP.Size = new System.Drawing.Size(80, 20);
+            this.lblLoaiSP.TabIndex = 124;
+            this.lblLoaiSP.Text = "lblLoaiSP";
             // 
             // lblNgayIn
             // 
@@ -321,7 +321,7 @@ namespace QuanLyShopDongHo.Forms
             this.Controls.Add(this.btnXuatDon);
             this.Controls.Add(this.lblTenKH);
             this.Controls.Add(this.lblNgayIn);
-            this.Controls.Add(this.lblMaLoai);
+            this.Controls.Add(this.lblLoaiSP);
             this.Controls.Add(this.lblTenLoai);
             this.Controls.Add(this.lblSoLuong);
             this.Controls.Add(this.lblTongTien);
@@ -365,7 +365,7 @@ namespace QuanLyShopDongHo.Forms
         private System.Windows.Forms.Label lblTongTien;
         private System.Windows.Forms.Label lblSoLuong;
         private System.Windows.Forms.Label lblTenLoai;
-        private System.Windows.Forms.Label lblMaLoai;
+        private System.Windows.Forms.Label lblLoaiSP;
         private System.Windows.Forms.Label lblNgayIn;
         private System.Windows.Forms.Label lblTenKH;
         private System.Windows.Forms.Button btnXuatDon;

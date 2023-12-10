@@ -240,7 +240,7 @@ namespace QuanLyShopDongHo.Forms
                 txtTenLoai.Text = db.ChiTietSanPhams.Where(x => x.LoaiSP == cboLoaiSP.Text)
                                     .Select(x => x.TenLoai).FirstOrDefault().ToString();
                 txtDonGia.Text = db.ChiTietSanPhams.Where(x => x.LoaiSP == cboLoaiSP.Text)
-                                   .Select(x => x.GiaBan).FirstOrDefault().ToString();
+                                   .Select(x => x.GiaBan).FirstOrDefault().ToString("#,##0");
             }
         }
 
