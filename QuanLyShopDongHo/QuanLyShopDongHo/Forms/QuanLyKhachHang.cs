@@ -13,7 +13,6 @@ namespace QuanLyShopDongHo.Forms
 {
     public partial class QuanLyKhachHang : Form
     {
-        public QuanLyKhachHang() { }
         string inputdata1 = "";
         string inputdata2 = "";
         string inputdata3 = "";
@@ -46,12 +45,6 @@ namespace QuanLyShopDongHo.Forms
 
         private bool checkForm()
         {
-            string input = txtTenKhachHang.Text;
-            if (!IsValidInput(input))
-            {
-                MessageBox.Show("Họ tên chỉ nhập chữ cái và khoảng trắng.");
-                return false;
-            }
             using (var db = new QuanLyShopDongHoEntities())
             {
                 var sdtTrung = db.KhachHangs.Select(x => x.SDT).FirstOrDefault();
@@ -59,6 +52,12 @@ namespace QuanLyShopDongHo.Forms
                 if (txtTenKhachHang.Text == "" || txtSDT.Text == "" || txtDiaChi.Text == "")
                 {
                     MessageBox.Show("Vui lòng nhập đầy đủ thông tin khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtTenKhachHang.Focus();
+                    return false;
+                }
+                else if (!IsValidInput(txtTenKhachHang.Text))
+                {
+                    txtTenKhachHang.Focus();
                     return false;
                 }
                 else if (txtSDT.Text.Length != 10)
@@ -66,10 +65,23 @@ namespace QuanLyShopDongHo.Forms
                     MessageBox.Show("Vui lòng nhập số điện thoại đủ 10 số", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     txtSDT.Focus();
                     return false;
-                }      
+                }
+                else if (txtSDT.Text.Contains(" "))
+                {
+                    MessageBox.Show("Số điện thoại không chứa khoảng trắng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtSDT.Focus();
+                    return false;
+                }
                 else if (int.TryParse(txtSDT.Text, out so) == false)
                 {
                     MessageBox.Show("Vui lòng nhập số điện thoại là số", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtSDT.Focus();
+                    return false;
+                }
+                else if (txtDiaChi.Text.StartsWith(" "))
+                {
+                    MessageBox.Show("Địa chỉ không bắt đầu bằng khoảng trắng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtDiaChi.Focus();
                     return false;
                 }
                 else
@@ -80,12 +92,17 @@ namespace QuanLyShopDongHo.Forms
         {
             foreach (char c in input)
             {
+                if(input.StartsWith(" "))
+                {
+                    MessageBox.Show("Họ tên không bắt đầu bằng khoảng trắng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return false;
+                }
                 if (!char.IsLetter(c) && !char.IsWhiteSpace(c))
                 {
+                    MessageBox.Show("Họ tên chỉ nhập chữ cái và khoảng trắng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return false;
                 }
             }
-
             return true;
         }
 
@@ -158,7 +175,6 @@ namespace QuanLyShopDongHo.Forms
             }
             catch (Exception)
             {
-
                 MessageBox.Show("Lỗi - khách hàng đã có hóa đơn", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
@@ -184,7 +200,7 @@ namespace QuanLyShopDongHo.Forms
         {
             using (var db = new QuanLyShopDongHoEntities())
             {
-                List<KhachHang> tenKH = db.KhachHangs.Where(x => x.TenKH.EndsWith(txtTenKhachTim.Text.Trim())).ToList();
+                List<KhachHang> tenKH = db.KhachHangs.Where(x => x.TenKH.Contains(txtTenKhachTim.Text.Trim())).ToList();
                 if (tenKH.Count > 0)
                 {
                     dgvKhachHang.Rows.Clear();
@@ -192,7 +208,6 @@ namespace QuanLyShopDongHo.Forms
                     {
                         dgvKhachHang.Rows.Add(x.TenKH, x.SDT, x.DiaChi);
                     });
-                    Rong();
                 }
                 else
                 {
@@ -258,7 +273,6 @@ namespace QuanLyShopDongHo.Forms
              Color.Silver, 3, ButtonBorderStyle.Solid,
              Color.Silver, 3, ButtonBorderStyle.Solid);
         }
-
         private void Closing_KH(object sender, FormClosingEventArgs e)
         {
             TrangChu dn = new TrangChu(inputdata1, inputdata2, inputdata3);
