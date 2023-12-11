@@ -816,11 +816,11 @@ namespace QuanLyShopDongHo.Forms
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.Image = global::QuanLyShopDongHo.Properties.Resources.Exit;
             this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThoat.Location = new System.Drawing.Point(708, 9);
+            this.btnThoat.Location = new System.Drawing.Point(701, 9);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(90, 35);
+            this.btnThoat.Size = new System.Drawing.Size(97, 35);
             this.btnThoat.TabIndex = 14;
-            this.btnThoat.Text = "Thoát";
+            this.btnThoat.Text = "Quay lại";
             this.btnThoat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
@@ -884,7 +884,6 @@ namespace QuanLyShopDongHo.Forms
             this.Controls.Add(this.manv);
             this.Name = "ThongKe";
             this.Text = "ThongKe";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Closing_ThongKe);
             this.Load += new System.EventHandler(this.ThongKe_Load);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();

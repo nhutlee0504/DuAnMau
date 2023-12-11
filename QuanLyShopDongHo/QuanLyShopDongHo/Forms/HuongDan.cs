@@ -36,11 +36,5 @@ namespace QuanLyShopDongHo.Forms
             TrangChu dn = new TrangChu(inputdata1, inputdata2, inputdata3);
             dn.Show();
         }
-
-        private void Closing_HDSD(object sender, FormClosingEventArgs e)
-        {
-            TrangChu dn = new TrangChu(inputdata1, inputdata2, inputdata3);
-            dn.Show();
-        }
     }
 }

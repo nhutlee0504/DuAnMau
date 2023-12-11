@@ -133,11 +133,5 @@ namespace QuanLyShopDongHo.Forms
             DangNhap dn = new DangNhap();
             dn.Show();
         }
-
-        private void Closing_QMK(object sender, FormClosingEventArgs e)
-        {
-            DangNhap dn = new DangNhap();
-            dn.Show();
-        }
     }
 }

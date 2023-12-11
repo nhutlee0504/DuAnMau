@@ -331,11 +331,5 @@ namespace QuanLyShopDongHo.Forms
         {
 
         }
-
-        private void Closing_NhanVien(object sender, FormClosingEventArgs e)
-        {
-            TrangChu dn = new TrangChu(inputdata1, inputdata2, inputdata3);
-            dn.Show();
-        }
     }
 }

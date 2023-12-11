@@ -389,7 +389,7 @@ namespace QuanLyShopDongHo.Forms
             this.btnthoat.Name = "btnthoat";
             this.btnthoat.Size = new System.Drawing.Size(85, 30);
             this.btnthoat.TabIndex = 65;
-            this.btnthoat.Text = "Thoát";
+            this.btnthoat.Text = "Quay lại";
             this.btnthoat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnthoat.UseVisualStyleBackColor = false;
             this.btnthoat.Click += new System.EventHandler(this.btnthoat_Click);
@@ -467,7 +467,6 @@ namespace QuanLyShopDongHo.Forms
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "QuanLyChiTietSanPham";
             this.Text = "QuanLyChiTietSanPham";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Closing_CTSP);
             this.Load += new System.EventHandler(this.QuanLyChiTietSanPham_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
