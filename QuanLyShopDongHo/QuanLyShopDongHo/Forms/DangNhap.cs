@@ -45,7 +45,7 @@ namespace QuanLyShopDongHo.Forms
             {
                 List<NhanVien> list = db.NhanViens
                    .Where(x => (x.MaNV == txtMaNV.Text))
-                   .ToList();//sắp xếp ở đây
+                   .ToList();
                 if (!list.Any())
                 {
                     MessageBox.Show("Tài khoản hoặc mật khẩu không đúng");
