@@ -211,15 +211,24 @@ namespace QuanLyShopDongHo.Forms
 
         private void btnxoa_Click(object sender, EventArgs e)
         {
-            using (QuanLyShopDongHoEntities db = new QuanLyShopDongHoEntities())
+            try
             {
-                NhanVien xoa = db.NhanViens.Where(x => x.MaNV == txtmanv.Text)
-                    .FirstOrDefault();
-                db.NhanViens.Remove(xoa);
-                db.SaveChanges();
+                using (QuanLyShopDongHoEntities db = new QuanLyShopDongHoEntities())
+                {
+                    NhanVien xoa = db.NhanViens.Where(x => x.MaNV == txtmanv.Text)
+                        .FirstOrDefault();
+                    db.NhanViens.Remove(xoa);
+                    db.SaveChanges();
+                }
+                rong();
+                upDateDGV();
             }
-            rong();
-            upDateDGV();
+            catch (Exception)
+            {
+                MessageBox.Show("Không thể xóa nhân viên");
+                return;
+            }
+            
 
         }
 
