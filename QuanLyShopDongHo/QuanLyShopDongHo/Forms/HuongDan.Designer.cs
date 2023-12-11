@@ -270,11 +270,11 @@ namespace QuanLyShopDongHo.Forms
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.Image = global::QuanLyShopDongHo.Properties.Resources.Exit;
             this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThoat.Location = new System.Drawing.Point(688, 16);
+            this.btnThoat.Location = new System.Drawing.Point(672, 16);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(81, 40);
+            this.btnThoat.Size = new System.Drawing.Size(97, 40);
             this.btnThoat.TabIndex = 11;
-            this.btnThoat.Text = "Thoát";
+            this.btnThoat.Text = "Quay lại";
             this.btnThoat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThoat.UseVisualStyleBackColor = false;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);

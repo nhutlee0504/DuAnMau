@@ -45,7 +45,7 @@ namespace QuanLyShopDongHo.Forms
             {
                 List<NhanVien> list = db.NhanViens
                    .Where(x => (x.MaNV == txtMaNV.Text))
-                   .ToList();//sắp xếp ở đây
+                   .ToList();
                 if (!list.Any())
                 {
                     MessageBox.Show("Tài khoản hoặc mật khẩu không đúng");
@@ -61,7 +61,6 @@ namespace QuanLyShopDongHo.Forms
                             string inputdata2 = tk.VaiTro.ToString();
                             string inputdata3 = tk.MaNV.ToString();
                             TrangChu tc = new TrangChu(inputdata1, inputdata2, inputdata3);
-                            MessageBox.Show("Đăng nhập thành công với vai trò 'Quản Trị'");
                             this.Hide();
                             tc.Show();
                             DangNhap dn = new DangNhap();
@@ -73,7 +72,6 @@ namespace QuanLyShopDongHo.Forms
                             string inputdata2 = tk.VaiTro.ToString();
                             string inputdata3 = tk.MaNV.ToString();
                             TrangChu tc = new TrangChu(inputdata1, inputdata2, inputdata3);
-                            MessageBox.Show("Đăng nhập thành công với vai trò 'Nhân Viên'");
                             this.Hide();
                             tc.Show();
                             DangNhap dn = new DangNhap();

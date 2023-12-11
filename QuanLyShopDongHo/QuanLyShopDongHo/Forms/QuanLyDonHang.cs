@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Text.RegularExpressions;
 using System.Data.SqlClient;
 
 namespace QuanLyShopDongHo.Forms
@@ -30,7 +29,6 @@ namespace QuanLyShopDongHo.Forms
             tennv.Text = inputdata1;
             vaitro.Text = inputdata2;
             manvv.Text = inputdata3;
-            ShowDH();
             using (var db = new QuanLyShopDongHoEntities())
             {
                 db.DonHangs.ToList().ForEach(x => cboMaDonTim.Items.Add(x.MaDon));
@@ -40,6 +38,9 @@ namespace QuanLyShopDongHo.Forms
             txtMaNhanVien.Text = manvv.Text;
             dtpNgayIn.Text = DateTime.Now.ToString("dd/MM/yyyy");
             btnThanhToan.Enabled = false;
+            pnlTimSDT.Visible = false;
+            ShowDH();
+            ShowKH();
         }
 
         private void ShowDH()
@@ -68,9 +69,6 @@ namespace QuanLyShopDongHo.Forms
                     dh.NgayIn = DateTime.Parse(dtpNgayIn.Text);
                     dh.MaNV = txtMaNhanVien.Text;
 
-                    string isNumber = @"^[-+]?[0-9]*.?[0-9]+$";
-                    Regex regex = new Regex(isNumber);
-                    var maDHTrung = db.DonHangs.Select(x => x.MaDon);
                     var SDT = db.KhachHangs.Select(x => x.SDT);
                     var loaiSP = db.ChiTietSanPhams.Select(x => x.LoaiSP);
                     if (cboSDT.Text == "" || cboLoaiSP.Text == "" || txtSoLuong.Text == "" || txtMaNhanVien.Text == "")
@@ -78,24 +76,14 @@ namespace QuanLyShopDongHo.Forms
                         MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         txtMaDon.Focus();
                     }
-                    else if (maDHTrung.Contains(txtMaDon.Text))
-                    {
-                        MessageBox.Show("Mã đơn hàng đã tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        txtMaDon.Focus();
-                    }
                     else if (cboSDT.Text.Length > 10 || cboSDT.Text.Length < 10)
                     {
-                        MessageBox.Show("Vui lòng nhập số điện thoại đủ 10 số nguyên dương", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Vui lòng nhập số điện thoại đủ 10 số", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         cboSDT.Focus();
                     }
                     else if (SDT.Contains(cboSDT.Text) == false)
                     {
                         MessageBox.Show("Số điện thoại không tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        cboSDT.Focus();
-                    }
-                    else if (regex.IsMatch(cboSDT.Text) == false)
-                    {
-                        MessageBox.Show("Vui lòng nhập số điện thoại là số", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         cboSDT.Focus();
                     }
                     else if (int.Parse(txtSoLuong.Text) <= 0)
@@ -135,6 +123,7 @@ namespace QuanLyShopDongHo.Forms
             Rong();
             btnThanhToan.Enabled = false;
             btnTaoDon.Enabled = true;
+            btnTimSDT.Enabled = true;
             ShowDH();
         }
         private void Rong()
@@ -232,6 +221,7 @@ namespace QuanLyShopDongHo.Forms
                 dtpNgayIn.Text = dgvDonHang.Rows[e.RowIndex].Cells[7].Value.ToString();
                 txtMaNhanVien.Text = dgvDonHang.Rows[e.RowIndex].Cells[8].Value.ToString();
                 btnTaoDon.Enabled = false;
+                btnTimSDT.Enabled = false;
                 btnThanhToan.Enabled = true;
             }          
         }
@@ -250,7 +240,7 @@ namespace QuanLyShopDongHo.Forms
                 txtTenLoai.Text = db.ChiTietSanPhams.Where(x => x.LoaiSP == cboLoaiSP.Text)
                                     .Select(x => x.TenLoai).FirstOrDefault().ToString();
                 txtDonGia.Text = db.ChiTietSanPhams.Where(x => x.LoaiSP == cboLoaiSP.Text)
-                                   .Select(x => x.GiaBan).FirstOrDefault().ToString();
+                                   .Select(x => x.GiaBan).FirstOrDefault().ToString("#,##0");
             }
         }
 
@@ -270,6 +260,58 @@ namespace QuanLyShopDongHo.Forms
            Color.Silver, 3, ButtonBorderStyle.Solid,
            Color.Silver, 3, ButtonBorderStyle.Solid,
            Color.Silver, 3, ButtonBorderStyle.Solid);
+        }
+
+        private void dgvKhachHang_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex == -1)
+                return;
+            else
+            {
+                cboSDT.Text = dgvKhachHang.Rows[e.RowIndex].Cells[1].Value.ToString();
+                txtSDT.Text = dgvKhachHang.Rows[e.RowIndex].Cells[1].Value.ToString();
+            }
+        }
+        private void ShowKH()
+        {
+            using (var db = new QuanLyShopDongHoEntities())
+            {
+                dgvKhachHang.Rows.Clear();
+                db.KhachHangs.ToList().ForEach(x => dgvKhachHang.Rows.Add(x.TenKH, x.SDT));
+            }
+        }
+
+        private void btnTimSDT_Click(object sender, EventArgs e)
+        {
+            pnlTimSDT.Visible = true;
+            pnlTimSDT.BringToFront();
+        }
+
+        private void btnTim_Click(object sender, EventArgs e)
+        {
+            using (var db = new QuanLyShopDongHoEntities())
+            {
+                List<KhachHang> SDT = db.KhachHangs.Where(x => x.SDT.Contains(txtSDT.Text.Trim())).ToList();
+                if (SDT.Count > 0)
+                {
+                    dgvKhachHang.Rows.Clear();
+                    SDT.ForEach(x =>
+                    {
+                        dgvKhachHang.Rows.Add(x.TenKH, x.SDT);
+                    });
+                }
+                else
+                {
+                    ShowKH();
+                    MessageBox.Show("Không tìm thấy SĐT khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ShowKH();
+                }
+            }
+        }
+
+        private void btnThoatChon_Click(object sender, EventArgs e)
+        {
+            pnlTimSDT.Visible = false;
         }
     }
 }

@@ -408,7 +408,7 @@ namespace QuanLyShopDongHo.Forms
             this.btnthoat.Name = "btnthoat";
             this.btnthoat.Size = new System.Drawing.Size(85, 30);
             this.btnthoat.TabIndex = 84;
-            this.btnthoat.Text = "Thoát";
+            this.btnthoat.Text = "Quay lại";
             this.btnthoat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnthoat.UseVisualStyleBackColor = false;
             this.btnthoat.Click += new System.EventHandler(this.btnthoat_Click_1);

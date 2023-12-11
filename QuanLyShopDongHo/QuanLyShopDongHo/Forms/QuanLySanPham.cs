@@ -289,15 +289,24 @@ namespace QuanLyShopDongHo.Forms
 
         private void btnxoa_Click_1(object sender, EventArgs e)
         {
-            using (QuanLyShopDongHoEntities db = new QuanLyShopDongHoEntities())
+            try
             {
-                SanPham xoa = db.SanPhams.Where(x => x.MaSanPham.ToString() == txtma.Text)
-                    .FirstOrDefault();
-                db.SanPhams.Remove(xoa);
-                db.SaveChanges();
+                using (QuanLyShopDongHoEntities db = new QuanLyShopDongHoEntities())
+                {
+                    SanPham xoa = db.SanPhams.Where(x => x.MaSanPham.ToString() == txtma.Text)
+                        .FirstOrDefault();
+                    db.SanPhams.Remove(xoa);
+                    db.SaveChanges();
+                }
+                rong();
+                upDateDGV();
             }
-            rong();
-            upDateDGV();
+            catch (Exception)
+            {
+                MessageBox.Show("Không thể xóa sản phẩm!!!");
+                return;
+            }
+            
         }
 
         private void btnlammoi_Click_1(object sender, EventArgs e)

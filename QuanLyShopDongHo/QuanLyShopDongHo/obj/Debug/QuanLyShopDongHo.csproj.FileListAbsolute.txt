@@ -24,6 +24,8 @@ F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\bin\Debug\Ent
 F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.csproj.CopyComplete
 F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.Forms.ThanhToanDonHang.resources
 F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.csproj.ResolveComReference.cache
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\Interop.Office.dll
+F:\FPOLY\2. DuAn_1_SD18301\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.Forms.DoiMKMoi.resources
 D:\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\bin\Debug\QuanLyShopDongHo.exe.config
 D:\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\bin\Debug\QuanLyShopDongHo.exe
 D:\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\bin\Debug\QuanLyShopDongHo.pdb
@@ -41,6 +43,7 @@ D:\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.Forms.Huon
 D:\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.Forms.QuanLyChiTietSanPham.resources
 D:\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.Forms.QuanLyNhanVien.resources
 D:\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.Forms.QuanLySanPham.resources
+D:\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.Forms.QuenMatKhau.resources
 D:\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.Forms.ThanhToanDonHang.resources
 D:\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.Forms.ThongKe.resources
 D:\DuAn1\QuanLyShopDongHo\QuanLyShopDongHo\obj\Debug\QuanLyShopDongHo.Forms.TrangChu.resources
