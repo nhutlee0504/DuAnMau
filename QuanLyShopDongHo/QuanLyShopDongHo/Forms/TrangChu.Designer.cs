@@ -55,9 +55,10 @@ namespace QuanLyShopDongHo.Forms
             this.vaitro.BackColor = System.Drawing.Color.Transparent;
             this.vaitro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.vaitro.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.vaitro.Location = new System.Drawing.Point(605, 53);
+            this.vaitro.Location = new System.Drawing.Point(807, 65);
+            this.vaitro.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.vaitro.Name = "vaitro";
-            this.vaitro.Size = new System.Drawing.Size(51, 20);
+            this.vaitro.Size = new System.Drawing.Size(64, 25);
             this.vaitro.TabIndex = 58;
             this.vaitro.Text = "label6";
             this.vaitro.Visible = false;
@@ -68,9 +69,10 @@ namespace QuanLyShopDongHo.Forms
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label7.Location = new System.Drawing.Point(542, 53);
+            this.label7.Location = new System.Drawing.Point(723, 65);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(55, 20);
+            this.label7.Size = new System.Drawing.Size(68, 25);
             this.label7.TabIndex = 57;
             this.label7.Text = "Vai trò";
             this.label7.Visible = false;
@@ -81,9 +83,10 @@ namespace QuanLyShopDongHo.Forms
             this.manv.BackColor = System.Drawing.Color.Transparent;
             this.manv.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.manv.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.manv.Location = new System.Drawing.Point(446, 53);
+            this.manv.Location = new System.Drawing.Point(595, 65);
+            this.manv.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.manv.Name = "manv";
-            this.manv.Size = new System.Drawing.Size(51, 20);
+            this.manv.Size = new System.Drawing.Size(64, 25);
             this.manv.TabIndex = 56;
             this.manv.Text = "label4";
             this.manv.Visible = false;
@@ -94,9 +97,10 @@ namespace QuanLyShopDongHo.Forms
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label5.Location = new System.Drawing.Point(383, 53);
+            this.label5.Location = new System.Drawing.Point(511, 65);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 20);
+            this.label5.Size = new System.Drawing.Size(73, 25);
             this.label5.TabIndex = 55;
             this.label5.Text = "Mã NV";
             this.label5.Visible = false;
@@ -107,9 +111,10 @@ namespace QuanLyShopDongHo.Forms
             this.tennv.BackColor = System.Drawing.Color.Transparent;
             this.tennv.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tennv.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.tennv.Location = new System.Drawing.Point(157, 56);
+            this.tennv.Location = new System.Drawing.Point(209, 69);
+            this.tennv.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tennv.Name = "tennv";
-            this.tennv.Size = new System.Drawing.Size(51, 20);
+            this.tennv.Size = new System.Drawing.Size(64, 25);
             this.tennv.TabIndex = 53;
             this.tennv.Text = "label3";
             // 
@@ -119,9 +124,10 @@ namespace QuanLyShopDongHo.Forms
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(42, 56);
+            this.label2.Location = new System.Drawing.Point(56, 69);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 20);
+            this.label2.Size = new System.Drawing.Size(137, 25);
             this.label2.TabIndex = 52;
             this.label2.Text = "Tên tài khoản:";
             // 
@@ -132,9 +138,10 @@ namespace QuanLyShopDongHo.Forms
             this.btnDangXuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangXuat.Image = global::QuanLyShopDongHo.Properties.Resources.icon_Exit;
             this.btnDangXuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDangXuat.Location = new System.Drawing.Point(47, 400);
+            this.btnDangXuat.Location = new System.Drawing.Point(63, 492);
+            this.btnDangXuat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDangXuat.Name = "btnDangXuat";
-            this.btnDangXuat.Size = new System.Drawing.Size(318, 50);
+            this.btnDangXuat.Size = new System.Drawing.Size(424, 62);
             this.btnDangXuat.TabIndex = 51;
             this.btnDangXuat.Text = "Đăng xuất";
             this.btnDangXuat.UseVisualStyleBackColor = false;
@@ -146,9 +153,10 @@ namespace QuanLyShopDongHo.Forms
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(71, 13);
+            this.label1.Location = new System.Drawing.Point(95, 16);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(701, 40);
+            this.label1.Size = new System.Drawing.Size(872, 52);
             this.label1.TabIndex = 42;
             this.label1.Text = "PHẦN MỀM QUẢN LÝ SHOP ĐỒNG HỒ";
             // 
@@ -159,9 +167,10 @@ namespace QuanLyShopDongHo.Forms
             this.btnHuongDan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHuongDan.Image = global::QuanLyShopDongHo.Properties.Resources.earth;
             this.btnHuongDan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHuongDan.Location = new System.Drawing.Point(779, 44);
+            this.btnHuongDan.Location = new System.Drawing.Point(1039, 54);
+            this.btnHuongDan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnHuongDan.Name = "btnHuongDan";
-            this.btnHuongDan.Size = new System.Drawing.Size(113, 32);
+            this.btnHuongDan.Size = new System.Drawing.Size(151, 39);
             this.btnHuongDan.TabIndex = 54;
             this.btnHuongDan.Text = "Hướng dẫn";
             this.btnHuongDan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -175,9 +184,10 @@ namespace QuanLyShopDongHo.Forms
             this.btnDoiMK.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDoiMK.Image = global::QuanLyShopDongHo.Properties.Resources.icon_DoiMK;
             this.btnDoiMK.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDoiMK.Location = new System.Drawing.Point(47, 353);
+            this.btnDoiMK.Location = new System.Drawing.Point(63, 434);
+            this.btnDoiMK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDoiMK.Name = "btnDoiMK";
-            this.btnDoiMK.Size = new System.Drawing.Size(318, 50);
+            this.btnDoiMK.Size = new System.Drawing.Size(424, 62);
             this.btnDoiMK.TabIndex = 50;
             this.btnDoiMK.Text = "Đổi mật khẩu";
             this.btnDoiMK.UseVisualStyleBackColor = false;
@@ -190,9 +200,10 @@ namespace QuanLyShopDongHo.Forms
             this.btnThongKe.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThongKe.Image = global::QuanLyShopDongHo.Properties.Resources.icon_ThongKe;
             this.btnThongKe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThongKe.Location = new System.Drawing.Point(47, 308);
+            this.btnThongKe.Location = new System.Drawing.Point(63, 379);
+            this.btnThongKe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnThongKe.Name = "btnThongKe";
-            this.btnThongKe.Size = new System.Drawing.Size(318, 50);
+            this.btnThongKe.Size = new System.Drawing.Size(424, 62);
             this.btnThongKe.TabIndex = 49;
             this.btnThongKe.Text = "Thống kê và báo cáo";
             this.btnThongKe.UseVisualStyleBackColor = false;
@@ -205,9 +216,10 @@ namespace QuanLyShopDongHo.Forms
             this.btnDonHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDonHang.Image = global::QuanLyShopDongHo.Properties.Resources.icon_DonHang;
             this.btnDonHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDonHang.Location = new System.Drawing.Point(47, 261);
+            this.btnDonHang.Location = new System.Drawing.Point(63, 321);
+            this.btnDonHang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDonHang.Name = "btnDonHang";
-            this.btnDonHang.Size = new System.Drawing.Size(318, 50);
+            this.btnDonHang.Size = new System.Drawing.Size(424, 62);
             this.btnDonHang.TabIndex = 48;
             this.btnDonHang.Text = "Quản lý đơn hàng";
             this.btnDonHang.UseVisualStyleBackColor = false;
@@ -220,9 +232,10 @@ namespace QuanLyShopDongHo.Forms
             this.btnKhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKhachHang.Image = global::QuanLyShopDongHo.Properties.Resources.icon_KhachHang1;
             this.btnKhachHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnKhachHang.Location = new System.Drawing.Point(47, 217);
+            this.btnKhachHang.Location = new System.Drawing.Point(63, 267);
+            this.btnKhachHang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnKhachHang.Name = "btnKhachHang";
-            this.btnKhachHang.Size = new System.Drawing.Size(318, 50);
+            this.btnKhachHang.Size = new System.Drawing.Size(424, 62);
             this.btnKhachHang.TabIndex = 47;
             this.btnKhachHang.Text = "Quản lý khách hàng";
             this.btnKhachHang.UseVisualStyleBackColor = false;
@@ -235,9 +248,10 @@ namespace QuanLyShopDongHo.Forms
             this.btnChiTietSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChiTietSP.Image = global::QuanLyShopDongHo.Properties.Resources.icon_PhanLoai;
             this.btnChiTietSP.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnChiTietSP.Location = new System.Drawing.Point(47, 170);
+            this.btnChiTietSP.Location = new System.Drawing.Point(63, 209);
+            this.btnChiTietSP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnChiTietSP.Name = "btnChiTietSP";
-            this.btnChiTietSP.Size = new System.Drawing.Size(318, 50);
+            this.btnChiTietSP.Size = new System.Drawing.Size(424, 62);
             this.btnChiTietSP.TabIndex = 46;
             this.btnChiTietSP.Text = "Chi tiết sản phẩm";
             this.btnChiTietSP.UseVisualStyleBackColor = false;
@@ -250,9 +264,10 @@ namespace QuanLyShopDongHo.Forms
             this.btnSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSanPham.Image = global::QuanLyShopDongHo.Properties.Resources.icon_SanPham;
             this.btnSanPham.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSanPham.Location = new System.Drawing.Point(47, 127);
+            this.btnSanPham.Location = new System.Drawing.Point(63, 156);
+            this.btnSanPham.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSanPham.Name = "btnSanPham";
-            this.btnSanPham.Size = new System.Drawing.Size(318, 50);
+            this.btnSanPham.Size = new System.Drawing.Size(424, 62);
             this.btnSanPham.TabIndex = 45;
             this.btnSanPham.Text = "Quản lý sản phẩm";
             this.btnSanPham.UseVisualStyleBackColor = false;
@@ -265,9 +280,10 @@ namespace QuanLyShopDongHo.Forms
             this.btnNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNhanVien.Image = global::QuanLyShopDongHo.Properties.Resources.icon_NhanVien;
             this.btnNhanVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNhanVien.Location = new System.Drawing.Point(47, 79);
+            this.btnNhanVien.Location = new System.Drawing.Point(63, 97);
+            this.btnNhanVien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNhanVien.Name = "btnNhanVien";
-            this.btnNhanVien.Size = new System.Drawing.Size(318, 51);
+            this.btnNhanVien.Size = new System.Drawing.Size(424, 63);
             this.btnNhanVien.TabIndex = 44;
             this.btnNhanVien.Text = "Quản lý nhân viên";
             this.btnNhanVien.UseVisualStyleBackColor = false;
@@ -276,18 +292,19 @@ namespace QuanLyShopDongHo.Forms
             // pictureBox1
             // 
             this.pictureBox1.Image = global::QuanLyShopDongHo.Properties.Resources.bia;
-            this.pictureBox1.Location = new System.Drawing.Point(387, 79);
+            this.pictureBox1.Location = new System.Drawing.Point(516, 97);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(504, 371);
+            this.pictureBox1.Size = new System.Drawing.Size(672, 457);
             this.pictureBox1.TabIndex = 43;
             this.pictureBox1.TabStop = false;
             // 
             // TrangChu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(17)))), ((int)(((byte)(28)))));
-            this.ClientSize = new System.Drawing.Size(935, 466);
+            this.ClientSize = new System.Drawing.Size(1247, 574);
             this.Controls.Add(this.vaitro);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.manv);
@@ -305,6 +322,7 @@ namespace QuanLyShopDongHo.Forms
             this.Controls.Add(this.btnNhanVien);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "TrangChu";
             this.Text = "TrangChu";
             this.Load += new System.EventHandler(this.TrangChu_Load);
