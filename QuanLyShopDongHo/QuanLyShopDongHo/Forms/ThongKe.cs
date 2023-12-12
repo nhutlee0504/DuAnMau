@@ -61,13 +61,13 @@ namespace QuanLyShopDongHo.Forms
             string connection = @"Data Source =.; Initial Catalog = QuanLyShopDongHo; Integrated security = SSPI";
             using (SqlConnection conn = new SqlConnection(connection))
             {
-                string query = "SELECT ChiTietSanPham.MaSP,\r\nSanPham.TenSanPham," +
+                string query = "SELECT ChiTietSanPham.MaSP,\r\nChiTietSanPham.TenLoai," +
                     "\r\nSUM(DonHang.SoLuong) as 'SoLuongBanRa'," +
                     "\r\n(((100-ChiTietSanPham.KhuyenMai)/100)*ChiTietSanPham.GiaBan) as 'GiaBanRa'" +
                     ",\r\n(((100-ChiTietSanPham.KhuyenMai)/100)*ChiTietSanPham.GiaBan) * SUM(DonHang.SoLuong) as 'DoanhThu'" +
                     "\r\nFROM DonHang INNER JOIN\r\nChiTietSanPham ON DonHang.LoaiSP = ChiTietSanPham.LoaiSP" +
                     " INNER JOIN\r\nSanPham ON ChiTietSanPham.MaSP = SanPham.MaSanPham\r\n" +
-                    "GROUP BY ChiTietSanPham.MaSP,SanPham.TenSanPham,ChiTietSanPham.KhuyenMai," +
+                    "GROUP BY ChiTietSanPham.MaSP,ChiTietSanPham.TenLoai,ChiTietSanPham.KhuyenMai," +
                     "ChiTietSanPham.GiaBan";
                 using (SqlCommand command = new SqlCommand(query, conn))
                 {
@@ -80,7 +80,7 @@ namespace QuanLyShopDongHo.Forms
 
                         while (datareader.Read())
                         {
-                            dgvDT.Rows.Add(datareader["MaSP"], datareader["TenSanPham"],
+                            dgvDT.Rows.Add(datareader["MaSP"], datareader["TenLoai"],
                                 datareader["SoLuongBanRa"], datareader["GiaBanRa"], datareader["DoanhThu"]) ;
                         }
                     }
@@ -95,13 +95,13 @@ namespace QuanLyShopDongHo.Forms
             string connection = @"Data Source =.; Initial Catalog = QuanLyShopDongHo; Integrated security = SSPI";
             using (SqlConnection conn = new SqlConnection(connection))
             {
-                string query = "SELECT ChiTietSanPham.MaSP,\r\nSanPham.TenSanPham," +
+                string query = "SELECT ChiTietSanPham.MaSP,\r\nChiTietSanPham.TenLoai," +
                     "\r\n(SanPham.GiaNhap / SanPham.SoLuong) AS 'GiaTB'," +
                     "\r\n(((100-ChiTietSanPham.KhuyenMai)/100) * ChiTietSanPham.GiaBan) AS 'GiaBanRa'" +
                     ",\r\n(((100-ChiTietSanPham.KhuyenMai)/100) * ChiTietSanPham.GiaBan) - (SanPham.GiaNhap / SanPham.SoLuong) AS'LoiNhuan'\r\n" +
                     "FROM DonHang INNER JOIN ChiTietSanPham\r\nON DonHang.LoaiSP = ChiTietSanPham.LoaiSP " +
                     "INNER JOIN\r\nSanPham ON ChiTietSanPham.MaSP = SanPham.MaSanPham\r\n" +
-                    "GROUP BY ChiTietSanPham.MaSP,\r\nSanPham.TenSanPham,\r\nSanPham.GiaNhap" +
+                    "GROUP BY ChiTietSanPham.MaSP,\r\nChiTietSanPham.TenLoai,\r\nSanPham.GiaNhap" +
                     ",\r\nSanPham.SoLuong,\r\nChiTietSanPham.KhuyenMai,\r\nChiTietSanPham.GiaBan";
                 using (SqlCommand command = new SqlCommand(query, conn))
                 {
@@ -114,7 +114,7 @@ namespace QuanLyShopDongHo.Forms
 
                         while (datareader.Read())
                         {
-                            dgvLN.Rows.Add(datareader["MaSP"], datareader["TenSanPham"],
+                            dgvLN.Rows.Add(datareader["MaSP"], datareader["TenLoai"],
                                 datareader["GiaTB"], datareader["GiaBanRa"], datareader["LoiNhuan"]);
                         }
                     }
@@ -177,7 +177,7 @@ namespace QuanLyShopDongHo.Forms
                         while (datareader.Read())
                         {
                             dgvDH.Rows.Add(datareader["MaDon"], datareader["TenLoai"],
-                                datareader["TenKH"], datareader["SoLuong"], datareader["NgayIn"],
+                                datareader["TenKH"], datareader["SoLuong"],Convert.ToDateTime(datareader["NgayIn"]).ToString("dd/MM/yyyy"),
                                 datareader["HoTen"]);
                         }
                     }
@@ -232,13 +232,13 @@ namespace QuanLyShopDongHo.Forms
                 string connection = @"Data Source =.; Initial Catalog = QuanLyShopDongHo; Integrated security = SSPI";
                 using (SqlConnection conn = new SqlConnection(connection))
                 {
-                    string query = "SELECT ChiTietSanPham.MaSP,\r\nSanPham.TenSanPham," +
+                    string query = "SELECT ChiTietSanPham.MaSP,\r\nChiTietSanPham.TenLoai," +
                         "\r\nSUM(DonHang.SoLuong) as 'SoLuongBanRa'," +
                         "\r\n(((100-ChiTietSanPham.KhuyenMai)/100)*ChiTietSanPham.GiaBan) as 'GiaBanRa'" +
                         ",\r\n(((100-ChiTietSanPham.KhuyenMai)/100)*ChiTietSanPham.GiaBan) * SUM(DonHang.SoLuong) as 'DoanhThu'" +
                         "\r\nFROM DonHang INNER JOIN\r\nChiTietSanPham ON DonHang.LoaiSP = ChiTietSanPham.LoaiSP" +
                         " INNER JOIN\r\nSanPham ON ChiTietSanPham.MaSP = SanPham.MaSanPham WHERE ChiTietSanPham.MaSP = @matim\r\n" +
-                        "GROUP BY ChiTietSanPham.MaSP,SanPham.TenSanPham,ChiTietSanPham.KhuyenMai," +
+                        "GROUP BY ChiTietSanPham.MaSP,ChiTietSanPham.TenLoai,ChiTietSanPham.KhuyenMai," +
                         "ChiTietSanPham.GiaBan";
                     using (SqlCommand command = new SqlCommand(query, conn))
                     {
@@ -256,7 +256,7 @@ namespace QuanLyShopDongHo.Forms
 
                             while (datareader.Read())
                             {
-                                dgvDT.Rows.Add(datareader["MaSP"], datareader["TenSanPham"],
+                                dgvDT.Rows.Add(datareader["MaSP"], datareader["TenLoai"],
                                     datareader["SoLuongBanRa"], datareader["GiaBanRa"], datareader["DoanhThu"]);
                             }
                         }
@@ -312,14 +312,14 @@ namespace QuanLyShopDongHo.Forms
                 string connection = @"Data Source =.; Initial Catalog = QuanLyShopDongHo; Integrated security = SSPI";
                 using (SqlConnection conn = new SqlConnection(connection))
                 {
-                    string query = "SELECT ChiTietSanPham.MaSP,SanPham.TenSanPham,\r\n" +
+                    string query = "SELECT ChiTietSanPham.MaSP,ChiTietSanPham.TenLoai,\r\n" +
                         "SUM(DonHang.SoLuong) as 'SoLuongBanRa',\r\n" +
                         "(((100-ChiTietSanPham.KhuyenMai)/100)*ChiTietSanPham.GiaBan)" +
                         " as 'GiaBanRa',\r\n(((100-ChiTietSanPham.KhuyenMai)/100)" +
                         "*ChiTietSanPham.GiaBan) * SUM(DonHang.SoLuong) as 'DoanhThu'\r\n" +
                         "FROM DonHang INNER JOIN ChiTietSanPham ON DonHang.LoaiSP = " +
                         "ChiTietSanPham.LoaiSP\r\nINNER JOIN SanPham ON ChiTietSanPham.MaSP = " +
-                        "SanPham.MaSanPham\r\nGROUP BY ChiTietSanPham.MaSP,SanPham.TenSanPham," +
+                        "SanPham.MaSanPham\r\nGROUP BY ChiTietSanPham.MaSP,ChiTietSanPham.TenLoai," +
                         "ChiTietSanPham.KhuyenMai,\r\nChiTietSanPham.GiaBan\r\n" +
                         "HAVING (((100-ChiTietSanPham.KhuyenMai)/100)*ChiTietSanPham.GiaBan) " +
                         "* SUM(DonHang.SoLuong)\r\n>= @tu AND " +
@@ -342,7 +342,7 @@ namespace QuanLyShopDongHo.Forms
 
                             while (datareader.Read())
                             {
-                                dgvDT.Rows.Add(datareader["MaSP"], datareader["TenSanPham"],
+                                dgvDT.Rows.Add(datareader["MaSP"], datareader["TenLoai"],
                                     datareader["SoLuongBanRa"], datareader["GiaBanRa"], datareader["DoanhThu"]);
                             }
                         }
@@ -361,7 +361,7 @@ namespace QuanLyShopDongHo.Forms
             string connection = @"Data Source =.; Initial Catalog = QuanLyShopDongHo; Integrated security = SSPI";
             using (SqlConnection conn = new SqlConnection(connection))
             {
-                string query = "SELECT ChiTietSanPham.MaSP,SanPham.TenSanPham" +
+                string query = "SELECT ChiTietSanPham.MaSP,ChiTietSanPham.TenLoai" +
                     ",\r\n(SanPham.GiaNhap / SanPham.SoLuong) AS 'GiaTB'" +
                     ",\r\n(((100-ChiTietSanPham.KhuyenMai)/100) * ChiTietSanPham.GiaBan)" +
                     " AS 'GiaBanRa',\r\n(((100-ChiTietSanPham.KhuyenMai)/100)" +
@@ -369,7 +369,7 @@ namespace QuanLyShopDongHo.Forms
                     " AS'LoiNhuan'\r\nFROM DonHang INNER JOIN ChiTietSanPham ON DonHang.LoaiSP" +
                     " = ChiTietSanPham.LoaiSP\r\nINNER JOIN SanPham ON ChiTietSanPham.MaSP" +
                     " = SanPham.MaSanPham\r\nWHERE ChiTietSanPham.MaSP = @timLN\r\nGROUP BY" +
-                    " ChiTietSanPham.MaSP, SanPham.TenSanPham, SanPham.GiaNhap\r\n" +
+                    " ChiTietSanPham.MaSP, ChiTietSanPham.TenLoai, SanPham.GiaNhap\r\n" +
                     ",SanPham.SoLuong,ChiTietSanPham.KhuyenMai,ChiTietSanPham.GiaBan";
                 using (SqlCommand command = new SqlCommand(query, conn))
                 {
@@ -388,7 +388,7 @@ namespace QuanLyShopDongHo.Forms
 
                         while (datareader.Read())
                         {
-                            dgvLN.Rows.Add(datareader["MaSP"], datareader["TenSanPham"],
+                            dgvLN.Rows.Add(datareader["MaSP"], datareader["TenLoai"],
                                 datareader["GiaTB"], datareader["GiaBanRa"], datareader["LoiNhuan"]);
                         }
                     }
@@ -436,14 +436,14 @@ namespace QuanLyShopDongHo.Forms
             string connection = @"Data Source =.; Initial Catalog = QuanLyShopDongHo; Integrated security = SSPI";
             using (SqlConnection conn = new SqlConnection(connection))
             {
-                string query = "SELECT ChiTietSanPham.MaSP,SanPham.TenSanPham" +
+                string query = "SELECT ChiTietSanPham.MaSP,ChiTietSanPham.TenLoai" +
                     ",\r\n(SanPham.GiaNhap / SanPham.SoLuong) AS 'GiaTB'" +
                     ",\r\n(((100-ChiTietSanPham.KhuyenMai)/100) * ChiTietSanPham.GiaBan)" +
                     " AS 'GiaBanRa',\r\n(((100-ChiTietSanPham.KhuyenMai)/100) * ChiTietSanPham.GiaBan)" +
                     " - (SanPham.GiaNhap / SanPham.SoLuong) AS'LoiNhuan'\r\nFROM" +
                     " DonHang INNER JOIN ChiTietSanPham ON DonHang.LoaiSP =" +
                     " ChiTietSanPham.LoaiSP\r\nINNER JOIN SanPham ON ChiTietSanPham.MaSP " +
-                    "= SanPham.MaSanPham\r\nGROUP BY ChiTietSanPham.MaSP, SanPham.TenSanPham" +
+                    "= SanPham.MaSanPham\r\nGROUP BY ChiTietSanPham.MaSP, ChiTietSanPham.TenLoai" +
                     ", SanPham.GiaNhap\r\n,SanPham.SoLuong,ChiTietSanPham.KhuyenMai" +
                     ",ChiTietSanPham.GiaBan\r\nHAVING (((100-ChiTietSanPham.KhuyenMai)/100)" +
                     " * ChiTietSanPham.GiaBan) - (SanPham.GiaNhap / SanPham.SoLuong) " +
@@ -467,7 +467,7 @@ namespace QuanLyShopDongHo.Forms
 
                         while (datareader.Read())
                         {
-                            dgvLN.Rows.Add(datareader["MaSP"], datareader["TenSanPham"],
+                            dgvLN.Rows.Add(datareader["MaSP"], datareader["TenLoai"],
                                 datareader["GiaTB"], datareader["GiaBanRa"], datareader["LoiNhuan"]);
                         }
                     }
@@ -482,14 +482,14 @@ namespace QuanLyShopDongHo.Forms
             string connection = @"Data Source =.; Initial Catalog = QuanLyShopDongHo; Integrated security = SSPI";
             using (SqlConnection conn = new SqlConnection(connection))
             {
-                string query = "SELECT ChiTietSanPham.MaSP,SanPham.TenSanPham" +
+                string query = "SELECT ChiTietSanPham.MaSP,ChiTietSanPham.TenLoai" +
                     ",\r\n(SanPham.GiaNhap / SanPham.SoLuong) AS 'GiaTB'" +
                     ",\r\n(((100-ChiTietSanPham.KhuyenMai)/100) * ChiTietSanPham.GiaBan)" +
                     " AS 'GiaBanRa',\r\n(((100-ChiTietSanPham.KhuyenMai)/100) * ChiTietSanPham.GiaBan)" +
                     " - (SanPham.GiaNhap / SanPham.SoLuong) AS'LoiNhuan'\r\nFROM" +
                     " DonHang INNER JOIN ChiTietSanPham ON DonHang.LoaiSP =" +
                     " ChiTietSanPham.LoaiSP\r\nINNER JOIN SanPham ON ChiTietSanPham.MaSP " +
-                    "= SanPham.MaSanPham\r\nGROUP BY ChiTietSanPham.MaSP, SanPham.TenSanPham" +
+                    "= SanPham.MaSanPham\r\nGROUP BY ChiTietSanPham.MaSP, ChiTietSanPham.TenLoai" +
                     ", SanPham.GiaNhap\r\n,SanPham.SoLuong,ChiTietSanPham.KhuyenMai" +
                     ",ChiTietSanPham.GiaBan\r\nHAVING (((100-ChiTietSanPham.KhuyenMai)/100)" +
                     " * ChiTietSanPham.GiaBan) - (SanPham.GiaNhap / SanPham.SoLuong) " +
@@ -510,7 +510,7 @@ namespace QuanLyShopDongHo.Forms
 
                         while (datareader.Read())
                         {
-                            dgvLN.Rows.Add(datareader["MaSP"], datareader["TenSanPham"],
+                            dgvLN.Rows.Add(datareader["MaSP"], datareader["TenLoai"],
                                 datareader["GiaTB"], datareader["GiaBanRa"], datareader["LoiNhuan"]);
                         }
                     }
@@ -525,14 +525,14 @@ namespace QuanLyShopDongHo.Forms
             string connection = @"Data Source =.; Initial Catalog = QuanLyShopDongHo; Integrated security = SSPI";
             using (SqlConnection conn = new SqlConnection(connection))
             {
-                string query = "SELECT ChiTietSanPham.MaSP,SanPham.TenSanPham" +
+                string query = "SELECT ChiTietSanPham.MaSP,ChiTietSanPham.TenLoai" +
                     ",\r\n(SanPham.GiaNhap / SanPham.SoLuong) AS 'GiaTB'" +
                     ",\r\n(((100-ChiTietSanPham.KhuyenMai)/100) * ChiTietSanPham.GiaBan)" +
                     " AS 'GiaBanRa',\r\n(((100-ChiTietSanPham.KhuyenMai)/100) * ChiTietSanPham.GiaBan)" +
                     " - (SanPham.GiaNhap / SanPham.SoLuong) AS'LoiNhuan'\r\nFROM" +
                     " DonHang INNER JOIN ChiTietSanPham ON DonHang.LoaiSP =" +
                     " ChiTietSanPham.LoaiSP\r\nINNER JOIN SanPham ON ChiTietSanPham.MaSP " +
-                    "= SanPham.MaSanPham\r\nGROUP BY ChiTietSanPham.MaSP, SanPham.TenSanPham" +
+                    "= SanPham.MaSanPham\r\nGROUP BY ChiTietSanPham.MaSP, ChiTietSanPham.TenLoai" +
                     ", SanPham.GiaNhap\r\n,SanPham.SoLuong,ChiTietSanPham.KhuyenMai" +
                     ",ChiTietSanPham.GiaBan\r\nHAVING (((100-ChiTietSanPham.KhuyenMai)/100)" +
                     " * ChiTietSanPham.GiaBan) - (SanPham.GiaNhap / SanPham.SoLuong) " +
@@ -553,7 +553,7 @@ namespace QuanLyShopDongHo.Forms
 
                         while (datareader.Read())
                         {
-                            dgvLN.Rows.Add(datareader["MaSP"], datareader["TenSanPham"],
+                            dgvLN.Rows.Add(datareader["MaSP"], datareader["TenLoai"],
                                 datareader["GiaTB"], datareader["GiaBanRa"], datareader["LoiNhuan"]);
                         }
                     }
@@ -601,7 +601,7 @@ namespace QuanLyShopDongHo.Forms
                             ",\r\nKhachHang.DiaChi";
                         using (SqlCommand command = new SqlCommand(query, conn))
                         {
-                            command.Parameters.AddWithValue("@timten", "%" + txtTimKH.Text);
+                            command.Parameters.AddWithValue("@timten", "%" + txtTimKH.Text + "%");
                             conn.Open();
                             SqlDataReader datareader = command.ExecuteReader();
 
@@ -649,7 +649,7 @@ namespace QuanLyShopDongHo.Forms
                                 ",\r\nKhachHang.DiaChi";
                             using (SqlCommand command = new SqlCommand(query, conn))
                             {
-                                command.Parameters.AddWithValue("@timten", "%" + int.Parse(txtTimKH.Text));
+                                command.Parameters.AddWithValue("@timten", "%" + int.Parse(txtTimKH.Text) + "%");
                                 conn.Open();
                                 SqlDataReader datareader = command.ExecuteReader();
 
