@@ -167,7 +167,7 @@ namespace QuanLyShopDongHo.Forms
                 }
                 else
                 {
-                    MessageBox.Show("Không tìm thấy tên khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Không tìm thấy đơn hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     ShowDH();
                     btnTaoDon.Enabled = true;
                     btnThanhToan.Enabled = false;

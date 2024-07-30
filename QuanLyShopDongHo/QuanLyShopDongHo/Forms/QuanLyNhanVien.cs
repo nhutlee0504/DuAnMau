@@ -199,6 +199,7 @@ namespace QuanLyShopDongHo.Forms
             txtngaysinh.Text = "";
             txtsdt.Text = "";
             txtemail.Text = "";
+            txtmanv.Enabled = true;
             btnthem.Enabled = true;
             btncapnhat.Enabled = false;
             btnxoa.Enabled = false;

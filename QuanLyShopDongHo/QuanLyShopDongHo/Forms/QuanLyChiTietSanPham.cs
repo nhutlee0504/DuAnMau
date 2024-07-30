@@ -82,6 +82,7 @@ namespace QuanLyShopDongHo.Forms
                 return false;
             }
             int number;
+            float number2;
             if (int.TryParse(txtkhuyenmai.Text, out number))
             {
                 if (number < 0)
@@ -95,9 +96,9 @@ namespace QuanLyShopDongHo.Forms
                 MessageBox.Show("Khuyến mãi phải là số nguyên dương.");
                 return false;
             }
-            if (int.TryParse(txtgiaban.Text, out number))
+            if (float.TryParse(txtgiaban.Text, out number2))
             {
-                if (number < 0)
+                if (number2 < 0)
                 {
                     MessageBox.Show("Giá bán phải là số nguyên dương.");
                     return false;
